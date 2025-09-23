@@ -5,9 +5,6 @@ date: 2025-09-19
 publish: true
 ---
 
-> [!NOTE] Devoirs pour lundi
-> Lire les articles reçus par mail!
-
 *Attention*: Distinction langage/parole. La parole est une forme orale de langage.
 
 ### Le langage n'est pas simplement un code

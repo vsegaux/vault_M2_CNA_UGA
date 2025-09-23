@@ -1,0 +1,17 @@
+---
+publish: true
+---
+- *Big Data*: données massives (cas particulier de volumétrie), définies comme telles selon 3 critères (3V):
+	- Volume (taille)
+	- Vélocité: à quelle vitesse les données arrivent elle?
+	- Variété: à quel point les données sont-elles hétérogènes (numériques, images, Json, ...)
+- *Machine Learning*: technologie permettant d'apprendre sans programmation explicite à partir de données en entrée. 
+- *Pattern recognition*: reconnaissance de caractéristiques structurelles spécifiques
+- *Data Mining*: fouille/forage de données...terme plus ancien 
+- *Deep Learning*: catégorie de ML utilisant des réseaux de neurones 
+- *Agent*: une entité qui perçoit et agit 
+- *Rational agent*: Un agent rationnel est un agent qui agit d'une manière lui permettant d'obtenir le plus de succès possible dans la réalisation des tâches qu'on lui a assignées
+- Machine Learning : a target is called a label. 
+- Statistics : a target is called a dependent variable. 
+- A variable in statistics is called a feature in machine learning.
+- A transformation in statistics is called feature creation in machine learning.
