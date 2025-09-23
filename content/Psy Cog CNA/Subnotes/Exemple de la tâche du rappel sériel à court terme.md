@@ -1,0 +1,3 @@
+Exemple de la tâche du rappel sériel à court terme:
+On suppose que la mémoire fonctionne comme un ruban magnétique de taille fixe, avec une tête de lecture écriture.
+Selon ce modèle, la moyenne de rappel de mots courts devrait être supérieure à la moyenne de rappel de mots plus longs (pour contrôler que la seule variable modifiée est bien la longueur de prononciation du mot, les tests sont réalisé dans la langue anglaise, le français ayant trop de mots de tailles différentes qui se prononcent d'autant de syllabes).
