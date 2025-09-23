@@ -2,7 +2,6 @@
 prof: ROUSSET Stéphane
 sujet: Psychologie Cognitive
 date: 2025-09-19
-publish: true
 ---
 
 > [!NOTE] Examen
@@ -26,8 +25,7 @@ On ne peut alors pas prouver qu'un modèle soit vrai, et il y aurait une infinit
 "Attention cependant, le test réellement effectué est toujours: SI (Spéculation * *Spéculations Annexes* ) ALORS (Implication)"[[2024-2025-Rousset-Partie-1.pdf#page=5&selection=4,0,11,19|p.5]]
 
 *Validité relative*: Les hypothèses doivent toujours s'effectuer dans le cadre d'une comparaison de modèles, toute choses étant égales par ailleurs. On peut alors simplement conclure que le modèle A est "moins faux/plus valide" que le modèle B. On va donc se diriger 'dans le sens du' modèle A pour poursuivre les recherches.
-![[Univers des modèles.png]]
-
+![[Univers des modèles]]
 
 
 ![[Niveaux de compréhension]]
@@ -64,9 +62,7 @@ Pour être utile, la représentation doit être accessible en dépit des variati
 
 Illustration des modèles computationnels:
 On stocke séquentiellement, de bas en haut, d'abord en 2D, des lignes, angles etc.. (primitives visuelles) Puis on extrait les surfaces, formes et positions afin de finalement en déduire la structure 3D complète que l'on peut comparer à nos connaissances en mémoire.
-
-![[IllustrationModeleComputationnels.png]]
-
+![[IllustrationModeleComp.png]]
 
 *Modèle de Biederman (1985)*
 1. Extraction des primitives liées au contours locaux
@@ -79,10 +75,7 @@ On stocke séquentiellement, de bas en haut, d'abord en 2D, des lignes, angles e
 
 Agnosies *perceptives*: Trouble de la représentation
 Agnosies *associatives*: Incapacité à faire le lien entre l'image et les connaissances (sans que le problème soit au niveau du décodage perceptif)
-
-![[schemaEnsembleIdentification.png]]
-
-
+![[SchemaEnsembleIdenti.png]]
 Pour l'instant, on a pas pu montrer que ce modèle soit faux, il reste donc celui utilisé.
 
 ### Restriction à la mémoire (TULVING 1972)
