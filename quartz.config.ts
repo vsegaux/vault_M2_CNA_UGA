@@ -77,7 +77,7 @@ const config: QuartzConfig = {
       // Use MathJax for advanced LaTeX compatibility
       Plugin.Latex({ renderEngine: "mathjax" }),
       Plugin.TableOfContents({
-        maxDepth: 6,          // Headings up to H3 included. Set 1–6 as needed.
+        maxDepth: 3,          // Headings up to H3 included. Set 1–6 as needed.
         minEntries: 1,        // Minimum headings required for TOC to appear.
         showByDefault: true,  // Show TOC unless disabled in frontmatter.
         collapseByDefault: false // Expand TOC by default.

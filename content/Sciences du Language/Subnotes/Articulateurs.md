@@ -1,3 +1,6 @@
+---
+publish: true
+---
 
 | *Articulateurs mobiles (actifs)* | *Articulateurs fixes (passifs)* |
 | -------------------------------- | ------------------------------- |

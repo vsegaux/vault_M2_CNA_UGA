@@ -1,3 +1,7 @@
+---
+publish: true
+---
+
 
 - *La physique* : Comment sont générés les sons
 - *Neuropsycho/physiologie*: Décrire les mécanismes de perception/action, leur développement et éventuelles pathologies
