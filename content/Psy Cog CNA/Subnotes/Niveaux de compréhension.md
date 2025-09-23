@@ -1,3 +1,6 @@
+---
+publish: true
+---
 Niveaux de compréhension
 "Marr "[[2024-2025-Rousset-Partie-1.pdf#page=6&selection=20,0,20,5|p.6]] : 3 niveaux de compréhension d'une machine
 

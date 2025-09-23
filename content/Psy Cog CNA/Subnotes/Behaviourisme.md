@@ -1,3 +1,6 @@
+---
+publish: true
+---
 Observation des relations entre situation et comportement.:
 Situation --> Comportement
 
