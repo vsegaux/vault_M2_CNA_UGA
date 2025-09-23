@@ -2,6 +2,7 @@
 prof: ROUSSET Stéphane
 sujet: Psychologie Cognitive
 date: 2025-09-19
+publish: true
 ---
 
 > [!NOTE] Examen
@@ -65,6 +66,7 @@ Illustration des modèles computationnels:
 On stocke séquentiellement, de bas en haut, d'abord en 2D, des lignes, angles etc.. (primitives visuelles) Puis on extrait les surfaces, formes et positions afin de finalement en déduire la structure 3D complète que l'on peut comparer à nos connaissances en mémoire.
 
 ![[IllustrationModeleComputationnels.png]]
+
 
 *Modèle de Biederman (1985)*
 1. Extraction des primitives liées au contours locaux

@@ -1,3 +1,19 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* Italic text */
+em {
+  color: #6a4c93; /* purple for light mode */
+}
+
+.dark em {
+  color: #9d7cd8; /* lighter purple for dark mode */
+}
+
+/* Bold text */
+strong {
+  color: #d1495b; /* red for light mode */
+}
+
+.dark strong {
+  color: #ff6b6b; /* bright red for dark mode */
+}

@@ -83,7 +83,10 @@ const config: QuartzConfig = {
         collapseByDefault: false // Expand TOC by default.
       }),
     ],
-    filters: [Plugin.RemoveDrafts()],
+    filters: [
+      Plugin.RemoveDrafts(),
+      Plugin.ExplicitPublish()
+    ],
     emitters: [
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
