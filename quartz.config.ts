@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "M2 CNA",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -66,12 +66,22 @@ const config: QuartzConfig = {
         },
         keepBackground: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      // Parses Obsidian markdown, including some plugins
+      Plugin.ObsidianFlavoredMarkdown({
+        enableInHtmlEmbed: true, // allow embedded HTML so Quick Latex output can render
+      }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
+      // Use MathJax for advanced LaTeX compatibility
+      Plugin.Latex({ renderEngine: "mathjax" }),
+      Plugin.TableOfContents({
+        maxDepth: 6,          // Headings up to H3 included. Set 1–6 as needed.
+        minEntries: 1,        // Minimum headings required for TOC to appear.
+        showByDefault: true,  // Show TOC unless disabled in frontmatter.
+        collapseByDefault: false // Expand TOC by default.
+      }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
