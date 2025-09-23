@@ -24,8 +24,7 @@ Résultats :
 -> Post-hoc : 
 "tickling sensation was significantly more intense in the ET UN condition (3.99) than in the ST condition (2.83) (p < .0001)"[[Article_Schizotypal.pdf#page=4&selection=115,55,123,8|p.4]]
 
-
-![[Article_Schizotypal.pdf#page=4&rect=159,75,379,207|p.4]]
+![[devoir_bars.png]]
 
 
 *Discussion:*

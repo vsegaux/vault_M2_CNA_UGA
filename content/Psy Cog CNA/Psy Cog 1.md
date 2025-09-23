@@ -2,6 +2,7 @@
 prof: ROUSSET Stéphane
 sujet: Psychologie Cognitive
 date: 2025-09-19
+publish: true
 ---
 
 > [!NOTE] Examen

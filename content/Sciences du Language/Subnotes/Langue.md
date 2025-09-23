@@ -1,3 +1,6 @@
+---
+publish: true
+---
 
 Elément essentiel à la production de la parole, mise en mouvement par deux types de muscles:
 - *Muscles extrinsèques*: Relie et place la langue par rapport aux autres éléments qui l'entourent
