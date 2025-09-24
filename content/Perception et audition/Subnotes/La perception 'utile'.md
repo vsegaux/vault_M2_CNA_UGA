@@ -1,0 +1,12 @@
+---
+publish: true
+---
+- Problèmes de surdité
+	- Comment le son est-il capté, transformé en influx nerveux ? Quelles zones cérébrales sont impliquées ?
+- Problème de compréhension de la parole 
+	- A quels niveaux peut il y avoir des problèmes ?
+- Problèmes à identifier une source 
+	- Comment le son est-il localisé dans l’espace ?
+- Enregistrer et restituer un son perçu dans l’espace 
+- Concevoir un signal d’avertissement
+	- Quels sont les indices importants du signal faisant sens pour l’auditeur ?

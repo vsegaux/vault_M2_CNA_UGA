@@ -141,7 +141,7 @@ Methods in:
 4000 to 7000 languages in the world, 75 in France (based on "1999 Cerquiglini report"[[content/Introduction cognitive sc/Supports/IntroCogSci_part1_M2ScCo_2024_25_Loevenbruck.pdf#page=64&selection=44,7,48,6|p.64]])
 https://francaisdenosregions.com/
 
-How do we generate sounds with our body? For speech : [[Produire la parole]]
+How do we generate sounds with our body? For speech : [[Physiologie de la production de la parole]]
 
 *Measures in language*: EGG (Electro-glotto-graphy), Vocal Fold endoscopy, Oral and nasal airflow, Acoustic measures, Anatomical MRI, Articulatory measures, Optoelectric tracking, Electromyography, ...
 *Behavioural measures*: Perceptual tests, Interaction with speaking faces, emotions, eyetracking
