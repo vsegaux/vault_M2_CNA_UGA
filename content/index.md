@@ -2,6 +2,25 @@
 title: Notes de cours du M2 Cognition Naturelle et Artificielle
 publish: true
 ---
+# Tables des matières:
+## Introduction aux sciences cognitives
+[[CM Loevenbruck]]
+## Méthodologie et mesures en sciences cognitives
+[[CM Chauvin]]
+## Modèle de mémoire
+[[CM Grandchamp]]
+## Perception et audition
+[[CM Garnier]]
+## Philosophie en sciences cognitives
+[[CM Alvarez]]
+## Psychologie cognitive
+[[CM Rousset]]
+## Sciences du langage
+[[CM Dohen]]
+
+
+# Références
+
 Site du master:
 https://imss-www.upmf-grenoble.fr/prevert/SpecialiteSC/index.htm
 

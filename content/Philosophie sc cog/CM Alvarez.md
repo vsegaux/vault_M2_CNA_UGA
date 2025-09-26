@@ -51,35 +51,36 @@ Exemple: L'hypothèse de la simulation épisodique (Schacter & Addis 2007) et l'
 
 Il existe un système neurocog responsable de la mémoire et l'imagination.
 
-
-> [!NOTE] TODO
-> Copier le diapo
-
-- Résultats de la psychologie clinique: TODO copier diapo...
-- Résultats...
-- Résultats...
+- *Résultats de la psychologie clinique*: les patients ayant des difficultés à se souvenir des épisodes passés ont également des difficultés à imaginer des épisodes futurs (Klein et al., 2002 ; Rosenbaum et al., 2005 ; Hassabis et al., 2007).
+- *Résultats de la psychologie du développement*: il a été montré que la capacité des enfants à se souvenir du passé et à imaginer l’avenir émerge approximativement au même moment (Suddendorf et Busby, 2005 ; Atance, 2008 ; Fivush, 2011).
+- *Résultats des neurosciences cognitives*: les études de neuroimagerie montrent qu’il existe un fort chevauchement entre les régions cérébrales associées à la mémoire épisodique et à l’imagination (Addis et al., 2007 ; Schäfer et al., 2007, 2012).
 
 Quelles pourraient être les implications de ces résultats?
-- *Continuisme*: La mémoire et l'imagination ne sont pas fondamentalement différentes. Se souvenir et imaginer sont le même type de processus; ils ne représentent que des différences graduelles.
-- *Discontinuisme*: Malgré certaines similitudes, la mémoire et l'imagination sont des types de processus fondamentalement différents, et non **TODO : copier slide!!**
+- *Continuisme*: la mémoire et l'imagination ne sont pas fondamentalement différentes. Se souvenir et imaginer sont le même type de processus; ils ne représentent que des différences graduelles.
+- *Discontinuisme*: malgré certaines similitudes, la mémoire et l’imagination sont des types de processus fondamentalement différents, et non de simples gradations d’un même processus.
 
 
 ## Qu'est-ce que la mémoire épisodique et comment se rapporte-t-elle à l'imagination?
 
 Est-ce qu'il y a une différence neuro-cognitive entre le souvenir d'un objet et l'imagination d'un objet?
 
-La mémoire épisodique
+**La mémoire épisodique**:
 - A d'abord été définie en termes de l'information qu'elle traite
 - Implique une conscience active (comme la mémoire sémantique)
 - On peut faire un récit des souvenirs épisodiques et sémantiques, les décrire et les adapter aux narrations qui donnent du sens à notre identité personelle
 - L'évolution des concepts chez Tulving 1972 et 1983 a nourri plusieurs discussions philosophiques (Andonovski 2024; Hoerl & McCormack 2024)
-- **TODO SLIDES!!!**
+- Information WWW (what–where–when) 
+	- Je me souviens de mon voyage en Espagne l’été dernier.
+	- Je me souviens de la première fois que j’ai mangé du camembert avec mes colocs à Lyon.
+- La mémoire sémantique peut aussi traiter l'information WWW
+- Pour *distinguer* la mémoire *épisodique* de la mémoire *sémantique* Tulving (1983) introduit la notion de « *conscience autonoétique* »: llle permet aux sujets de se représenter soi mêmes dans le passé et revivre mentalement des expériences personnelles passées
 
-Pour distinguer la mémoire sémantique de la mémoire épisodique, Tulving introduit la notion de 'conscience autonoétique' ([[content/Psychologie cognitive/Subnotes/Restriction à la mémoire (TULVING 1972)]])
 
-Puis étude du patient K.C. -> **TODO SLIDE!!!**
-- K.C. a subi une lésion cérébrale et ne pouvait plus se souvenir des évènements personnels passés, mais sa mémoire sémantique restait largement intacte
-- Intéressamment, K.C. avait également des difficultés à construire des scénarios futurs détaillé **TODO**...
+Puis étude du patient K.C.
+- L’étude du patient K.C. en 1985 a fait reformuler la perspective de Tulving 
+- K.C. a subi une lésion cérébrale et ne pouvait plus se souvenir des événements personnels passés, mais sa mémoire sémantique restait largement intacte 
+- Intéressamment, K.C. avait également des difficultés à construire des scénarios futurs détaillés et personnels 
+- Tulving propose alors que la conscience autonoétique est aussi impliquée dans l’imagination et permet de voyager mentalement dans le passé et l’avenir
 
 ## Des questions fondamentales à répondre
 - Que faut-il pour se *souvenir véritablement* d'un évènement?
@@ -87,8 +88,11 @@ Puis étude du patient K.C. -> **TODO SLIDE!!!**
 - La mémoire et l'imagination sont-elles du *même genre d'état mental*, ou existe-t-il une différence qualitative entre elles?
 
 ## Cas du peintre
-Contexte : Avant même la distinction entre mémoire épisodique et mémoire sémantique.
-
-**TODO SLIDES!!!**
+Contexte historique/philosophique : Avant même la distinction entre mémoire épisodique et mémoire sémantique.
+« Supposons que quelqu’un demande à un peintre de peindre une scène imaginaire. Le peintre accepte et, pensant qu’il peint une scène purement imaginaire, réalise un tableau détaillé d’une cour de ferme, comprenant une maison d’une certaine couleur et forme, plusieurs personnes aux traits précis, des vêtements particuliers, et ainsi de suite. Ses parents reconnaissent alors le tableau comme une représentation très fidèle d’une scène qu’il n’a vue qu’une seule fois dans son enfance. (…) Bien que le peintre croie sincèrement que son œuvre est purement imaginaire et ne représente aucune scène réelle, les observateurs stupéfaits disposent de toutes les preuves nécessaires pour établir qu’en réalité il se souvient d’une scène de son enfance. » (Martin et Deutscher, 1966 : 167-168)
 
 Est-ce que le peintre se souvient, dans ce cas là?
+
+## Cas de Kent
+
+« (Kent) a raconté à son ami Gray ce qu’il avait vu lors d’un accident auquel il avait participé. Kent a ensuite un second accident, dans lequel il reçoit un coup à la tête qui détruit toute mémoire d’une période de son passé, y compris le moment où le premier accident s’est produit. Lorsque Gray constate que Kent ne se souvient plus du premier accident, il lui rappelle les détails que Kent lui avait racontés entre le premier et le second accident. Après un certain temps, Kent oublie que quelqu’un lui a parlé du premier accident, mais se souvient encore de ce que Gray lui a raconté. » (Martin et Deutscher, 1966 : 180)
