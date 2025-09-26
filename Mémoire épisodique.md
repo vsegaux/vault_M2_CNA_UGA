@@ -1,0 +1,9 @@
+---
+publish: true
+---
+Nécessite la conscience de sa propre existence dans le monde (rappel d'élément déjà vécu) (= expression de mémoire *auto noétique*).
+	- On considère qu'il s'agit d'un sur-système de la mémoire sémantique, comme un indexeur d'évènement. Les représentations dans ce système sont plus abstraites que celles en mémoire sémantique, puisqu'elle permettent simplement de se souvenir que "j'ai vécu" les éléments qui y sont présents; de se souvenir des moments qui ont été vécus. L'*hippocampe* est un bon candidat pour soutenir ce rôle dans le cerveau. Une lésion de l'hippocampe cause des amnésies (incapacité à se souvenir). Il y a deux types d'amnésie:
+		- *Amnésie antérograde*: due à une lésion de l'hippocampe: incapacité de souvenir pour tous les évènement *suivant* l'accident. Incapacité de revivre des moments du passé. L'existence de ce type d'amnésie permet de faire la distinction entre mémoire sémantique et épisodique; la mémoire sémantique étant généralement conservée contrairement à la mémoire épisodique.
+		- *Amnésie rétrograde*: incapacité d'évocation de son propre passé (autobiographique) avant l'évènement déclencheur de l'amnésie. Perte aussi d'élément sémantique (prénom, lieu d'école, ...)
+	- Test de la mémoire épisodique chez des animaux:
+		- On montre à un jais quelqu'un qui cache de différents types de nourriture à différents endroits. Ces types de nourriture s'abiment plus ou moins rapidement dans le temps. Le jais va ensuite aller rechercher dans le bon ordre la nourriture aux différents endroits. Le jais serait donc capable de se souvenir de cet évènement unique qu'il a vécu (qqun qui cache la nourriture).

@@ -50,7 +50,7 @@ Note: Expérimentalement, le 'neurone Jennifer Anniston' est observable de mani�
 > [!NOTE] Référence biblio:
 > Fodor, La modularité de l'esprit.
 
-La représentation et l'objet réel du monde extérieur sont deux concept distinct. Une représentation correspond strictement à l'objet du monde extérieur, par définition. Les processus perceptif qui permettent d'accéder à cette représentation ne doivent pas être en mesure de l'altérer. Si l'on pouvait modifier la relation entre l'objet et sa représentation, celle-ci ne serait plus une représentation (ex: si je me représente la craie comme un arbre, je ne me 'représente' plus la craie). Les processus de perception doivent être encapsulés afin qu'il ne puisse pas y avoir de rétroaction de la représentation; **les processus de perception sont des processus strictement montant** (on se réfère à ce paradigme pour la suite du cours, il s'agit du cadre paradigmatique fixé classiquement. A noter que certains phénomènes ne respectent pas ce paradigme, comme le traitement des couleurs, en particulier en vision périphérique). Les traitements rétroactifs sur les processus de perception sont considérés comme liés à la notion d'attention.
+Une représentation correspond strictement à l'objet du monde extérieur, par définition. Les processus perceptif qui permettent d'accéder à cette représentation ne doivent pas être en mesure de l'altérer. Si l'on pouvait modifier la relation entre l'objet et sa représentation, celle-ci ne serait plus une représentation (ex: si je me représente la craie comme un arbre, je ne me 'représente' plus la craie). Les processus de perception doivent être encapsulés afin qu'il ne puisse pas y avoir de rétroaction de la représentation; **les processus de perception sont des processus strictement montant** (on se réfère à ce paradigme pour la suite du cours, il s'agit du cadre paradigmatique fixé classiquement. A noter que certains phénomènes ne respectent pas ce paradigme, comme le traitement des couleurs, en particulier en vision périphérique). Les traitements rétroactifs sur les processus de perception sont considérés comme liés à la notion d'attention.
 
 Pour être utile, la représentation doit être accessible en dépit des variations du signal d’une rencontre à l’autre. [[content/Psychologie cognitive/Supports/2024_2025_MSC_Rousset_partie-2.pdf#page=2&selection=6,0,44,1|p.2]]
 - C’est donc un élément discret *abstrait* des caractéristiques idiosyncratiques de présentation
@@ -80,4 +80,54 @@ Agnosies *associatives*: Incapacité à faire le lien entre l'image et les conna
 Pour l'instant, on a pas pu montrer que ce modèle soit faux, il reste donc celui utilisé.
 
 ### Restriction à la mémoire (TULVING 1972)
-![[Restriction à la mémoire (TULVING 1972)]]
+D'un point de vue descriptif, notre mémoire s'exprime de trois manières différentes:
+![[Mémoire procédurale]]
+![[Mémoire sémantique]]
+![[Mémoire épisodique]]
+
+Modèle actuel:
+![[tulving2.png]]
+Ajout de la *mémoire de travail (MDT)*, son rôle est de maintenir activement certains éléments pendant un temps cours. Cette mémoire permet d'aider à construire les index (mémoire épisodique) les plus efficaces possible. Plus on réfléchit à quelque chose, meilleure va être la mémoire épisodique, on parle d'*effet d'élaboration sémantique* ou *effet de profondeur d'encodage*, cet effet est massif en psychologie expérimentale. 
+- Exemple: présentation simple de mots, puis demande de rappel d'un mot cible; vs présentation de mot en demandant de dire s'ils sont 'vivant' ou non, puis demande de rappel
+- . Dans le second cas, on manipule mentalement les mots présentés, le rappel est largement meilleur.
+
+Modèle alliant plasticité et stabilité de la mémoire (Squire & Alvarez (95), Mc Clelland & Al. (95), Murre (96), Nadel & Moscowitch (97)):
+1er dilemme:
+- Stabilité: On doit pouvoir se souvenir durablement.
+- Plasticité: Une seule présentation doit ensuite permettre de s'en souvenir.
+
+2nd dilemme:
+- Retrouver une information spécifique.
+- Retrouver une information en fonction de tous les éléments des différents épisodes vécus.
+
+Il faut donc un système qui puisse à la fois apprendre immédiatement et un système qui soit capable d'apprendre lentement au fil des expériences vécues afin d'extraire une structure.
+
+Exemple de création d'une sémantique:
+Bière…. Louvain….Plaisir
+Bière…. Bruxelle….Plaisir
+Bière….Grenoble…Plaisir, on fini par associer bière et plaisir.
+
+Nadel & Moscowitch (1997):
+![[nadelMosco.png]]
+Lors de la perception d'un évènement A, il y a un début de création de lien entre des 'features' sémantique et création instantanée d'une trace épisodique.
+
+Il y a le risque que, lors des évocations épisodiques, le système fasse des mélanges.
+
+Selon ce modèle, si l'on part du principe que l'apprentissage est séquentiel, il y a un risque que, lorsque des souvenirs nouveaux sont encodés, ils risquent de trop écraser les souvenirs déjà présents. Le système pourrait dériver et être uniquement déterminer par les choses récentes qui y sont ajoutées.
+Une solution à ce problème serait l'apprentissage intercalé. Par exemple pour apprendre une liste de mot, il vaut mieux la présenter 10 fois mélangé à d'autres mots, que de la présenter de manière condensée (i.e. pour apprendre ABCDE, il vaut mieux apprendre de manière répétée chaque lettre): *Apprentissage massé < apprentissage distribué*.
+
+Ce que les auteurs proposent dans leur système:
+ajout d'activation aléatoires d'épisode enregistrés dans l'hippocampe: activation de la mémoire épisodique, qui permet alors l'activation au niveau cortical (mémoire sémantique) et donc un renforcement des éléments sémantiques (l'apprentissage est réalisé en sens inverse par rapport à précédemment: épisodique->sémantique->évènement). Il s'agit typiquement de rêves, le sommeil permet de renforcer les éléments qui ont été encodés. 
+Selon Nadel & oscowitch, ces éléments évoqués le sont sous la forme de *nouveaux* souvenirs épisodique (et pas simplement réactivation de souvenirs déjà vécus). D'autres auteurs considèrent que les souvenirs anciens sont contenu dans la mémoire sémantique et non pas épisodique. Ces différences sont testables expérimentalement: sous IRM, on devrait voir des activations hippocampiques lors du rappel de souvenirs anciens (et c'est bien le cas).
+
+Plus les souvenirs sont anciens, plus les structures permettant de les encodés ont de chance d'être réutiliser, et donc plus ils ont de chances d'être mélangé à d'autres souvenirs. ""Il y a donc un équilibre à trouver entre les éléments anciens qui sont souvent activés lors des phases de sommeil et les évènements nouveaux qui arrivent pour "les écraser". Au final, on évite ainsi la dérive qui était décrite ci-dessus.""
+
+Cas des patients amnésique antérogrades:
+On suppose qu'en lui montrant de manière contrôler des éléments, il pourra finir par obtenir des performances similaires à un patient contrôle (qui 'se serait montré lui même dans son sommeil' les mêmes éléments). Les résultats sont bons, on arrive effectivement à faire apprendre des éléments au patient amnésique.
+
+Concernant les éléments arrivés avant l'accident: on observe toujours une frange d'amnésie rétrograde dans les amnésies antérogrades, le modèle de Nadel & Moscowitch l'explique de la manière suivante:
+Chez le sujet contrôle, le jour de l'accident et les jours qui suivent, son hippocampe va renforcer les éléments vécus dans les heures/jours/semaines passé l'évènement. Pour le patient ayant vécu l'accident, ces éléments ne seront pas renforcés et ont donc tendance à être oublié (malgré qu'ils soient avant l'accident).
+![[AnterogradeAMne.png]]
+
+
+
