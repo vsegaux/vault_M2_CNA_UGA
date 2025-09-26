@@ -75,7 +75,7 @@ La mémoire épisodique
 - L'évolution des concepts chez Tulving 1972 et 1983 a nourri plusieurs discussions philosophiques (Andonovski 2024; Hoerl & McCormack 2024)
 - **TODO SLIDES!!!**
 
-Pour distinguer la mémoire sémantique de la mémoire épisodique, Tulving introduit la notion de 'conscience autonoétique' ([[Restriction à la mémoire (TULVING 1972)]])
+Pour distinguer la mémoire sémantique de la mémoire épisodique, Tulving introduit la notion de 'conscience autonoétique' ([[content/Psychologie cognitive/Subnotes/Restriction à la mémoire (TULVING 1972)]])
 
 Puis étude du patient K.C. -> **TODO SLIDE!!!**
 - K.C. a subi une lésion cérébrale et ne pouvait plus se souvenir des évènements personnels passés, mais sa mémoire sémantique restait largement intacte
