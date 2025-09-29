@@ -85,11 +85,14 @@ L'activité mesurée en EEG/MEG de surface est la résultante de l'activité cum
 | MEG       | Champs magnétiques     | Absolue  | 1ms                   | $10^{-13}$ tesla  | Capteurs SQUID couplé à des bobines |
 En EEG, on mesure des différences de potentiels électriques, soit par mesure *monopolaire* (électrode VS référence, le plus souvent utilisé en recherche), soit par mesure *bipolaire* (électrode VS électrode, plutôt utilisé en médecine). Dans le cas monopolaire se pose le soucis de la référence, plusieurs méthodes sont possibles:
 - Sur le nez, mais gênée par le mouvement des yeux
-- Derrière l'oreille/sur les lobes d'oreilles (moyenne des deux côtés), potentiellement complexe selon la taille du lobe/la présence de piercings...
+- Derrière l'oreille (sur les mastoïdes), souvent utilisé
+- Sur les lobes d'oreilles (moyenne des deux côtés), potentiellement complexe selon la taille du lobe/la présence de piercings...
 - Obtenue par moyenne (seulement possible sur un grand nombre d'électrode (>64)), l'avantage est que les différences obtenues avec cette référence sont bien dues à des activités d'"intérêt".
 ## Activités oscillatoires
 
 ![[rythmes.png]]
+
+### Origine des signaux
 
 Origine des activités oscillatoires:
 - Boucles thalamo-corticales: Thalamus, relais sensoriel, ("chef d'orchestre")
@@ -99,8 +102,7 @@ Origine des activités oscillatoires:
 ![[sommeSPatiTemp.png]]
 
 
-Sur un seul neurone, l'entrée d'ions provoque des courants locaux (courants primaires sur l'image suivante) et des courants secondaires qui sont dus à la présence de canaux de sorties d'ion (toujours ouverts).
-
+Sur un seul neurone, l'entrée d'ions provoque des courants locaux (*courants primaires* sur l'image suivante) et des *courants secondaires* qui sont dus à la présence de *canaux de sorties* d'ion (toujours ouverts):
 ![[courantPrimaires.png]]
 
 Les champs dipolaires dus au PPS (potentiels post synaptiques) diminuent moins en amplitude avec la distance (contrairement aux champs dus aux PA). Ainsi, l'activité électrique due aux PA ne permet pas la synchronisation neuronale, contrairement à celle des *PPS* qui est *favorable* à la *synchronisation temporelle* d'un *grand nombre* de *neurones*. C'est cette activité qui est *nécessaire à une visualisation en EEG* ou MEG. A noter aussi que les signaux observés en EEG sont principalement générés par les cellules pyramidales (P), à cause de leur architecture plutôt en colonne:
@@ -108,5 +110,89 @@ Les champs dipolaires dus au PPS (potentiels post synaptiques) diminuent moins e
 
 Note: La synchronisation temporelle est due à la fois aux boucles thalamo-corticales et cortico-corticales (synchronisation des messages nerveux afférents) et à l'activité électrique due aux PPS.
 
+Finalement, l'activation synchronisée de millier de neurone pyramidaux va résulter en la création d'un *macro-dipôle*, dont la *direction* et perpendiculaire à la surface corticale locale et dont l'amplitude correspond à "l'intégrale des densités de courants dans la colonne considéré soit en moyenne":
+![[macro_dipole.png]]
 
+### En EEG et en MEG
 
+Selon le positionnement du macro-dipôle sur le gyrus, il peut être radial ou tangentiel, les variations de potentiel résultantes vont être impactées: 
+![[Dipoles_rad_tang]]
+![[topographie.png]]
+
+Et en MEG, les champs magnétiques étant perpendiculaires aux courants électrique:
+![[MEG_EEG.png]]
+
+Le signal électrique, même s'il est issu d'un seul point, va apparaitre de manière "étalée" sur la surface du scalp en EEG. En MEG, les *champs magnétiques* relevés sont moins dispersés, car ils sont beaucoup *moins sensibles aux milieux traversés*, c'est pour ça que la MEG a une meilleure résolution spatiale que l'EEG. Par rapport à la source du signal:
+- L'amplitude du signal va diminuer en s'éloignant de la source (aussi si celle-ci est profonde)
+- La dispersion du signal va augmenter avec la distance à la source.
+
+### Sensibilité
+
+| Type de source | MEG  | EEG   |                                        |
+| -------------- | ---- | ----- | -------------------------------------- |
+| Radiale        | 1/10 | 2     | Par rapport à une source tengencielle  |
+| Profonde       | 1/3  | 1/100 | Par rapport à une source superficielle |
+
+### Cas des sources multiples
+Les observations réalisées en surface sont la résultante de la somme de plusieurs macro-dipôles. Exemple: dans le cas d'une onde auditive perçue, on a de fortes activation sur le dessus du crâne alors que ces zones ne sont pas impliquées dans son traitement.
+
+## Résumé EEG-MEG
+
+| MEG                                                        | EEG                                                  |
+| ---------------------------------------------------------- | ---------------------------------------------------- |
+| Mesure un champ magnétique                                 | Mesure un potentiel électrique                       |
+| Réponse dipolaire perpendiculaire à la direction du dipôle | Réponse dipolaire parallèle à la direction du dipôle |
+| Réponse focale                                             | Réponse diffuse                                      |
+| Peu affecté par les tissus cérébraux                       | Très affecté par les tissus                          |
+| Séléctif pour les sources tangentielles                    | Sensible à toutes orientations                       |
+| Peu sensible aux sources profondes                         | Sensible aux sources profondes                       |
+| Coûteux                                                    | Moins cher                                           |
+
+# Dispositifs et principe de mesure des signaux
+
+## MEG
+
+Nécessite une chambre blindée (cage de Faraday) pour supprimer toutes les ondes électromagnétiques environnantes (téléphone portable, prises électrique etc...).
+
+La détection est faite par des bobines, le signal est ensuite amplifié par des SQUIDS (supraconducting quantom interference device) qui doivent être refroidis ) l'hélium liquide (d'où le cout de la manipulation):
+![[MEG_dispositif.png]]
+
+## EEG
+
+Les électrodes sont positionnées de manière standardisée directement sur la tête, il existe plusieurs types d'électrodes:
+
+| Type d'électrode | Passive                            | *Active*                                            | *Humide*                             | Sèche                                                            |
+| ---------------- | ---------------------------------- | --------------------------------------------------- | ------------------------------------ | ---------------------------------------------------------------- |
+|                  | Simple réception du signal nerveux | Pré-Amplification du signal directement à la source | Posées sur un gel conducteur         | Sans gel                                                         |
+|                  |                                    |                                                     | Long à poser car application du gel; | Présentent souvent des artéfacts de mesure; désagréable à porter |
+
+![[EEG_dispo.png]]
+
+Système international 10-20 (pour <21 voies):
+![[10_2.png]]
+Positionnement des électrodes par rapport à une répartition du scalp à partir de 4 points de références: *Nasion*, *Inion*, *Préaurical* (Gauche et Droit). La première électrode posée est l'électrode centrale, au niveau du "*vertex*". L'espacement entre les électrodes et de 10 ou 20 % des distances Nasion-Inion.
+Ces quatres points sont la référence pour tous les systèmes actuels, mais la répartition est plutôt de 5% actuellement, pour une meilleure résolution spatiale.
+
+### Dispositif de mesure de la position du casque par rapport à la tête
+
+Idéalement, il faudrait un IRM du cerveau du patient. Certaines références ont été créée à partir de moyenne sur 1000 cerveaux sinon. La position précise des électrodes est reconstruite numériquement par rapport aux points de référence (Nasion, Péri-auriculaire Droit et Gauche) et au contour de la peau.
+
+# Protocoles d'étude et traitement des données
+## Pré-traitement des données
+### Identification & Correction des artéfacts 
+([vidéo youtoube]( https://www.youtube.com/watch?v=zH3fim2uIHs)). 
+Les principales causes d'artéfacts *physiologiques* sont:
+- Mouvement oculaires
+- Activité cardiaque
+- Activité musculaire
+- Activité liée à un état de fatigue (onde Alpha)
+
+Sources *extra-physiologiques*:
+- Mouvement transitoires du sujet, mouvement de tête
+- Bruits électroniques (50Hz, déplacement de câbles, ...)
+
+### Filtrage
+
+![[filtrage_eeg.png]]
+
+L'*Analyse en Composantes Principale* (*PCA*) permet aussi de filtrer les artéfacts (typiquement cardiaque).
