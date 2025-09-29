@@ -85,7 +85,7 @@ L'activité mesurée en EEG/MEG de surface est la résultante de l'activité cum
 | MEG       | Champs magnétiques     | Absolue  | 1ms                   | $10^{-13}$ tesla  | Capteurs SQUID couplé à des bobines |
 En EEG, on mesure des différences de potentiels électriques, soit par mesure *monopolaire* (électrode VS référence, le plus souvent utilisé en recherche), soit par mesure *bipolaire* (électrode VS électrode, plutôt utilisé en médecine). Dans le cas monopolaire se pose le soucis de la référence, plusieurs méthodes sont possibles:
 - Sur le nez, mais gênée par le mouvement des yeux
-- Derrière l'oreille (sur les mastoïdes), souvent utilisé
+- Derrière l'oreille (sur les mastoïdes)(moyenne des deux côtés), souvent utilisé
 - Sur les lobes d'oreilles (moyenne des deux côtés), potentiellement complexe selon la taille du lobe/la présence de piercings...
 - Obtenue par moyenne (seulement possible sur un grand nombre d'électrode (>64)), l'avantage est que les différences obtenues avec cette référence sont bien dues à des activités d'"intérêt".
 ## Activités oscillatoires
@@ -134,7 +134,7 @@ Le signal électrique, même s'il est issu d'un seul point, va apparaitre de man
 | Profonde       | 1/3  | 1/100 | Par rapport à une source superficielle |
 
 ### Cas des sources multiples
-Les observations réalisées en surface sont la résultante de la somme de plusieurs macro-dipôles. Exemple: dans le cas d'une onde auditive perçue, on a de fortes activation sur le dessus du crâne alors que ces zones ne sont pas impliquées dans son traitement.
+Les observations réalisées en surface sont la résultante de la somme de plusieurs macro-dipôles. L'obtention de la source réelle du signal électrique n'est pas garantie. Exemple: dans le cas d'une onde auditive perçue, on a de fortes activation sur le dessus du crâne alors que ces zones ne sont pas impliquées dans son traitement.
 
 ## Résumé EEG-MEG
 
@@ -174,6 +174,9 @@ Positionnement des électrodes par rapport à une répartition du scalp à parti
 Ces quatres points sont la référence pour tous les systèmes actuels, mais la répartition est plutôt de 5% actuellement, pour une meilleure résolution spatiale.
 
 ### Dispositif de mesure de la position du casque par rapport à la tête
+
+
+> [!NOTE] A reprendre...
 
 Idéalement, il faudrait un IRM du cerveau du patient. Certaines références ont été créée à partir de moyenne sur 1000 cerveaux sinon. La position précise des électrodes est reconstruite numériquement par rapport aux points de référence (Nasion, Péri-auriculaire Droit et Gauche) et au contour de la peau.
 
