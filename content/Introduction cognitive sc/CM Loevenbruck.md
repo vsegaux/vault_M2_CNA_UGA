@@ -6,7 +6,7 @@ publish: true
 ---
 
 > [!NOTE] Examen
-> Une heure, examen écrit
+> Une heure, examen écrit, Vérifier dans les supports pour les parties à apprendre ou pas!!!
 
 *Cognitive Science* :
 "If "cognition" means in Latin "faculty of knowing", one could say that cognitive sciences aim at studying the functioning of the human capacity to extract, select, process and interpret information (conscious and unconscious) resulting from the interaction between internal mental activities and the environment in order to produce adapted responses.” “It is thus a question of observing, studying and understanding the major mental functions of human beings (perception, action, memory, language, reasoning, learning, communication...), of relating these mental functions to the study of behavior in interaction with the surrounding world, but also of observing these capacities from different complementary angles: developmental, clinical and pathological. By studying these functions, cognitive sciences are also interested in our brain, as a carrier of our knowledge, and of our mental representations.”[[content/Introduction cognitive sc/Supports/IntroCogSci_part1_M2ScCo_2024_25_Loevenbruck.pdf#page=12&selection=0,0,214,2|p.12]]

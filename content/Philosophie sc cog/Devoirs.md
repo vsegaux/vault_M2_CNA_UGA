@@ -1,0 +1,49 @@
+# McCarroll
+- **Problématique**
+    - L’article examine le lien entre mémoire épisodique et imagination épisodique.
+    - La question centrale : _se souvenir est-il simplement une forme d’imagination ?_
+- **Théorie causale de la mémoire**
+    - Elle affirme qu’un souvenir est authentique s’il existe un lien causal continu entre l’expérience passée et le souvenir présent, via une **trace mnésique**.
+    - Cette trace stocke et transmet l’information à travers le temps, distinguant ainsi la mémoire de l’imagination        
+- **Théorie de la simulation**
+    - Elle soutient que la mémoire est un processus d’imagination : se rappeler = simuler un événement passé.
+    - Pas besoin de trace mnésique : l’important est que le système cognitif construise correctement la représentation.
+    - Conséquence : on pourrait « se souvenir » d’événements non vécus, si l’on dispose d’informations pour les reconstruire (ex. souvenirs d’enfance très précoces, souvenirs par témoignage)
+- **Critique de la simulation**
+    - **Problème de l’oubli** : si se souvenir n’est qu’imaginer, pourquoi oublions-nous tant d’événements ? La théorie de la simulation peine à expliquer ce phénomène courant, alors que la théorie causale l’explique par la perte ou l’inaccessibilité des traces.
+    - **Souvenirs non expérimentés** : la simulation conduit à admettre des « souvenirs » d’événements jamais vécus (ex. vie intra-utérine, naissance), ce qui paraît contre-intuitif.
+    - **Amnésie infantile** : l’incapacité générale à se souvenir des toutes premières années de vie va à l’encontre de l’idée que l’on puisse toujours reconstruire un souvenir sans trace.
+- **Limites du passé personnel**
+    - Si la simulation accepte les souvenirs d’avant la naissance ou de la gestation, elle perd le caractère « personnel » de la mémoire épisodique.
+    - La mémoire devient alors difficile à distinguer de simples récits autobiographiques ou d’imagination partagée.
+- **Conclusion**
+    - McCarroll défend que la mémoire n’est pas réductible à l’imagination.
+    - Pour expliquer l’oubli et les limites du rappel, il faut maintenir l’idée d’un lien causal avec le passé, assuré par des traces mnésiques.
+    - Ainsi, la mémoire est une capacité **diachronique** (reliée à l’expérience passée), et non pas seulement une construction **synchrone** au moment du rappel
+
+# Michaelian
+- **Problématique**
+    - La théorie de la simulation (STM) affirme que se souvenir = imaginer un événement du passé personnel.
+    - McCarroll critique cette position : elle ne peut expliquer l’amnésie infantile et ne peut exclure des souvenirs « impossibles » (par ex. avant la naissance)        
+- **Simulationisme vs théorie causale**
+    - La théorie causale (CTM) exige un lien causal entre l’expérience et le souvenir (via une trace mnésique).
+    - Le simulationisme, lui, ne requiert pas cette condition : un souvenir est valide s’il est produit par un système de construction épisodique fiable, même sans trace directe
+- **Réponse à l’objection de l’amnésie infantile**
+    - McCarroll dit : sans traces, le simulationisme ne peut expliquer pourquoi nous ne nous souvenons pas de la petite enfance.
+    - Michaelian réplique : le simulationisme peut intégrer la même explication que les causalistes (cerveau immature incapable de stocker l’info), mais la considère comme un cas particulier de son modèle.
+    - Résultat : le simulationisme peut bel et bien expliquer l’amnésie infantile
+- **Souvenirs d’avant la naissance (pré-nataux)**
+    - McCarroll : si STM permet de « se souvenir » d’événements non vécus, il autorise des souvenirs absurdes comme ceux décrits par Dalí in utero.
+    - Michaelian concède : effectivement, la STM n’exclut pas totalement ces souvenirs, mais cela ne réfute pas la théorie.
+    - Ces souvenirs seraient rares et souvent produits par un système défaillant, mais pas « impossibles »
+- **Vers un simulationisme radical**
+    - Plutôt que de corriger la théorie en ajoutant une condition d’expérience passée (STM+PE), Michaelian propose de la radicaliser.
+    - Nouvelle version (STM−PP) : se souvenir = imaginer de manière fiable un événement du passé, qu’il soit personnel ou non.
+    - Cela signifie que l’on pourrait « se souvenir » aussi bien de son propre passé que du passé non personnel (ex. la naissance de Napoléon)
+- **Conséquences et critiques**
+    - Perte du caractère « personnel » de la mémoire épisodique : elle devient une simple sous-catégorie de l’imagination orientée vers le passé.
+    - Objection : cela brouille la distinction entre mémoire épisodique et sémantique, et fait perdre l’autonoèse (sentiment du soi dans le temps).
+    - Réponse de Michaelian : ces différences (phénoménologiques ou de format de représentation) ne prouvent pas qu’il existe deux types de mémoire distincts.
+- **Conclusion**
+    - McCarroll a raison : le simulationisme permet bien d’envisager des souvenirs pré-natals.
+    - Mais cela ne doit pas conduire à l’abandonner, plutôt à l’assumer et le pousser plus loin : la mémoire est une forme d’imagination fiable orientée vers le passé, sans restriction au passé personnel.
