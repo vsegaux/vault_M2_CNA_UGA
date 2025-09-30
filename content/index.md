@@ -7,8 +7,6 @@ publish: true
 [[CM Loevenbruck]]
 ## Méthodologie et mesures en sciences cognitives
 [[CM Chauvin]]
-## Méthodes de neuroimagerie
-[[CM Campagne]]
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
@@ -19,8 +17,6 @@ publish: true
 [[CM Rousset]]
 ## Sciences du langage
 [[CM Dohen]]
-## Linguistique
-[[CM Depau]]
 
 
 # Références

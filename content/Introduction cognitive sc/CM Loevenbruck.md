@@ -212,7 +212,7 @@ Methods include studying Vocalisations, social behaviours (food sharing, groomin
 
 # Cognitive philosophy
 
-C.F. [[CM Alvarez]]
+> [!NOTE] Dedicated lecture will come
 
 *Aim*: reflections on notions, theories and methodologies 
 - Questions on computation, representation •

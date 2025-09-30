@@ -125,5 +125,65 @@ On observe aussi une perte *rétrograde* (certains éléments ayant eu lieu avan
 
 Chez le sujet contrôle, le jour de l'accident et les jours qui suivent, son hippocampe va renforcer les éléments vécus dans les heures/jours/semaines passé l'évènement. Pour le patient ayant vécu l'accident, *le processus de renforcement* de ces éléments était en cours au moment de l'accident, mais *n'a pas pu aboutir*.
 
+## Deux conceptions de la mémoire
+*Abstractive*: La mémoire est un stock de *représentations*.
+- Créer les représentations (encodage)
+- Les placer en mémoire (stockage)
+- Pouvoir les atteindre (Récupération)
+*Non-Abstractive*: La mémoire est la capacité à re-créer des expériences passées.
+- Trouver un système qui puisse assurer cette re-création après avoir été confronté à des exemples d’apprentissage
+- Les systèmes multi-traces ainsi qu’une certaine utilisation de l'outil connexionniste permetent d'implémenter ce fonctionnement 
+	- Le défis serait de trouver une des configurations d'efficience «synaptique » qui permet de réaliser la **fonction** de re-création correspondant aux exemples appris
+
+Dans le modèle non abstractif, la mémoire n'est plus un stockage, mais une capacité de s'adapter à l'environnement, un "ensemble" de fonctions dont l'environnement donnerait les paramètres. Si l'on se place dans le cadre de l'autopoïèse, le système serait l'être humain et son 'but' serait de garder son intégrité dans l'environnement. Pour commencer, on considèrera le cas le plus basique où la fonction à réaliser par le système est la fonction identité, c'est à dire qu'il ne doit pas interagir avec l'environnement, simplement être en contact avec lui.
+
+On considère que les entrées sensorielles du système constituent des capteurs dont les états sont chacun continu sur une dimension. L'ensemble des entrées sensorielles a donc N dimensions, et le système, dans notre *exemple simple*, doit renvoyer l'*identité* ($f(x)=x$).
+Si l'on réduit, par simplification, l'ensemble des dimensions d'entrée sur un seul axe et que l'on représente le taux d'erreur de notre système en réponse à un stimuli donné, on a:
+![[Apprentissage_sys.png]]
+
+Dans le cas de l'apprentissage de A', proche de A, le système va faire des erreurs, il aura tendance à recréer (le but étant l'identité) des éléments correspondant au point appris le plus proche (A).
+
+Le vrai critère de la mémoire est la vitesse d'adaptation, on parle de fluence perceptive.
+
+### Un modèle multi-traces: Minerva II (Hintznan 84)
+
+On considère la mémoire comme une matrice à j colonne, j correspondant au nombre de capteurs sensoriels. Les lignes correspondent au temps qui s'écoule, chaque case est donc l'état d'un capteur sensoriel à un instant donné. La mémoire enregistrerait donc des traces depuis la naissance, à une fréquence d'échantillonnage donnée.
+Dans ce cadre:
+- On appellera une "*sonde*" un ensemble de modalité des capteurs sensoriels avant d'être stocké dans la mémoire. 
+- On appellera "*écho*" la sortie, calculée en fonction des différents éléments de la matrice.
+- *L'idée d'accéder à une trace (ligne) particulière n'a pas de sens* (de par leur immense nombre, et similarité), *s'il y a un calcul, il devra impliquer toutes les traces*, de manière parallèle.
+
+On part du principe que les coefficients inscrits en tant que traces sont tous normalisés dans $[-1, 1]$.
+
+Le calcul se fait en deux étapes:
+1. Activation de la trace *i*, en fonction de sa similitude à la *sonde*: $A(i)=\sum_{j=1}^{n} \frac{M(j)*S(j)}{n}$, ce calcul est effectué en parallèle pour chaque trace *i*. 
+2. Détermination de l'*écho* comme moyenne de toutes les traces pondérées par leurs activations, pour chaque composante *j*: $E(j) = \frac{\sum_{i=1}^{n} A(i)*M(i,j)}{\|\sum_{i=1}^{n} A(i)\|}$  (Note: l'activation $A(i)$ peut être élevée à une puissance 'Acc', qui est un méta paramètre du modèle). 
+
+Dans l'ensemble, le processus complet pour chaque nouvelle stimulation est:
+1. Stimulation (arrivée d'une *sonde*)
+2. Calcul en deux étapes
+3. La sonde devient une trace dans la mémoire; l'écho est retourné.
+
+Avec un exemple simple:
+![[modele_exemple.png]]
+Dans la première étape, la sonde est comparée à chaque trace (une seule ici). Dans une seconde étape, l'écho est calculé par multiplication de chaque trace avec son activation calculée: le système produit un écho contenant "Fourchette/Assiette/Salade" ( On parle de **co-activation** plutôt que de 'contenu'.). Finalement, la sonde s'intègre comme une trace dans la mémoire.
+Pour que le système finisse par répondre l'identité, il faudrait répéter l'opération en ayant à chaque fois pour sonde 'Fourchette/.../...', petit à petit, on se rapprocherait de l'identité en sortie.
+
+#### Autres exemples:
+Mémoire:
+Fourchette/Assiette/Salade
+Fourchette/Assiette/Pâtes
+Sonde:
+Fourchette/.../...
+--> Echo: Fourchette/Assiette/{Salade/Pâtes mélangés}
+
+Mémoire:
+Fourchette/Assiette/Salade
+Fourchette/Assiette/Pâtes
+Fourchette/Assiette/Pâtes
+Sonde:
+Fourchette/.../...
+--> Echo: Fourchette/Assiette/{Salade/Pâtes mélangés, avec 2/3 de pâtes}
 
 
+Finalement, on se retrouve avec *un système qui aura stocké une sémantique, sans jamais avoir stocké de représentation du monde*.

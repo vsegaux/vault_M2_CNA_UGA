@@ -96,3 +96,17 @@ Est-ce que le peintre se souvient, dans ce cas là?
 ## Cas de Kent
 
 « (Kent) a raconté à son ami Gray ce qu’il avait vu lors d’un accident auquel il avait participé. Kent a ensuite un second accident, dans lequel il reçoit un coup à la tête qui détruit toute mémoire d’une période de son passé, y compris le moment où le premier accident s’est produit. Lorsque Gray constate que Kent ne se souvient plus du premier accident, il lui rappelle les détails que Kent lui avait racontés entre le premier et le second accident. Après un certain temps, Kent oublie que quelqu’un lui a parlé du premier accident, mais se souvient encore de ce que Gray lui a raconté. » (Martin et Deutscher, 1966 : 180)
+
+
+
+# McCarroll (CM2)
+
+> [!NOTE] TODO
+> Copier les slides pour le corps du text
+
+Imagination épisodique ou mémoire épisodique?
+
+## Le causalisme et le discontinuisme
+
+
+Notion importante: Trace mnésique -> CF slides
