@@ -185,6 +185,8 @@ Measuring methods:
 
 EEG are low amplitude signal so recordings must be repeated and the signal averaged to improve SNR ratio.
 
+CF [[CM Campagne]]
+
 ## Cognitive anthropology
 
 *Aim*: Study cognition across cultures, physical & social environments
