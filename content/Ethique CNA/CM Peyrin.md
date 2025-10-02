@@ -146,3 +146,97 @@ En Sciences Sociales, la déclaration de Helsinki n'est pas adaptée à cause de
 - Les chercheurs ne peuvent pas mener une étude qui utilise la tromperie tant qu’ils n’ont pas déterminé que l’utilisation de techniques de tromperie se justifie par la valeur prospective scientifique, éducative ou appliquée de l’étude et que des procédures alternatives tout aussi efficaces, sans tromperie, ne sont pas possibles.
 - Les chercheurs ne doivent jamais tromper les participants sur des points significatifs qui seraient de nature à affecter leur désir de participation, comme par exemple, les risques physiques, les sentiments d’inquiétude, d’inconfort ou les expériences émotionnelles déplaisantes.
 - (*Debriefing*): Tout autre tromperie qui fait partie intégrante du plan et du déroulement d’une expérience doit être expliquée aux sujets aussitôt que possible (le débriefing), de préférence au terme de leur participation, mais en aucun cas au-delà de la fin du protocole de recherche
+
+# CM2
+
+## Données à caractère personnel [[cours_ethique.pdf#page=74&selection=0,0,0,29|p.74]]
+
+Notion liée à la Commission Nationale de l'Informatique et des Libertés (*CNIL*).
+
+Il s'agit de toute information relative à une personne physique susceptible d'être identifiée, directement (prénom, mail, photo, enregistrements, ...) ou indirectement (numéro de téléphone, adresse postale), ou pas recoupement (ex. date de naissance+école).
+
+Liste des données sensibles:
+- l’origine raciale ou ethnique 
+- les opinions politiques 
+- les convictions religieuses ou philosophiques 
+- l’appartenance syndicale 
+- les données génétiques 
+- les données biométriques qui identifient une personne physique (ADN, contour de la main, empreinte digitale) 
+- les données de santé (IMC, WISC/tests neuropsychologiques, Images Radio/IRM, etc.) 
+- la vie sexuelle ou l’orientation sexuelle 
+- le numéro de sécurité sociale
+
+Sont considérées comme 'données de santé' les données dans les catégories suivantes:
+- *celles qui sont des données de santé par nature* : antécédents médicaux, maladies, prestations de soins réalisés, résultats d’examens, traitements, handicap, etc. 
+- *celles, qui du fait de leur croisement avec d’autres données*, deviennent des données de santé en ce qu’elles permettent de tirer une conclusion sur l’état de santé ou le risque pour la santé d’une personne : croisement d’une mesure de poids avec d’autres données (la taille => IMC, nombre de pas, mesure des apports caloriques…), croisement de la tension avec la mesure de l’effort, etc. 
+- *celles qui deviennent des données de santé en raison de leur destination*, c’est-à-dire de l’utilisation qui en est faite au plan médical.
+
+
+## Histoire des régulations éthiques en France
+
+- Loi du 20 dèc. 1988 relative à la protection des personnes
+	- N'encadre que les recherches biomédicales *interventionnelles* (Une recherche biomédicale se définit comme une recherche organisée et pratiquée sur l'être humain en vue du développement des connaissances biologiques ou médicales) (interventionnelle: médicament, thérapie, IRM, etc...).
+- 2004: Comité de Protection des Personnes (*CPP*)
+	- Véritable tournant pour les chercheurs, obligation d'une autorisation éthique. A permis d'améliorer la qualité des recherches médicales; a été mal accueilli par les médecins
+	- Ne s'appliquait pas aux recherches non médicales donc pas d'autorisation/d'approbation éthique pour les labos de recherches non médicaux.
+- 2008-2010: Comité d'éthique non-CPP --> Comité d'éthique pour la Recherche (*CER*)
+	- Dans les universités
+	- N'ont pas toujours autorité à qualifier
+- 2016: Loi Jardé:
+	- Une Recherche impliquant l’humain (RIPH) se définit comme une recherche organisée et pratiquée sur l'être humain en vue du développement des connaissances biologiques ou médicales. -> Très similaire (faignant ce Jardé parait-il) à la loi précédente
+	- Nécessité d'un décret en 2017 pour clarifier, mais qui ne suffit pas.. Mise en place de 3 catégories de recherches:
+![[ethiquecatégorie.png]]
+
+Typiquement les recherches en psycho/sciences cognitives (IRM -> RIPH2), (EEG -> RIPH3). CF les slides pour la liste précise.
+Nouvel ajout au décret (slides 98), toujours insuffisant pour classifier proprement les recherches menées en psychologie, bref encore du drama parce qu'il n'y a pas de représentativité des SHS dans les comités du gouvernement.
+
+*Cas des recherches rétrospectives*: Il s'agit de l'utilisation de données collectées précédemment, typiquement des mesures EEG ou autre dans des bases de données. --> Non concerné par la loi Jardé.
+
+- 2018: Règlement général sur la protection des données (*RGPD*), texte de l'union européenne, moins sévère que la CNIL en France
+
+### RIPH, quelles démarches?
+CF slides 109+:
+- Il faut un promoteur (institutionnel, CHU/INSERM,CNRS; industriel, labo pharma, entreprise; individu (non conseillé)). Celui-ci peut demander des frais.
+- Il faut l'avis de l'ANSM
+- Il faut rédiger un protocole, qui doit être validé par le CPP (typiquement 6 mois de rédaction/allé retour avec le CPP tiré au sort (pas le CPP régional pour cause de possibles conflit d'intérêt))
+- Il faut faire une déclaration à la CNIL 
+
+(Possibilité de se référer aux MR (méthodologies de référence) qui simplifient largement ces démarches.)
+
+Sinon, potentielles sanctions pénales (slide 119).
+Résumé des démarches:
+![[demarchesEthique.png]]
+
+
+CER à Grenoble pour les recherches non RIPH : "[CERGA](https://www.univ-grenoble-aloes.fr/cerga)" 
+
+
+Attention aux outils en lignes (Prolific ou Sphinx (UGA) pour la collecte de données), ne pas utiliser Amazon Mturk ou Google form etc..
+
+Pour les travaux pratiques: voir slides à partir de 141:
+- Savoir justifier pourquoi on est une RIPH ou non
+- ...
+
+## Dans la peau d'un CER
+
+
+**Bénéfices / Risques**:
+- Validité scientifique 
+- Compétences des investigateurs 
+- Sélection des participants / Vulnérabilité 
+- Recrutement / Indemnisation 
+- Procédure / Matériel utilisé 
+- Mise en scène expérimentale 
+- Découverte fortuite 
+- Confidentialité
+*Information et Consentement*:
+- Consentement libre et éclairé (information) 
+- Responsabilité 
+- Vulnérabilité 
+- Débriefing
+
+## Intégrité scientifique
+Attention en particulier à la falsification, plagiat, oubli de co-auteur, conflit d'intérêt non signalé, etc...
+Attention aussi au partage de code, les propriétés intellectuelles sont au labo, pas à l'individu!
+
+"Les activités de recherche doivent être conduites par des chercheurs honnêtes, suivre une méthodologie rigoureuse, les résultats obtenus sauvegardés et disponibles de façon ouverte, les publications libres d’accès." -> Attention toutes fois à ne pas partager de données protégées etc...

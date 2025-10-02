@@ -110,3 +110,27 @@ Imagination épisodique ou mémoire épisodique?
 
 
 Notion importante: Trace mnésique -> CF slides
+
+Slide 33 past events+ future events : ce même réseau est aussi impliqué dans tout un tas d'autres activités mentales (lié au soit, mémoire épisodique, imagination, etc..)
+
+
+> [!NOTE] TODO
+> Recouper les notes du texte + les slides pour avoir des "fiches"
+
+# Michaelian (CM3)
+
+*Souvenir vicariant*: Se rappeler de souvenirs que quelqu'un d'autre à raconter, sans les avoir vécu.
+
+
+
+> [!NOTE] Examen
+> Question typiques:
+
+
+| Courant        | Causaliste (CTM)      | Simulationiste (STM) |
+| -------------- | --------------------- | -------------------- |
+| Continuisme    | Peter Langland-Hassan | FDB, Michaelian      |
+| DIscontinuisme | M&D, McCarroll        | ?                    |
+
+Peut on etre causaliste et continuiste, dans quelle mesure?
+Peut on etre STM et Discontinuiste?

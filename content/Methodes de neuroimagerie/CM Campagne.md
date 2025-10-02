@@ -191,8 +191,85 @@ Sources *extra-physiologiques*:
 - Mouvement transitoires du sujet, mouvement de tête
 - Bruits électroniques (50Hz, déplacement de câbles, ...)
 
+L'*Analyse en Composantes Principale* (*PCA*) permet aussi de filtrer les artéfacts (typiquement cardiaque), en particulier si ceux-ci sont très différents (orthogonaux) du signal d'intérêt.
+
+
+- *Recourt à l'EOG* (Electro-Oculographie):
+	- Mesure bipolaire, au moins 4 éléctrodes pour séparer l'EOG verticale (clignement + mouvements oculaires verticaux) et horizontale (mouvement oculaires horizontaux). Idéalement, la composante horizontale ne mesure strictement QUE de l'horizontale et pareil pour la verticale; ce résultat est obtenu en plaçant parfaitement les 4 électrodes (le sens de variation dépend du montage, il n'y a pas de convention): ![[position_electrodes.png]]
+- *Recourt à l'ECG* (Electro-Cardiographie): 
+	- Mesure bipolaire
+	- Rarement nécessaire car le signal émit par le cœur est de forme très typique (simplement fréquence variable). Deux électrodes (+ la masse) suffisent.
+- *Recourt à l'EMG* (Electro-myographie):
+	- Mesure bipolaire
+	- Attention, toute correction liée à l'activité musculaire est un potentiel biais pour la mesure initiale (car l'EMG va elle-même présenter des artéfacts). En cas de mesure à artéfacts, il est souvent préférable de simplement supprimer les mesures concernées.
+
 ### Filtrage
 
 ![[filtrage_eeg.png]]
 
-L'*Analyse en Composantes Principale* (*PCA*) permet aussi de filtrer les artéfacts (typiquement cardiaque).
+*Attention*:
+- au filtrage avant les autres traitements, si on se *limite* à certaines *gammes de fréquences* on perd potentiellement beaucoup du signal. 
+- Le filtrage *déforme* les artéfacts (et le signal d'intérêt), qui seront potentiellement plus difficile à discriminer par la suite.
+- Le filtrage 'sans risque' typique serait : 
+	- Retirer $50 Hz$ avec un filtre fente
+	- Appliquer un passe bande sur $[0.5; 100] Hz$.
+
+### Correction de la ligne de base
+
+Souvent, on enregistre pour chaque sujet l'activité EEG avant et après la période de tâche, pendant 5 minutes (avant et après). On fait ensuite la moyenne de ces deux périodes afin de la soustraire/diviser/Zscore au reste du signal.
+(Z score: différence normalisée)
+
+![[lignedebase.png]]
+
+## Traitement des données
+
+L'analyse des signaux est spécifique du but de l'étude, on peut typiquement distinguer deux types d'analyses:
+- *globale* (évolution d'état de vigilance dans différents contextes; évolution d'état émotionnels; ...)
+- *locale*, discrimination des processus cérébraux (capacité de discrimination d'un visage; impact d'une condition expérimentale sur un processus de traitement; ...)
+
+
+> [!NOTE] Examen
+> Questions sur les analyses pas plus détaillées que l'image suivante, on est allé trop vite sur la suite du cours pour être interrogé dessus. --> Potentiels et champs évoqué? Pour mesurer quoi? Pareil pour Analyse spectrale; connectivités; analyse de sources.
+
+![[analyses_EEG.png]]
+
+### Potentiels et champs évoqués et induits
+
+![[PE_CE.png]]
+
+*Nomenclature des réponses*:
+- Nxxx: onde EEG négative à xxx ms
+- Pxxx: onde EEG positive à xxx ms
+- Mxxx: champ magnétique à xxx ms
+- Positive/négative dans le *sens de variation* (vers le positif/vers le négatif), pas en valeur absolue!
+
+> [!NOTE] Examen
+> Pas d'interrogation sur les potentiels évoqués spécifiques (juste savoir ce que c'est/comment ça s'obtient)
+
+### Activité oscillatoire: analyse spectrale
+
+
+> [!NOTE] Examen
+> Pas d'interrogation sur les méthodes d'analyse spectrale
+
+![[spectrale_event.png]]
+
+
+### Activité oscillatoire: connectivités
+
+Différents types de méthodes existent.
+
+> [!NOTE] Examen
+> Pas d'interrogation sur les méthodes d'analyse de connectivité
+
+![[connectivites.png]]
+
+### Localisation des sources du signal
+
+> [!NOTE] Examen
+> Pas d'interrogation sur les méthodes de localisation des sources
+
+
+Le principe est de produire différents modèles et d'essayer de voir lequel est le plus probable.
+
+![[sourcedusignalEEG.png]]
