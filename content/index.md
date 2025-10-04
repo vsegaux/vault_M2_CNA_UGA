@@ -5,19 +5,25 @@ publish: true
 # Tables des matières:
 ## Introduction aux sciences cognitives
 [[CM Loevenbruck]]
+## Linguistique
+ [[CM Depau]]
+## Machine Learning
+
+## Méthodologie de neuroimagerie
+[[CM Campagne]]
 ## Méthodologie et mesures en sciences cognitives
 [[CM Chauvin]]
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
-[[content/Perception et audition/CM Garnier]]
+[[content/Perception et audition/CM Garnier|CM Garnier]]
 ## Philosophie en sciences cognitives
 [[CM Alvarez]]
 ## Psychologie cognitive
 [[CM Rousset]]
 ## Sciences du langage
 [[CM Dohen]]
-
+[[content/Sciences du langage/CM Garnier|CM Garnier]]
 
 # Références
 
