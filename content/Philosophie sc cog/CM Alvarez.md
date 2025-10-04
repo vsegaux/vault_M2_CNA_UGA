@@ -101,23 +101,129 @@ Est-ce que le peintre se souvient, dans ce cas là?
 
 # McCarroll (CM2)
 
-> [!NOTE] TODO
-> Copier les slides pour le corps du text
-
-Imagination épisodique ou mémoire épisodique?
-
 ## Le causalisme et le discontinuisme
 
+### Causalisme
 
-Notion importante: Trace mnésique -> CF slides
+Se *souvenir véritablement* d’un événement requiert une *connexion causale* entre une *représentation actuelle* de cet événement et l’*expérience passée* qui en a été faite, connexion maintenue par une *trace mnésique* (memory trace) provenant de cette expérience, et exige que cette trace soit *causalement opérante* lorsque le sujet se remémore l’événement.
+
+Cette *connexion causale*, sous la forme d’une *trace mnésique*, garantit que le souvenir constitue un *état ou un processus* d’une *nature différente* de l’*imagination* et du simple réapprentissage d’une information déjà acquise. (McCarroll 2020)
+
+**Traces mnésiques**:
+Sont des ‘modifications structurelles au niveau des synapses… qui affectent la facilité avec laquelle les neurones d’un réseau neuronal peuvent s’activer mutuellement’ (Bernecker, 2010, p. 132), et qui stockent l’information concernant l’événement de manière distribuée.
+Elles sont parfois envisagées comme des impressions dans la cire ou comme le sillon d'un disque gramophone.
+
+"Selon la théorie causale, la mémoire peut être comprise comme une capacité diachronique, car ‘se souvenir consiste en l’existence d’une relation particulière entre des représentations situées en deux moments distincts dans le temps’ (Michaelian et Robins, 2018, p. 14). En d’autres termes, un contenu acquis à un moment du passé est stocké puis transmis à la représentation mnésique présente" (McCarroll 2020)
+
+#### Vertus du causalimse selon McCarroll
+
+- Il fournit une explication parcimonieuse 
+	-  de l’*oubli* 
+		- L’oubli est due à l’indisponibilité des traces mnésiques ou à l’inaccesibilité des traces mnésiques 
+	- de l’*amnésie infantile* 
+		- L’amnésie infantile est due à l’incapacité des enfants d’avoir des expériences dans un sens stricte ainsi que à leur incapacité de former des traces de ces expériences 
+- Il exclut la possibilité de considérer comme véritables des souvenirs apparents qui sont « impossibles » 
+	- Comme les souvenirs *intra-utérins* de Salvador Dalí
+
+#### Faiblesses du causalisme
+
+Il semble être en tension avec l'idée que la mémoire est une capacité constructive:
+« La mémoire n’est pas une reproduction littérale du passé, mais plutôt un processus constructif dans lequel *des fragments d’informations provenant de diverses sources sont réunis* » (Schacter & Addis 2007)
+- Que la mémoire soit constructive veut dire qu’un sujet peut puiser à la fois dans des informations provenant de l’expérience de divers événements *et dans des informations non issues de l’expérience, telles que des témoignages recueillis après l’événement*, pour reconstruire des représentations mnésiques des événements
+- *Mais si on accepte qu’on peut former des souvenirs véritables à partir des informations testimoniales, on doit abandonner la condition de causalité appropriée du causalisme !*
+
+### Discontinuisme
+
+« (…) même si l’imagination peut requérir un soi (a self) présent pour se projeter dans des scénarios imaginaires, la mémoire épisodique impliquerait non seulement un sens robuste du soi présent, mais aussi un sens robuste du soi passé. *Ce qui caractérise la mémoire épisodique, par opposition à l’imagination, c’est l’existence d’un lien entre ces deux sois (selves) passé et présent* » (McCarroll 2020)
+
+Selon le *discontinuisme*, comparer la *mémoire* et l’*imagination* revient à comparer les rivières et les mers: bien que les deux partagent certaines similitudes, elles *diffèrent fondamentalement*.
 
 Slide 33 past events+ future events : ce même réseau est aussi impliqué dans tout un tas d'autres activités mentales (lié au soit, mémoire épisodique, imagination, etc..)
 
+#### Faiblesses du discontinuisme
+- Le discontinuisme a du mal à rendre compte des recherches sur la mémoire en tant que forme de voyage mental dans le temps ou de simulation épisodique (Addis 2020, 2018 ; Suddendorf & Corballis 2007), qui suggèrent que *le souvenir et l’imagination reposent sur le même système neurocognitif*.
+- Les simulationnistes soutiennent que, de la même manière que d’autres formes de simulation épisodique ne requièrent pas qu’une trace provenant de l’expérience du sujet de l’événement représenté ait une influence causale sur le processus correspondant, le souvenir n’exige pas non plus cette condition (Michaelian 2016)
 
-> [!NOTE] TODO
-> Recouper les notes du texte + les slides pour avoir des "fiches"
-
+## En s'éloignant du causalime et du discontinuisme
+- **Neuropsychologie**: les patients ayant des difficultés à se souvenir des épisodes passés ont également des difficultés à imaginer des épisodes futurs (Klein et al., 2002 ; Rosenbaum et al., 2005 ; Hassabis et al., 2007)
+- **Psychologie du développement**: la capacité des enfants à se souvenir du passé et à imaginer l’avenir émerge approximativement au même moment (Suddendorf et Busby, 2005 ; Atance, 2008 ; Fivush, 2011)
+- **Neurosciences cognitives**: des études de neuroimagerie montrent qu’il existe un fort chevauchement entre les régions cérébrales associées à la mémoire épisodique et à l’imagination (Addis et al., 2007 ; Schäfer et al., 2007, 2012)
 # Michaelian (CM3)
+
+## Continuisme
+
+Si la mémoire et l’imagination peuvent différer en degré, elles ne diffèrent pas en nature.
+Selon le continuisme, comparer la *mémoire* et l’*imagination* revient à comparer les roses et les tournesols: bien qu’elles diffèrent sur certains points, elles *sont fondamentalement du même type*.
+
+## Simulationnisme
+
+Elle postule l’*existence d’un système constructif* dont les avantages adaptatifs résultent de sa *tendance à produire des représentations suffisamment exactes* en puisant de manière flexible dans un large éventail de ressources informationnelles.
+
+Condition de la fiabilité ou la fonctionne propre:
+- Pour qu’un sujet se souvienne véritablement d’un événement passé, il est nécessaire que la représentation qu’il en a soit produite par un système de construction épisodique correctement fonctionnel et donc fiable, visant à produire une représentation d’un événement appartenant au passé personnel du sujet
+
+Bien que le système puisse parfois être sujet à des erreurs et des distorsions (Schacter 2021), *il est*, selon le simulationnisme, *peu probable que l’évolution ait doté les êtres humains d’un système ayant tendance à produire des représentations inexactes* (Michaelian, 2013) ou *d’un système devant se fonder sur des informations fournies par des traces ayant une origine causale spécifique* (Michaelian, 2016 ; cf. Michaelian, 2024)
+
+
+### Arguments contre le simulationnisme selon McCarroll
+
+#### A partir de l'oubli et de l'amnésie infantile
+
+**Prémisse 1**: si le simulationnisme est correct, alors il est toujours possible de se souvenir d’un événement du passé personnel:
+- La mémoire, conçue comme une capacité synchronique, requiert seulement la génération de contenu au moment de la récupération, contenu qui peut provenir de plusieurs sources informationnelles 
+- Selon le simulationnisme, le souvenir n’a pas à mobiliser d’information issue de l’événement originel 
+- Si, au moment de la récupération, on dispose de l’information nécessaire pour construire une représentation d’un événement passé, alors on peut toujours, en principe, construire des souvenirs
+**Prémisse 2**: il n’est pas vrai qu’il soit toujours possible de se souvenir d’un événement du passé personnel
+- L’oubli et l’amnésie infantile sont des phénomènes robustes et bien documentés en sciences cognitives 
+- Ils démontrent qu’on ne peut pas toujours se souvenir des événements du passé personnel
+**Conclusion**: Le simulationnisme n'est pas correct
+
+##### La réponse de Michalelian (2024)
+- La stratégie de Michaelian pour contrecarrer le premier argument de McCarroll consiste à attaquer la prémisse 1 
+- Selon Michaelian, le simulationnisme n’implique pas qu’il soit toujours possible de se souvenir d’un événement du passé personnel. 
+	- Pour ce faire, le simulationniste fournit une explication de l’oubli et de l’amnésie infantile.
+- **L’explication de l’oubli**
+	- À un moment donné, le sujet est capable de simuler l’événement pertinent 
+	- À un autre moment, il n’en est plus capable, soit parce que son système de construction épisodique ne dispose plus des matières premières appropriées, soit parce qu’il dispose de ces matières premières mais n’est plus en mesure d’y accéder
+- **L’explication de l’amnésie infantile**
+	- La plupart des événements de la petite enfance sont tels que *l’on n’y conserve pas de traces* provenant de ses expériences de ces événements 
+	- La plupart des événements de la petite enfance sont également tels que l’on ne reçoit aucun *témoignage* à leur sujet 
+	- Ces deux faits impliquent que la **majorité** *des événements de la petite enfance sont tels que l’on est incapable d’en générer une représentation, simplement parce que l’on ignore qu’ils ont eu lieu*
+
+#### A partir des souvenirs impossibles
+
+Le simulationnisme vise à expliquer le souvenir d’événements relevant du passé personnel, mais la notion de « passé personnel » n’intervient en rien dans son cadre explicatif.
+
+**Prémisse 1**: si le simulationnisme est correct, alors il est possible que des souvenirs intra-utérins de Dalí soient véritablement des souvenirs
+- Étant donné que le simulationnisme ne requiert pas que le souvenir véritable inclue du contenu provenant de l’expérience du sujet de l’événement remémoré, *il ne semble pas y avoir de raison d’exiger que le souvenir véritable nécessite que l’événement représenté ait été effectivement vécu par le sujet *
+- Il est possible, selon le simulationnisme, de se souvenir d’événements que l’on n’a pas vécus tant que le système de construction épisodique est fiable
+**Prémisse 2**: Il n’est pas possible que ces souvenirs soient véritables
+- Dalí n’avait pas une conscience de soi lorsqu’il a vécus ces événements intra-uterins 
+- Les faits développementaux concernant les capacités cognitives des fœtus donnent à penser qu’il n’est pas possible de former des souvenirs à ce stade de la vie 
+- Intuitivement, les prétendus souvenirs intra-utérins de Dalí relèvent plutôt de l’imagination d’un esprit créatif
+**Conclusion**: Le simulationnisme n'est pas correct
+##### La réponse de Michalelian (2024)
+- La stratégie de Michaelian pour contrecarrer le deuxième argument de McCarroll consiste à attaquer la prémisse 2 
+	- Selon Michaelian, ces souvenirs peuvent être, dans certaines circonstances, véritables même si la plupart d’entre eux ont tendance à ne pas l’être
+- Ce qui est important pour établir si un souvenir est véritable ou non est la fiabilité du système au moment de la *récupération* 
+	- Si le système a été fiable au moment de l’*encodage n’est pas pertinent* 
+- La *disponibilité des informations* au moment de la récupération affecte la fiabilité du système 
+	- Étant donné que les informations sur les événements intra-utérins n’est pas généralement disponible afin de permettre la construction fiable des représentations de ces événements, il y a des raisons pour penser que les souvenirs intra-utérins sont généralement le résultat d’un système défaillant 
+- Cependant, *il serait tout à fait possible* que, sous les conditions appropriées, *un système fiable produit ce genre de représentations*, selon Michaelian (2024) 
+	- Contre McCarroll, Michaelian affirme qu’il ne s’agit pas des « souvenirs impossibles »
+
+**Et la notion du passé personnel?**
+
+- Michaelian reconnaît que si les souvenirs intra-utérins (ou les souvenirs prénataux plus généralement) peuvent être des souvenirs véritables, il n’y a pas une bonne raison de préserver la notion du passé personnel dans la théorie 
+	- **Rappel**: (simulationnisme) pour qu’un sujet se souvienne véritablement d’un événement passé, il est nécessaire que la représentation qu’il en a soit produite par un système de construction épisodique correctement fonctionnel et donc fiable, visant à produire une représentation d’un événement appartenant au passé personnel du sujet 
+- *Dans quel sens les souvenirs prénataux feraient partie du passé personnel du sujet ?*
+- L’*hypothèse de la construction de scènes* suggère que le système responsable de la mémoire est aussi responsable de toute forme d’*imagination des événements possibles* (Hassabis et Maguire 2009) 
+- La notion du passé personnel est *conceptuellement vague*
+
+Michaelian va alors **reformuler radicalement le simulationnisme**:
+- Pour qu’un sujet se souvienne véritablement d’un événement passé, il est nécessaire que la représentation qu’il en a soit produite par un *système de construction épisodique correctement* fonctionnel et donc *fiable*, visant à produire une représentation d’un événement *passé*
+- Selon cette reformulation radicale, *se souvenir* d'un évènement *de son passé personnel* *est équivalent à se souvenir d'un évènement passé non personnel* (se souvenir de l'arrivée de Napoléon à Grenoble est équivalent à se souvenir de sa propre arrivée à Grenoble) 
+
 
 *Souvenir vicariant*: Se rappeler de souvenirs que quelqu'un d'autre à raconter, sans les avoir vécu.
 

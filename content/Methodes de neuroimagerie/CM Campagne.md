@@ -244,13 +244,13 @@ L'analyse des signaux est spécifique du but de l'étude, on peut typiquement di
 - Positive/négative dans le *sens de variation* (vers le positif/vers le négatif), pas en valeur absolue!
 
 > [!NOTE] Examen
-> Pas d'interrogation sur les potentiels évoqués spécifiques (juste savoir ce que c'est/comment ça s'obtient)
+> Pas d'interrogation précise sur les potentiels évoqués spécifiques (juste savoir ce que c'est/comment ça s'obtient)
 
 ### Activité oscillatoire: analyse spectrale
 
 
 > [!NOTE] Examen
-> Pas d'interrogation sur les méthodes d'analyse spectrale
+> Pas d'interrogation précise sur les méthodes d'analyse spectrale
 
 ![[spectrale_event.png]]
 
@@ -260,14 +260,14 @@ L'analyse des signaux est spécifique du but de l'étude, on peut typiquement di
 Différents types de méthodes existent.
 
 > [!NOTE] Examen
-> Pas d'interrogation sur les méthodes d'analyse de connectivité
+> Pas d'interrogation précise sur les méthodes d'analyse de connectivité
 
 ![[connectivites.png]]
 
 ### Localisation des sources du signal
 
 > [!NOTE] Examen
-> Pas d'interrogation sur les méthodes de localisation des sources
+> Pas d'interrogation précise sur les méthodes de localisation des sources
 
 
 Le principe est de produire différents modèles et d'essayer de voir lequel est le plus probable.
