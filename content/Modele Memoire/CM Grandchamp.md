@@ -23,10 +23,12 @@ Une *connaissance* est une information nouvelle, apprise par association d'infor
 ![[AI_ML_DL.png]]
 
 
-| Type d'apprentissage | Supervisé                                                                 | Non Supervisé                                                            | Par renforcement                                                                                                                    |
-| -------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Description          | Les données d'entrée ont été labelisée (i.e. elles ont déjà été traitées) | Données non labelisées, l'algorithme doit trouver des structures cachées | On qualifie la sortie du système (note de performance, ex: qté d'argent, distance parcourue...) afin de l'entrainer par essai-errur |
-| Exemple              | k-NN (NearestNeighbours); reconnaissance de chiffre manuscrits, ...       | Clustering, segmenter une clientèle selon leurs comportements, ...       | Alpha-Go, Checkers, apprentissage de la marche pour les robots, ...                                                                 |
+| Type d'apprentissage | Supervisé                                                                                                                     | Non Supervisé                                                                                                                                                | Par renforcement                                                                                                                    |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Description          | Les données d'entrée ont été labelisée (i.e. elles ont déjà été traitées)<br>- Prediction<br>- Classification<br>- Regression | Données non labelisées, l'algorithme doit trouver des structures cachées<br>- Clustering<br>- Estimation de distribution de proba<br>- Reduction de dimesion | On qualifie la sortie du système (note de performance, ex: qté d'argent, distance parcourue...) afin de l'entrainer par essai-errur |
+| Exemple              | k-NN (NearestNeighbours); reconnaissance de chiffre manuscrits, ...                                                           | Clustering, segmenter une clientèle selon leurs comportements, ...                                                                                           | Alpha-Go, Checkers, apprentissage de la marche pour les robots, ...                                                                 |
+| Avantage             | Efficace lorsque les étiquettes sont disponibles et les relations bien définies                                               | Aucune étiquette nécessaire, ce qui est pratique pour des ensembles de données massifs où l'étiquetage est impossible.                                       |                                                                                                                                     |
+| Inconvénients        | Nécessite un grand nombre de données étiquetées: coûteux et chronophage.                                                      | Les résultats peuvent être difficiles à interpréter et moins précis sans supervision claire.                                                                 |                                                                                                                                     |
 
 *Deep learning*: Relatif à la méthode d'implémentation (des réseaux de neurones) plutôt qu'au type d'apprentissage (ex: reconnaissance d'image, traduction automatique, ChatGPT).
 
@@ -86,3 +88,19 @@ Différents domaines de l'IA:
 - Vie Artificielle: auto-réparation, reproduction..
 - Informatique bio-inspirées: exemples: algorithmes génétiques (s'inspirent de la notion de sélection naturelle et l'appliquent à une population de solutions potentielles au problème donné. La solution est alors approchée par bonds successifs.)
 - Systèmes multi-agents: Notion d'*émergence*: des comportements simples mais coordonnés peuvent donner un comportement global très complexe.
+
+Différents types de problèmes:
+ - *Classification* : Attribuer des objets ou événements à des catégories prédéfinies (par exemple, reconnaître des images de chien ou de chat, distinguer deux espèces de plantes en fonction de la largeur et de la longueur des sépales). 
+ - *Régression* : Modélisation des relations entre les variables pour prédire une valeur numérique continue. 
+ - *Clusterisation (Clustering)* : Regrouper des données similaires ensemble sans qu'il y ait des catégories prédéfinies (exemple : segmenter les clients d'une entreprise en groupes similaires). 
+ - *Association* : Identifier des relations entre des variables dans les données (par exemple, la découverte de règles d’association dans les ventes, comme « les gens qui achètent du lait achètent aussi du pain »). 
+ - *Détection d'anomalies* : Identifier des données qui ne suivent pas les schémas attendus (utile pour la détection de fraude, par exemple).
+
+**Fléau de la dimensionalité**:
+ Introduite pour la première fois par Bellman (1961), elle indique que le nombre d'échantillons nécessaires pour estimer une fonction arbitraire avec un niveau de précision donné croît de manière exponentielle par rapport au nombre de variables d'entrée (c'est-à-dire la dimensionnalité) de la fonction.
+Ex: Dans un volume à 1D, on a 2 bordures, à 2D, on a 4 bordures (des lignes). Dans un cube 3D, on a 8 arêtes et 6 faces qui constituent les bordures.
+
+**Motifs aléatoires**:
+*Principe de Bonferroni*, il est possible de découvrir des motifs aléatoires qui n'ont pas réellement de sens simplement en 'considérant' énormément de possibilités.
+
+![[supervise.png]]
