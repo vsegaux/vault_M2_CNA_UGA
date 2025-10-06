@@ -59,14 +59,30 @@ Que permet l'IA aujourd'hui:
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | Reasoning/internal | *Think like people*<br>The automation of activities that we associate with human thinking, activities such as decision-making, problem solving, learning... (Bellman, 1978) | *Think rationally*<br>The study of the computations that make it possible to perceive, reason and act. (Winston, 1992) |
 | behaviour/external | *Act like people*<br>The study of how to make computers do things at which, at the moment, people are better. (Rich and Knight, 1991)                                       | *Act rationally*<br>Computational Intelligence is ths study of the design of intelligent agents. (Poole et al. 1998)   |
-Répétition du tableau...:
+Répétition du tableau...: **Deux approches de l'IA**:
 - *Reproduction du comportement* : L'IA est jugée uniquement sur sa capacité à imiter les actions humaines de manière efficace, sans tenir compte des processus qu'elle utilise pour arriver à ces actions. Ce qui compte, c'est le comportement observable. 
 - *Modélisation du fonctionnement* : L'IA est jugée sur sa capacité à imiter les processus cognitifs humains, c'est-à-dire la manière dont elle pense ou raisonne, même si ses actions ne sont pas directement les mêmes que celles d’un humain.
 
 ## Thinking humanly
 Pour comprendre comment pense l'Humain:
-- Introspection, investigation expérimentale, nécessite des théories sur l'activité du cerveau
+- *Introspection*, investigation expérimentale, nécessite des théories sur l'activité du cerveau
 - Nécessite d'exprimer ces théories en tant que programmes informatiques
 Pour valider ces théories:
-- Prédiction et test du comportement humain (top-down)
-- Identification directement depuis les données neurobiologiques (bottom-up)
+- Prédiction et test du comportement humain (*top-down*)
+- Identification directement depuis les données neurobiologiques (*bottom-up*)
+
+**Test de Turing**:
+Permet de tester la capacité d'une entité à agir comme un humain. Il consiste en 30 minutes d'interrogation libre d'un humain via un ordinateur. A l'issu de ces 30 minutes, si l'interrogateur est capable de distinguer son interlocuteur d'un réel humain, alors la machine a passé le test. Afin de réussir, l'entité a besoin de:
+- Natural Language Processing (*NLP*)
+- *Knowledge representation*
+- *Automated reasoning*
+- *Machine Learning*
+Mais aussi, pour un test plus évolué:
+- Computer Vision
+- Robotics
+
+Différents domaines de l'IA:
+- Système experts: systèmes d'inférences (raisonnement logique)
+- Vie Artificielle: auto-réparation, reproduction..
+- Informatique bio-inspirées: exemples: algorithmes génétiques (s'inspirent de la notion de sélection naturelle et l'appliquent à une population de solutions potentielles au problème donné. La solution est alors approchée par bonds successifs.)
+- Systèmes multi-agents: Notion d'*émergence*: des comportements simples mais coordonnés peuvent donner un comportement global très complexe.

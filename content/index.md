@@ -16,14 +16,14 @@ publish: true
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
-[[content/Perception et audition/CM Garnier|CM Garnier]]
+[[CM Garnier PA|CM Garnier PA]]
 ## Philosophie en sciences cognitives
 [[CM Alvarez]]
 ## Psychologie cognitive
 [[CM Rousset]]
 ## Sciences du langage
 [[CM Dohen]]
-[[content/Sciences du langage/CM Garnier|CM Garnier]]
+[[CM Garnier SL|CM Garnier SL]]
 
 # Références
 
