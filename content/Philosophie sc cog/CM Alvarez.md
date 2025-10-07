@@ -233,10 +233,23 @@ Michaelian va alors **reformuler radicalement le simulationnisme**:
 > Question typiques:
 
 
-| Courant        | Causaliste (CTM)      | Simulationiste (STM) |
-| -------------- | --------------------- | -------------------- |
-| Continuisme    | Peter Langland-Hassan | FDB, Michaelian      |
-| DIscontinuisme | M&D, McCarroll        | ?                    |
+| Courant        | Causaliste (CTM)      | Simulationiste (STM)               |
+| -------------- | --------------------- | ---------------------------------- |
+| Continuisme    | Peter Langland-Hassan | FDB, Michaelian                    |
+| DIscontinuisme | M&D, McCarroll        | **?** -> Potentiellement *PARTIEL* |
 
 Peut on etre causaliste et continuiste, dans quelle mesure?
 Peut on etre STM et Discontinuiste?
+
+Débat causaliste/simulationiste: qu'est-ce qu'un souvenir véritable et qu'est-ce qui le distingue d'un souvenir seulement apparent?
+Débat continuisme/discontinuisme: différence de nature (et/ou de degré) entre mémoire et imagination?
+
+
+
+
+# CM4
+
+> [!NOTE] TODO
+> Récupérer les slides
+
+

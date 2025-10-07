@@ -48,3 +48,34 @@ Le chant *diphonique* où un chanteur produit deux sons distincts en même temps
 	- la durée de stimulation (un son très bref à tendance à être perçu comme plus grave).
 	- l'intensité, en particulier dans les basses fréquences où un son joué plus fort peut être perçu comme plus aigu.
 	- le spectre du son (~le timbre): un sifflement est perçu différemment d'une voix
+
+## Perception des intervalles
+
+La *perception des intervalles* dépend du *rapport de fréquence* plutôt que de la différence de fréquence:
+![[intervalleF.png]]
+
+Par exemple, on perçoit une *octave* entre $440 Hz$ et $880 Hz$ (+440, *x2*) et on perçoit de la même manière une octave entre $880 Hz$ et $1760 Hz$ (+880, *x2*). Cela est du à la disposition logarithmique de la tonotopie dans la cochlée.
+
+Au delà de $2000 Hz$, la perception des intervalles n'est plus directement en relation avec la fréquence (les instruments de musique son accordés en conséquence).
+
+### Capacité de discrimination de l'oreille
+
+![[discriOreil.png]]
+
+(*JND*= Just Noticeable Difference)
+
+## Perception de deux sons simultanés
+
+Plusieurs cas sont possibles:
+### Perception d'un seul des deux sons (*masquage*)
+![[soundmaska.png]]
+
+D'un point de vue physiologique:
+![[bandeCritique.png]]
+
+
+Les seuils de masquage ne sont pas symétrique autour des fréquences (échelle linéaire): ![[seuilTriangels.png]]
+
+
+### Perception d'un son, avec un battement ou rugosité
+### Perception de deux sons distincts
