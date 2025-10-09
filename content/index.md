@@ -23,7 +23,8 @@ publish: true
 [[CM Rousset]]
 ## Sciences du langage
 [[CM Dohen]]
-[[CM Garnier SL|CM Garnier SL]]
+[[CM Garnier SL]]
+
 
 # Références
 

@@ -6,6 +6,12 @@ publish: true
 
 
 # Perception de la hauteur
+
+
+> [!NOTE] Notion importante
+> Hauteur tonale et spectrale!
+
+
 ## Hauteur spectrale
 
 Correspond à la distribution de l'énergie acoustique en fréquence, elle est typiquement plus '*diffuse*' que la hauteur tonale. La perception des ces différentes variations est due à la [[Tonotopie]] de notre système auditif. 
@@ -68,14 +74,92 @@ Au delà de $2000 Hz$, la perception des intervalles n'est plus directement en r
 
 Plusieurs cas sont possibles:
 ### Perception d'un seul des deux sons (*masquage*)
+
+> [!NOTE] Notion importante
+> Masquage énergétique/simultané
+
 ![[soundmaska.png]]
 
-D'un point de vue physiologique:
+La *largeur* du 'triangle' *de masquage* correspond à la *bande critique*. 
+
+D'un point de vue physiologique, la bande critique dépend de la fréquence du masqueur:
 ![[bandeCritique.png]]
 
+La *bande critique* due aux *fréquences élevée* est plus *réduite* que celle provoquée par des fréquences *faibles* du fait de la variation de *rigidité de la membrane basilaire*; celle-ci étant plus rigide à la base (rayon de courbure plus grand; sensible aux hautes fréquences) et plus souple à son apex (rayon de courbure plus faible; sensible aux basses fréquences).
 
 Les seuils de masquage ne sont pas symétrique autour des fréquences (échelle linéaire): ![[seuilTriangels.png]]
 
+Le **masquage énergétique** (simultané) dépend donc de:
+- la *fréquence* des deux sons
+- l'*amplitude relative* des deux sons
+### Perception de sons, avec un battement ou rugosité
 
-### Perception d'un son, avec un battement ou rugosité
-### Perception de deux sons distincts
+- Due à la rigidité de la membrane basilaire:
+- **Battements**: Lorsque les fréquences des deux sons sont très proches (différence < 12 Hz):
+	- Fréquence perçue et amplitude altérée: ![[battement.png]]
+- **Rugosité**: 12 Hz < différence < Bande critique:
+	- Rugosité <=> un seul son perçu toujours, mais forte modulation en amplitude
+- **Polyphonie**: différence > Bande critique. -> Perception de deux sons distincts
+
+
+# Perception de l'intensité
+
+Il y a un rapport de $10^{-12}$ entre le seuil de perception et le seuil de douleur ($[watt/m^2]$). On utilise donc le décibel (dB): $n_{dB} = 10*log(\frac{I}{I_{seuil perception}})$.
+
+![[zoneaudtiion.png]]
+
+## Sonie
+
+La sonie correspond à l'intensité réelle, perçue par le système auditif, elle varie en fonction de la fréquence du son.
+
+Courbe de variation de la sensibilité auditive avec la fréquence:
+![[sonie.png]]
+Exemple pour un son de 1000 Hz, entendu à 20 dB; il faudrait le présenter à 35 dB pour qu'il soit entendu de la même intensité à 100 Hz.
+
+### Influence de la durée
+- durée < 0.5s: augmentation de la sonie avec la durée
+- durée > 0.5s: sonie constante
+- durée > plusieurs secondes: sonie décroissante pour les sons de faible intensité
+
+### Influence du contenu spectral
+Augmentation de la sonie avec la largeur spectrale (à partir d'une largeur spectrale définie: la **bande critique**):
+![[bandecritsonie.png]]
+
+
+## Masquage proactif
+Masquage d'un son par un son qui précède, masquage plus important avec:
+- proximité fréquentielle des deux sons
+- proximité temporelle des deux sons
+
+![[masquagepro.png]]
+
+## Discrimination en intensité
+
+![[audibilité.png]]
+Sur le graphique de droite, les courbes de niveau indiquent notre capacité de discrimination de sons, par exemple, on peut distinguer 5500 sons différents dans la zone 'G'.
+
+La zone de sensibilité de l'oreille est triple:
+- capacité de détection
+- capacité de discrimination:
+	- de la hauteur
+	- de l'intensité
+
+## Fatigue et perte auditive
+
+### Fatigue
+Après l'audition d'un son intense, le seuil d'audition est plus élevé que normalement:
+![[fatigue_aud.png]]
+
+### Pertes auditives
+
+![[perteaudit.png]]
+
+
+
+> [!NOTE] *TODO* Fiche sur les 6 points clefs du cours
+> - les trois facteurs qui contribuent à la sensibilité particulière de notre système auditif à 2-3kHz
+> - le principe de tonotopie
+> - encodage de la fréquence des sons
+> - encodage de l'intensité des sons
+> - distinction et définition des hauteurs spectrale/tonale
+> - masquage énergétique
