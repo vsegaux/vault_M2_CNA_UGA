@@ -104,3 +104,95 @@ Ex: Dans un volume à 1D, on a 2 bordures, à 2D, on a 4 bordures (des lignes). 
 *Principe de Bonferroni*, il est possible de découvrir des motifs aléatoires qui n'ont pas réellement de sens simplement en 'considérant' énormément de possibilités.
 
 ![[supervise.png]]
+
+Exemple de la régression mathématiques:
+- Linéaire: On cherche à prédire Y en fonction de X, selon un modèle linéaire, en minimisant les couts (erreurs/résiduels) qui correspondent aux distances entre chaque point et la droite produite.
+- On peut, par transformation (sur les données d'entrée; log/exp/...), retomber sur des modèles linéaire même pour des problèmes non linéaires au départ: ![[linearire.png]]
+
+En rajoutant des termes de degrés supérieurs, on peut modéliser des relations encore plus complexes. On arrive alors dans les problèmes d'**overfitting**:![[overfitting.png]]
+
+### Compromis biais-variance
+- **Erreur totale** d'un modèle (=erreur moyenne du modèle sur l'ensemble des données):
+	- $Err_{tot}$ = Biais² + Variance + Erreur irréductible
+	- Erreur irréductible: C'est l'erreur due à du bruit dans les données, qui ne peut pas être réduite par un modèle. Elle est indépendante du modèle et est souvent liée à la variabilité inhérente des données.
+- **Biais**: Le biais mesure *à quel point les prédictions du modèle s'écartent de la vraie* valeur (c'est-à-dire, la moyenne des prédictions par rapport à la moyenne des vraies valeurs). Un modèle avec un biais élevé fait des suppositions simplistes sur la relation entre les variables d'entrée et de sortie. 
+- **Variance**: La variance mesure *la sensibilité du modèle aux variations des données d'entraînement*. Un modèle avec une variance élevée sera très influencé par les fluctuations des données d'entraînement, entraînant des prédictions très différentes pour des ensembles d'entraînement légèrement différents. (Variance faible => Faible capacité de généralisation)
+
+
+![[biais-variance.png]]
+![[err_complex.png]]
+
+### Rasoir d'Occam
+Entre deux modèles qui expliquent les données de la même manière, on choisit toujours *le plus simple*.
+
+### Régularisation
+Plusieurs types de "régulariseurs" existent, il permettent de pénaliser les modèles trop complexes (avec trop de paramètres). Ils donnent un score au modèles, en fonction de l'erreur empirique et d'un terme de régularisation (qui dépend donc de la complexité des modèles).
+
+# ML Workflow
+## Prétraitement
+Les objectifs du prétraitement sont:
+- Corriger des différences de mesures/attribut
+	- Certains algorithmes en sont très dépendants: KNN (K Nearest Neighbours), SVM (Support Vector Machine), Lasso, Ridge,...
+	- D'autres comme les arbres de décisions ou les régression linéaire le sont moins
+- Aider à visualiser les données (échelle commune)
+- Aider à interpréter les données (poids, coefficients comparables)
+
+### Prétraitements principaux
+- *Standardisation*: Consiste à transformer les données pour qu'elles aient une distribution avec une moyenne de 0 et un écart type de 1. Souvent utilisée lorsque les données suivent une distribution normale (car leur distribution ne sera pas altérée). Transformation des données par la formule : $z = \frac{x-\mu}{\sigma}$ avec x la valeur originale, $\mu$ la moyenne et $\sigma$ l'écart-type.
+	- Pertinente avec des algorithmes sensibles à la distribution des données (regréssion linéaire, SVM, K-means)
+- *Normalisation*: Change l'échelle des données pour qu'elles soient comprises entre 0 et 1, ou parfois entre -1 et 1. La formule la plus courante est : $x' = \frac{x-x_{min}}{x_{max} - x_{min}}$ avec x' la nouvelle valeur, x la valeur originale et les valeurs minimales et maximales dans les données.
+	- Surtout utile lorsque les données ont des gammes très différentes, ce qui pourrait biaiser les résultats d'algorithmes comme (réseaux de neurones, méthodes basées sur la distance comme le KNN)
+- *Mise à l'échelle* (scaling): manière plus générale d'ajuster les données pour les amener dans une certaine plage spécifique. *Inclut à la fois la standardisation et/ou la normalisation*, et consiste à redimensionner les valeurs selon une plage ou un intervalle défini.
+	- La mise à l'échelle est **nécessaire pour les réseaux de neurones** et **les modèles qui calculent des distances** entre les points de données (par exemple, les algorithmes basés sur des distances euclidiennes, KNN, SVM).
+
+### Autres prétraitements
+- *Encodage* d'attributs catégoriques sur la base des données ou sur la base de dictionnaires (ex: One Hot Encoding).
+- *Discrétisation*: convertir une variable continue (une variable qui peut prendre une infinité de valeurs, comme la température ou l'âge) en une variable discrète.
+- *Binarisation* d'attributs : convertir des variables continues ou catégorielles en valeurs binaires, c'est-à-dire en deux catégories : 0 ou 1.
+- *Imputation*: Remplacer les valeurs manquantes.
+
+### Résumé
+
+![[résumé.png]]
+
+## Généralisation/Partitionnement
+
+**Attention**, *il ne faut jamais présenter lors du test d'un modèle des données qui lui ont été présentées pendant l'entrainement.*
+
+### Partitionnement
+
+Répartition du jeu de donnée en:
+- **Training set**: jeu d'entraînement pour déterminer les hyperparamètres de l'algorithme (ensemble de règles)
+- **Validation set**: jeu complémentaire du training set pour valider le choix des hyperparamètres.
+- **Test set**: jeu mis de côté initialement pour mesurer la performance de l'algorithme après optimisation de ses hyperparamètres.
+
+Aucun soucis pour les gros jeux de données (60%/20%/20%), mais sinon, plusieurs autres méthodes sont possibles.
+
+#### Validation croisée à k-plis
+
+Combien de plis? k=5 à 10, si le jeu de test le permet (suffisamment gros). Avec 10 plis, on a une meilleure robustesse du modèle.
+##### Interne
+Recherche d'hyperparamètres sur différents plis des données d'entrainement puis test avec les meilleurs paramètres. Chaque 'split' dans la figure suivante correspond à un set d'hyperparamètres: 
+![[validation_croisee_inner.png]]
+
+| Pros                                                                                                                                                                                             | Cons                                                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| *Évaluation Robuste* : Elle permet d'obtenir une estimation plus fiable des performances du modèle en utilisant plusieurs itérations de validation.                                              | *Coût Computationnel* : La validation croisée interne peut être coûteuse en termes de calcul, car plusieurs modèles doivent être entraînés et évalués.                                           |
+| *Réduction du Risque de Surapprentissage* : En évaluant le modèle sur des sous-ensembles de données, elle aide à réduire le risque que le modèle ne soit trop ajusté aux données d'entraînement. | *Complexité* : La gestion des hyperparamètres et des différentes combinaisons peut rendre le processus complexe et difficile à gérer, surtout pour des modèles avec de nombreux hyperparamètres. |
+| *Optimisation des Hyperparamètres* : Elle facilite l'optimisation des hyperparamètres en fournissant une méthode systématique pour tester différentes configurations.                            |                                                                                                                                                                                                  |
+
+##### Imbriquée
+La boucle interne permet l'optimisation d'hyperparamètres, c'est dans cette boucle, que chaque ligne (orange sur la figure ci-dessous) correspond à un set d'hyperparamètres.
+![[nested_CV.png]]
+
+
+| Pros                                                                                                                                                                                                                              | Cons                                                                                                                                                                                          |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Estimation Précise de la Performance* : En séparant la sélection des hyperparamètres et l'évaluation des performances, la validation croisée imbriquée fournit une estimation plus précise de la performance générale du modèle. | *Coût Computationnel Élevé* : La validation croisée imbriquée est coûteuse en termes de calcul, car elle nécessite l'entraînement de plusieurs modèles à chaque niveau de validation croisée. |
+| *Éviter le Surapprentissage* : Elle réduit le risque de surapprentissage en garantissant que les données de test ne sont jamais utilisées lors de la sélection des hyperparamètres.                                               | *Complexité* : La mise en œuvre de cette technique peut être complexe et nécessiter une gestion attentive des hyperparamètres et des plis.                                                    |
+| *Optimisation des Hyperparamètres* : Elle permet une optimisation des hyperparamètres de manière systématique et rigoureuse.                                                                                                      |                                                                                                                                                                                               |
+
+
+#### Bootstrap
+
+Sous échantillonnage avec remise à répéter plusieurs fois (100 à 10000):![[bootstrap.png]]
