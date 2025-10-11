@@ -4,209 +4,361 @@ sujet: Psychologie Cognitive
 date: 2025-09-19
 publish: true
 ---
+> [!NOTE] Examen  
+> Capacité à expliquer le contenu du cours à quelqu’un qui ne l’a pas suivi.
 
-> [!NOTE] Examen
-> Capacité d'explication du contenu du cours à quelqu'un qui n'aurait pas suivi le cours.
+# Psychologie : Démarches et Concepts
 
+La **psychologie** vise à intervenir sur le comportement humain.
 
-Psychologie: A pour but d'intervenir sur le comportement humain.
-# Démarches en psychologie:
-![[Behaviourisme]]
+## Démarches en psychologie
 
-*Introspection, pourquoi c'est banni?* ""Un système ne peux pas être à la fois l'objet d'étude et suffisamment complexe pour s'évaluer lui-même.""
+Observation des relations entre situation et comportement :  
+**Situation → Comportement**
+
+|**Avantages**|**Inconvénients**|
+|---|---|
+|Bon pouvoir prédictif|Nécessite un échantillon très large|
+|Permet d’établir des lois empiriques|Question sur la validité écologique des observations|
+||Mode d’action limité à la modification de l’environnement|
+
+Les lois issues de la simple _observation_ permettent de prévoir un comportement mais pas de l’expliquer.
+
+## Introspection : pourquoi rejetée ?
+
+> _"Un système ne peut pas être à la fois l’objet d’étude et être suffisamment complexe pour s’auto-évaluer."_
 
 ## Démarche du psychologue
-*Explication du comportement*: L'objet d'étude est inconnu au départ, on va supposer qu'il 'fonctionne comme' un autre objet connu; *supposition d'une analogie à modèle*. On va alors tester/observer que le comportement de l'objet d'étude soit similaire à celui prédit par le modèle. On sait que le modèle est faux (!= de l'objet d'étude), mais il permet de faire des prédictions sur l'objet d'étude.
 
-![[Exemple de la tâche du rappel sériel à court terme]]
+**But** : expliquer le comportement.  
+L’objet étudié est inconnu au départ. On suppose qu’il _fonctionne comme_ un objet connu (**analogie à modèle**).  
+On observe si le comportement correspond aux prédictions du modèle, en sachant que celui-ci est faux mais utile pour faire des prédictions.
 
-/!\ Le seul fait que l'implication (la supposition) soit vérifiée ne prouve en rien que l'analogie est valide. La seule conclusion logiquement valide est que la spéculation ne soit pas valide.
-On ne peut alors pas prouver qu'un modèle soit vrai, et il y aurait une infinité de modèle faux à débusquer.
+**Exemple : rappel sériel à court terme**
 
-"Attention cependant, le test réellement effectué est toujours: SI (Spéculation * *Spéculations Annexes* ) ALORS (Implication)"[[content/Psychologie cognitive/Supports/2024-2025-Rousset-Partie-1.pdf#page=5&selection=4,0,11,19|p.5]]
+- Modèle : mémoire = ruban magnétique de taille fixe, avec tête lecture/écriture.
+    
+- Prédiction : rappel plus performant pour mots courts que pour mots longs.
+    
+- Test en anglais (contrôle : durée de prononciation identique), car en français longueur et syllabes varient fortement.
+    
+- Attention : vérification de la supposition ≠ validation de l’analogie. On ne prouve jamais qu’un modèle est “vrai”, seulement que certains sont _moins faux_ que d’autres.
+    
 
+**Conclusion** :  
+En psychologie, les hypothèses doivent toujours être testées _dans une comparaison de modèles_, toutes choses égales par ailleurs. 
 *Validité relative*: Les hypothèses doivent toujours s'effectuer dans le cadre d'une comparaison de modèles, toute choses étant égales par ailleurs. On peut alors simplement conclure que le modèle A est "moins faux/plus valide" que le modèle B. On va donc se diriger 'dans la direction' modèle A pour poursuivre les recherches.
+
 ![[Univers des modèles]]
 
+## Les trois niveaux de compréhension (Marr)
 
-![[Niveaux de compréhension]]
+[[public/Psy-Cog-CNA/Supports/2024-2025-Rousset-Partie-1.pdf#page=6&selection=20,0,20,5|p.6]]
 
+|Niveau|But / Principe|Exemple Aspirateur|En psychologie|
+|---|---|---|---|
+|**Computationnel**|But global|Aspirer|Traiter le monde / Intégrer l’information|
+|**Algorithmique**|Principes, outils|Ventilateur|Fonctions cognitives|
+|**Implémentation**|Composants de base|Moteur, Électricité|Neurones|
 
-En sciences cognitives (modèles représentationnels), les 3 axiomes sont :
-- Le comportement humain est basé sur des connaissances.
-- Les connaissances sont constituées de représentations mentales.
-- Le comportement émerge de la manipulation de ces représentations mentales.
+- **Implémentation** : briques de base du fonctionnement, transposées sur d’autres supports (ordinateur, machine mécanique…). Sert à _formuler des hypothèses_ et faire des prédictions, pas à valider le fonctionnement humain.
+    
+## Axiomes des sciences cognitives (modèles représentationnels)
 
-## Concept de 'représentation'
+1. Le comportement humain repose sur des connaissances.
+    
+2. Les connaissances sont des représentations mentales.
+    
+3. Le comportement émerge de la manipulation de ces représentations.
+    
+## Concept de "représentation"
 
-Deux sens de "représentation":
-- *Sens faible*: "Correspondance régulière entre l’état physique (neurones ou groupes de neurones) d’un système en fonctionnement et les événements qu’il traite."[[content/Psychologie cognitive/Supports/2024_2025_MSC_Rousset_partie-2.pdf#page=1&selection=8,0,16,31|p.1]] ("*en regardant l'état d'un système, on peut savoir ce qu'il est en train de traiter*", ex: représentation de Alan Chauvin n'est, au sens faible, pas égale à l'activation d'un nombre/de certains neurones strictement définis, mais simplement le fait de penser à lui.)
-- *Sens fort*: "Structure physique (neurones ou groupes de neurones) d’un système qui correspond de *manière permanente* à *un* élément du monde extérieur et qui constitue l’objet des processus cognitifs."[[content/Psychologie cognitive/Supports/2024_2025_MSC_Rousset_partie-2.pdf#page=1&selection=24,0,38,20|p.1]] (ex: le neurone Jennifer Anniston (dont le but serait de la représenter); il existerait des neurones/structures dans le cerveau *dont le but serait de représenter* des éléments de l'environnement)
+Deux sens :
 
-Note: Expérimentalement, le 'neurone Jennifer Anniston' est observable de manière réplicable (représentation au sens faible (~"corrélation")), mais le fait de l'interprété comme "étant le neurone dont le but est de détecter JA" est une représentation au sens fort, et cette interprétation est une erreur.
+- **Sens faible** : correspondance régulière entre état physique du système et événements traités (corrélation).  
+    Ex : penser à une personne active certains neurones, mais sans lien unique.
+    
+- **Sens fort** : structure neuronale physique correspondant _de manière permanente_ à _un_ élément précis du monde extérieur.
+    
 
+**Attention** : observer un “neurone Jennifer Aniston” ne prouve pas qu’il _représente_ Jennifer Aniston ; c’est une corrélation (sens faible), pas une preuve de sens fort.
 
-> [!NOTE] Référence biblio:
-> Fodor, The Modularity of Mind (1983)
+> [!NOTE] Référence biblio  
+> Fodor, _The Modularity of Mind_ (1983)
 
-Une **représentation** correspond strictement à l'objet du monde extérieur, par définition. Les processus perceptif qui permettent d'accéder à cette représentation ne doivent pas être en mesure de l'altérer. Si l'on pouvait modifier la relation entre l'objet et sa représentation, celle-ci ne serait plus une représentation (ex: si je me représente la craie comme un arbre, je ne me 'représente' plus la craie). Les *processus de perception* doivent être *encapsulés* afin qu'il ne puisse pas y avoir de rétroaction de la représentation; **les processus de perception sont des processus strictement montant** (on se réfère à ce paradigme pour la suite du cours, il s'agit du cadre paradigmatique fixé classiquement. A noter que certains phénomènes ne respectent pas ce paradigme, comme le traitement des couleurs, en particulier en vision périphérique, on n'en parlera pas ici). Les traitements rétroactifs sur les processus de perception sont considérés comme liés à la notion d'attention.
+**Caractéristiques d’une représentation** :
 
-Pour être utile, la représentation doit être accessible en dépit des variations du signal d’une rencontre à l’autre. [[content/Psychologie cognitive/Supports/2024_2025_MSC_Rousset_partie-2.pdf#page=2&selection=6,0,44,1|p.2]]
-- C’est donc un élément discret *abstrait* des caractéristiques idiosyncratiques de présentation
-	- idiosyncratique: tout ce qui est propre à la représentation, mais pas à la structure même de l'objet représenté (lumière, angle, etc...)
-- Il existerait une représentation structurale visuelle qui correspondrait aux *invariants*. 
-- Or, la notion d’invariant a un sens a posteriori (i.e. c'est facile de repérer les invariants une fois qu'on a tout vu) ; en faire la structure centrale nécessite de concevoir un système perceptif ‘particulièrement intelligent’ (il faudrait stocker que ce qui n'est pas susceptible de bouger dans le future: les invariants)
-- Difficulté du pari …. *comment intégrer l’apprentissage de nouveaux stimuli dans les modèles abstractifs*
+- Correspond strictement à l’objet externe.
+    
+- Processus perceptifs encapsulés (flux strictement ascendant, pas de rétroaction).
+    
+- Doit rester accessible malgré les variations de signal (position, éclairage…).
+    
 
-## Modèles de l'identification
+## Exemple : effet de supériorité du prototype jamais vu
 
-Illustration des modèles computationnels:
-On stocke séquentiellement, de bas en haut, d'abord en 2D, des lignes, angles etc.. (primitives visuelles) Puis on extrait les surfaces, formes et positions afin de finalement en déduire la structure 3D complète que l'on peut comparer à nos connaissances en mémoire.
+Expérience montrant que lors de l’apprentissage de variations d’un stimulus, les participants mémorisent un **prototype** jamais présenté, _contredisant les modèles classiques de la mémoire_.
+
+Dans les détails:
+On prend un stimulus de base (prototype, P), un nuage de point et on en créé des dérivations ($D_{1}, ..., D_n$) en faisant bouger certains points. Les participants ne voient que les dérivations.
+On laisse passer un certain temps et on réalise un expérience de mémoire en présentant aux participants:
+- certaines dérivations présentée initialement ($D_x$)
+- certains nuages de points jamais vus (N)
+- le prototype qui n'a jamais été vu (P)
+Le participants doivent dire oui s'il ont déjà vu le stimulus présenté.
+
+| Situation | Bonne réponse | Réponse observée |
+| --------- | ------------- | ---------------- |
+| $D_x$     | OUI           | OUI              |
+| N         | NON           | NON              |
+| P         | NON           | *OUI*            |
+## Modèles computationnels d’identification
+
 ![[IllustrationModeleComp.png]]
 
-*Modèle de Biederman (1985)*
-1. Extraction des primitives liées au contours locaux
-2. Extraction des composantes volumétriques de l'objet
-3. Assemblage des composantes volumétriques en objet
-4. Appariement avec des objets stockés en mémoire
+**Modèle de Biederman (1985)** :
 
+1. Extraction des contours locaux.
+    
+2. Extraction des composantes volumétriques.
+    
+3. Assemblage.
+    
+4. Appariement en mémoire.
+    
 
-*Agnosie*: Trouble de reconnaissance des objets.
+**Agnosies** :
+Perte spécifique (en cas de perte complète de mémoire sémantique, impossible d'interrogation car c'est comme si on s'adressait à un bébé) d'accès à certaines représentation (ex: perte des représentations d'animaux).
 
-Agnosies *perceptives*: Trouble de la représentation
-Agnosies *associatives*: Incapacité à faire le lien entre l'image et les connaissances (sans que le problème soit au niveau du décodage perceptif)
+- _Perceptives_ : trouble de la représentation.
+    
+- _Associatives_ : difficulté à relier image et connaissances.
+    
+
 ![[SchemaEnsembleIdenti.png]]
-Pour l'instant, on a pas pu montrer que ce modèle soit faux, il reste donc celui utilisé.
 
-## Restriction à la mémoire (TULVING 1972)
+## Mémoire selon Tulving (1972)
 
 ![[TULVING1972.png]]
 
-D'un point de vue descriptif, notre mémoire s'exprime de trois manières différentes:
+### Mémoire procédurale – Anoétique
 
-![[Mémoire procédurale]]
+- Apprentissage moteur (marcher, vélo…).
+    
+- Pas de conscience associée.
+    
+- Description behaviouriste uniquement (observations, pas d'explication).
+    
+
+### Mémoire sémantique – Noétique
+
+- Connaissance du monde et de sa permanence.
+    
+- Représentations reliées entre elles (non falsifiable en recherche).
+	-  Les seuls domaines qui tente de l'expliquer sont la *psychologie du développement* (pour étudier la naissance des représentations chez l'enfant) et la *neuropsychologie*, pour faire le lien avec les neurosciences.    
+
+### Mémoire épisodique – Autonoétique
+
+- Conscience de sa propre existence et rappels d’expériences vécues.
+    
+- Sur-système de la mémoire sémantique (indexeur d’évènements).
+    
+- L’hippocampe joue un rôle central.
+    
+- Troubles : amnésie antérograde / rétrograde:
+	- *Amnésie antérograde*: incapacité à créer de nouveaux souvenirs; oubli de tous les évènement *suivant* l'accident. L'existence de ce type d'amnésie permet de faire la distinction entre mémoire sémantique et épisodique; la mémoire sémantique étant généralement conservée contrairement à la mémoire épisodique.
+	- *Amnésie rétrograde*: incapacité d'évocation d'éléments autobiographique. Pouvant être aussi bien épisodique que sémantique.
+#### Test de la mémoire épisodique chez les animaux
+On montre à un geai quelqu'un qui cache de différents types de nourriture à différents endroits. Ces types de nourriture s'abiment plus ou moins rapidement dans le temps. Le geai va ensuite aller rechercher dans le bon ordre la nourriture aux différents endroits. Le geai serait donc capable de se souvenir de cet évènement unique qu'il a vécu (qqun qui cache la nourriture), et aurait donc bien une mémoire épisodique.
 
 
-![[Mémoire sémantique]]
+## Modèle SPI de Tulving (1995)
 
+![[tulving2.png]]
 
-![[Mémoire épisodique]]
+Ajoute :
 
-### Modèle SPI de Tulving (1995):
-![[Modèle SPI de Tulving (1995)]]
-### Equilibres 'Général-Spécifique' et 'Stabilité-Plasticité'
+- **Mémoire de travail (MDT)** : manipulation temporaire.
+	- La *MDT* sert d'*interface* entre les autres types de mémoire.
+	- **Effet de profondeur d’encodage** (ou d'élaboration sémantique) : manipulation mentale du matériel → amélioration du rappel.
+		- **Exemple expérimental**: présentation simple de mots, puis demande de rappel d'un mot cible; vs présentation de mot en demandant de dire s'ils sont 'vivant' ou non, puis demande de rappel
+			- Dans le second cas, on manipule mentalement les mots présentés, le rappel est largement meilleur.
+    
+- **Mémoire perceptive (PRS)** : maintien de structures perceptives.
+    
 
-Pour établir un modèle de la mémoire correct, deux dilemmes se posent:
-- 1er dilemme:
-	- Stabilité: On doit pouvoir se souvenir durablement.
-	- Plasticité: On doit pouvoir *apprendre rapidement* (système épisodique), une seule présentation doit ensuite permettre de s'en souvenir.
-- 2nd dilemme:
-	- Spécifique: Retrouver une information spécifique.
-	- Général: Retrouver une information en fonction de tous les éléments des différents épisodes vécus (*établir une structure sémantique*).
+# Les grands équilibres de la mémoire
 
-Il faut donc un système qui puisse *à la fois apprendre immédiatement* et un système qui soit *capable d'apprendre lentement* au fil des expériences vécues afin d'en extraire une structure *cohérente*.
+Pour concevoir un **modèle cohérent de la mémoire**, deux dilemmes fondamentaux apparaissent.  
+Ces tensions découlent du fait que notre mémoire doit à la fois enregistrer fidèlement des expériences uniques et dégager des structures générales stables.
 
-`Exemple de création d'une sémantique:`
-`Bière…. Louvain….Plaisir`
-`Bière…. Bruxelle….Plaisir`
-`Bière….Grenoble…Plaisir`
-`on fini par associer 'bière' et 'plaisir'.`
+## 1. Premier dilemme : Stabilité vs Plasticité
 
-#### Nadel & Moscowitch (1997):
-![[Nadel & Moscowitch (1997)]]
+- **Stabilité** : la mémoire doit permettre la _conservation durable_ des connaissances déjà acquises. Si tout apprentissage nouveau effaçait ou modifiait les anciens souvenirs, aucune continuité cognitive ne serait possible.
+    
+- **Plasticité** : à l’inverse, le système doit pouvoir _apprendre rapidement_ à partir d’une seule exposition à un événement. C’est la propriété essentielle du système **épisodique**. Elle garantit l’adaptation rapide à un environnement changeant.
+    
 
-#### Cas des patients amnésique antérogrades:
+L’objectif est donc de trouver un mécanisme mémoire capable d’articuler **mémorisation immédiate** (rapide mais instable) et **consolidation lente** (stable mais moins réactive).  
+Cette articulation sous‑tend l’idée que différents systèmes (épisodique, sémantique, procédural) ne sont pas concurrents mais **complémentaires**.
 
-Ces patients ne peuvent plus accéder à leur mémoire épisodique, donc ne peuvent plus indexer les nouveaux évènements. D'après le modèle de [[Nadel & Moscowitch (1997)]], on devrait pouvoir simuler cette indexation (due normalement à la 'répétition' des souvenirs pendant le sommeil) en présentant de manière répétée l'information aux patients. Expérimentalement, cela fonctionne bien tant que la seule information qui est présentée au patient est la bonne et qu'on ne lui pose pas de question dessus (un peu bizarre non..?).
+## 2. Deuxième dilemme : Spécificité vs Généralisation
 
-On observe aussi une perte *rétrograde* (certains éléments ayant eu lieu avant l'accident sont oubliés) chez ces patients souffrant d'amnésie *antérograde*:
+- **Spécifique** : il faut retrouver une information précise correspondant à un souvenir unique (mécanisme de la mémoire épisodique).
+    
+- **Général** : le système doit aussi construire une _structure sémantique_ en intégrant les régularités des différents épisodes vécus.
+    
+
+Cela implique l’existence conjointe :
+
+- d’un système _spécifique_ et rapide, qui encode les détails individuels ;
+    
+- d’un système _général_ et lent, qui extrait progressivement des invariants à travers plusieurs expériences.
+    
+
+Ainsi, la mémoire combine apprentissage ponctuel et abstraction progressive — deux dynamiques nécessaires à la construction de la connaissance.
+## Exemple d’émergence d’une structure sémantique
+
+À partir de corrélations répétées d’expériences, certaines associations émergent spontanément :
+
+text
+
+`Bière — Louvain — Plaisir   Bière — Bruxelles — Plaisir   Bière — Grenoble — Plaisir`
+
+Les occurrences multiples de _bière_ et _plaisir_ finissent par engendrer une **association conceptuelle stable**.  
+Ce processus illustre comment la mémoire, en agrégeant les épisodes, produit une sémantique — ici “bière → plaisir” — qui transcende les situations particulières.
+
+# Modèle de Nadel & Moscovitch (1997)
+
+Les auteurs proposent une **interaction dynamique entre l’hippocampe** et les **modules néocorticaux**.  
+Le modèle cherche à expliquer la consolidation de la mémoire, c’est‑à‑dire le passage progressif d’un souvenir épisodique spécifique vers une connaissance sémantique plus abstraite.
+
+## Principe de fonctionnement
+
+Lors de la perception d’un **événement A**, deux processus fonctionnent simultanément :
+
+1. Création de **liens sémantiques** entre les _features_ (traits perceptifs ou conceptuels) dispersées dans les modules néocorticaux.
+    
+2. Création d’une **trace épisodique** spécifique dans l’hippocampe, représentant l’événement vécu.
+    
+
+![[eventA 1.png]]
+
+Lors de la perception d’un **événement B**, les mêmes opérations sont effectuées : nouvelle trace épisodique + renforcement des liens sémantiques.  
+Cependant, les éléments communs entre A et B (ex. un même lieu, une même personne, une émotion similaire) voient leurs connexions sémantiques **renforcées**.
+
+![[eventB 1.png]]
+
+Ce mécanisme progressif explique comment des **liens conceptuels** émergent entre épisodes différents.
+
+## Rôle du sommeil et des activations aléatoires
+
+Nadel et Moscovitch suggèrent que, durant le **sommeil**, certaines _traces épisodiques_ de l’hippocampe sont **réactivées aléatoirement**.  
+Ces réactivations engendrent :
+
+- un **renforcement** supplémentaire des liens sémantiques entre les événements similaires ;
+    
+- mais aussi un **risque de mélange** ou de _reconstruction partielle_ des souvenirs, car l’activation est fragmentaire.
+    
+
+Ainsi, plus un souvenir est ancien, plus il a été remodelé au fil de ces réactivations — ce qui explique leur caractère souvent **imprécis ou reconstruit**.
+
+> _Remarque :_ Certains chercheurs estiment que les souvenirs anciens migrent vers la mémoire sémantique, alors que pour Nadel et Moscovitch, ils conservent une réactivation épisodique.  
+> L’imagerie cérébrale (_IRM fonctionnelle_) montre en effet des **activations hippocampiques** lors du rappel d’événements anciens, ce qui soutient partiellement cette hypothèse.
+
+## Implication : l’apprentissage distribué
+
+Le modèle justifie le **principe d’apprentissage distribué** :  
+il est plus efficace de revoir plusieurs fois des éléments séparés (A, B, C, D), dispersés dans le temps et mélangés à d’autres informations, que d’apprendre une seule fois la liste complète “ABCD”.
+
+> _Apprentissage distribué >> Apprentissage massé_
+
+Cette répétition espacée favorise les activations croisées et donc la construction de structures sémantiques cohérentes.
+
+# Étude des patients amnésiques antérogrades
+
+## Déficit principal
+
+Les individus atteints d’**amnésie antérograde** ont perdu la capacité de former de nouvelles traces épisodiques.  
+Autrement dit, ils ne peuvent plus “indexer” de nouveaux événements en mémoire à long terme.
+
+Selon Nadel & Moscovitch, si l’indexation normale repose sur la **répétition nocturne** des traces, on peut la **simuler artificiellement** :  
+une présentation répétée et isolée de la même information produit parfois un apprentissage mesurable, à condition de ne pas introduire d’interférences (par exemple en posant des questions qui mobiliseraient d’autres traces).
+
+## Perte rétrograde conjointe
+
+En complément, une **amnésie rétrograde partielle** est souvent observée chez les mêmes patients : certains souvenirs antérieurs à l’accident disparaissent.
 
 ![[AnterogradeAMne.png]]
 
-Chez le sujet contrôle, le jour de l'accident et les jours qui suivent, son hippocampe va renforcer les éléments vécus dans les heures/jours/semaines passé l'évènement. Pour le patient ayant vécu l'accident, *le processus de renforcement* de ces éléments était en cours au moment de l'accident, mais *n'a pas pu aboutir*.
+Chez un sujet sain, l’hippocampe consolide les souvenirs récents dans les jours et semaines suivant l’événement.  
+Dans le cas du patient amnésique, cette consolidation en cours au moment du traumatisme **n’a pas pu se terminer**, ce qui conduit à la perte des souvenirs encore “instables”.
 
-## Deux conceptions de la mémoire
+# Deux conceptions fondamentales de la mémoire
 
-*Abstractive*: La mémoire est un stock de *représentations*.
-- Créer les représentations (encodage)
-- Les placer en mémoire (stockage)
-- Pouvoir les atteindre (Récupération)
-*Non-Abstractive*: La mémoire est la capacité à re-créer des expériences passées.
-- Trouver un système qui puisse assurer cette re-création après avoir été confronté à des exemples d’apprentissage
-- Les systèmes multi-traces ainsi qu’une certaine utilisation de l'outil connexionniste permetent d'implémenter ce fonctionnement 
-	- Le défis serait de trouver une des configurations d'efficience «synaptique » qui permet de réaliser la **fonction** de re-création correspondant aux exemples appris
+|Type de conception|Vision principale|Métaphore du fonctionnement|
+|---|---|---|
+|**Abstractive**|La mémoire est un **stock de représentations**. Chaque élément est encodé, stocké puis récupéré.|Bibliothèque de contenus stables.|
+|**Non‑abstractive**|La mémoire est une **capacité à recréer** les expériences passées à partir d’exemples d’apprentissage.|Système dynamique de re‑simulation.|
 
-### La mémoire non abstractive
+## La mémoire non abstractive : principes généraux
 
-Dans le modèle non abstractif, la mémoire n'est plus un stockage, mais une capacité de s'adapter à l'environnement, un "ensemble" de fonctions dont l'environnement donnerait les paramètres. Si l'on se place dans le cadre de l'autopoïèse, le système serait l'être humain et son 'but' serait de garder son intégrité dans l'environnement. Pour commencer, on considèrera le cas le plus basique où la fonction à réaliser par le système est la fonction identité, c'est à dire qu'il ne doit pas interagir avec l'environnement, simplement être en contact avec lui.
+Le modèle **non abstractif** rejette l’idée d’un stockage statique.  
+La mémoire est ici conçue comme un **dispositif adaptatif** dont la fonction est de maintenir l’intégrité d’un système (l’être humain) en interaction constante avec son environnement.
 
-On considère que les entrées sensorielles du système constituent des capteurs dont les états sont chacun continu sur une dimension. L'ensemble des entrées sensorielles a donc N dimensions, et le système, dans notre *exemple simple*, doit renvoyer l'*identité* ($f(x)=x$).
-Si l'on réduit, par simplification, l'ensemble des dimensions d'entrée sur un seul axe et que l'on représente le taux d'erreur de notre système en réponse à un stimuli donné, on a:
+Sous ce point de vue, la mémoire ne conserve pas des représentations pré‑formées mais **reconstruit** les expériences à chaque interaction.
+
+## Exemple de base : fonctionnement identité
+
+Supposons un système dont les entrées sensorielles ont NNN dimensions.  
+La tâche consiste simplement à _reproduire à la sortie ce qui est perçu en entrée_ :  
+f(x)=x
+
+Cette fonction “identité” correspond à un contact passif avec l’environnement sans transformation active.
+
 ![[Apprentissage_sys.png]]
 
-Si l'on suppose un cas d'apprentissage de A', proche de A, le système va faire des erreurs, il aura tendance à recréer (le but étant l'identité) des éléments correspondant au point appris le plus proche (A): $A < f(A') < A'$ (si l'on a $A'>A$).
+Lorsqu’on présente un stimulus légèrement différent A’ d’un stimulus déjà appris A, la réponse du système est biaisée :  
+A<f(A’)<A’ si A’>A.
+Autrement dit, le système _reconstruit partiellement_ la nouvelle entrée à partir de la plus proche connue.  
+Le **critère véritable de la mémoire** réside donc dans la **vitesse d’adaptation** à un changement, appelée _fluence perceptive_.
 
-Le vrai critère de la mémoire est la *vitesse d'adaptation*, on parle de fluence perceptive.
-
-#### Un modèle multi-traces: Minerva II (Hintznan 84)
-
-On considère la mémoire comme une matrice à j colonne, j correspondant au nombre de capteurs sensoriels. Les lignes correspondent au temps qui s'écoule, chaque case est donc l'état d'un capteur sensoriel à un instant donné. La mémoire enregistrerait donc des traces depuis la naissance, à une fréquence d'échantillonnage donnée. Dans notre modèle, tous les coefficients sont normalisés dans $[-1, 1]$.
+# Le modèle multi‑traces : Minerva II (Hintzman, 1984)
 
 ![[MinervaII_matrice.png]]
 
-Dans ce cadre:
-- On appellera une "*sonde*" un ensemble de modalité des capteurs sensoriels avant d'être stocké dans la mémoire. 
-- On appellera "*écho*" la sortie, calculée en fonction des différents éléments de la matrice.
-- *L'idée d'accéder à une trace (ligne) particulière n'a pas de sens* (de par leur immense nombre, et similarité), *s'il y a un calcul, il devra impliquer toutes les traces*, de manière parallèle.
+## Structure générale
 
-Le calcul se fait en deux étapes:
-1. Activation de la trace *i*, en fonction de sa similitude à la *sonde*: $A(i)=\sum_{j=1}^{n} \frac{M(j)*S(j)}{n}$, ce calcul est effectué en parallèle pour chaque trace *i*. 
-2. Détermination de l'*écho* comme moyenne de toutes les traces pondérées par leurs activations, pour chaque composante *j*: $E(j) = \frac{\sum_{i=1}^{n} A(i)*M(i,j)}{\|\sum_{i=1}^{n} A(i)\|}$  (Note: l'activation $A(i)$ peut être élevée à une puissance 'Acc' (impaire, pour conserver le signe), qui est un méta paramètre du modèle). 
+- La mémoire est représentée comme une **matrice** où :
+    
+    - chaque **colonne** correspond à un capteur sensoriel ;
+        
+    - chaque **ligne** correspond à un instant (ensemble d’expériences enregistrées dans le temps).
+        
+- Les valeurs sont normalisées dans l’intervalle $[−1,1]$.
+    
 
-Dans l'ensemble, le processus complet pour chaque nouvelle stimulation est:
-1. Stimulation (arrivée d'une *sonde*)
-2. Calcul en deux étapes
-3. La sonde *devient une trace* dans la mémoire; l'*écho est retourné*.
+## Terminologie
 
-##### Exemple simple
+- **Sonde** : l’ensemble des modalités sensorielles stimulées à un moment donné (entrée).
+    
+- **Écho** : la sortie produite par le système, résultat de la combinaison de toutes les traces.
+    
 
-![[modele_exemple.png]]
-Dans la première étape, la sonde est comparée à chaque trace (une seule ici). Dans une seconde étape, l'écho est calculé par multiplication de chaque trace avec son activation calculée: le système produit un écho contenant "Fourchette/Assiette/Salade", ( On parle de **co-activation** plutôt que de 'contenu'.). Finalement, la sonde s'intègre comme une trace dans la mémoire.
-Pour que le système finisse par répondre l'identité, il faudrait répéter l'opération en ayant à chaque fois pour sonde 'Fourchette/.../...', petit à petit, on se rapprocherait de l'identité en sortie.
-##### Autres exemples:
-Mémoire:
-Fourchette/Assiette/Salade
-Fourchette/Assiette/Pâtes
-Sonde:
-Fourchette/.../...
---> Echo: Fourchette/Assiette/{Salade/Pâtes mélangés}
+Accéder à une trace particulière n’a aucun sens : les calculs se font **en parallèle sur toutes les traces**, selon un principe d’activation pondérée.
 
-Mémoire:
-Fourchette/Assiette/Salade
-Fourchette/Assiette/Pâtes
-Fourchette/Assiette/Pâtes
-Sonde:
-Fourchette/.../...
---> Echo: Fourchette/Assiette/{Salade/Pâtes mélangés, avec 2/3 de pâtes}
+## Mécanisme de calcul
 
+1. **Activation des traces**  
+    Activation de la trace *i*, en fonction de sa similitude à la *sonde*: $A(i)=\sum_{j=1}^{n} \frac{M(j)*S(j)}{n}$, ce calcul est effectué en parallèle pour chaque trace *i*. 
+    
+2. **Calcul de l’écho**  
+    Détermination de l'*écho* comme moyenne de toutes les traces pondérées par leurs activations, pour chaque composante *j*: $E(j) = \frac{\sum_{i=1}^{n} A(i)*M(i,j)}{\|\sum_{i=1}^{n} A(i)\|}$  (Note: l'activation $A(i)$ peut être élevée à une puissance 'Acc' (impaire, pour conserver le signe), qui est un méta paramètre du modèle). 
+3. La sonde *devient une trace* dans la mémoire; l'*écho est retourné*.    
 
-Finalement, on se retrouve avec *un système qui aura stocké une sémantique, sans jamais avoir stocké de représentation du monde*.
-
-Expérience de pensée: la tâche de définition d'une feuille de papier ne donne pas les mêmes listes de propriétés (ou au moins pas dans le même ordre) selon que la tâche soit réalisée à un bureau ou à côté d'un feu. -> Le contexte de rappel influe sur la représentation sémantique. Cela va à l'encontre de la représentation de la mémoire comme un stockage de représentation fixe.
-
-Notre performance de récupération va être déterminé (selon ce modèle) uniquement par les éléments présents dans la *sonde* (i.e. *La performance est dépendante des indices de récupération*).
-L'*apprentissage* est *localisé* (les évènements vécus sont chacun stocké tel quel en mémoire). La *récupération* en revanche est *distribuée*, on considère l'ensemble des éléments en mémoire pour se remémorer.
-
-![[minervaII_chien.png]]
-
-
-
-**Synthèse des propriétés du Modèle Minerva II**:
-Il propose une sémantique:
-- Flexible en fonction des indices de récupérations
-- Déterminée en ligne, à la récupération, par l'ensemble des expériences passées.
-
-La *spécificité des indices de récupérations* et la valeur d'*accélération* (puissance dans le calcul) *déterminent* des évocations génériques (*sémantiques*) ou liées principalement à une trace (*épisodique*):
+Le paramètre “_acc_” (puissance appliquée à A) module la précision du rappel :  
+valeurs élevées → récupération **spécifique** (épisodique),  
+valeurs faibles → récupération **générale** (sémantique).
 `ex:`
 
 | Trace/Activation   | A   | $A^3$ |
@@ -214,55 +366,98 @@ La *spécificité des indices de récupérations* et la valeur d'*accélération
 | trace 1            | 2   | 8     |
 | trace 2            | 4   | 64    |
 | Ratio d'activation | *2* | *8*   |
-|                    |     |       |
-`Pour une même différence d'activation entre deux trace, selon le paramètre de puissance, la récupération peut être impactée fortement (puissance haute => récupération de traces très spécifiques plutôt épisodiques.)`
+
+## Illustration du fonctionnement
+
+![[modele_exemple.png]]
+
+- Étape 1 : comparaison de la _sonde_ avec chaque trace existante (une seule ici: _Fourchette/Assiette/Salade_).
+    
+- Étape 2 : construction de l’écho (combinaison pondérée des activations, une seule ici encore):   _Fourchette/Assiette/Salade_
+- Étape 3 :
+	- Echo renvoyé:  _Fourchette/Assiette/Salade_
+	- Mémoire ensuite:
+		-  _Fourchette/Assiette/Salade_
+		-  _Fourchette/.../..._
+
+Répétée plusieurs fois, cette procédure permet d’approcher progressivement la “fonction identité”.
+
+**Autre exemple** :  
+Mémoire : 
+_Fourchette/Assiette/Salade_  
+_Fourchette/Assiette/Pâtes_  
+Sonde : _Fourchette/.../..._  
+→ Écho : _Fourchette/Assiette/{Salade/Pâtes}_
 
 
+## Propriétés clés du modèle Minerva II
 
-**Limite du fonctionnement feed-forward**:
-1. La sonde calculée est généralement mal définie (trop prototypique) surtout pour des mémoire de grande taille. (permettrait, de fait, que des identifications très catégorielle) 
-2. Le fonctionnement cognitif est complètement déterminé par la stimulation actuelle.. 
-3. *Dans le modèle actuel*, seul les stimuli servent de sonde: à l'évocation orale du mot "couteau", le stimuli est oral, et serait donc *comparé uniquement aux traces* dans lequel le mot a été entendu à l'*oral* (et non pas aux traces liées au concept du couteau). Ces traces représentent une sémantique très réduite du mot "couteau".
+- La performance dépend **uniquement des indices de récupération** présents dans la sonde.
+    
+- L’**apprentissage est localisé** (chaque expérience = une trace).
+    
+- La **récupération est distribuée** (activation de l’ensemble des traces associées).
+    
+- La **sémantique** émerge d’une co‑activation généralisée d’expériences passées.
+    
 
-Pour (1.) il est possible de jouer sur l accélération mais l’évocation est restreinte aux traces contenant l indice (3.) et "la connaissance évoquée à partir du mot Catherine Deneuve peut elle être restreinte aux quelques traces correspondant aux instants ou nous avons entendu Catherine Deneuve". 
+![[minervaII_chien.png]]
 
-Solution à la limite (3.):
-L'écho peut devenir une sonde car il est de même format (**réinjection**, dans ce cas, la sonde ne devient pas une trace dans l'étape 3 du calcul!!), la proposition est que la *sonde* est *co-déterminée* par les *stimulations externes et l'écho*. 
-(Si les sondes réinjectées deviennent des traces, on pourrait créer des traces simplement en pensant, sans stimulation extérieure.) 
+## Limites et extensions
 
-Dans l'exemple précédent: "couteau" à l'oral va d'abord activer les traces 'orales' du mot couteau, mais va évoquer en écho l'image du couteau, même si c'est de manière légère; de même pour la présentation écrite du mot, pour les sensations en le tenant etc... Si l'écho devient une sonde, on balaye alors beaucoup plus de traces contenant la notion 'couteau' dans les différentes modalités. Récursivement, on s'approche alors progressivement de toutes les traces du concept général de couteau.
+1. **Sondes mal définies** pour de grandes mémoires → représentations trop prototypiques.
+    
+2. **Fonctionnement strictement feed‑forward** : dépendance totale aux stimuli présents.
+    
+3. **Restriction de modalité** : un mot entendu active principalement des traces auditives, pas visuelles ou conceptuelles.
+    
 
-#### Indices neuropsychologiques
+**Solution proposée** :  
+réinjection de l’**écho** comme nouvelle _sonde_ (de même format).  
+Ainsi, la sonde devient **co-déterminée** par la stimulation externe et l’écho.
 
-Cas des agnosies visuelles massive (incapacité d'accès aux sens des objets présentés visuellement) et aucune image mentale (sans trouble perceptif):
+Exemple : le mot “couteau” entendu active ses traces orales ; l’écho généré évoque son image et ses propriétés sensorielles ; réinjecté, il élargit l’activation à d’autres modalités (visuelle, tactile, motrice).  
+Ce processus récursif permet d’approcher le **concept multimodal** de “couteau”.
 
-- *Interprétation 'classique'*:
-	- Perte du stock visuel
-	- Preuve d'organisation catégorielle en mémoire sémantique
-- *Interprétation 'multi traces'*:
-	- Lésion des enregistrements de la modalité visuelle
-	- Prise en compte du fait que nos épisodes de rencontre avec les animaux ont quasiment toujours une composante visuelle (et pas forcément/souvent d'autres composantes)
+# Données neuropsychologiques et expérimentales
 
-#### Indices expérimentaux du rôle causal des recréations perceptives dans l'accès au sens
+## Agnosies visuelles massives
 
-En IRM, on observe que l'évocation d'un simple mot peut provoquer des activations des zones sensorielles liées (ex: "poulet"-> gustatif).
+Cas de patients incapables d’accéder au sens d’objets visuels tout en conservant un système perceptif intact.
 
-Expérience (*Amandine E. Rey, Benoit RIou, ...*):
-On présente des images d'animaux ou d'objet, soit avec un masque visuel qui gène les stimulations visuelle, soit sans masque (le masque est de bas niveau, il gène directement l'image perçue (contrairement à un masque de haut niveau, qui montrerait d'autres images)).
-La tâche est de catégoriser dans les catégories "animaux" ou "objets". On recherche alors quels sont les participants qui sont sensibles au masque ou pas, pour les *catégoriser* dans deux catégories (*haute sensibilité*/*faible sensibilité*).
-Dans une deuxième séance, on présente soit le masque sur l'écran, soit rien. Et les participants doivent dire 'objet' ou 'animal' selon un son qui leur est présenter:
-![[expe_mask_nomask.png]]
+- Interprétation classique : perte du _stock visuel_ → mémoire sémantique catégorielle.
+    
+- Interprétation multi‑traces : lésion des _enregistrements visuels_ empêchant la ré‑activation modale.
+    
 
-On observe alors que les *participants hautement sensibles au masque* ont des *performances réduites* lors de la présentation de ce masque, même dans une tâche d'identification auditive. Le modèle multi trace explique cela par le fait que les personnes se basant beaucoup sur des traces 'visuelles' pour accéder aux concepts sont aussi perturbés en cas d'évocation auditives.
+## Activation sensorielle lors du rappel
 
-La deuxième expérience familiarise les sujets à l'association de son grave ou aigu avec la présence ou l'absence de masque visuel (association masque-aique; non masque-grave). Dans un second temps, pendant la catégorisation à partir d'image, on joue un son aux sujets (grave ou aigu). On observe alors que les participants fortement sensibles initialement au masque visuel vont avoir de moins bonne performances lors des essais avec le son associé au masquage. Le modèle multi trace explique cela par le fait que lors de l'écoute du son, il y a activation des traces associées (donc du masquage).
+L’IRM montre que l’évocation de mots simples peut activer des **zones sensorielles correspondantes** (_“poulet” → activation gustative_).
 
-Autre expérience (*Lionel Brunel, Elodie Labeye, Mathieu Lesourd, Rémy Versace*):
-Période d'apprentissage de son de 500ms avec ou sans présentation d'images en même temps:
-![[expe2_sonforme.png]]
-Même principe que l'expérience précédente...
+## Expériences comportementales
 
+1. (_Amandine Rey et al._)
+    
+    - Présentation d’images d’objets/animaux avec ou sans masque visuel.
+        
+    - Les sujets sensibles au masque présentent une baisse de performance même lors de tâches auditives → preuve d’une dépendance intermodale des traces.
+        
+    - Les sons associés aux masques visuels perturbent aussi la catégorisation ultérieure → activation croisée de traces liées.
+        
+    
+    ![[expe_mask_nomask.png]]
+    
+2. (_Lionel Brunel, Élodie Labeye, Mathieu Lesourd, Rémy Versace_)
+    
+    - Apprentissage de sons de 500 ms avec ou sans images correspondantes.
+        
+    - Même principe : interférence perceptive selon la modalité active.
+        
+    
+    ![[expe2_sonforme.png]]
+    
+# Conclusion : portée et limites du modèle non abstractive
 
-#### Conclusion sur la mémoire non abstractive
-
-Les modèles non abstractifs proposent une autre forme de mémorisation et donc un autre but computationnel. Cependant, comme pour les modèles abstractifs, l'*absence* de *prise en compte* de la *dimension interactive* ne peut *engendrer que des explications parcellaires*.
+Les modèles **non abstractifs** redéfinissent la mémoire comme un **système de re‑création** et non de stockage.  
+Ils offrent une vision flexible et adaptative, capable d’expliquer les interactions multimodales et la dépendance contextuelle du rappel.  
+Néanmoins, tout comme les modèles abstractifs, ils restent **partiels** s’ils ne prennent pas en compte la **dimension interactive** complète entre le sujet et son environnement.

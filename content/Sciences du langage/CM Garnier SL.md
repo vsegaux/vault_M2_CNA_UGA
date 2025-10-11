@@ -3,163 +3,219 @@ prof: GARNIER Maeva
 date: 2025-10-03
 publish: true
 ---
-
-
 # Perception de la hauteur
 
-
-> [!NOTE] Notion importante
-> Hauteur tonale et spectrale!
-
+> [!NOTE] Notion importante  
+> Hauteur **tonale** et **spectrale** : deux dimensions essentielles de la perception sonore.
 
 ## Hauteur spectrale
 
-Correspond à la distribution de l'énergie acoustique en fréquence, elle est typiquement plus '*diffuse*' que la hauteur tonale. La perception des ces différentes variations est due à la [[Tonotopie]] de notre système auditif. 
+La hauteur spectrale correspond à **la distribution de l’énergie acoustique en fréquence**. Elle est généralement plus _diffuse_ et moins précise que la hauteur tonale. Sa perception est fortement liée à la Tonotopie du système auditif.
 
-On appelle *barycentre spectral* l'endroit où se concentre l'énergie (il correspond à la fréquence 'médiane' telle qu'il y ait autant d'énergie de plus haute fréquence que de plus basse fréquence, i.e. l'intégrale de $[0;Barycentre]$ est égale à celle de $[Barycentre; +\infty]$).
+Le **barycentre spectral** désigne la fréquence autour de laquelle l’énergie est équilibrée :
 
+- intégrale de l’énergie de $[0;Barycentre]$ égale à celle de $[Barycentre;+∞]$
+    
 
 ![[spectralHeight.png]]
+
 ## Hauteur tonale
 
-Correspond à la sensation de hauteur d'un son complexe périodique, elle est liée à la fréquence fondamentale du son, cette sensation est plus précise et permet typiquement d'identifier la 'note' jouée. (La notion de hauteur tonale n'est pas applicable sans périodicité dans les signaux). Exemple d'une note produite par la voix humaine sur un spectrogramme:
+La hauteur tonale correspond à la **sensation de hauteur d’un son complexe périodique**, liée à sa fréquence fondamentale $F_0$. Elle permet d’identifier précisément une note. Sans périodicité, la hauteur tonale n’est pas définissable.
+
+Exemple : note produite par la voix humaine (spectrogramme) :  
 ![[spectro_hauteurTonale.png]]
 
-La hauteur tonale repose sur le phénomène de codage temporel:
+Cette perception repose sur le **codage temporel** du signal :  
 ![[codage_temp.png]]
 
-### Exemple de son à fondamentale filtrée
-Notre cerveau est capable de reconstituer la période sous jacente à la série harmonique entendu. Cet exemple illustre précisément la différence entre hauteur spectrale et tonale:
-- *Hauteur spectrale*:
-	- Sans la première harmonique, le spectre *objectif* ne contient plus la fréquence fondamentale
-	- la hauteur perçue est diffuse, il ne reste plus que l'empilement d'harmoniques
-	- *Le barycentre augmente lorsque la fondamentale est retirée*
-- *Hauteur tonale*:
-	- Grâce à l'espacement régulier des harmoniques ($2*F0, 3*F0, 4*F0,...$), le système auditif reconstruit une fréquence fondamentale $F0$ virtuelle.
-	- La hauteur tonale reste donc précise, perçue comme $F0$
-	- Le codage temporel permet de reconstituer la fondamentale.
-### Exemple du chant diphonique
+## Exemple : Son à fondamentale filtrée
 
-Le chant *diphonique* où un chanteur produit deux sons distincts en même temps : une note de base (la fondamentale) et une mélodie parallèle constituée d’harmoniques aiguës:
-- Comme tout son voisé, la voix humaine contient une fréquence fondamentale (F0) et un ensemble d’harmoniques (multiples de F0).
-- Dans le chant normal, ces harmoniques sont tous présents, mais mélangés et perçus globalement comme le timbre de la voix.
-- Dans le chant diphonique, le chanteur *renforce sélectivement une harmonique particulière* grâce à son conduit vocal, de sorte qu’elle devient audible comme une seconde « voix » claire et mélodique.
-	- La *hauteur tonale* renvoie dans ce cas généralement à la perception de la  fréquence fondamentale $F0$.
-	- La *hauteur spectrale* renvoie dans ce cas généralement à la perception (souvent) diffuse d'une harmonique particulière.
+Lorsqu’une fondamentale est retirée du spectre :
 
-### Autres éléments intervenant dans la perception de la hauteur
+- **Hauteur spectrale** :
+    
+    - Le spectre ne contient plus $F_0$
+        
+    - Hauteur perçue plus diffuse
+        
+    - Barycentre spectral **augmente**
+        
+- **Hauteur tonale** :
+    
+    - Les harmoniques régulières 2$F_0$,3$F_0$,... permettent de reconstruire une **fondamentale virtuelle** $F_0$
+        
+    - Hauteur perçue reste précise grâce au codage temporel
+        
 
-- Nécessité d'une durée minimale pour percevoir la fréquence d'un son
-- La sensation de hauteur varie avec:
-	- la durée de stimulation (un son très bref à tendance à être perçu comme plus grave).
-	- l'intensité, en particulier dans les basses fréquences où un son joué plus fort peut être perçu comme plus aigu.
-	- le spectre du son (~le timbre): un sifflement est perçu différemment d'une voix
+## Exemple : Chant diphonique
+
+Dans le chant diphonique, le chanteur produit simultanément :
+
+- Une fondamentale $F_0$
+    
+- Harmonique élevée fortement amplifiée par le conduit vocal
+    
+
+Effets :
+
+- **Hauteur tonale** perçue sur $F_0$
+    
+- **Hauteur spectrale** perçue sur l’harmonique amplifiée (plus diffuse)
+    
+
+## Facteurs influençant la perception de hauteur
+
+- **Durée minimale** nécessaire pour identifier la fréquence
+    
+- Variation de perception selon :
+    
+    - Durée de stimulation (sons brefs → plus grave)
+        
+    - Intensité (sons forts dans les basses → perçus plus aigus)
+        
+    - Spectre/timbre (ex. sifflement vs voix)
+        
 
 ## Perception des intervalles
 
-La *perception des intervalles* dépend du *rapport de fréquence* plutôt que de la différence de fréquence:
+La perception des intervalles est fondée sur **le rapport de fréquence**, pas sur la différence absolue.  
 ![[intervalleF.png]]
 
-Par exemple, on perçoit une *octave* entre $440 Hz$ et $880 Hz$ (+440, *x2*) et on perçoit de la même manière une octave entre $880 Hz$ et $1760 Hz$ (+880, *x2*). Cela est du à la disposition logarithmique de la tonotopie dans la cochlée.
+Exemples :
 
-Au delà de $2000 Hz$, la perception des intervalles n'est plus directement en relation avec la fréquence (les instruments de musique son accordés en conséquence).
+- 440Hz→880Hz → octave (x2)
+    
+- 880Hz→1760Hz → octave (x2)
+    
 
-### Capacité de discrimination de l'oreille
+Cela découle de l’**organisation logarithmique** de la tonotopie cochléaire.
 
-![[discriOreil.png]]
+Au-delà de 2000 Hz, la perception des intervalles est moins directement reliée à la fréquence — d’où l’accord spécifique des instruments.
 
-(*JND*= Just Noticeable Difference)
+## Discrimination de l’oreille
+
+![[discriOreil.png]]  
+(JND = Just Noticeable Difference)
 
 ## Perception de deux sons simultanés
 
-Plusieurs cas sont possibles:
-### Perception d'un seul des deux sons (*masquage*)
+Plusieurs scénarios :
 
-> [!NOTE] Notion importante
+## 1. Masquage énergétique/simultané
+
+> [!NOTE] Notion importante  
 > Masquage énergétique/simultané
 
 ![[soundmaska.png]]
 
-La *largeur* du 'triangle' *de masquage* correspond à la *bande critique*. 
+La largeur du triangle de masquage = **bande critique**, dépendant de la fréquence du son masqueur :
 
-D'un point de vue physiologique, la bande critique dépend de la fréquence du masqueur:
+- Fréquences élevées → bande critique plus étroite (membrane basilaire plus rigide à la base)
+    
+- Fréquences basses → bande critique plus large (membrane plus souple à l’apex)
+    
+
 ![[bandeCritique.png]]
 
-La *bande critique* due aux *fréquences élevée* est plus *réduite* que celle provoquée par des fréquences *faibles* du fait de la variation de *rigidité de la membrane basilaire*; celle-ci étant plus rigide à la base (rayon de courbure plus grand; sensible aux hautes fréquences) et plus souple à son apex (rayon de courbure plus faible; sensible aux basses fréquences).
+Seuils de masquage : non symétriques (échelle linéaire)  
+![[seuilTriangels.png]]
 
-Les seuils de masquage ne sont pas symétrique autour des fréquences (échelle linéaire): ![[seuilTriangels.png]]
+Facteurs principaux :
 
-Le **masquage énergétique** (simultané) dépend donc de:
-- la *fréquence* des deux sons
-- l'*amplitude relative* des deux sons
-### Perception de sons, avec un battement ou rugosité
+- **Fréquences des deux sons**
+    
+- **Amplitude relative**
+    
 
-- Due à la rigidité de la membrane basilaire:
-- **Battements**: Lorsque les fréquences des deux sons sont très proches (différence < 12 Hz):
-	- Fréquence perçue et amplitude altérée: ![[battement.png]]
-- **Rugosité**: 12 Hz < différence < Bande critique:
-	- Rugosité <=> un seul son perçu toujours, mais forte modulation en amplitude
-- **Polyphonie**: différence > Bande critique. -> Perception de deux sons distincts
+## 2. Battements et rugosité
 
+- **Battements** : deux fréquences proches (< 12 Hz) → modulation de l’amplitude  
+    ![[battement.png]]
+    
+- **Rugosité** : différence entre 12 Hz et la bande critique → modulation plus prononcée
+    
+- **Polyphonie** : différence > bande critique → perception de deux sons distincts
+    
 
-# Perception de l'intensité
+# Perception de l’intensité
 
-Il y a un rapport de $10^{-12}$ entre le seuil de perception et le seuil de douleur ($[watt/m^2]$). On utilise donc le décibel (dB): $n_{dB} = 10*log(\frac{I}{I_{seuil perception}})$.
-
+Entre seuil de perception et seuil de douleur : rapport $10^{-12}$$[watt/m^2]$. Utilisation du **décibel** : $n_{dB} = 10*log(\frac{I}{I_{seuil perception}})$. 
 ![[zoneaudtiion.png]]
 
 ## Sonie
 
-La sonie correspond à l'intensité réelle, perçue par le système auditif, elle varie en fonction de la fréquence du son.
+La sonie est l’**intensité perçue** par l’audition, variant selon la fréquence.
 
-Courbe de variation de la sensibilité auditive avec la fréquence:
+Courbes d’isosonie :  
 ![[sonie.png]]
-Exemple pour un son de 1000 Hz, entendu à 20 dB; il faudrait le présenter à 35 dB pour qu'il soit entendu de la même intensité à 100 Hz.
 
-### Influence de la durée
-- durée < 0.5s: augmentation de la sonie avec la durée
-- durée > 0.5s: sonie constante
-- durée > plusieurs secondes: sonie décroissante pour les sons de faible intensité
+Exemple :
 
-### Influence du contenu spectral
-Augmentation de la sonie avec la largeur spectrale (à partir d'une largeur spectrale définie: la **bande critique**):
+- 1000 Hz à 20 dB → équivalent à 100 Hz à 35 dB
+    
+
+## Influence de la durée
+
+- < 0.5 s : sonie ↑ avec la durée
+    
+- 0.5 s – quelques s : sonie constante
+    
+- Plusieurs secondes (faible intensité) : sonie ↓
+    
+
+## Influence du contenu spectral
+
+Sonie ↑ avec la largeur spectrale au-delà de la bande critique :  
 ![[bandecritsonie.png]]
 
-
 ## Masquage proactif
-Masquage d'un son par un son qui précède, masquage plus important avec:
-- proximité fréquentielle des deux sons
-- proximité temporelle des deux sons
 
-![[masquagepro.png]]
+Masquage par un son précédent, accentué si :
+
+- Fréquences proches
+    
+- Intervalle temporel court  
+    ![[masquagepro.png]]
+    
 
 ## Discrimination en intensité
 
 ![[audibilité.png]]
-Sur le graphique de droite, les courbes de niveau indiquent notre capacité de discrimination de sons, par exemple, on peut distinguer 5500 sons différents dans la zone 'G'.
 
-La zone de sensibilité de l'oreille est triple:
-- capacité de détection
-- capacité de discrimination:
-	- de la hauteur
-	- de l'intensité
+Exemple : 5500 sons différents discriminables dans zone “G” sur le graphique de droite.
 
-## Fatigue et perte auditive
+Triple sensibilité de l’oreille :
 
-### Fatigue
-Après l'audition d'un son intense, le seuil d'audition est plus élevé que normalement:
+1. Détection
+    
+2. Discrimination de la hauteur
+    
+3. Discrimination de l’intensité
+    
+
+## Fatigue et pertes auditives
+
+## Fatigue
+
+Un son intense augmente temporairement le seuil auditif :  
 ![[fatigue_aud.png]]
 
-### Pertes auditives
+## Pertes auditives
 
 ![[perteaudit.png]]
 
+> [!NOTE] _TODO_ Fiche sur les 6 points clefs du cours
+> 
+> - Sensibilité accrue à 2–3 kHz (3 facteurs)
+>     
+> - Principe de tonotopie
+>     
+> - Encodage de la fréquence
+>     
+> - Encodage de l’intensité
+>     
+> - Distinction hauteur spectrale / tonale
+>     
+> - Masquage énergétique
 
-
-> [!NOTE] *TODO* Fiche sur les 6 points clefs du cours
-> - les trois facteurs qui contribuent à la sensibilité particulière de notre système auditif à 2-3kHz
-> - le principe de tonotopie
-> - encodage de la fréquence des sons
-> - encodage de l'intensité des sons
-> - distinction et définition des hauteurs spectrale/tonale
-> - masquage énergétique

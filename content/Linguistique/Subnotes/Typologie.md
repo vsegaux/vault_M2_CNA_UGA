@@ -1,0 +1,37 @@
+---
+publish: true
+---
+Classification sur la base de traits structuraux:
+- **Phonologiques**:
+	- Langues *tonales* (chinois mandarin, langues papoues,...)
+		- mã  (mère)
+		- mà (chanvre)
+		- ...
+		- Différents tons indiquent différentes significations
+	- Langues *non-tonales* (français,...)
+		- "vraiment" (de surprise ou sceptique)
+		- Différents tons pour un même mot, selon le contexte
+- **Morphologiques**:
+	- Langues *agglutinantes* (swahili, turc, finnois)
+		- penda (aimer)
+		- anapenda (il aime)
+		- atapenda (il aimera)
+		- atanipenda (il m'aimera)
+		- *Ajout de préfix/suffix à un élément central selon le contexte*; chaque préfix/suffix a un sens spécifique unique (contrairement à l'italien par exemple, où un suffixe peut être appliqué au Masculin SG et au pluriel)
+	- Langues *isolantes* (vietnamien, chinois, khmer)
+		- khi tôi dên nhà ban tôi -- quand 1SG arriver maison ami 1SG
+		- chúng tôi bát dâu làm bài -- PL 1SG commencer faire leçon
+		- ‘Quand je suis arrivé à la maison de mon ami, nous avons commencé à faire des devoirs.’
+		- --> *Chaque élément/unité lexicale a une valeur, mais c'est la syntaxe globale qui donne du sens à chacune*
+	- Langues fusionnelles; polysynthétiques (qui sont des sous-groupes des types ci-dessus)
+- **Syntaxiques**:
+	- Selon l'ordre des mots dans une phrase (Sujet, Verbe, Objet; SOV, VSO, VOS, OSV, OVS)
+- **Sémantiques**:
+	- La typologie sémantique est la partie de la typologie qui s’intéresse à l’*expression du sens* dans les langues du monde. Il s’agit de l’*étude* inter linguistique systématique *de la manière dont les langues expriment le sens grâce* à des signes.
+	- Démarche **onomasiologique**:
+		- On part du concept, et on se demande dans quelle forme il est exprimé: ![[angl_tzotzil.png]]
+	- Démarche **sémasiologique**:
+		- On part de la forme (du mot, typiquement) et on se demande quel concept il exprime (pas clair clair la différence avec la démarche précédente..): ![[bleuvert.png]]
+	- Relation entre sens et forme:
+		- English: "The bird *flew* **out** of the hole in the tree." -> Langue à structure satellitaire, le verbe a une place principale et 'porte' des compléments qui le précisent.
+		- Français: "Le hibou **sort** du trou d'arbre en *volant*."
