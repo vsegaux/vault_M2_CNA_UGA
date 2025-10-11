@@ -49,7 +49,7 @@ On observe si le comportement correspond aux prédictions du modèle, en sachant
 En psychologie, les hypothèses doivent toujours être testées _dans une comparaison de modèles_, toutes choses égales par ailleurs. 
 *Validité relative*: Les hypothèses doivent toujours s'effectuer dans le cadre d'une comparaison de modèles, toute choses étant égales par ailleurs. On peut alors simplement conclure que le modèle A est "moins faux/plus valide" que le modèle B. On va donc se diriger 'dans la direction' modèle A pour poursuivre les recherches.
 
-![[Univers des modèles]]
+![[Univers des modèles.png]]
 
 ## Les trois niveaux de compréhension (Marr)
 
