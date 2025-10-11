@@ -1,16 +1,24 @@
 ---
-title: Notes de cours du M2 Cognition Naturelle et Artificielle
+title: Reste à faire...
 publish: true
 ---
-# Tables des matières:
+# Cours finalisés
+## Introduction aux sciences cognitives
+[[CM Loevenbruck]]
+## Méthodologie de neuroimagerie
+[[CM Campagne]]
+## Perception et audition
+[[CM Garnier PA]]
+## Psychologie cognitive
+[[CM Rousset]]
+
+
+# Cours à mettre au propre
 ## Introduction aux sciences cognitives
 [[CM Loevenbruck]]
 ## Linguistique
  [[CM Depau]]
-## Machine Learning
-
 ## Méthodologie de neuroimagerie
-[[CM Campagne]]
 [[CM Cousin]]
 ## Méthodologie et mesures en sciences cognitives
 [[CM Chauvin]]
@@ -18,18 +26,14 @@ publish: true
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
-[[CM Garnier PA]]
 ## Philosophie en sciences cognitives
 [[CM Alvarez]]
 ## Psychologie cognitive
-[[CM Rousset]]
 [[CM Faivre]]
 [[CM Mermillod PC]]
 ## Sciences du langage
 [[CM Dohen]]
 [[CM Garnier SL]]
-
-
 # Références
 
 Site du master:
