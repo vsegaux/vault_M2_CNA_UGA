@@ -7,6 +7,8 @@ publish: true
 [[CM Loevenbruck]]
 ## Méthodologie de neuroimagerie
 [[CM Campagne]]
+## Méthodologie et mesures en sciences cognitives
+[[CM ITO]]
 ## Perception et audition
 [[CM Garnier PA]]
 ## Psychologie cognitive
@@ -22,7 +24,6 @@ publish: true
 [[CM Cousin]]
 ## Méthodologie et mesures en sciences cognitives
 [[CM Chauvin]]
-[[CM ITO]] **TODO**
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
