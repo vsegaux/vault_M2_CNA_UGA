@@ -11,13 +11,13 @@ publish: true
 [[CM Garnier PA]]
 ## Psychologie cognitive
 [[CM Rousset]]
-
+## Linguistique
+ [[CM Depau]]
 
 # Cours à mettre au propre
 ## Introduction aux sciences cognitives
 [[CM Loevenbruck]]
-## Linguistique
- [[CM Depau]] **TODO**
+
 ## Méthodologie de neuroimagerie
 [[CM Cousin]]
 ## Méthodologie et mesures en sciences cognitives
@@ -27,7 +27,7 @@ publish: true
 [[CM Grandchamp]]
 ## Perception et audition
 ## Philosophie en sciences cognitives
-[[CM Alvarez]]
+[[CM Alvarez]] **TODO**
 ## Psychologie cognitive
 [[CM Faivre]]
 [[CM Mermillod PC]]

@@ -4,221 +4,283 @@ date: 2025-09-29
 publish: true
 ---
 
-
-> [!NOTE] Examen
-> DOCUMENTS AUTORISES.
-> Questions ouvertes, de réflexion (pas juste reprendre les slides du coup...) sur les éléments du cours.
+> [!NOTE] Examen  
+> **DOCUMENTS AUTORISÉS.**  
+> Questions ouvertes, de réflexion (il ne s’agira donc pas de simplement réciter les slides).  
+> Il peut aussi être demandé d’appliquer l’étude du morphème selon les **4 étapes** précisées à la fin du cours, sur un petit corpus.
 
 # Introduction
-Qu'est-ce que la linguistique?
-- « Linguistics is the *science of language*, and linguists are scientists who apply the *scientific method* to questions about the *nature and function of language*. 
-- Linguists conduct formal studies of *speech sounds*, *grammatical structures*, and *meaning* across all the world’s […] languages. They also investigate the *history of changes* within language families and *how language is acquired* when we are infants etc... 
-- Clearly, many of the questions linguists pose overlap with fields in the life sciences, social sciences, and humanities, thus making *linguistics* a **multidisciplinary field**. As a multidisciplinary field, Linguistics, attempts to understand how language is stored in the human mind/brain and how it is part of everyday human behavior through its sister fields of neuroscience, philosophy, psychology, anthropology, sociology, and computer science. »
 
-La linguistique est un ensemble de disciplines scientifiques qui étudient le langage. Ces disciplines ont pour portée: le langage (absolument tous!), les variations et les changement linguistiques.
+## Qu’est-ce que la linguistique ?
 
-## Linguistique vs grammaire (traditionnelle)
-- *La grammaire (traditionnelle)* est une discipline normative qui impose aux locuteurs des normes en fonction du « bon usage » de la langue indépendamment du véritable usage de cette dernière la part des locuteurs. La grammaire (traditionnelle) est donc *prescriptive*.
-- Le linguiste, qui n’est ni un polyglotte, ni un puriste, n’impose pas des usage précis, et notamment de « bons usages » ; *Le linguiste observe et note les productions linguistiques* des locuteurs. -> Les *règles de la linguistique* sont *descriptives*.
-## Focus: langue et dialecte
-*Dialecte*: Variété diatopique (spatiale) orale (ayant parfois également une tradition écrite).
-*Langue régionale*: Terme de la traduction française, compromis avec les exigences institutionnelles.
-*Patois*: Terme ambigu, connotation souvent négative (origine: "pate" + suffixe -ois; "parler comme un pied"). A parfois aussi un aspect communautaire/identitaire/affectif dans certaines régions.
+> « Linguistics is the _science of language_, and linguists are scientists who apply the _scientific method_ to questions about the _nature and function of language_. »
 
-Ces définitions ne sont pas absolues car ces termes renvoient à des connexions entre des critères linguistique, psycho-sociaux, identitaires et politiques très variables d'un individu/d'une société à l'autre.
+Les linguistes mènent des études formelles sur :
 
-Deux critères possibles pour la *différence* entre *langue et dialecte*:
-- *Critère linguistique*: l'intercompréhension.
-	- Problème de continuum dialectal (A comprend B qui comprends C, mais A ne comprends pas C)
-- *Critère sociopolitique*: les rapports de force entre les communautés (ex. jeu de différenciation entre serbe et croate après la guerre)
-### Questions...
-- La langue qu’on parle affecte notre capacité à distinguer les différents sons *VRAI* (Spécialisation des enfants à comprendre le mieux possible leur langue natale)
-- Il existe des langues primitives qui ne peuvent pas exprimer efficacement des idées complexes *FAUX* (non, on peut exprimer des idées complexes, il manque éventuellement du lexique, mais les mots peuvent s'emprunter à d'autres langues)
-- On peut produire du langage sans variation *FAUX* (la langue varie toujours, dans sa production individuelle, selon les contextes, ...)
-- Produire des grossièretés dégrade une langue *FAUX* (plutôt un apport de variété; potentiellement évolution sémantique des mots, ex. "coquin" qui est presque gentil/familier; alors qu'il était très fortement marqué au 17e siècle)
-- Il existe plus de 6000 langues parlées dans le monde, mais 96% de la population n'en parle que 4% *VRAI* (5% seulement des langues ont un système d'écriture)
-- Dans toutes les langues, il existe des mots pour « gauche » et « droite » pour les expressions spatiales *on va voir*
+- les **sons du langage** (_phonétique, phonologie_),
+    
+- les **structures grammaticales** (_morphologie, syntaxe_),
+    
+- et le **sens** (_sémantique, pragmatique_).
+    
+
+Ils s’intéressent aussi :
+
+- à l’**histoire des changements linguistiques**,
+    
+- à la **façon dont les langues sont acquises** (chez l’enfant ou l’adulte),
+    
+- et à la **variabilité** des langues dans le temps, l’espace et la société.
+    
+
+Ainsi, la linguistique est une **science multidisciplinaire**, à la croisée de la **psychologie**, **neurosciences**, **philosophie**, **anthropologie**, **sociologie**, et **informatique**.  
+Elle cherche à comprendre comment le langage est **représenté dans le cerveau humain** et comment il est **mis en œuvre dans les comportements quotidiens**.
+
+## Linguistique vs. grammaire traditionnelle
+
+|Linguistique|Grammaire traditionnelle|
+|---|---|
+|Discipline **scientifique et descriptive** : le linguiste observe, décrit et explique les usages du langage tels qu’ils existent réellement.|Discipline **normative et prescriptive** : elle fixe des règles du « bon usage » indépendamment de la pratique réelle.|
+|Objectif : comprendre **comment** la langue fonctionne et évolue.|Objectif : définir **comment** on « doit » parler ou écrire.|
+
+Le linguiste n’est **ni un puriste ni un prescripteur** : il analyse les productions linguistiques des locuteurs sans jugement de valeur.
+
+## Focus : langue, dialecte et patois
+
+- **Dialecte** : variété régionale (_diatopique_) d’une langue, souvent orale, mais pouvant aussi posséder une tradition écrite.
+    
+- **Langue régionale** : terme institutionnel utilisé en France pour désigner certaines variétés dialectales reconnues.
+    
+- **Patois** : terme ambigu, parfois péjoratif, historiquement formé à partir de _pate_ + _-ois_ (« parler comme un pied »). Il peut néanmoins avoir une **valeur affective ou identitaire** dans certaines communautés.
+    
+
+Ces distinctions reposent sur des **critères linguistiques**, **sociopolitiques** et **identitaires** variables selon les contextes.
+
+### Deux critères possibles de distinction entre langue et dialecte
+
+1. **Critère linguistique** : l’**intercompréhension**.  
+    → Limite : dans un _continuum dialectal_, A comprend B, B comprend C, mais A ne comprend pas C.
+    
+2. **Critère sociopolitique** : le **rapport de force** ou la **reconnaissance institutionnelle**.  
+    → Exemple : différenciation du serbe et du croate après la guerre.
+    
+
+### Quelques idées reçues sur les langues
+
+|Affirmation|Vrai / Faux|Explication|
+|---|---|---|
+|La langue qu’on parle influence la perception des sons.|✅ Vrai|L’enfant se spécialise très tôt dans les sons de sa langue maternelle.|
+|Il existe des langues primitives.|❌ Faux|Toutes les langues permettent d’exprimer des idées complexes ; seul le lexique varie.|
+|On peut produire du langage sans variation.|❌ Faux|Le langage varie toujours selon le contexte et l’individu.|
+|Les grossièretés dégradent une langue.|❌ Faux|Elles enrichissent le lexique et peuvent évoluer sémantiquement (ex. _coquin_).|
+|96 % de la population parle seulement 4 % des langues du monde.|✅ Vrai|Et seules 5 % des langues possèdent un système d’écriture.|
+
 
 ## Les langues dans le monde
-Il y en aura environ 7000 (4000 n'ont pas été étudiées de façon précise), il est difficile d'établir un inventaire précis:
-- certaines langues demeurent inconnues
-- la situation linguistique du monde évolue constamment : des langues qui meurent, des langues qui fusionnent, des langues qui « naissent » 
-- certaines langues peuvent avoir plusieurs noms selon les locuteurs 
-- il est difficile de faire la distinction entre langue et dialecte
 
-La *plus grande diversité de langues* se trouve dans les *régions tropicales*. *8 pays* de ces régions rassemblent *50% des langues du monde*.
+Il existe environ **7000 langues** recensées aujourd’hui (dont environ 4000 peu étudiées).  
+Cette estimation reste mouvante car :
 
-On reconnait de plus en plus de langues dans le monde au fil des années, alors que des langues disparaissent régulièrement. L'*augmentation du nombre de langues recensées* par le SIL (ethnologue.com) est due non pas à la création de langues nouvelles, mais à la *reconnaissance comme langues de nouvelles langues*.
+- certaines langues demeurent inconnues,
+    
+- des langues **disparaissent, fusionnent ou naissent**,
+    
+- certaines **changent de statut** (langue ↔ dialecte),
+    
+- et une même langue peut avoir **plusieurs noms** selon les locuteurs.
+    
+
+> La plus grande diversité linguistique se trouve dans les **régions tropicales** : 8 pays concentrent environ **50 % des langues du monde**.
+
+L’**augmentation du nombre de langues recensées** (par ex. par _Ethnologue.com / SIL_) reflète surtout une **meilleure reconnaissance** de langues existantes, et non l’apparition de nouvelles.
+
 # Classification des langues
-## (Phylo-)génétique
-Cette classification consiste à répartir les langues en familles sur la base de leur liens de parenté.
-### Méthode
-Comparaison du *lexique de base* pour chercher des correspondances phonologiques. Le lexique de base correspond à un ensemble de mots très commun (tête, mer, ...). Exemple avec un mot:
+
+## Classification (phylo)génétique
+
+Elle répartit les langues en **familles** selon leurs liens de parenté.  
+Méthode : comparaison du **lexique de base** (mots universels comme _tête_, _mer_, _trois_, etc.) afin de repérer des **correspondances phonologiques régulières**.
+
 ![[trois_partout.png]]
-## Typologie
 
-Classification sur la base de traits structuraux:
-- **Phonologiques**:
-	- Langues *tonales* (chinois mandarin, langues papoues,...)
-		- mã  (mère)
-		- mà (chanvre)
-		- ...
-		- Différents tons indiquent différentes significations
-	- Langues *non-tonales* (français,...)
-		- "vraiment" (de surprise ou sceptique)
-		- Différents tons pour un même mot, selon le contexte
-- **Morphologiques**:
-	- Langues *agglutinantes* (swahili, turc, finnois)
-		- penda (aimer)
-		- anapenda (il aime)
-		- atapenda (il aimera)
-		- atanipenda (il m'aimera)
-		- *Ajout de préfix/suffix à un élément central selon le contexte*; chaque préfix/suffix a un sens spécifique unique (contrairement à l'italien par exemple, où un suffixe peut être appliqué au Masculin SG et au pluriel)
-	- Langues *isolantes* (vietnamien, chinois, khmer)
-		- khi tôi dên nhà ban tôi -- quand 1SG arriver maison ami 1SG
-		- chúng tôi bát dâu làm bài -- PL 1SG commencer faire leçon
-		- ‘Quand je suis arrivé à la maison de mon ami, nous avons commencé à faire des devoirs.’
-		- --> *Chaque élément/unité lexicale a une valeur, mais c'est la syntaxe globale qui donne du sens à chacune*
-	- Langues fusionnelles; polysynthétiques (qui sont des sous-groupes des types ci-dessus)
-- **Syntaxiques**:
-	- Selon l'ordre des mots dans une phrase (Sujet, Verbe, Objet; SOV, VSO, VOS, OSV, OVS)
-- **Sémantiques**:
-	- La typologie sémantique est la partie de la typologie qui s’intéresse à l’*expression du sens* dans les langues du monde. Il s’agit de l’*étude* inter linguistique systématique *de la manière dont les langues expriment le sens grâce* à des signes.
-	- Démarche **onomasiologique**:
-		- On part du concept, et on se demande dans quelle forme il est exprimé: ![[angl_tzotzil.png]]
-	- Démarche **sémasiologique**:
-		- On part de la forme (du mot, typiquement) et on se demande quel concept il exprime (pas clair clair la différence avec la démarche précédente..): ![[bleuvert.png]]
-	- Relation entre sens et forme:
-		- English: "The bird *flew* **out** of the hole in the tree." -> Langue à structure satellitaire, le verbe a une place principale et 'porte' des compléments qui le précisent.
-		- Français: "Le hibou **sort** du trou d'arbre en *volant*."
+## Classification typologique
 
-# La linguistique en tant que science
+Elle classe les langues selon leurs **traits structuraux** (et non leurs origines).
 
-La linguistique est une science:
-- empirique (vs intuitive)
-- descriptive (vs descriptive)
-- objective (vs subjective)
+### Typologie phonologique
 
-La partie orale des langues s'est historiquement développée bien avant la partie écrite (5-6000 ans vs 100 000 ans, d'après l'évolution du conduit vocal). Encore aujourd'hui, seule une partie des langues actuelles a développé un système d'écriture.
-La langue orale est acquise de manière naturelle et spontanée alors que la langue écrite s'acquiert principalement pendant la scolarisation.
+- **Langues tonales** (ex. mandarin, langues papoues) : le ton modifie le sens du mot.  
+    Exemple : _mã_ (mère) / _mà_ (chanvre).
+    
+- **Langues non tonales** (ex. français) : les variations d’intonation ne changent pas le sens lexical, seulement la nuance pragmatique.
+    
+### Typologie morphologique
 
+- **Langues agglutinantes** (turc, swahili, finnois) : ajout de préfixes/suffixes **clairement segmentables**, chacun ayant une signification propre.  
+    Exemple (swahili) :
+    
+    - _penda_ (aimer), _anapenda_ (il aime), _atapenda_ (il aimera), _atanipenda_ (il m’aimera).
+        
+- **Langues isolantes** (vietnamien, chinois, khmer) : chaque mot a une valeur fixe, et la **syntaxe** donne le sens global.  
+    Exemple :  
+    _Khi tôi đến nhà bạn tôi_ → “Quand je suis arrivé chez mon ami” (quand 1SG arriver maison ami 1SG).
+    
+- **Langues fusionnelles / polysynthétiques** : sous-groupes où les morphèmes peuvent fusionner plusieurs sens ou fonctions.
+    
+### Typologie syntaxique
+
+Classification selon l’**ordre des mots** dans la phrase (SVO, SOV, VSO, etc.).
+
+### Typologie sémantique
+
+Elle étudie **comment les langues expriment le sens**.  
+Deux démarches complémentaires :
+
+- **Onomasiologique** : on part du **concept** pour étudier ses différentes expressions.  
+    ![[angl_tzotzil.png]]
+    
+- **Sémasiologique** : on part de la **forme** pour analyser les concepts qu’elle exprime.  
+    ![[bleuvert.png]]
+    
+
+> Exemple :  
+> Anglais : “The bird _flew out_ of the hole.” → structure satellitaire.  
+> Français : “Le hibou **sort** du trou d’arbre en _volant_.” → structure verbale principale différente.
+
+# La linguistique comme science
+
+La linguistique est une science :
+
+- **empirique** (fondée sur des données observables, non sur l’intuition),
+    
+- **descriptive** (et non normative),
+    
+- **objective** (reposant sur des faits et non des jugements).
+    
+
+### Langue orale vs. écrite
+
+- Le langage **oral** est beaucoup plus ancien (≈100 000 ans) que l’écriture (≈5 000 ans).
+    
+- La **langue orale** est acquise spontanément,  
+    tandis que la **langue écrite** s’apprend de manière formelle.
+    
 ## Notion de signe linguistique
 
-Notion de **signe linguistique**, depuis F. de Saussure dans le Cours de linguistique générale: "Si l’on veut découvrir la véritable nature de la langue, il faut la prendre d’abord dans ce qu’elle a de commun avec tous les autres systèmes du même ordre". *Il intègre ainsi la linguistique à une autre discipline plus vaste: la science générale de tous les systèmes de communication par signaux ou sémiologie (science qui étudie les systèmes de signes).*
+Selon **Ferdinand de Saussure**, le signe linguistique unit :
 
-Un signe est constitué du:
-- *signifiant* (image acoustique, image mentale, représentation mentale sonore) (ex: mot "arbre")
-- *signifié* (notion, élément de sens => Attribut sémantique) (ex: 'représentation mentale du concept d'arbre; ensemble de traits qualitatifs)
+- un **signifiant** : l’image acoustique (forme sonore ou visuelle du mot),
+    
+- un **signifié** : le concept ou la notion associée.
+    
 
-Il pointe vers un *référent*, qui lui, fait partie du monde réel (ex: l'arbre dans le monde réel).
+Le signe renvoie à un **référent** (l’objet réel du monde).  
 ![[signe_semio.png]]
 
-Un signe linguistique a les propriétés suivantes:
-- **Arbitraire**
-	- Rien exceptée la convention sociale n'explique la relation entre signifiant et signifié.
-	- Quid des onomatopées? Elles se rapprochent plus des sons de la natures, mais les séquences sonores choisies restent arbitraires (kokoriko ou kikiriki pour le coq)
-- **Linéaire**
-	- Les signes se déploient successivement dans le temps et ne peuvent pas apparaître simultanément.
-- **Discret**
-	- Les signes s'opposent les uns les autres sans gradation intermédiaire
-	- Chaque signe a une identité qui lui est spécifique tout en s'opposant aux autres signes:
-		- Cat vs Cats, le signifiant 'cat' représente un chat au singulier alors que le signifiant 'cats' représente des chats, au pluriel (et non pas "un chat au singulier" + "un chat au singulier") 
-		- Ronger vs Songer
-- **Doublement articulé** -> On voit ici en quoi le système de communication humain est puissant et particulier
-	- *Premier niveau*: combinaison d'unités significatives (au moins des morphèmes)
-	- *Deuxième niveau*: combinaison d'unités distinctives (phonèmes)
-	- A partir d'un stock limité d'unités de deuxième articulation (sons, *phonèmes*) on forme une grande variété d'unités de première articulation (*morphèmes*)
-- Un signe n'est pas autonome, il appartient à un tout (appelé "système"), il n'a pas de valeur intrinsèque/naturelle, il la prenne en tant qu'élément d'un code global (exemple le signe du feu vert dans la circulation routière).
+### Propriétés du signe
 
-### Diversité de types de signes
-Les types de signes peuvent se distinguer sur la base de 2 critères fondamentaux:
-- **Intentionnalité**
-- **Motivation relative**
+- **Arbitraire** : aucun lien naturel entre forme et sens (ex. _tree_, _arbre_, _Baum_).  
+    Les onomatopées semblent motivées, mais varient selon les langues (ex. _kokoriko_ / _kikiriki_).
+    
+- **Linéaire** : les signes se succèdent dans le temps.
+    
+- **Discret** : chaque signe est distinct (ex. _cat_ ≠ _cats_).
+    
+- **Double articulation** (Martinet) :
+    
+    - 1re : unités significatives (morphèmes)
+        
+    - 2e : unités distinctives (phonèmes)
 
-Selon ces critères, on distingue les signes suivants:
-- **Indice** (symptômes):
-	- Motivé naturellement, pas intentionnel
-	- Fondé sur le rapport cause/conséquence (par exemple, des nuages noirs qui annoncent la pluie (sans intention); ou des empruntes d'animaux qui indiquent son passage)
-- **Signal**
-	- Utilisé intentionnellement (ex, pour signifier un danger; ou demander de l'attention)
-	- Soumis à des règles d'interprétation; tous les systèmes de communication sont des codes. (Les signes linguistiques sont les éléments constitutifs du code 'Langue')
-	- *Icône*
-		- Motivé analogiquement/intentionnellement
-		- Basée sur la similarité de forme/structure, l’icône reproduit certaines propriétés de l’objet désigné/référent (rapport de ressemblance avec le référent)
-		- Par exemple: une carte de Grenoble
-	- *Symbole* (dont le signe linguistique)
-		- Motivé culturellement et donc lié à des conventions, intentionnel 
-		- Par exemple: Noir: couleur représentant le deuil (dans certaines cultures, en Chine c’est le blanc qui représente le deuil)/ Feu rouge: STOP
-		- (Une définition plus stricte de signe: Saussure distingue symbole de signe linguistique car pour lui le symbole n’est pas tout à fait arbitraire (mais le pb ne se pose plus si on considère l’arbitraire sur un continuum))
+    - A partir d'un stock limité d'unités de deuxième articulation (sons, *phonèmes*) on forme une grande variété d'unités de première articulation (*morphèmes*), c'est la 'puissance' du langage humain.
+        
 
-## Spécificité du langage humain
+Le signe n’a pas de valeur isolée : il **n’existe que dans un système global** de relations.
 
-- Le langage humain est génératif dans le sens qu’à partir d’un stock limité d’unités et de règles de combinaisons de ces unités il permet de produire une infinité d’énoncés inédits et de longueur potentiellement illimitée:
-	- Doublement articulé
-	- Récursivité: réutilisation d'éléments définis
-- Il permet un usage métalinguistique (on peut parler d'une langue en utilisant une langue (la même ou un autre))
-- Déplacement: capacité de faire référence à des éléments non présents.
-- Apprentissage: capacité d'apprendre une langue (un code) complètement, même sans la connaitre au départ.
+## Typologie des signes
 
-# Axes d'organisation de la langue
+Deux critères : **intentionnalité** et **motivation**.
 
-L'axe syntagmatique réfère à la séquence d'unité du langage (oral).
-L'axe paradigmatique se réfère plutôt au sens des différents signes (sons, mots, ...).
-![[axe_organisation_langue.png]]
+| Type de signe | Motivation       | Intention | Exemple                                       |
+| ------------- | ---------------- | --------- | --------------------------------------------- |
+| **Indice**    | Naturelle/Aucune | Aucune    | Fumée → feu, empreintes → passage d’un animal |
+| **Signal**    | Conventionnelle  | Oui       | Klaxon, feu rouge                             |
+| **Icône**     | Analogique       | Oui       | Carte, schéma, pictogramme                    |
+| **Symbole**   | Culturelle       | Oui       | Couleur du deuil, signes linguistiques        |
 
-## Procédures d'analyse des unités linguistiques
+## Spécificités du langage humain
 
-En appliquant les procédures suivantes, on se rend compte du fonctionnement d'un système linguistique donné (comprendre les règles et unités linguistiques):
+- **Générativité** : production infinie d’énoncés à partir d’un stock limité d’unités.
+    
+- **Récursivité** : possibilité d’insérer des éléments dans d’autres structures similaires.
+    
+- **Usage métalinguistique** : capacité à parler du langage lui-même.
+    
+- **Déplacement** : référence à des éléments absents/inexistants/imaginaires.
+    
+- **Apprentissage** : acquisition complète d’un code linguistique nouveau (de nouvelles langues).
+    
 
-- **Permutation** (procédure syntagmatique)
-	- Modifier l'ordre des éléments ou déplacer un élément pour mesurer les différence de sens qui résultent de ces déplacement/modification.
-	- Fait apparaitre certaines solidarité entre les éléments de la séquence en question.
-	- exemple: 'Je n'aurais sûrement pas conduit' VS 'je n'aurais pas conduit sûrement'
-- **Commutation** (procédure paradigmatique)
-	- Remplacer un élément par un autre de même fonction
-	- On constate d'abord si le remplacement est possible/faisable et si cela modifie la signification et dans quel sens
-	- exemple: $[mas]$ ('masse') VS $[mal]$ ('mal')
+# Axes d’organisation de la langue
 
-## Niveaux d'analyse de la langue
+- **Axe syntagmatique** : séquence linéaire des unités (dans le discours).
+    
+- **Axe paradigmatique** : relations de substitution entre unités de même nature (dans le système).  
+    ![[axe_organisation_langue.png]]
+    
+
+## Procédures d’analyse linguistique
+
+1. **Permutation (syntagmatique)** : déplacer un élément pour observer les changements de sens.  
+    Ex. _Je n’aurais sûrement pas conduit_ / _Je n’aurais pas conduit sûrement_.
+    
+2. **Commutation (paradigmatique)** : remplacer un élément par un autre et observer les effets de sens.  
+    Ex. /mas/ (_masse_) → /mal/ (_mal_).
+    
+
+## Niveaux d’analyse de la langue
 
 ![[niveau_analyse_langue.png]]
 
 ### Niveau sémantique
-Sens des unités.
-### Niveau syntaxique
-Pierre (a vu (son frère qui passait (dans la rue)))
-La syntaxe s'intéresse à:
-- la structure interne des syntagmes/phrases
-- la combinaison des mots en syntagmes/phrases
-- la fonction des mots dans une phrase
-### Niveau morphologique
-port+er, ra(p)+port+er, développe+ment+al
-La morphologie s'intéresse à:
-- la structure interne des mots
-- la combinaison des morphèmes en mots
-- la fonction des morphèmes dans le mot
-Un *morphème* = *unité significative minimale* (elle associe une forme (*signifiant*) et un sens (*signifié*)).
 
-Démarche (exemple avec le mot 'impoliment'):
-1. Identifier les éléments composant les mots (en respectant la relation entre forme et sens)
-2. Classer les éléments identifiés
-	- im- : préfixe de négation
-	- -poli-: radical adjectival
-	- -ment: suffixe de manière
-3. Rendre compte des règles de combinaisons entre ces éléments:
-	- im- est préfixé au radical -poli- et -ment y est suffixé.
+Analyse du **sens** des unités linguistiques.
+
+### Niveau syntaxique
+
+Étude de la **structure interne** des phrases et de la **fonction** des mots.  
+Ex. : _Pierre (a vu (son frère qui passait (dans la rue)))_.
+
+### Niveau morphologique
+
+Étude de la **structure interne des mots** et de la **combinaison des morphèmes**.
+
+**Morphème** : unité minimale associant forme (_signifiant_) et sens (_signifié_).  
+Ex. _impoliment_ → _im-_ (négation) + _poli-_ (radical) + _-ment_ (suffixe de manière).    
 
 Afin de déterminer le sens et/ou la fonction d'un morphème, il faut mettre en évidence des **contextes d'apparition** et de **non apparition**, par exemple:
 ![[exemple_morpheme.png]]
 
 ### Niveau phonologique
-Quels sont les phonèmes qui entrent en jeu?
-La phonologie étudie la fonction et l’organisation des sons d’une langue en tant qu’unités linguistiques. Dans l'exemple du mot 'impoliment', le premier morphème (im-) contient 1 phonème, le second (-poli-) en contient 4, et le dernier 2 (-ment).
-- Les sons représentent le *signifiant* (Sa) du signe linguistique (par opposition au *signifié*, qui est le concept sous-jacent)
-- Tout élément significatif est composé d’éléments distinctifs non dotés de sens 
-- Rappel : double articulation (Martinet 1956): *deuxième niveau d’articulation* > *unités distinctives*
+
+Étude de la **fonction et de l’organisation des sons** dans la langue (phonèmes).  
+Les sons correspondent au _signifiant_ du signe linguistique.
+
 ### Niveau phonétique
-Quels sont les sons qui entrent en jeu?
-La phonétique s'intéresse aux sons de la parole en tant que phénomènes appartenant au monde physique en décrivant les propriétés anatomiques, neurologiques et parfois psychologiques des humains qui les produisent et entendent. Elle comprend 3 branches (production, transmission, réception/audition).
 
+Étude des sons comme **phénomènes physiques** (production, transmission, perception).
 
+# Étapes d’identification des morphèmes
+
+1. **Sélection** des énoncés comparables (recherche de ressemblances et différences formelles/sémantiques).  
+    ![[exemple_etape1.png]]
+    
+2. **Segmentation** des mots en morphèmes.  
+    ![[exemple_morpheme_2.png]]
+    
+3. **Classement** des morphèmes selon leur rôle (préfixe, radical, suffixe…).  
+    ![[exemple_morpheme_3.png]]
+    
+4. **Règles de combinaison** entre ces morphèmes.  
+    ![[exemple_morpheme_4.png]]
+    

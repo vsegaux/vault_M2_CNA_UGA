@@ -256,3 +256,15 @@ Se souvenir véritablement d’un événement nécessite une **connexion causale
         
     - Continuisme vs discontinuisme : différence de nature et/ou de degré entre mémoire et imagination ?
         
+
+# Arcangeli & Dokic (CM4)
+**TODO** Get slides
+
+
+# Debus (CM5)
+**TODO** Get slides
+
+3 niveau d'explication (tableau): M = Mémoire, I = Imagination, selon ce que le peintre expérimente.
+
+Retenir les types d'arguments..? (Par contraste; avec prémisse 1,2 puis contre..; ...)
+
