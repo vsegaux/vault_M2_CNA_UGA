@@ -3,6 +3,12 @@ prof: " ITO Takayuki"
 date: 2025-10-10
 publish: true
 ---
+
+> [!NOTE] Examen
+> Savoir quelle technique utilisée pour étudier quel organe. 
+> Savoir quelles sont les limites et spécificités de chaque technique.
+
+
 # Introduction
 
 **Purpose**:
@@ -57,8 +63,63 @@ This technique is affected by the following *limits*:
 	- This can be addressed by compensating for such movements (typically using IREDs LED to track head position)
 
 ## Endoscopie & Transillumination
-## Electroglottographie - EEG
+
+L'endoscopie permet d'observer directement les cordes vocales en temps réelle. Elle consiste en l'insertion d'une caméra (soit directement par la bouche, soit par le nez) équipée de LED directement dans la trachée du patient.
+La transillumination consiste à mesurer la lumière (émise par une LED insérée via un câble souple par le nez) qui passe à travers les cordes vocales via un capteur placé sur l'extérieur du cou. Cette méthode ne permet pas de mesurer directement les vibrations des cordes vocales, mais simplement de détecter quand elles sont ouvertes ou non.
+
+![[endoscopie.png]]
+## Electroglottographie - EGG
+
+Mesure de l'impédance entre deux points de part et d'autre du cou par l'intermédiaire de deux électrodes:
+
+![[electroglottographie.png]]
+
+Les mesures de variations d'impédance ont la forme suivante:
+![[mesureImpedance.png]]
+
 ## Electropalatographie - EPG
 
+L'électropalatographie (EPG) est une technique utilisée pour surveiller les contacts entre la langue et le palais dur, en particulier lors de l'articulation et de la parole. Un palais artificiel sur mesure est moulé pour s'adapter au palais dur d'un locuteur. Le palais artificiel contient des électrodes exposées à la surface linguale.
+
+![[EPG.png]]
+
+L'EPG permet de mesurer et de visualiser en direct les dynamiques de prononciation et de coarticulation:
+![[EPG_measures.png]]
+
 # Mesures dynamiques
+## Capteurs de force
+
+Le capteur est inséré dans la bouche pour mesurer la force appliquée par la langue lors de la parole. Le soucis de ces capteurs est qu'ils gênent la production de la parole. 
+
+En terme de technologie, ils sont basés sur des jauges de contraintes, dont la résistance électrique varie avec la déformation. Ce genre de capteur nécessite une phase de calibration.
+
+On utilise plusieurs jauges de contraintes placées sur le palais, de manière spécifique pour chaque patient:
+![[capteurforce_palais.png]]
+
+Les mesures obtenues ont la forme suivante:
+![[capteurForce_mesure.png]]
+
+## Electromyographie - EMG
+
+### Principes
+L'unité motrice consiste en l'ensemble des fibres motrices innervées par un même motoneurone provenant de la colonne vertébrale, on parle de signaux efférents alpha. Ces signaux efférents s'additionnent et, si le seuil est atteint, provoque la production de potentiels d'action (PA) par le motoneurone. Les PA vont alors être transmis aux fibres motrices et causer la contraction du muscle; plus d'unités motrices sont recrutées, plus la contraction sera forte.
+Le fuseau neuromusculaire permet aussi un retour neuronale donnant le niveau d'étirement du muscle (signal afférent).
+
+![[uniteMotrice_principe.png]]
+
+### Méthode
+Des électrodes sont placées à la surface des muscles (parfois directement sur les fibres musculaires, avec une aiguille):
+![[nappe_electrode.png]]
+Avec l'EMG de surface, on mesure souvent l'activité de muscles voisins, en particulier selon la taille des électrodes et la taille/proximité des muscles ciblés.
+
+
 # Exemples de paradigmes expérimentaux
+
+## Tongue perturbation experiment
+Le principe est de perturber la langue pour comprendre quels mécanismes de contrôle sont à l'œuvre dans la production de la parole. Ici, la langue est légèrement tirée vers l'extérieur par un robot. Des mesures EMG sont réalisée sur la partie basse et inférieure de la langue.
+![[tonguePerturbExpe.png]]
+
+On observe que lorsque la langue est tirée, les patients ont le réflexe de la ramener vers sa position initiale afin de continuer de produire de la parole (Ito, Bouguerra, Bourhis, Perrier, Scientific Reports, 2024,):
+![[mesures_reponse_perturb_langue.png]]
+![[EMG_speech_nSpeech_rest_volun.png]]
+Lorsque le sujet ne doit pas produire de parole, on observe pas/très peu d'activation réflexe. La conclusion de ces observations est que le reflexe n'est activé que pendant la production de la parole.

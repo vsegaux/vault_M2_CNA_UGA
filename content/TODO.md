@@ -17,12 +17,12 @@ publish: true
 ## Introduction aux sciences cognitives
 [[CM Loevenbruck]]
 ## Linguistique
- [[CM Depau]]
+ [[CM Depau]] **TODO**
 ## Méthodologie de neuroimagerie
 [[CM Cousin]]
 ## Méthodologie et mesures en sciences cognitives
 [[CM Chauvin]]
-[[CM ITO]]
+[[CM ITO]] **TODO**
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
