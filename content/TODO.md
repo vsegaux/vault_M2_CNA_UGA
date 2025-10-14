@@ -15,6 +15,9 @@ publish: true
 [[CM Rousset]]
 ## Linguistique
  [[CM Depau]]
+## Psychologie cognitive
+[[CM Mermillod PC]]
+[[CM Faivre]]
 
 # Cours à mettre au propre
 ## Introduction aux sciences cognitives
@@ -29,9 +32,6 @@ publish: true
 ## Perception et audition
 ## Philosophie en sciences cognitives
 [[CM Alvarez]] **TODO**
-## Psychologie cognitive
-[[CM Faivre]]
-[[CM Mermillod PC]]
 ## Sciences du langage
 [[CM Dohen]]
 [[CM Garnier SL]]
