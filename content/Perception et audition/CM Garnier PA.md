@@ -335,7 +335,3 @@ Le **système vestibulaire** détecte les mouvements de la tête grâce à l’i
 Chaque canal correspond à un axe de rotation dans l’espace tridimensionnel, permettant de coder l’orientation et les accélérations.
 
 ![[Canauxsemicirculaires.png]]
-
----
-
-Souhaites-tu que je poursuive avec la **partie sur les potentiels évoqués et l’analyse EEG** (s’il y en a une dans la suite de ton cours), pour que tout soit harmonisé ?
