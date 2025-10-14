@@ -14,17 +14,7 @@ Biais limitant la véracité du déclaratif:
 - Biais de désirabilité sociale
 - Biais de demande expérimentale
 
-
----
-Excellent 👌  
-Voici donc **l’ensemble des fiches de révision factuelles** couvrant **tout le cours jusqu’à la diapo 58** du CM1 de _Psychologie cognitive_ (Mermillod, UGA).  
-Elles suivent ton format : concis, factuel et organisé par thème logique.
-
----
-
 ## 🧠 PSYCHOLOGIE COGNITIVE – CM1 (Mermillod)
-
-### Fiches de révision – Partie 1 (jusqu’à diapo 58)
 
 ---
 
