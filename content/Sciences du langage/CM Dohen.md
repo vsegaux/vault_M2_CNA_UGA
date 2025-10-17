@@ -289,3 +289,161 @@ Leur structure formantique est continue, on passe très proche des formants des 
 ![[formant_voyelle_glide.png]]
 
 ## Traits suprasegmentaux, la prosodie
+Traits segmentaux: phonétiques, phonologiques (nasalité des voyelles en français)
+Traits suprasegmentaux:
+- **Durée, intensité, hauteur**
+- Ces traits peuvent avoir des valeurs dans les domaines suivants:
+	- phonétiques (traits intrinsèques: $[i]$ plus haut que $[a]$)
+	- phonologiques (quantité, tons, accent)
+	- prosodiques ("oh lala!")
+
+Afin de représenter les variations de la fréquence fondamentale sur le même graphe que les autres fréquences, deux échelles sont utilisées sur le même graphe:
+![[supperposition_freq0.png]]
+
+On remarque alors qu'un même mot, selon les variations de la fréquence fondamentale peut avoir un sens différent (ici, affirmatif ou interrogatif).
+
+« Suprasegmental features are established by a comparison of items (segments) in a sequence. » Lehiste, 1970. Suprasegmentals.
+Par exemple 
+- La *hauteur* – haute vs. basse – dépend de la « gamme » du locuteur ET de la « gamme » de l’énoncé. Il est donc nécessaire de comparer des segments/ syllabes successifs.
+	- Hauteur en tant que trait phonétique:
+		- Hauteurs individuelles (homme VS femme)
+		- Hauteurs intrinsèques des voyelles en anglais (voyelle hautes > voyelles basses)
+	- Hauteur en tant que trait phonologique: les **tons**
+		- Potentiellement jusqu'à 4 niveaux de tons (Top VS High VS Mid VS Low)
+		- Potentiellement des tons mélodiques (Low falling, High falling, High rising, Low falling-rising, Mid falling)
+- De même, la *durée* dépend du contexte – ce qui est court quand on parle lentement est long quand on parle vite. 
+	- Durée en tant que trait phnétique:
+		- Durée intrinsèque: la durée des voyelles est liée à leur hauteur (voyelles basses (a) plus longues que les voyelles hautes (i))
+	- Durée en tant que trait phonologique:
+		- Contraste de longueur - Voyelles (en tchèque: dolu (mine) VS dolü (en bas))
+		- Contraste de longueur - Consonnes (en italien: cappello (chapeau) VS capello (cheveu))
+- Et l’*intensité* est aussi dépendante du contexte.
+
+
+- L'*accent* (stress); il peut être réalisé sur
+	- la hauteur (pitch) (en anglais, français, suedois,...)
+	- la longueur (en anglais, polonais,...)
+	- l'intensité (les voyelles basses ont typiquement une intensité plus haute que les voyelles hautes (=notion de proéminence)) (parfois en anglais)
+
+	- Accentuation lexicale 
+		- Variable: (ex: an *in*sult VS to in*sult*)
+		- Fixe: 1ère syl. en tchèque, dernière en français.
+- La *prosodie*: Elle participe pleinement à la **compréhension mutuelle** (et donc à l’interprétation) : extraction de la structure des énoncés, *segmentation du flux de paroles* (mots, groupes de mots, propositions, phrases…), *extraction de l’information pertinente*, interprétations pragmatiques, *inférences sur les états mentaux*… Elle participe aussi à l'**interaction**: gestion des tours de parole, relances, backchannels... ![[prosodie_graph.png]]
+
+- Le *focus*: Utilisé pour mettre en relief un constituant (information nouvelle). Réalisé par contour intonatif + augmentation de la durée + désaccentuation post-focale.
+
+# Production de la parole
+CF [[CM ITO]].
+# Théories de la production de la parole
+
+## Pourquoi des théories?
+**THEORIE** 
+- ensemble *cohérent* et *structuré* de *concepts*, *propositions*, *règles*, *principes* et *lois* visant à *expliquer* des phénomènes 
+- *cadre de travail* pour la compréhension de la *nature* et de l'*humain*
+- Attention : plus qu’une explication car elle :
+	- permet de rendre compte de faits et observations et de leurs conséquences 
+	- tend vers l’universalité 
+	- permet de prévoir des événements qui n’ont pas encore été observés expérimentalement, de découvrir des faits nouveaux (cf. la prédiction de l’existence de Neptune)
+- *Une bonne théorie scientifique est* : 
+	- parcimonieuse (cf. le rasoir d’Ockham : les hypothèses les plus simples sont les plus vraisemblables, ne pas utiliser de nouvelles hypothèses tant que celles déjà énoncées suffisent) 
+	- prédictive 
+	- testable 
+	- réfutable (falsifiable)
+**MODÉLE** 
+- se distingue principalement d’une théorie par le nombre ou le caractère limité des phénomènes qu’il explique 
+- peut être à la base de l’élaboration d’une théorie 
+- est une « vue de l’esprit » analytique ou algorithmique représentant des phénomènes et leurs relations
+## Principaux problèmes en production de la parole
+### L'ordre sériel de la parole
+La parole peut être conçue comme une séquence d’éléments, une série de sons qui peuvent être interprétés comme des unités de plus haut niveau, tels que les mots. 
+- Quelles sont les unités ? Ex : phonèmes, allophones, syllabes, parties de syllabes ? 
+- Comment sont-elles contrôlées, régulées, combinées ? Ex : par groupe accentuel ou rythmique, par cadre et contenu
+- Le feedback (rétroaction) est-il utilisé pour réguler le contrôle de la parole ? 
+	- Feedback : information envoyée de la périphérie (les muscles) au contrôleur qui régule les mouvements
+
+Les erreurs de production ne sont pas aléatoires et reflètent l’organisation de la parole. Ex : « tasted the whole worm » (au lieu de « wasted the whole term ») : les syllabes affectées ont le même niveau d’accentuation dans la phrase
+
+Les productions des enfants reflètent des principes d’organisation. Ex : le babillage canonique $[bababa]$
+
+**Différentes hypothèses**: 
+- Préprogrammation : tous les éléments d’un énoncé sont préparés à l’avance 
+- Contrôle par rétroaction (feedback) : le contrôleur envoie des instructions motrices pour un 1er élément et attend un signal de rétroaction avant d’envoyer les instructions suivantes 
+- Combinaison de préprogrammation et contrôle par feedback : le signal de feedback serait utilisé de façon intermittente
+
+### Les degrés de liberté
+Exemple d’énoncé simple : « les théories de la production de la parole » 
+- contient 28 phonèmes 
+- activations des muscles intrinsèques et extrinsèques de la respiration, du larynx, de la langue, des lèvres, de la mandibule, du velum, de façon combinée ou non, phasée ou non, etc. 
+- actions simples : « fermer les lèvres » (mandibule, lèvres sup. et inf.), « baisser la mandibule », « accoler les cordes vocales », etc..
+
+- Quels sont les degrés de liberté en parole ? 
+- Y a-t-il des synergies musculaires ? des regroupements fonctionnels, pour des tâches spécifiques ?
+
+**Différentes hypothèses**:
+-  les unités de la parole sont des allophones sensibles au contexte (mais à quelle distance ? anticipation vs. régression ?) 
+- des mécanismes spécifiques opèrent sur les unités de la parole, composées de traits (features) ; ex : propagation de traits
+
+## Différents types de théories
+
+| Type            | Objectif                                                                          |
+| --------------- | --------------------------------------------------------------------------------- |
+| Neural          | Décrire les processus neuraux qui contrôlent la production de la parole           |
+| Articulatoire   | Décrire les mouvements articulatoires des organes liés à la production de parole  |
+| Conduit vocal   | Décrire les formes du conduit vocal lors de la production de parole               |
+| Fonctionnel     | Décrire les fonctions de la formulation et de l’exécution de la parole            |
+| Contrôle moteur | Décrire les schémas d’activation musculaire du système de production de la parole |
+### Théories par étapes (sérielles)
+La production de la parole résulte de différentes étapes en série, correspondant aux différents types d’informations traités (phrases, mots, segments). Les résultats du traitement d’une étape sont passés à l’étape suivante. 
+**Etapes typiques de ces modèles**: 
+1. *Spécification des segments* (syllabes, phonèmes ou allophones) en lien direct avec le système de formulation du langage 
+2. *Décomposition en traits phonétiques ou buts articulatoires* 
+	 Ex : /p/ : occlusive bilabiale, non-voisée => adduction du larynx, fermeture des lèvres 
+3. *Génération de commandes motrices*: séquence des contractions musculaires, durée et force des contractions 
+4. Etape additionnelle dans certains modèles : *Spécification du débit de parole, de l’accentuation, de la prosodie*
+![[theorie_serielle_illustr.png]]
+
+### Théories des systèmes dynamiques (task dynamics)
+La production de la parole n’est pas le résultat d’étapes sérielles mais de la coordination de structures visant des tâches précises. Les unités de base de la parole ne sont pas statiques mais dynamiques : ce sont les gestes articulatoires (actions).
+
+**Gestes**: « dynamically specified units of articulatory action » 
+- Structures coordinatives (ou “synergies”, pour éviter le problème de l’excès de degrés de liberté musculaires) 
+- Tâches de parole associant les articulateurs par groupes fonctionnels. 
+Ex : fermeture labiale (orbicularis oris, muscles élévateurs mandibule, etc.) 
+
+(NB : ne pas confondre gestes et mouvements (geste planifié VS mouvement effectif))
+
+**Intentions gestuelles**: attracteurs du second ordre dans l’espace des *variables du conduit vocal* (tract variable) 
+- Le mouvement d’une variable du conduit est modélisé par : $$mx'' + bx' + k(x-u) = 0$$![[dynamic_speech_prod_theoryç.png]]
+- Le contrôle du mouvement d’une variable du conduit se fait en spécifiant les **paramètres dynamiques** de cette équation (amortissement b, raideur k et position de repos u) 
+	- *Position d’équilibre* : position articulatoire vers laquelle le système tend (cible) 
+	- *Raideur et amortissement* : jouent sur la durée du mouvement vers la position de repos
+
+
+Il existe deux niveaux de coordination distincts mais agissant ensemble:
+- **Niveau inter-articulateur**
+	- Les tâches de constriction du conduit vocal sont décrites à ce niveau par des équations qui caractérisent les variations temporelles des *variables du conduit*. 
+	- Chaque type de constriction est associé, dans le plan sagittal, à deux *variables du conduit* (position et degré de constriction). 
+	- Chaque variable du conduit est associée à un sous-ensemble de *variables articulatoires*. 
+	- Les *variables articulatoires* définissent les mouvements des articulateurs du conduit vocal.
+	- Ex: Production d'une labiale (b,p,m):
+		- Variable du conduit : Protrusion des lèvres (LP) | 2 variables articulatoires (upper lip and lower lip)
+		- Variable du conduit : Ouverture des lèvres (LA) | 3 variables articulatoires (upper lip, lower lip and jaw)
+	- Passage des variables du conduit aux variables articulatoires : via une *transformation cinématique* 
+	- Illustration de la coordination entre articulateurs pour une tâche donnée 
+		- À partir de :
+			- valeurs déterminées des paramètres dynamiques pour les variables du conduit LA et LP, 
+			- positions et vitesses initiales données de la mâchoire et des lèvres, 
+		- Les équations du mouvement (transformées pour les variables articulatoires) génèrent des mouvements articulatoires coordonnés qui permettent de réaliser une tâche donnée (tq fermeture bilabiale) spécifiée au niveau des variables du conduit en tenant compte de la configuration des articulateurs
+- **Niveau inter-gestuel**
+	- Gère la coordination des différents gestes entre eux (gestes de constriction des lèvres et du dos de la langue pour séquence VbV (voyelle, 'b', voyelle)) 
+	- Les gestes ont une durée propre et intrinsèque et peuvent se chevaucher temporellement (actifs simultanément) et spatialement (utilisant les mêmes variables du conduit). 
+	- Il existe des *principes généraux* qui définissent comment les gestes sont organisés ou synchronisés : 
+		1. Tout geste vocalique est synchronisé par rapport au 1er geste consonantique de sa syllabe. 
+		2. Le 1er geste consonantique d’une séquence de consonnes est synchronisé par rapport au début du geste vocalique si la séquence est au début de la syllabe (et par rapport à la fin si la séquence est finale). 
+		3. Etc
+
+**Variables d'activation**
+- L’intervalle temporel pendant lequel un geste influence le mouvement des articulateurs est défini en fonction des variables d’activation. 
+- **Variable d’activation**: force avec laquelle le geste considéré façonne les mouvements du conduit vocal. 
+- À chaque geste particulier correspond une variable d’activation propre. 
+- On a ainsi un modèle à trois systèmes de variables.

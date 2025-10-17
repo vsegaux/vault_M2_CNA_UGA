@@ -237,14 +237,24 @@ Se souvenir véritablement d’un événement nécessite une **connexion causale
 	- Pour qu’un sujet se souvienne véritablement d’un événement passé, il est nécessaire que la représentation qu’il en a soit produite par un *système de construction épisodique correctement* fonctionnel et donc *fiable*, visant à produire une représentation d’un événement *passé*
 	- Selon cette reformulation radicale, *se souvenir* d'un évènement *de son passé personnel* *est équivalent à se souvenir d'un évènement passé non personnel* (se souvenir de l'arrivée de Napoléon à Grenoble est équivalent à se souvenir de sa propre arrivée à Grenoble) 
 	- D'où la notion de **souvenir vicariant**: Se souvenir d’un événement rapporté par quelqu’un d’autre, sans l’avoir vécu soi-même.
-    
+
+![[causa_disco_conti_simu.png]]
+
+
+| Courant        | Causaliste (CTM)                                                                                                                                                                                                             | Simulationiste (STM)                                                           |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Continuisme    | *Langland-Hassan* (2022, 2023b) suggère que l’association entre le causalisme et le discontinuisme est purement contingente et qu’il est possible de soutenir de manière cohérente à la fois le causalisme et le continuïsme | Addis (2018, 2020), De Brigard (2014, cf. 2025), *Michaelian* (2016a, b; 2024) |
+| Discontinuisme | MDebus (2010, 2014), *McCarroll* 2020; Perrin (2016, 2021), Werning (2020)                                                                                                                                                   | **?** -> Potentiellement _PARTIEL_                                             |
+
+**Le causalisme discontinuiste de Langland-Hassan** 
+-  Selon Langland-Hassan, la mémoire et l’imagination font appel aux mêmes mécanismes de traces 
+	- Les traces sont des ressources réutilisables au service de la construction de représentations d’événements orientées vers le passé et vers l’avenir 
+- Cependant, la mémoire et l’imagination ont, selon cette perspective, des contraintes différentes 
+	- Selon Langland-Hassan, la causalité appropriée constitue la principale contrainte de la mémoire 
+	- Causalité appropriée sans traces mnésiques
+
 > [!NOTE] Examen  
 > Questions typiques :
-
-|Courant|Causaliste (CTM)|Simulationiste (STM)|
-|---|---|---|
-|Continuisme|Peter Langland-Hassan|FDB, Michaelian|
-|Discontinuisme|M&D, McCarroll|**?** -> Potentiellement _PARTIEL_|
 
 - Peut-on être causaliste et continuiste ?
     
@@ -258,8 +268,50 @@ Se souvenir véritablement d’un événement nécessite une **connexion causale
         
 
 # Arcangeli & Dokic (CM4)
-**TODO** Get slides
 
+## Trois niveaux d'explication
+Une théorie exhaustive d’un état mental donné devrait prendre en compte au moins ces trois niveaux:
+ - Niveau ontologique 
+	 - La nature de nos états mentaux
+	 - Le causalisme et le simulationnisme concernent principalement le niveau ontologique.
+- Niveau phénoménologique 
+	- La manière dont on fait l’expérience de nos états mentaux 
+- Niveau réflexif 
+	- Comment les états mentaux sont auto-attribués
+Une des idées défendues par Arcangeli & Dokic (2024) est que ces niveaux sont, en principe, indépendants !
+
+## Les thèses d'impossibilité
+Portése par Paul Ricoeur et Jean-Paul Sartre:
+- Il est impossible de confondre un souvenir avec une imagination 
+	- **1a** Il est impossible de confondre *réflexivement* un souvenir avec un une imagination 
+	- **1b** Il est impossible de confondre *phénoménologiquement* un souvenir avec une imagination
+- Il est impossible de confondre une imagination avec un souvenir
+	- **2a** Il est impossible de confondre *réflexivement* une imagination avec un souvenir 
+	- **2b** Il est impossible de confondre *phénoménologiquement* une imagination avec un souvenir
+
+## Deux types de confusion
+Prenant comme point de départ un passage de _L’imaginaire_ de Sartre, les auteurs proposent qu’il existe deux types de confusion (deux manières de se tromper) 
+- Confusion réflexive 
+	- Une confusion liée à l’auto-attribution d’états mentaux à partir des jugements et croyances sur ces états mentaux 
+	- Elle requiert le déploiement de concepts explicites des états mentaux pertinents
+	- Les états mentaux peuvent comporter des ressentis spécifiques, que nous nous les auto-attribuions ou non par la suite. 
+- Confusion phénoménologique 
+	- Une confusion liée à nos expériences subjectives de nos états mentaux 
+	- Elle ne requiert pas l’auto-attribution ni le déploiement de concepts explicites
+
+Les auteurs proposent des arguments conditionnels contre les thèses d’impossibilité 
+- Si la confusion réflexive est possible, alors 1a et 2a sont fausses 
+- Si la confusion phénoménologique est possible, alors 1b et 2b sont fausses
+
+
+### La possibilité de la confusion réflexive
+
+- S confond réflexivement un souvenir avec une imagination, ou une imagination avec un souvenir, lorsque : 
+	- *S a un souvenir actuel que S s’auto-attribue à tort comme une imagination*, 
+	- ou
+	- *S a une imagination que S s’auto-attribue à tort comme un souvenir actuel*
+
+--> **S21**
 
 # Debus (CM5)
 **TODO** Get slides
