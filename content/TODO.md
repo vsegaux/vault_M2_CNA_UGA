@@ -9,6 +9,7 @@ publish: true
 [[CM Campagne]]
 ## Méthodologie et mesures en sciences cognitives
 [[CM ITO]]
+[[CM Chauvin]]
 ## Perception et audition
 [[CM Garnier PA]]
 ## Psychologie cognitive
@@ -18,20 +19,16 @@ publish: true
 ## Psychologie cognitive
 [[CM Mermillod PC]]
 [[CM Faivre]]
-
+## Philosophie en sciences cognitives
+[[CM Alvarez]]
 # Cours à mettre au propre
 ## Introduction aux sciences cognitives
 [[CM Loevenbruck]]
-
 ## Méthodologie de neuroimagerie
 [[CM Cousin]]
-## Méthodologie et mesures en sciences cognitives
-[[CM Chauvin]]
+[[CM Bertolotti]]
 ## Modèle de mémoire
 [[CM Grandchamp]]
-## Perception et audition
-## Philosophie en sciences cognitives
-[[CM Alvarez]] **TODO**
 ## Sciences du langage
 [[CM Dohen]]
 [[CM Garnier SL]]

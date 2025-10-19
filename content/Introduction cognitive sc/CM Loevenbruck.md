@@ -5,7 +5,7 @@ sujet: Introduction
 publish: true
 ---
 > [!NOTE] Examen
-> Une heure, examen écrit.
+> Une heure, examen écrit. Une feuille manuscrite Recto-Verso autorisée
 
 
 # Introduction à la science cognitive

@@ -179,144 +179,298 @@ Se souvenir véritablement d’un événement nécessite une **connexion causale
 - Cette approche ouvre la voie au **continuisme** et au **simulationnisme**.
     
 
+Voici ta version reformulée, clarifiée et légèrement enrichie, tout en respectant la structure markdown pour Obsidian, les images et les blocs spéciaux. J’ai aussi ajouté des transitions logiques et précisé certains points implicites. Les sections **CM4** et **CM5** sont bien séparées.
+
+
 # Michaelian (CM3)
 
-## Continuisme
+## 1. Continuisme
 
-- Mémoire et imagination diffèrent en degré mais pas en nature.
-    
-- Exemple : comparer mémoire et imagination revient à comparer roses et tournesols : différentes, mais du même type fondamental.
-    
+Le **continuisme** défend l’idée que la **mémoire** et l’**imagination** ne diffèrent pas fondamentalement dans leur nature, mais seulement dans leur **degré**.  
+Autrement dit, il n’existe pas de frontière ontologique entre se souvenir et imaginer — les deux relèvent du même type de processus mentaux, même si leurs fonctions et leurs contraintes diffèrent.
 
-## Simulationnisme
-
-- La mémoire repose sur un **système constructif** fiable, produisant des représentations suffisamment exactes en puisant dans diverses sources informationnelles.
-    
-- La fiabilité du système est cruciale pour qu’un souvenir soit véritable.
+- Comparer mémoire et imagination, c’est comme comparer des **roses** et des **tournesols** : des différences, certes, mais au sein d’une même catégorie de phénomènes.
     
 
-### Arguments contre le simulationnisme (McCarroll)
 
-1. **Oubli et amnésie infantile** : impossibilité de toujours se souvenir.
-	1. **Prémisse 1**: si le simulationnisme est correct, alors il est toujours possible de se souvenir d’un événement du passé personnel:
-		- La mémoire, conçue comme une capacité synchronique, requiert seulement la génération de contenu au moment de la récupération, contenu qui peut provenir de plusieurs sources informationnelles 
-		- Selon le simulationnisme, le souvenir n’a pas à mobiliser d’information issue de l’événement originel 
-		- Si, au moment de la récupération, on dispose de l’information nécessaire pour construire une représentation d’un événement passé, alors on peut toujours, en principe, construire des souvenirs
-	2. **Prémisse 2**: il n’est pas vrai qu’il soit toujours possible de se souvenir d’un événement du passé personnel
-		- L’oubli et l’amnésie infantile sont des phénomènes robustes et bien documentés en sciences cognitives 
-		- Ils démontrent qu’on ne peut pas toujours se souvenir des événements du passé personnel
-	3. **Conclusion**: Le simulationnisme n'est pas correct
+## 2. Simulationnisme
+
+Le **simulationnisme** (Michaelian, De Brigard, Addis, etc.) affirme que la mémoire repose sur un **système constructif** capable de produire des représentations d’événements passés en combinant diverses sources d’informations (traces, inférences, témoignages, connaissances générales, etc.).
+
+- Un souvenir est **véridique** si le **système de construction épisodique** est **fiable** au moment de la récupération.
     
-2. **Souvenirs impossibles** : souvenirs intra-utérins de Dalí.
-	1. **Prémisse 1**: si le simulationnisme est correct, alors il est possible que des souvenirs intra-utérins de Dalí soient véritablement des souvenirs
-		- Étant donné que le simulationnisme ne requiert pas que le souvenir véritable inclue du contenu provenant de l’expérience du sujet de l’événement remémoré, *il ne semble pas y avoir de raison d’exiger que le souvenir véritable nécessite que l’événement représenté ait été effectivement vécu par le sujet *
-		- Il est possible, selon le simulationnisme, de se souvenir d’événements que l’on n’a pas vécus tant que le système de construction épisodique est fiable
-	2. **Prémisse 2**: Il n’est pas possible que ces souvenirs soient véritables
-		- Dalí n’avait pas une conscience de soi lorsqu’il a vécus ces événements intra-uterins 
-		- Les faits développementaux concernant les capacités cognitives des fœtus donnent à penser qu’il n’est pas possible de former des souvenirs à ce stade de la vie 
-		- Intuitivement, les prétendus souvenirs intra-utérins de Dalí relèvent plutôt de l’imagination d’un esprit créatif
-	3. **Conclusion**: Le simulationnisme n'est pas correct
+- Il ne s’agit donc pas de reproduire fidèlement un événement, mais de **simuler** de manière fiable un état passé du monde ou de soi.
     
 
-#### Réponses de Michaelian
 
-- Simulationnisme ne suppose pas que l’on puisse toujours se souvenir.
-	- **L’explication de l’oubli**
-		- À un moment donné, le sujet est capable de simuler l’événement pertinent 
-		- À un autre moment, il n’en est plus capable, soit parce que son système de construction épisodique ne dispose plus des matières premières appropriées, soit parce qu’il dispose de ces matières premières mais n’est plus en mesure d’y accéder
-	- **L’explication de l’amnésie infantile**
-		- La plupart des événements de la petite enfance sont tels que *l’on n’y conserve pas de traces* provenant de ses expériences de ces événements 
-		- La plupart des événements de la petite enfance sont également tels que l’on ne reçoit aucun *témoignage* à leur sujet 
-		- Ces deux faits impliquent que la **majorité** *des événements de la petite enfance sont tels que l’on est incapable d’en générer une représentation, simplement parce que l’on ignore qu’ils ont eu lieu*
-    
-- La fiabilité du système au moment de la récupération prime sur l’encodage.
-    
-- Les souvenirs prénataux pourraient, théoriquement, être véritables.
-    
-- Notion de passé personnel : conceptuellement vague, reformulé pour inclure tout événement passé:
-	- Pour qu’un sujet se souvienne véritablement d’un événement passé, il est nécessaire que la représentation qu’il en a soit produite par un *système de construction épisodique correctement* fonctionnel et donc *fiable*, visant à produire une représentation d’un événement *passé*
-	- Selon cette reformulation radicale, *se souvenir* d'un évènement *de son passé personnel* *est équivalent à se souvenir d'un évènement passé non personnel* (se souvenir de l'arrivée de Napoléon à Grenoble est équivalent à se souvenir de sa propre arrivée à Grenoble) 
-	- D'où la notion de **souvenir vicariant**: Se souvenir d’un événement rapporté par quelqu’un d’autre, sans l’avoir vécu soi-même.
+### 2.1. Arguments contre le simulationnisme (McCarroll)
 
+#### (1) L’oubli et l’amnésie infantile
+
+1. **Première prémisse** :  
+    Si le simulationnisme est correct, alors il devrait toujours être possible, en principe, de se souvenir d’un événement passé.
+    
+    - Puisque la mémoire consiste à **générer un contenu** au moment de la récupération (et non à réactiver une trace spécifique),
+        
+    - et puisque ce contenu peut provenir de **plusieurs sources d’informations**,
+        
+    - il devrait toujours être possible de **reconstruire** un souvenir, même en l’absence de traces directes de l’événement originel.
+        
+2. **Deuxième prémisse** :  
+    Or, il est empiriquement faux qu’on puisse toujours se souvenir.
+    
+    - Les phénomènes d’**oubli** et d’**amnésie infantile** montrent que nous **ne pouvons pas** toujours reconstruire nos expériences passées.
+        
+    - Ces phénomènes sont bien documentés et constants dans les recherches cognitives.
+        
+3. **Conclusion** :  
+    Le simulationnisme ne peut pas être correct dans sa forme la plus forte.
+    
+
+
+#### (2) Les « souvenirs impossibles » (ex. : les souvenirs intra-utérins de Dalí)
+
+1. **Première prémisse** :  
+    Si le simulationnisme est correct, alors un individu pourrait théoriquement avoir des **souvenirs véridiques d’événements qu’il n’a pas vécus** (comme Dalí prétendant se souvenir de sa vie intra-utérine).
+    
+    - Le modèle ne requiert pas que le souvenir contienne une **information issue de l’expérience vécue**.
+        
+    - Il suffirait que la **simulation** soit fiable.
+        
+2. **Deuxième prémisse** :  
+    Cependant, il est impossible que ces souvenirs soient véritablement des souvenirs.
+    
+    - Les fœtus n’ont pas de **conscience de soi** ni de **capacité mnésique** fonctionnelle.
+        
+    - Ces souvenirs prétendus relèvent donc de l’**imagination**, non de la mémoire.
+        
+3. **Conclusion** :  
+    Le simulationnisme doit être nuancé ou rejeté.
+    
+
+
+### 2.2. Réponses de Michaelian
+
+Michaelian répond à ces objections en reformulant certaines hypothèses clés.
+
+#### a. Concernant l’oubli et l’amnésie infantile
+
+- Le simulationnisme **n’implique pas** qu’on puisse toujours se souvenir.
+    
+- **L’oubli** :
+    
+    - À un moment donné, un sujet peut être capable de **simuler** un événement.
+        
+    - Plus tard, il peut **perdre cette capacité**, soit par manque de ressources informationnelles, soit par perte d’accès à ces ressources.
+        
+- **L’amnésie infantile** :
+    
+    - Les événements de la petite enfance ne laissent souvent **aucune trace exploitable**.
+        
+    - De plus, ces événements ne font **l’objet d’aucun témoignage** transmis au sujet.
+        
+    - En conséquence, la plupart des expériences précoces sont **impossibles à reconstruire**, car nous **ignorons même qu’elles ont eu lieu**.
+        
+
+#### b. La fiabilité du système
+
+Ce qui compte n’est pas l’origine de l’information (l’encodage), mais la **fiabilité du système de construction au moment de la récupération**.  
+Autrement dit, un souvenir peut être véritable même s’il est partiellement reconstruit à partir d’autres sources, tant que le système fonctionne correctement.
+
+#### c. Souvenirs prénataux et élargissement du concept de passé personnel
+
+Michaelian propose une redéfinition du **passé personnel**, pour inclure tout événement passé, qu’il soit ou non directement vécu :
+
+- Se souvenir d’un événement de son passé personnel revient à **produire une représentation fiable** d’un **événement passé**, même s’il n’a pas été vécu.
+    
+- Cela ouvre la voie à la notion de **souvenir vicariant** : se souvenir d’un événement relaté par autrui comme s’il faisait partie de sa propre mémoire.
+    
+
+
+### 2.3. Tableau récapitulatif des positions
 ![[causa_disco_conti_simu.png]]
 
+|Courant|Causaliste (CTM)|Simulationniste (STM)|
+|---|---|---|
+|Continuisme|_Langland-Hassan_ (2022, 2023b) — compatibilité entre causalisme et continuisme|_Addis_ (2018, 2020), _De Brigard_ (2014), _Michaelian_ (2016a,b; 2024)|
+|Discontinuisme|_Debus_ (2010, 2014), _McCarroll_ (2020), _Perrin_ (2016, 2021), _Werning_ (2020)|? (potentiellement partiel)|
 
-| Courant        | Causaliste (CTM)                                                                                                                                                                                                             | Simulationiste (STM)                                                           |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Continuisme    | *Langland-Hassan* (2022, 2023b) suggère que l’association entre le causalisme et le discontinuisme est purement contingente et qu’il est possible de soutenir de manière cohérente à la fois le causalisme et le continuïsme | Addis (2018, 2020), De Brigard (2014, cf. 2025), *Michaelian* (2016a, b; 2024) |
-| Discontinuisme | MDebus (2010, 2014), *McCarroll* 2020; Perrin (2016, 2021), Werning (2020)                                                                                                                                                   | **?** -> Potentiellement _PARTIEL_                                             |
+#### Tentative de simulationnisme discontinuiste
+Pour l'aspect discontinuiste:
+- P1 : Si la mémoire repose sur un système cognitif qui ne sous-tend pas l’imagination, alors mémoire et imagination diffèrent en nature. 
+- P2 : La mémoire repose effectivement sur un système cognitif qui ne sous-tend pas l’imagination. 
+	- Les mécanismes de manipulation et de rétention des traces sous-tendent la mémoire, mais pas l’imagination. 
+	- Les processus d’encodage, de stockage et de consolidation obéissent à des règles spécifiques à la mémoire. 
+	- La mémoire mobilise le hippocampe et le néocortex d’une manière propre, non observée dans l’imagination. 
+	- La fonction principale de la mémoire épisodique est le soutien à l’apprentissage à partir de l’expérience, tandis que l’imagination sert surtout à l’anticipation.
+- Conclusion : Donc, mémoire et imagination diffèrent en nature. => Discontinuisme
 
-**Le causalisme discontinuiste de Langland-Hassan** 
--  Selon Langland-Hassan, la mémoire et l’imagination font appel aux mêmes mécanismes de traces 
-	- Les traces sont des ressources réutilisables au service de la construction de représentations d’événements orientées vers le passé et vers l’avenir 
-- Cependant, la mémoire et l’imagination ont, selon cette perspective, des contraintes différentes 
-	- Selon Langland-Hassan, la causalité appropriée constitue la principale contrainte de la mémoire 
-	- Causalité appropriée sans traces mnésiques
+Cette conception reposerait sur un système de mémoire épisodique spécialisé, dont la fonction est de donner *priorité aux informations de première main* lors de la récupération (c’est-à-dire aux traces directement issues de l’expérience vécue). Cependant, ce système peut *aussi intégrer des informations de seconde main*, provenant de sources extérieures au cerveau (« extracranial resources »), comme des rappels sociaux, des notes, des photographies, etc., lorsque c’est pertinent.
+Ainsi, cette approche reconnaît la plasticité et la dimension reconstructive de la mémoire (puisqu’elle peut incorporer des informations externes), tout en maintenant une distinction entre ce qui fonde un souvenir véritable (la priorité donnée aux informations issues de l’expérience directe) et ce qui le complète ou le soutient (les informations externes).
+### 2.4. Le causalisme discontinuiste selon Langland-Hassan
+
+- La **mémoire** et l’**imagination** utilisent les **mêmes traces mnésiques** comme ressources.
+    
+- Ces traces servent à construire des représentations d’événements orientées soit vers le **passé**, soit vers le **futur**.
+    
+- Cependant, les deux capacités diffèrent par leurs **contraintes** :
+    
+    - La **mémoire** est soumise à une **contrainte causale** : il faut une connexion appropriée entre l’expérience passée et la représentation présente.
+        
+    - Cette causalité peut être **appropriée même sans trace mnésique explicite**.
+        
+
 
 > [!NOTE] Examen  
-> Questions typiques :
+> **Questions typiques :**
+> 
+> - Peut-on être **causaliste et continuiste** ?
+>     
+> - Peut-on être **simulationniste et discontinuiste** ?
+>     
+> - **Débats centraux :**
+>     
+>     - Causaliste vs simulationniste : qu’est-ce qu’un **souvenir véritable** ?
+>         
+>     - Continuisme vs discontinuisme : la différence entre mémoire et imagination est-elle de **nature** ou seulement de **degré** ?
+>         
 
-- Peut-on être causaliste et continuiste ?
-    
-- Peut-on être STM et discontinuiste ?
-    
-- Débats :
-    
-    - Causaliste vs simulationniste : qu’est-ce qu’un souvenir véritable ?
-        
-    - Continuisme vs discontinuisme : différence de nature et/ou de degré entre mémoire et imagination ?
-        
 
 # Arcangeli & Dokic (CM4)
 
-## Trois niveaux d'explication
-Une théorie exhaustive d’un état mental donné devrait prendre en compte au moins ces trois niveaux:
- - Niveau ontologique 
-	 - La nature de nos états mentaux
-	 - Le causalisme et le simulationnisme concernent principalement le niveau ontologique.
-- Niveau phénoménologique 
-	- La manière dont on fait l’expérience de nos états mentaux 
-- Niveau réflexif 
-	- Comment les états mentaux sont auto-attribués
-Une des idées défendues par Arcangeli & Dokic (2024) est que ces niveaux sont, en principe, indépendants !
+## 1. Trois niveaux d’explication
 
-## Les thèses d'impossibilité
-Portése par Paul Ricoeur et Jean-Paul Sartre:
-- Il est impossible de confondre un souvenir avec une imagination 
-	- **1a** Il est impossible de confondre *réflexivement* un souvenir avec un une imagination 
-	- **1b** Il est impossible de confondre *phénoménologiquement* un souvenir avec une imagination
-- Il est impossible de confondre une imagination avec un souvenir
-	- **2a** Il est impossible de confondre *réflexivement* une imagination avec un souvenir 
-	- **2b** Il est impossible de confondre *phénoménologiquement* une imagination avec un souvenir
+Une théorie complète des états mentaux doit intégrer **trois niveaux d’analyse** :
 
-## Deux types de confusion
-Prenant comme point de départ un passage de _L’imaginaire_ de Sartre, les auteurs proposent qu’il existe deux types de confusion (deux manières de se tromper) 
-- Confusion réflexive 
-	- Une confusion liée à l’auto-attribution d’états mentaux à partir des jugements et croyances sur ces états mentaux 
-	- Elle requiert le déploiement de concepts explicites des états mentaux pertinents
-	- Les états mentaux peuvent comporter des ressentis spécifiques, que nous nous les auto-attribuions ou non par la suite. 
-- Confusion phénoménologique 
-	- Une confusion liée à nos expériences subjectives de nos états mentaux 
-	- Elle ne requiert pas l’auto-attribution ni le déploiement de concepts explicites
+1. **Niveau ontologique** — la nature des états mentaux.
+    
+    - Le **causalisme** et le **simulationnisme** relèvent principalement de ce niveau.
+        
+2. **Niveau phénoménologique** — la manière dont les états mentaux sont **vécus subjectivement**.
+    
+3. **Niveau réflexif** — la manière dont ces états sont **auto-attribués** par le sujet.
+    
 
-Les auteurs proposent des arguments conditionnels contre les thèses d’impossibilité 
-- Si la confusion réflexive est possible, alors 1a et 2a sont fausses 
-- Si la confusion phénoménologique est possible, alors 1b et 2b sont fausses
+Arcangeli & Dokic (2024) défendent que ces trois niveaux sont **indépendants** en principe : un état peut être de type mémoire sur le plan ontologique, mais être vécu comme imagination sur le plan phénoménologique.
 
 
-### La possibilité de la confusion réflexive
+## 2. Les thèses d’impossibilité
 
-- S confond réflexivement un souvenir avec une imagination, ou une imagination avec un souvenir, lorsque : 
-	- *S a un souvenir actuel que S s’auto-attribue à tort comme une imagination*, 
-	- ou
-	- *S a une imagination que S s’auto-attribue à tort comme un souvenir actuel*
+Inspirées par **Ricoeur** et **Sartre**, ces thèses soutiennent qu’il est **impossible de confondre** mémoire et imagination :
 
---> **S21**
+1. **Mémoire → imagination**
+    
+    - (1a) Impossible de les confondre **réflexivement** (en termes de jugement sur son propre état mental).
+        
+    - (1b) Impossible de les confondre **phénoménologiquement** (en termes de ressenti subjectif).
+        
+2. **Imagination → mémoire**
+    
+    - (2a) Impossible de confondre **réflexivement** une imagination avec un souvenir.
+        
+    - (2b) Impossible de les confondre **phénoménologiquement**.
+        
+
+
+## 3. Deux types de confusion possibles
+
+En s’appuyant sur _L’Imaginaire_ (Sartre), Arcangeli & Dokic distinguent deux formes de **confusion** entre imagination et mémoire :
+
+### a. Confusion réflexive
+
+- Erreur dans l’**auto-attribution** d’un état mental.
+    
+- Elle suppose l’usage de **concepts explicites** (se dire : « je me souviens que… » ou « j’imagine que… »).
+    
+- Exemple : un **peintre classique** qui se souvient réellement d’une scène mais croit seulement l’imaginer.
+    
+
+### b. Confusion phénoménologique
+
+- Erreur dans la **manière de vivre subjectivement** un état mental.
+    
+- Elle ne requiert pas d’auto-attribution consciente.
+    
+- Exemple : un **peintre perplexe** vit un souvenir mais le ressent comme s’il s’agissait d’une simple imagination.
+    
+
+
+## 4. Arguments contre les thèses d’impossibilité
+
+- Si la **confusion réflexive** est possible → les thèses 1a et 2a sont fausses.
+    
+- Si la **confusion phénoménologique** est possible → les thèses 1b et 2b sont fausses.
+    
+
+Les auteurs défendent donc qu’il est **logiquement et psychologiquement possible** de se tromper sur la nature de ses propres états mentaux.
+
+
+## 5. Les cas types (les « peintres »)
+
+|Cas|Ontologie|Phénoménologie|Réflexion|
+|---|---|---|---|
+|**Classic Painter** (peintre classique)|Mémoire|Imagination|Imagination|
+|**Misinformed Painter** (peintre mal informé)|Imagination|Imagination|Mémoire|
+|**Puzzled Painter** (peintre perplexe)|Mémoire|Imagination|Mémoire|
+|**Informed Painter** (peintre informé)|Imagination|Mémoire|Imagination|
+|**Confabulated Painter**|Imagination|Mémoire|Mémoire|
+
 
 # Debus (CM5)
-**TODO** Get slides
 
-3 niveau d'explication (tableau): M = Mémoire, I = Imagination, selon ce que le peintre expérimente.
+## 1. La théorie causale de la mémoire
 
-Retenir les types d'arguments..? (Par contraste; avec prémisse 1,2 puis contre..; ...)
+Selon **Debus** (2010), un souvenir véritable exige une **causalité appropriée** entre l’expérience passée et la représentation actuelle.
 
+> **Définition :**  
+> Se souvenir véritablement d’un événement, c’est posséder une représentation actuelle **causalement reliée** à l’expérience initiale, par l’intermédiaire d’une **trace mnésique** encore opérante.
+
+### Conditions nécessaires et suffisantes :
+
+1. Le sujet **représente un événement passé** avec une certaine précision.
+    
+2. Il a **effectivement vécu ou observé** cet événement.
+    
+3. Son **expérience passée** a joué un rôle **causal** dans la formation de la représentation présente.
+    
+
+## 2. L’argument par contraste
+
+Méthode philosophique consistant à **comparer deux cas** pertinents afin de faire ressortir ce qui distingue un véritable souvenir d’une simple conscience du passé.
+
+
+## 3. L’expérience de pensée de Debus : _Mary vs John_
+
+- **Mary** : sujet typique, dotée d’une mémoire fonctionnelle.
+    
+- **John** : sujet atypique, capable d’avoir des expériences du passé mais sans jamais les utiliser pour justifier ou former de nouvelles croyances.
+    
+
+Les deux ont assisté au même dîner.
+
+- Mary se **rappelle** les invités et peut **raisonner à partir** de ses souvenirs (ex. : « quelqu’un portait un haut rouge »).
+    
+- John **a** les mêmes expériences perceptives, mais il **ne les considère pas** comme des raisons valides pour former des jugements sur le passé.  
+    Ses expériences sont **psychologiquement présentes mais épistémiquement inertes**.
+    
+
+> **Différence essentielle :**
+> 
+> - Mary a une **capacité de mémoire véritable** : elle utilise ses expériences passées pour former des croyances rationnelles.
+>     
+> - John a seulement une **conscience du passé**, sans pertinence épistémique.
+>     
+
+
+## 4. Vers une théorie causale complète : la pertinence épistémique
+
+Debus complète la théorie causale en ajoutant une condition essentielle :
+
+> Pour qu’une expérience compte comme un **souvenir**, elle doit avoir une **pertinence épistémique** pour le sujet.
+
+Cela signifie que :
+
+- Le sujet doit être **disposé à prendre en compte** cette expérience lorsqu’il juge du passé.
+    
+- Sans cette disposition, il ne s’agit pas d’un **souvenir**, mais d’une **expérience isolée** du passé sans fonction cognitive.
+    
