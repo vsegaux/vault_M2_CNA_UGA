@@ -1,0 +1,11 @@
+---
+publish: true
+---
+- Reconnaître automatiquement de la parole ou des sources sonores 
+- Séparer automatiquement des flux ou des sources sonores 
+	- Quels sont les indices du signal et les mécanismes cognitifs d’intégration de ces indices qui permettent d’identifier une source ou de la séparer d’un fond sonore ?
+- Réduire la taille de stockage d’un son 
+	- Quels sont les indices non importants ou non perçus que l’on peut « abîmer » ou supprimer sans trop entacher la qualité sonore?
+- Effectuer le doublage audio d’un film 
+	- Quels sont les mécanismes cognitifs d’intégration multimodale ?
+- Implants cochléaires
