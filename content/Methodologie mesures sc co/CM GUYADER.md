@@ -50,7 +50,6 @@ Contrairement au nystagmus (mouvement réflexe de stabilisation lors de mouvemen
 
 ![[poursuite.png]]
 
-
 ### Mouvement de vergence
 
 Les **mouvements de vergence** ajustent l’orientation des deux yeux selon la **profondeur de la cible**.  
