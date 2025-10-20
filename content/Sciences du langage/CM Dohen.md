@@ -442,8 +442,105 @@ Il existe deux niveaux de coordination distincts mais agissant ensemble:
 		2. Le 1er geste consonantique d’une séquence de consonnes est synchronisé par rapport au début du geste vocalique si la séquence est au début de la syllabe (et par rapport à la fin si la séquence est finale). 
 		3. Etc
 
+
 **Variables d'activation**
 - L’intervalle temporel pendant lequel un geste influence le mouvement des articulateurs est défini en fonction des variables d’activation. 
 - **Variable d’activation**: force avec laquelle le geste considéré façonne les mouvements du conduit vocal. 
 - À chaque geste particulier correspond une variable d’activation propre. 
 - On a ainsi un modèle à trois systèmes de variables.
+
+**Notion de partition gestuelle**
+![[partition_gestuelle.png]]
+
+
+#### Phonologie articulatoire
+- La Phonologie Articulatoire exploite le modèle de Task Dynamics pour établir un lien entre niveaux linguistique et articulatoire. 
+- Liée à la Théorie Motrice de la perception (Liberman & Mattingly), selon laquelle l’analyse des gestes articulatoires renseigne sur le message linguistique. 
+- La structure phonologique réside dans l’organisation des actions physiques (articulatoires, motrices). 
+- Les gestes (événements discrets) sont la passerelle entre unités articulatoires et unités phonologiques primitives
+
+![[modele_production_parole__.png]]
+
+#### Un modèle de contrôle moteur
+
+Modèle dit de "Wolpert" (Kawato et al.; Wolpert; Cf Thèse de Lucile Rapin, 2011)
+![[model_ctrl_moteur.png]]
+Ce modèle comporte deux systèmes de feedback:
+- Un feedback sensoriel, plus lent, qui se base sur les articulations et sons produits
+- Un feedback basé sur une copie d'efférence des commandes motrices, plus rapide.
+
+#### Le modèle connexionniste DIVA
+**DIVA : Directions Into Velocities of Articulators** 
+- Objectif : modéliser l’activité cérébrale et les processus moteurs, biomécaniques et sensoriels impliqués dans la production de parole 
+- Tenir compte des données sur la variabilité contextuelle, l’équivalence motrice (bite-block), la coarticulation, les effets du débit d’élocution 
+- Tenir compte des données sur l’acquisition du langage 
+- Fournir des hypothèses sur les corrélats neuraux du modèle (cf. plus tard)
+
+- Nature des cibles
+	- Task dynamics : lieu et degré de constriction 
+	- DIVA : régions dans un espace de planification auditif et orosensoriel (rapports formantiques, constrictions du conduit vocal) 
+	Régions : inspirées du “window model of coarticulation” de Keating (1990
+
+![[DIVA_position_region.png]]
+Plusieurs points peuvent correspondre à la production d'un seul phonème. Dans l'exemple suivant, on a la production du phonème $[k]$, dans deux configurations différentes (pour produire $[u]$ ou $[i]$):
+![[k_u_i.png]]
+
+### Théorie psycholinguistique
+Trois niveaux de traitement dans la production de la parole (Levelt 1989):
+- **Conceptualisation**: le locuteur conçoit ce qu’il veut dire, son intention communicative -> « message pré-verbal » 
+	- Débit : 0,2 idées/s
+- **Formulation**: le message conceptuel est traduit dans une forme linguistique propre à être énoncée 
+	- Débit : 2 à 3 mots/s
+- **Articulation**: le locuteur produit les sons appropriés dans l’ordre approprié : planification phonétique et articulatoire 
+	- Débit : 10 à 15 sons/s 
+	- Environ 100 muscles impliqués
+
+![[levelt_blueprintofthespeach.png]]
+
+Levelt s'est beaucoup basé sur les lapsus, qui donnent des renseignement sur:
+- **l’encodage grammatical et la nature du lexique** 
+	- Exemple 1 : `Don’t burn your toes (au lieu de fingers)`
+		Les mauvaises sélections impliquent des items sémantiquement liés -> *organisation sémantique du lexique*.
+	- Exemple 2 : `He sliced the knife with a salami`
+		L’échange se fait entre noms et non pas du verbe au nom -> l*es lemmes du lexique ont des propriétés syntaxiques* : nom, verbe, etc. 
+- **l’encodage phonologique** 
+	- Exemples : - `With this wing I thee red` - `Franche dimanse`
+		L’existence de lapsus phonologiques montre que le locuteur n’accède pas à la représentation phonologique comme un tout, mais comme un ensemble de segments individuels qu’il doit assembler -> no phonetic whole word template
+		Le fait que les échanges concernent les mêmes positions dans la syllabe indique qu’une information positionnelle est associée aux segments. 
+		Les erreurs d’échange et d’anticipation montrent que l’articulation ne commence que lorsque le mot phonologique entier a été encodé
+
+Les hésitation et les pauses renseignent sur la planification:
+- Types de pauses:
+	- Pauses remplies: répétitions, faux départs, remarques “parenthèse” (alors, n’est-ce pas, tu vois) 
+	- pauses vides : moments de silence 
+- Types de difficulté : 
+	- « microplanning » (recherche des mots difficiles) 
+	- « macroplanning » (planification de la phrase) 
+- Pauses associées à la recherche lexicale : plus fréquentes et de plus longue durée avant les mots moins prédictibles.
+	Les répétitions tendent aussi à suivre ces mots —> vérification ; elles sont accompagnées par plus de gestes manuels montrant qu’on connaît la signification
+
+# Percevoir la parole
+## Analyse de scènes auditives et perception de la parole
+
+Comment notre système perceptif extrait-il le signal de parole à partir d'un ensemble de sons présentés ensemble.
+![[ASA_pres_du_pb.png]]
+
+### Ségrégation et fusion de flux sonores
+Selon les sons présentés, le système perceptif va avoir tendance à "fusioner" deux sources sonores, voir à compenser des trous et à rassembler des éléments selon leur proximité spectrale.
+
+Ségrégation par indice spectraux: 
+- similarités spectrales (perception de voix similaires vs différentes)
+	- Détection d'une phrase cible dans un flux de parole de deux locuteurs:
+		- Au plus difficile lorsque mélanger à de la parole du même locuteur
+		- Difficile lorsque mélanger à de la parole d'un locuteur d'autre sexe
+		- Moins difficile avec du bruits non parole
+- groupement par F0: identification de deux voyelles, détection de l'harmonicité
+- indices spatiaux (cocktail party effect), reconstruction spatiale de la scène selon les différences de perception entre les deux oreilles
+- par connaissance des formes et mouvement sonores possibles (identification d'une voix chantée lorsque de petite variations sont perçues; par rapport à un accord 'stable/constant' d'un instrument par exemple)
+## Perception de la parole et théories
+### Problèmes posés par la perception de la parole
+- **Absence d'invariance des indices acoustiques**
+	- La perception de parole associe des unités sonores variables avec des catégories phonologiques invariantes
+	- Avec l'exemple des voyelles: deux sources majeures de variabilités:
+		- Inter locuteur: l'espace vocalique varie beaucoup selon l'âge et le sexe des locuteurs
+		- Intra locuteur (co-articulation, réduction vocalique)
