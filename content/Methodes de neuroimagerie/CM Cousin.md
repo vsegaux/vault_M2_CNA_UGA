@@ -136,3 +136,62 @@ Possible échauffement tissulaire car les tissus absorbent l'énergie des radio 
 - Effets cardiovasculaires
 - Déconseillé aux femmes enceintes
 
+# Considérations psychologiques et Inférence inverse
+
+Attention à la tendance à associer certaines régions du cerveau à des processus (réseau de la douleur; du langage; etc.), on parle d'afférence inverse: par exemple dans l'étude de Kross et al. 2011, ils font une afférence car les zones activées dans le cas du rejet amoureux sont les mêmes/similaires à celle impliquées dans la douleur. Mais ces zones ne sont *pas typiques* de ces processus, elles sont simplement aussi recrutées dans les différents processus.
+
+-> Observer quelles régions s'activent ne nous apprends pas grand chose sur le fonctionnement mental en général. Mais il faut *regarder quelles théories/modèles sont remis en cause (ou non) par les observations*.
+
+En neuroimagerie, on se pose la question de quelles régions sont plus actives dans une tâche que dans une autre (approche de **cartographie cérébrales**). On est alors dans le paradigme d'inférence directe:
+1. On demande au sujet de réaliser une tâche. 
+2. On regarde quelles zones sont plus impliquées (contraste statistique). 
+Et non pas dans l'autre sens!
+
+*Qu'une région cérébrale cible soit active ou non doit contraindre votre théorie à vous apprendre quelque chose de nouveau.*
+
+*Si une région est* **sensible** *mais non* **spécifique**, *elle s'active souvent, mais pour plein de raison.*
+*Si elle est **spécifique** mais peu **sensible**, elle s'active rarement, même lors de la condition.*
+
+**Inférence directe**:
+Etant donné un état psychologique induit, on *observe* l'activité cérébrale
+**Inférence indirecte**:
+Compte tenu de l'activité cérébrale, pouvons nous en déduire l'état psychologique?
+
+
+Conclusion sur les inférence inverses:
+- L'inférence inverse est la pratique consistant à traiter le cerveau comme un marqueur de quelque chose.
+- Lorsque les gens font des inférences inverses, il supposent une valeur prédictive positive élevée (**VPP**).
+- La VPP peut être calculée mais nécessite l'évaluation de plusieurs tâches/états potentiellement confondus
+- pour que l'activation cérébrale régionale ait une VPP élevé:
+	1. **TODO**
+	2. **TODO**
+
+
+Quels types de théories la neuroimagerie peut-elle tester?
+1. Théories de localisation fonctionnelles (question "où?")
+	- Cartes d'activation
+	- Contraste tâche/contrôle
+2. Théories de connectivité et d'architecture fonctionnelle (question "avec qui?")
+	- Analyse de connectivité, graph theory, ICA (Analyse en Composantes Indépendantes)
+3. Théories mécanistes/computationnelles (question "comment?")
+	- Relier les modèles cognitifs/neuronaux aux données IRMf
+	- RSA, modèles de décodages multivariés (MVPA), modélisation computationnelles couplée à l'IRM
+
+# Réalisation pratique d'un examen IRMf
+1. Scan de repérage
+2. Scan fonctionnel
+	- Acquisition des volumes fonctionnels (contraste tâche/contrôle)
+	- Séquence d'acquisition: ensemble des coupes réalisées avec les mêmes paramètres d'acquisition.
+3. Scan anatomique
+
+# Expérience sur la perception olfactive et la motricité
+Les réseaux primaires sont assez bien connus.
+## Imagerie olfactive et motrice
+Représentation mentale d'une sensation perceptive sans stimulation externe:
+- imagerie olfactive, souvent moins vivace
+- imagerie motrice, typiquement assez vivace
+
+Passation du QQME par les sujet: pour mesurer l'aphantasie dans les différents sens.
+
+## Matériel et méthode
+4 tâches cognitives: moteur, olfaction, imagerie motrice, imagerie olfactive.
