@@ -10,6 +10,7 @@ publish: true
 ## Méthodologie et mesures en sciences cognitives
 [[CM ITO]]
 [[CM Chauvin]]
+[[CM GUYADER]]
 ## Perception et audition
 [[CM Garnier PA]]
 ## Psychologie cognitive
@@ -22,8 +23,6 @@ publish: true
 ## Philosophie en sciences cognitives
 [[CM Alvarez]]
 # Cours à mettre au propre
-## Introduction aux sciences cognitives
-[[CM Loevenbruck]]
 ## Méthodologie de neuroimagerie
 [[CM Cousin]]
 [[CM Bertolotti]]
