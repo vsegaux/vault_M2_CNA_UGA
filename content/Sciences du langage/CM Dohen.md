@@ -542,5 +542,156 @@ Ségrégation par indice spectraux:
 - **Absence d'invariance des indices acoustiques**
 	- La perception de parole associe des unités sonores variables avec des catégories phonologiques invariantes
 	- Avec l'exemple des voyelles: deux sources majeures de variabilités:
-		- Inter locuteur: l'espace vocalique varie beaucoup selon l'âge et le sexe des locuteurs
-		- Intra locuteur (co-articulation, réduction vocalique)
+		- **Inter locuteur**: l'espace vocalique varie beaucoup selon l'âge et le sexe des locuteurs
+		- **Intra locuteur**:
+			- *Coarticulation*, illustré sur la figure suivante: en rouge, les zones de productions des voyelles seules, et en vert, leur zone de production en coarticulation: ![[rouge_vert_coart_seul.png]]
+			-  *Réduction vocalique*, régulièrement, les voyelles sont raccourcies dans les mots du langage courant. Exemple: I'm going to go. $\rightarrow$ I'm going t' go. La voyelle a été réduite à une version très courte du *shoa* (point central sur le trapèze vocalique).
+
+- **Impossibilité de segmenter les unités sonores**: tous les éléments ont de l'influence les uns sur les autres donc il est impossible d'isoler les différents phonèmes.
+
+
+#### Perception catégorielle
+VOT (Voice Onset Time): Délai d'établissement du voisement après une occlusion. Qui est typiquement plus court pour la consonne 'b' que pour 'p'.
+- Nul quand : début de la vibration des cordes vocales synchrone avec l’explosion consonantique 
+- Positif quand : la vibration commence après l’explosion 
+- Négatif quand : la vibration commence avant l’explosion
+
+Malgré le fait que selon des valeur continues de VOT entre Ba et Pa, notre perception est catégorielle et va majoritairement reporter Ba OU Pa. Il existe entre ces deux catégorisation une frontière assez courte: 
+![[percep_categBG.png]]
+Une autre manière d'établir cette frontière est de demander aux participants de discriminer deux sons entendus, on observe alors un pic de discrimination au niveau de la frontière.
+
+
+**Compensation de la coarticulation (C2C)**: la décision perceptive est influencée par les "connaissances" de coarticulation du système. Mis en évidence en demandant à des sujets de discriminer Ga ou Da dans un mot bisyllabique dont la première syllabe est aL ou aR:
+![[C2C.png]]
+Dans le contexte aL, il sera plus difficile de produire Ga, donc le système perceptif est moins exigent pour détecter Ga, on a décalage de la frontière catégorielle vers la droite (vers Da). Et inversement avec la production de Da dans un contexte de aR.
+
+#### Restauration de phonèmes
+Le système perceptif est capable de restaurer un phonème mal prononcé. L'information manquante est alors restaurée.
+#### Perception duplexe
+Différentes interprétations d'un même indice acoustique.
+![[duplexe_percep.png]]
+
+#### Autres problèmes dans la perception de la parole
+- Relations de compensation
+- Effets d'adaptation perceptuo-moteurs
+- Répétition rapide ('close shadowing') et interactions perceptuo-motrices
+- Intégration audiovisuelle et multisensorialle
+### Différentes théories qui tentent de rendre compte de ces phénomènes
+
+Historiquement, deux types de théories : auditive et motrice/gestuelle
+
+#### Théorie quantique (auditive)
+
+Principe: la relation entre la configuration articulatoire du conduit vocal et la sortie acoustique **n'est pas linéaire**.
+![[frontiere_1_2_3.png]]
+La différence acoustique entre I et III (sur la figure ci-dessus) est importante quantitativement et qualitativement (contraste acoustique abrupt entre une ouverture glottique et un voisement) : existence d’un contraste linguistique. 
+Le paramètre acoustique est peu sensible à des changements du paramètre articulatoire à l’intérieur des régions I et III. 
+Dans ces régions : 
+- L’articulation n’a pas besoin d’être très précise -> tolérance à la variabilité, à l’erreur. 
+- Des mouvements continus dans ces régions correspondent à un état acoustique stable
+
+
+La perception catégorielle recouvrerait une discontinuité psychoacoustique (une frontière auditive naturelle, pré-existante au langage humain) qui expliquerait à la fois la nature des catégories (les résultats d’identification) et les variabilités de discrimination.    
+Il existerait une représentation commune entre discrimination et identification, dans laquelle il existerait une discontinuité.
+
+Selon les théories auditives, l'invariant est dans le signal acoustique et ses transformées auditives.
+#### Théorie motrice
+
+"Le geste est fixe, le signal acoustique est variable, le percept est constant. L'invariance est dans le geste vocal et les gestes moteurs."
+
+**Perception de la parole = perception de gestes** 
+« …Les objets de la perception de parole sont les gestes que le locuteur a voulu produire, représentés dans le cerveau comme des commandes invariantes » -> perception d’un geste planifié intentionnel: les invariants ne sont pas dans le signal acoustique ni dans l’articulation effective, mais dans les gestes planifiés. 
+**Mécanisme perceptif de la parole -> module biologique spécialisé**
+« …La perception de parole ne peut pas s’expliquer par les principes qui régissent la perception des sons en général » -> existence d’un module inné spécifique à la parole qui permet de décoder les sons de parole. **La parole est spéciale**. 
+**Le lien production/perception de la parole est inné**.
+Nous sommes capables de percevoir la parole car nous sommes capables de la produire. Ce lien s’est développé au cours de l’évolution de l’espèce humaine.
+
+La catégorisation perceptive existe même déjà chez les bébés: mécanisme inné spécifique à la parole?
+Mais:
+- la perception catégorielle a été démontrée également pour d'autres sons que la parole
+- et même pour d'autres espèces que les humains (cailles japonaises, ...)
+
+#### Théorie réaliste de la perception directe
+
+Perception immédiate, directe, pas de processus d’inférence < théorie générale de la perception directe de J. J. Gibson (1966, 1979)
+**Réalisme** : objets de la perception = mouvements effectifs, réels du conduit vocal, ou gestes effectifs 
+-> ni des phonèmes abstraits (représentations mentales idéales) ni, comme le suppose la Théorie Motrice, des causes de ces mouvements (gestes planifiés).
+
+**Passage du signal acoustique au geste** : inutile de faire l’hypothèse d’un décodeur spécialisé (comme dans la Théorie Motrice) -> ce sont directement les gestes articulatoires effectifs qui sont perçus. **La parole n’est pas spéciale**.
+
+#### Approche générale
+**Pas de mécanismes ou de modules spécialisés pour la perception de la parole**:
+- La perception des sons de parole implique les mêmes mécanismes que l’audition et l’apprentissage perceptif en général. 
+**Perception de la parole = perception du signal acoustique**:
+- Pas perception de gestes 
+**Explication de la compensation de la coarticulation**:
+- Capacité générale de l’auditeur d’utiliser des indices acoustiques multiples et imparfaits pour catégoriser des stimuli complexes 
+- selon l’Approche Générale : les langues exploitent les frontières acoustiques naturelles pour un bon contraste auditif (Diehl, Lotto & Holt, 2004)
+- Effet général de notre système perceptif à accentuer les contrastes
+
+**Hypothèse forte** : pas de rôle des gestes moteurs dans la perception de parole **MAIS** les données récentes de la neurophysiologie indiquent bien un rôle du cortex moteur lors de la perception de parole, en particulier lorsque les stimuli sont ambigus, ou lors de l’acquisition d’une seconde langue par ex
+
+#### La parole est-eelle spéciale?
+- **Oui** -> il existe un mode spécifique de traitement pour percevoir la parole (ex : théorie motrice de Liberman, 1954) 
+- **Non** -> approche générale : pas de mécanisme spécialisé pour percevoir la parole (ex : Diehl, Holt, Lotto…)
+
+| La parole est spéciale                                                                                                                                            | La parole n'est pas spéciale                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| La parole est perçue de manière catégorielle et pas les autres stimuli auditifs                                                                                   | Les chinchillas possède aussi une perception catégorielle, mais ils ne parlent pas !                                      |
+| Dans la perception duplexe, un stimulus de parole peut être traité comme de la parole ou non en même temps. Pourquoi n’est-il pas traité comme de la non parole ? | Quand d’autres stimuli auditifs sont séparés et présentés séparément à chaque oreille, le même phénomène peut apparaître. |
+| Le cerveau possède des aires dédiées à la parole et un hémisphère du langage.                                                                                     | D’autres animaux ont des aires cérébrales répondant à des sons communicatifs spécifiques à l’espèce.                      |
+
+**BILAN**
+
+|                                | Mécanismes spécifiques      | Mécanismes généraux |
+| ------------------------------ | --------------------------- | ------------------- |
+| Objets perceptifs gestuels     | Théorie motrice             | Réalisme direct     |
+| Objets perceptifs non-gestuels | Spécialisations éclectiques | Approche générale   |
+
+#### Théorie de la variabilité adaptative : H & H
+
+Notion d'adaptativité en parole: style, intelligibilité.
+Selon cette théorie, il n'y a pas d'invariance mais de la variabilité contrôlée (de l'"information").
+
+Hypospeech vs. hyperspeech : la production de parole est un compromis entre deux contraintes : 
+- **Hyperspeech** : intelligibilité -> orientation auditeur : contraste suffisant 
+- **Hypospeech** : économie d’effort -> orientation locuteur : effort minimum
+
+Le même message phonétique sera produit de façon différente en fonction de l’intention du locuteur et de son évaluation de l’état de la communication. -> notion de **variabilité adaptative**.
+
+# Interactions production/perception
+## Implication de l'audition dans la production
+### Surdité
+Le retour auditif n'est pas nécessaire pour parler, *mais* les surdités prélinguale et postlinguale affectent le VOT, la durée des consonnes et des voyelles, les valeurs de formants et la $F_0$.
+### Retour auditif masqué: **effet Lombard**
+**Tendance involontaire des locuteurs à augmenter leur effort vocal lorsqu’ils parlent dans un environnement bruyant** (par ex. avec un casque sur les oreilles) 
+- augmentation de F0 
+- déplacement de l’énergie des fréquences graves vers les fréquences moyennes et élevées 
+- augmentation de l’intensité 
+- augmentation de la durée des voyelles 
+- déplacement des valeurs de formants F1 (surtout) et F2 
+- augmentation de la durée des mots de contenu 
+- augmentation des mouvements faciaux
+### Delayed auditory feedback
+*Hypothèse*: retour auditif défectueux $\rightarrow$ déclenche une correction d’erreur $\rightarrow$ parole interrompue 
+*Dans l'expérience* : l’info externe écrase le feedback auditif altéré qu’a le locuteur de ses propres productions (Max et al. 2004; Hickok et al. 2011; Houde & Nagarajan, 2011
+
+### Retour auditif variable: Gestural drift
+
+L'input auditif exogène altère la production de la parole: si un portugaise est aux USA, sa manière de prononcer sa langue sera altérée. Cette altération sera aussi présente si elle veut parler anglais au Portugal (par rapport à anglais dans un pays anglophone).
+
+### Retour audifit variable: Convergence phonétique
+L’input auditif exogène altère la production de parole. Les locuteurs altèrent leur production de parole pour s’adapter aux caractéristiques acoustiques de la parole de l’autre : 
+- $F_0$ et $F_1$ (e.g. Garnier et al. 2013 ; Delvaux & Soquet, 2007 ; Babel, 2009) 
+- VOT (e.g. Nielsen, 2011) 
+- Débit (e.g. Pardo et al., 2010)
+Ces imitations sont *automatiques* et *non intentionnelles*; et durent parfois jusqu'à 10 minutes après la séparation.
+
+### Adaptation aux perturbations
+Les sujets modifient leurs stratégies articulatoires pour compenser une perturbation motrice et parvenir à atteindre la cible acoustique ('u' dans le cas de l'expérience du lip-tube perturbation).
+
+### Retour auditif transformé
+- Transformation auditive en temps réel
+- $F_1$ déplacée vers le haut ou le bas pendant que les sujet produisent 'bet', 'beck', 'debt'
+- Les locuteurs produisent un shift de F1 dans la direction opposée, de façon inconsciente.
+- Latence : 130 msec

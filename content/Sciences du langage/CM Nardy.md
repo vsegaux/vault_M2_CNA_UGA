@@ -5,182 +5,316 @@ publish: true
 ---
 # Développement du langage
 
+> [!NOTE]  
+> **Variabilité interindividuelle** : l’apprentissage du langage présente une forte variabilité entre les enfants.  
+> Par exemple, pour certaines étapes comme la production de deux mots supplémentaires à "papa" et "maman", il peut y avoir un **écart de 3 à 8 mois** entre le moment où 50 % des enfants les maîtrisent et celui où 90 % y parviennent.
+> 
+> L’apprentissage du langage **n’est pas strictement séquentiel** : la syntaxe et le lexique se développent **en parallèle**, parfois même avant les premières productions verbales.
 
-> [!NOTE] Notes:
-> Variabilité interindividuelles inhérente à l'apprentissage du langage
-> 		- écart de 3 à 8 mois dans l'acquisition de certaines étapes (ex: dire 2 mots en plus que 'papa' et 'maman') entre 50% des enfants l'ont acquis et 90% des enfants l'ont acquis.
-> L'apprentissage du langage n'est pas séquentiel, la syntaxe est apprise en parallèle du lexique, même avant les premières production de mot.
+> **Notation d’âge** : l’écriture _(1;9)_ signifie _1 an et 9 mois_ (soit 21 mois). Cette notation permet d’éviter les confusions avec les âges exprimés uniquement en mois.
 
-> Note: Notation (1;9) indique un an et 9 mois, permet de ne pas se perdre dans les valeurs d'âge en mois (21 dans cet exemple)
+## 1. Rappel : Phonologie et phonétique
 
-## Rappel phonologie/phonétique
-- **Phonologie**:
-	- étudie les sons du langage du point de vue de leur *fonction dans le système de communication* linguistique
-	- étudie les éléments phoniques qui distinguent, dans une même langue, 2 messages de sens différents: les phonèmes
-	- **phonème**: un son qui a une valeur distinctive dans le système (repéré dans les paires minimales, CF cours de linguistique)
-- **Phonétique**:
-	- étudie les sons du langage dans leur réalisation concrète, indépendamment de elur fonction linguistique
-	- description articulatoire, acoustique des sons du langage
+### Phonologie
 
-## Développement phonologique
-Le conduit vocal du jeune enfant est très différent de celui de l'adulte.
-Chronologie du développement phonologique chez l'enfant typique, sain:
-- Acquisition d'abord des sons a, i, ou, o, é déjà vers 1 ou 2 ans.
-	- Sons correspondant généralement aux voyelles, il *suffit de faire vibrer ses cordes vocales* et d'ajuster grossièrement la position de sa bouche.
-- Puis jusqu'à 3 ans des sons è, eu, u, an, in, on, un
-- Puis des sons p, b, m, t, k, d, g, n, gn de 2 à 3-4 ans.
-	- Consonnes, occlusives bilabiales d'abord (p, b, m), qui *ne mettent pas en jeu la langue*, et dont *l'articulation est entièrement visible*.
-	- Suivie des consonnes obstructive (t, k, d, g, gn), qui nécessitent simplement une *obstruction totale* du conduit vocale.
-- Et finalement f, v, s, z, ch etc... entre 3 et 6-7 ans
-	- Il s'agit des consonnes constrictives, qui nécessitent un contrôle plus fin pour produire une *obstruction partielle* du conduit vocale.
--  On remarque ici déjà la grande variabilité des âges d'apprentissage (de par l'étalement des périodes d'apprentissage de ces différents sons ('entre 3 et 7 ans))
+- Étudie les **sons du langage** du point de vue de leur **fonction** dans le système linguistique.
+    
+- Analyse les **éléments phoniques distinctifs** qui permettent de différencier deux mots dans une langue donnée (→ _phonèmes_).
+    
+- Le **phonème** est donc la plus petite unité sonore ayant une **valeur distinctive** (ex. les _paires minimales_ étudiées en linguistique (CF cours ==Depau==)).
+    
+
+### Phonétique
+
+- Étudie les **sons du langage dans leur réalisation concrète**, indépendamment de leur fonction dans la communication.
+    
+- Elle décrit de manière **articulatoire** et **acoustique** la production et les caractéristiques physiques des sons.
+    
+
+## 2. Développement phonologique
+
+Le **conduit vocal du jeune enfant** est très différent de celui de l’adulte, ce qui influence la chronologie d’acquisition des sons.
+
+### Chronologie typique
+
+1. **Vers 1-2 ans** : acquisition des sons [a], [i], [u], [o], [é].  
+    → Ces sons correspondent aux **voyelles** : il suffit de faire vibrer les cordes vocales et d’ajuster la bouche.
+    
+2. **Jusqu’à 3 ans** : apparition des sons [ɛ], [ø], [y], [ɑ̃], [ɛ̃], [ɔ̃], [œ̃].
+    
+3. **Entre 2 et 3-4 ans** : production des sons [p], [b], [m], [t], [k], [d], [g], [n], [ɲ].
+    
+    - Les premières consonnes acquises sont souvent les **occlusives bilabiales** (p, b, m), simples à articuler car **visibles et sans implication de la langue**.
+        
+    - Viennent ensuite les **consonnes obstructives** (t, k, d, g, gn) nécessitant une obstruction complète du conduit vocal.
+        
+4. **Entre 3 et 6-7 ans** : acquisition des sons [f], [v], [s], [z], [ʃ]...  
+    → Ce sont des **consonnes constrictives**, demandant un contrôle moteur plus fin (obstruction partielle du conduit vocal).
+    
+
+> On observe une **grande variabilité** dans l’âge d’acquisition de ces sons
 
 ![[develop_chrono_appre.png]]
 
-### Etude de Aicart de Falco et Vion (1987)
-- 75 enfants entre 3 et 6 ans (milieu social intermédiaire/favorisé)
-- Dénomination d'objets et d'images (nécessitant l'ensemble des phonèmes français, dans toutes les positions possibles des mots)
-- **Résultats**
-	- 80% des enfants de maternelle ne maitrisent pas la totalité des phonèmes du français
-	- 10% à 3-4 ans produisent correctement tous les phonèmes
-	- 25% à 5-6 ans produisent correctement tous les phonèmes
-- **Erreurs constatées**
-	- Davantage d'erreur sur la production des consonnes
-	- Confusion les plus fréquentes : "je" -> "ze" et "ch" -> "ss"
-	- Erreurs sur la production des groupes consonantiques
-		- Omission de l'une des deux consonnes (souvent "r" ou "l" ne sont pas produites: "tracteur"-> "tateur")
-		- Remplacement d'une des deux consonnes par une autre (souvent 'tr' remplacé par 'kr': "krop bien") -> *Antériorisation*
 
-> Remarque: qu'un son ne soit pas produit ne signifie pas forcément qu'il n'est pas perçu. 3fis" phenomenon: Lorsqu'un adulte emploi les sons utilisés par l'enfant pour dénommer quelque chose, l'enfant ne le reconnait pas nécessairement: "C'est ton fis" -> "Non, c'est mon fis (au lieu de fish)"
-> Les enfants auraient donc une bonne représentation des connaissances langagière, malgré qu'ils ne puissent pas les articuler correctement.
-## Développement lexical
+### Étude de Aicart de Falco & Vion (1987)
 
-- 9-10 mois : débuts de la compréhension des mots en contexte 
-- 12 mois : compréhension d’une trentaine de mots en contexte et de quelques mots très familiers hors contexte (De Boysson-Bardies, 1996) 
-- 11-13 mois : production des premiers mots
-La compréhension a environ 3 à 5 mois d'avance sur la production.
+- **Échantillon** : 75 enfants âgés de 3 à 6 ans (milieux sociaux intermédiaires à favorisés).
+    
+- **Méthode** : dénomination d’objets et d’images sollicitant l’ensemble des phonèmes français dans toutes les positions possibles.
+    
 
-### Inventaire français du développement communicatif (IFDC)
-- 548 enfants âgés de 8 à 16 mois et 663 enfants âgés de 16 à 30 mois 
-- Version courte (temps de passation de 5 à 10 minutes) 
-- Questionnaires fermés d’une page chacun (12, 18 et 24 mois) remplis par les familles
-	- Description des gestes communicatifs et du babillage 
-	- Compréhension et production des mots 
-	- Acquisition des premières bases grammaticales
-	- Exemple de consignes:![[IFDC_consignes.png]]
-- **Résultats**
-	- Variations individuelles importantes
-	- Effet significatif du sexe sur toutes les mesures
-		- Plusieurs recherches menées à ce sujet: *le discours porté à l'enfant* est différents *en terme de quantité pour les filles est plus grand que pour les garçons*. Les filles parlent aussi plus que les garçons à ces âges là. La qualité du discours donné aux filles est aussi meilleure que celle des discours donnés aux garçons (plus de questions sont posées au filles, typiquement). Les mères proposent plus de *variantes standard* aux filles qu'au garçons (typiquement les liaisons facultatives comme dans "c'es*t* ici")
-		- Ces effets sont en général réduit avec l'âge, pour finir par disparaitre complètement vers 6-7 ans.
+#### Résultats
 
-|         | Nb de mots produits | Nb de mots compris |
-| ------- | ------------------- | ------------------ |
-| 12 mois | 4 (5Fille, 3Garçon) | 31 (33F, 28G)      |
-| 18 mois | 22 (26F, 17G)       | 77 (81F, 73G)      |
-| 24 mois | 67 (72F, 61G)       |                    |
+- 80 % des enfants de maternelle **ne maîtrisent pas tous les phonèmes** du français.
+    
+- 10 % des enfants de **3-4 ans** produisent correctement tous les phonèmes.
+    
+- 25 % des enfants de **5-6 ans** y parviennent.
+    
 
-### Lexique et inégalité socio-culturelles
-- 11496 enfants suivis dans une étude longitudinale
-- Niveau de développement langagier en fonction du niveau de diplôme de la mère (IFDC à 24 mois, nb de mots dits de manière spontanée)
-- **Résultats**:
-	- Moyenne générale à 2ans: 74 mots
-	- Pour les niveaux d'étude de la mère inférieur ou égal au bac: 70
-	- Pour les niveaux d'études à bac+2: 78
+#### Types d’erreurs
+
+- Erreurs plus fréquentes sur les **consonnes** que sur les voyelles.
+    
+- Confusions typiques :
+    
+    - "je" → "ze"
+        
+    - "ch" → "ss"
+        
+- Difficultés avec les **groupes consonantiques** :
+    
+    - Omission : "tracteur" → "tateur" (souvent omission de _r_ ou _l_).
+        
+    - Substitution : "tr" → "kr" (ex. "krop bien") → phénomène d’**antériorisation**.
+        
+
+> [!NOTE]  
+> Le fait qu’un son **ne soit pas produit** ne signifie pas qu’il **n’est pas perçu**.  
+> Exemple du _"fis phenomenon"_ : si un adulte reprend les sons utilisés par l’enfant pour nommer un objet, l’enfant peut **ne pas le reconnaître** ("C’est ton fis ?" → "Non, c’est mon fis !" au lieu de _fish_).
+> 
+> Cela suggère que les enfants ont **une représentation phonologique correcte** même s’ils ne peuvent pas encore articuler tous les sons.
+
+
+## 3. Développement lexical
+
+### Étapes clés
+
+- **9-10 mois** : début de la **compréhension des mots** en contexte.
+    
+- **12 mois** : compréhension d’une **trentaine de mots**, dont quelques-uns compris même **hors contexte** (De Boysson-Bardies, 1996).
+    
+- **11-13 mois** : **premiers mots produits**.
+    
+
+> La **compréhension précède la production** de 3 à 5 mois en moyenne.
+
+
+### Inventaire Français du Développement Communicatif (IFDC)
+
+- **Échantillon** :
+    
+    - 548 enfants de 8 à 16 mois
+        
+    - 663 enfants de 16 à 30 mois
+        
+- **Procédure** : questionnaires courts (5 à 10 minutes), remplis par les parents à 12, 18 et 24 mois.
+    
+    - Évaluation des **gestes communicatifs**, du **babillage**, de la **compréhension et production lexicale**, et des **bases grammaticales**.
+        
+
+![[IFDC_consignes.png]]
+
+#### Résultats
+
+- **Variabilité individuelle importante**.
+    
+- **Effet du sexe** : les filles sont généralement **plus avancées** sur toutes les mesures.
+    
+    - Elles **parlent davantage** et **reçoivent plus de discours** de la part des adultes.
+        
+    - La **qualité du discours parental** est également meilleure (plus de questions, vocabulaire plus riche, variantes standard comme la liaison "c’est_t_ ici").
+        
+    - Ces différences **s’estompent vers 6-7 ans**.
+        
+
+|Âge|Mots produits (moyenne)|Mots compris (moyenne)|
+|---|---|---|
+|12 mois|4 (5F / 3G)|31 (33F / 28G)|
+|18 mois|22 (26F / 17G)|77 (81F / 73G)|
+|24 mois|67 (72F / 61G)|—|
+
+
+### Lexique et inégalités socio-culturelles
+
+- Étude longitudinale sur **11 496 enfants**.
+    
+- Mesure du vocabulaire à 24 mois (nombre de mots produits spontanément selon le diplôme de la mère).
+    
+
+#### Résultats
+
+- Moyenne générale à 2 ans : **74 mots**.
+    
+- Niveau ≤ Bac : **70 mots**.
+    
+- Niveau Bac +2 : **78 mots**.
+    
 
 ![[socio_eco_mot_appris.png]]
 
-### Evolution développementale
+
+### Évolution développementale du lexique
+
 ![[acuisition_develop_evolution.png]]
-On observe un pic d'apprentissage de vocabulaire entre 24 et 25 mois, on parle d'**explosion lexicale**: augmentation rapide/brutale du rythme d'acquisition. Ce phénomène est universel, indépendant des cultures et des langues. Cette explosion sépare deux périodes d'acquisition: 
-- entre 20 et 24 mois, **augmentation lente** du vocabulaire (6.5 mots nouveaux par mois)
-	- À partir de la production des premiers mots ≈ 2-3 mots nouveaux appris par semaine (voire moins) 
-	- Prononciation encore balbutiante
-	- Mots produits dans un contexte particulier et en général en présence du référent
-- entre 25 et 30 mois, **augmentation rapide** du vocabulaire (27 mots nouveaux par mois)
-	- ≈ entre 4 et 10 mots nouveaux produits par jour 
-	- Prononciation proche de celle de l’adulte 
-	- Mots produits de manière plus décontextualisée et conventionnelle
 
-Une explication de cette augmentation est l'atteinte d'un **seuil critique**, qui serait d'environ *50 mots*. Une fois atteint, l'apprentissage est plus rapide.
+- **Pic d’apprentissage vers 24-25 mois** : l’**explosion lexicale**, caractérisée par une augmentation rapide du rythme d’acquisition, phénomène **universel**.
+    
 
-#### Taille du lexique
-- Vers 3 ans : des centaines de mots 
-- Au-delà : des milliers de mots 
-- Adulte cultivé : entre 20000 et 40000 mots
-#### Composition du lexique
-- *Avant l’explosion lexicale* : 
-	- Noms de personnes, d’animaux, d’objets du quotidien, de nourriture/boisson 
-	- Onomatopées 
-	- Expressions diverses en lien avec les jeux et les routines quotidiennes 
-- *Après l’explosion lexicale* : 
-	-  $\nearrow$ Noms communs 
-	- $\searrow$  Onomatopées et expressions diverses en lien avec les jeux et le quotidien 
-	- Apparition des verbes et des adjectifs
-- *A partir d'un stock lexical d'environ 400 mots* :
-	- Production de mots grammaticaux (déterminants, pronoms, prépositions, conjonctions, etc.)
-#### Sens des mots
-- Stratégies pour découvrir le sens des mots
-	- Sous-extension: utiliser un mot 'large' pour désigner une sous-catégorie (chien pour les caniches spécifiquements, mais pas les autres chiens)
-	- Sur-extension: utiliser un mot pour désigner une catégorie plus large (chat pour tous les petits animaux poilus (lapin, chiot, rat..))
-### Acquisition du lexique
-Elle est liée à la capacité à catégoriser les objets du monde. Apprendre à dénommer c'est apprendre à catégoriser.
-#### Expérience de catégorisation
-Présentation d'objet avec des noms inexistant, puis demande à l'enfant de "donner celui qui va avec", on remarque que l'enfant catégorise selon les propriétés des objets. Des expériences similaires permettent de voir quelles sont les catégorisations qui sont faites par les enfants (voiture/camion; animaux; ...)
+#### Avant l’explosion (20-24 mois)
 
-### Developpement morpho-syntaxique
+- Croissance lente : ≈ **6,5 mots par mois**.
+    
+- Prononciation hésitante/balbutiante.
+    
+- Usage contextuel : les mots sont produits **en présence du référent**.
+    
 
-- À partir de l’explosion lexicale 
-	- Diversification des catégories formelles 
-	- Premières combinaisons de mots (style "télégraphique") 
-		- pati papa 
-		- pati chien 
-		- pati voiture 
-		- encore gateau 
-		- encore lait 
-		- encore ballon
-	- Données IFDC (Bovet et al, 2005) 
-		- À 18 mois, 44% des enfants combinent 2 mots 
-		- À 24 mois, 91% des enfants combinent 2 mots
+#### Pendant l’explosion (25-30 mois)
 
+- Croissance rapide : **≈27 mots par mois**, soit **4 à 10 mots nouveaux par jour**.
+    
+- Prononciation proche de celle de l’adulte.
+    
+- Utilisation **plus décontextualisée** du langage.
+    
 
-Trois types de mesures couramment utilisées:
-- **Productivité**
-	- Nombre total d’énoncés produits 
-	- Nombre total de mots produits 
-		- Tokens (nombre total des occurrences des mots) 
-		- Types (nombre total de mots différents) 
-- **Longueur Moyenne des Énoncés (LME)** 
-	- Nombre de tokens/nombre d’énoncés : indicateur de la complexité morphosyntaxique 
-	- Meilleur indicateur de développement langagier à notre disposition aujourd'hui
-- **Rapport Types/Tokens (RTT)** 
-- Nombre de types/nombre de tokens : indicateur de la diversité lexicale
--
-**Remarques sur la LME** 
-- Indicateur fiable du développement morphosyntaxique 
-- Évolue avec l’âge dans les premières étapes développementales 
-- **MAIS** au-delà d’une LME de 4-5 mots (≈4-5 ans), cette mesure n’est plus un indicateur fiable de développement langagier Acquisition de la morpho-syntaxe
-	- Exemple : Maman fait de la purée avec le mixeur : 8 mots
-	- Maman fait de la purée avec la machine qui écrabouille les patates : 12 mots
+> L’accélération semble liée à un **seuil critique d’environ 50 mots** : une fois franchi, l’apprentissage devient plus efficace.
+
+#### Taille et composition du lexique
+
+- **Vers 3 ans** : plusieurs centaines de mots.
+    
+- **Adulte cultivé** : entre **20 000 et 40 000 mots**.
+    
+
+**Avant l’explosion lexicale :**
+
+- Mots concrets : noms de personnes, d’animaux, objets familiers, nourriture, onomatopées, expressions de routines.
+    
+
+**Après l’explosion lexicale :**
+
+- Hausse des **noms communs**.
+    
+- Diminution des **onomatopées** et expressions routinières.
+    
+- Apparition des **verbes** et **adjectifs**.
+    
+- Vers 400 mots : production de **mots grammaticaux** (déterminants, pronoms, prépositions, conjonctions…).
+    
+
+#### Stratégies de sens
+
+- **Sous-extension** : mot utilisé pour une sous-catégorie ("chien" = uniquement les caniches).
+    
+- **Sur-extension** : mot utilisé pour une catégorie trop large ("chat" = tout petit animal poilu).
+    
 
 
-#### Etude de Parisse et Le Normand 2006
-- Langage spontané de 316 enfants entre 2 et 4 ans
-- Contexte: jeu avec la maison Fischer-Price en compagnie de l'un des parents
-- **Résultats**
-	- Productivités (nb d'énoncé et de tokens)
-		- $\nearrow$ entre 2 et 3 ans
-		- ~ entre 3 et 4 ans
-	- Nb type & LME:
-		- $\nearrow$ avec l'âge
-	- RTT:
-		- $\nearrow$ entre 2 et 4 ans mais fluctuations dans les tranches d'âge
-#### Indépendant de l'étude précedente, mais sur le même genre de population d'enfant
-Evolution en fonction de l'origine sociale:
-- Les enfants de cadres produisent davantage d'énoncé, quelque soit l'âge
-- Ces écarts se creusent entre 24 et 42 mois.
-	- Les enfants de cadres à 33 mois connaissent déjà autant de mots (400) que les enfants de milieux 'populaire' à 42 mois.
+### Acquisition du lexique et catégorisation
+
+Apprendre à nommer, c’est apprendre à **catégoriser** le monde.  
+Des expériences montrent que les enfants regroupent les objets selon leurs **propriétés perceptives** (ex. voiture/camion, animaux…).
+
+
+## 4. Développement morpho-syntaxique
+
+### À partir de l’explosion lexicale :
+
+- Diversification des **catégories grammaticales**.
+    
+- Premières **combinaisons de mots** ("style télégraphique") :
+    
+    - "pati papa", "pati chien", "encore gâteau", "encore ballon"...
+        
+
+**Données IFDC (Bovet et al., 2005)** :
+
+- À 18 mois : 44 % combinent 2 mots.
+    
+- À 24 mois : 91 % combinent 2 mots.
+    
+
+
+### Mesures du développement morpho-syntaxique
+
+1. **Productivité**
+    
+    - Nombre total d’énoncés produits.
+        
+    - Nombre total de mots produits :
+        
+        - _Tokens_ = occurrences totales.
+            
+        - _Types_ = mots différents.
+            
+2. **Longueur Moyenne des Énoncés (LME)**
+    
+    - Formule : _nombre de tokens / nombre d’énoncés_.
+        
+    - Indicateur de **complexité morpho-syntaxique**.
+        
+    - C’est aujourd’hui **le meilleur indicateur** de développement langagier.
+        
+3. **Rapport Types/Tokens (RTT)**
+    
+    - _Nombre de types / nombre de tokens_ → mesure de la **diversité lexicale**.
+        
+
+> [!NOTE]  
+> La **LME** est un indicateur fiable au début du développement (jusqu’à 4-5 ans, LME ≈ 4-5 mots).  
+> Au-delà, elle **n’est plus discriminante**, car les différences de longueur ne traduisent plus nécessairement un développement grammatical.
+> 
+> Exemple :
+> 
+> - "Maman fait de la purée avec le mixeur" → 8 mots.
+>     
+> - "Maman fait de la purée avec la machine qui écrabouille les patates" → 12 mots.
+>     
+
+
+### Étude de Parisse & Le Normand (2006)
+
+- **316 enfants** âgés de 2 à 4 ans.
+    
+- Observation du **langage spontané** lors d’un jeu (maison Fisher-Price) avec un parent.
+    
+
+#### Résultats
+
+- **Productivité** (nombre d’énoncés et de tokens) :
+    
+    - Augmente entre 2 et 3 ans.
+        
+    - Se stabilise entre 3 et 4 ans.
+        
+- **Nombre de types et LME** : augmentation régulière avec l’âge.
+    
+- **RTT** : augmente aussi, mais avec des fluctuations.
+    
+
+
+### Effets du milieu social et du sexe
+
+- Les **enfants de cadres** produisent **plus d’énoncés** à tous les âges.
+    
+- Les écarts se **creusent entre 24 et 42 mois** :
+    
+    - À 33 mois, les enfants de cadres connaissent ≈ **400 mots**, soit autant que les enfants de milieux populaires à 42 mois.
+        
+- On retrouve aussi un **effet du sexe** : les filles produisent plus de mots et une plus grande diversité lexicale.
+    
+
 ![[evolution_origin_sociale_carde_populaire.png]]
-
-On retrouve aussi l'effet du sexe sur le type (diversité) et sur le nombre de mots produits (de 2 à 4 ans).
-
