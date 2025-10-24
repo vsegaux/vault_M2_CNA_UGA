@@ -1,6 +1,9 @@
 - Prise en main des algos: python? pseudo-code? C++? ou déjà embarqué?
 - Export des algos: automatique? OpenCL/CUDA etc.. généré seul?
 - Partie floue: apprentissage incrémental/en ligne?
+- *Focus portage ou focus développement de AIDGE?*
+notes Licence
+
 
 Doc. Aidge https://eclipse.dev/aidge/source/Tutorial
 

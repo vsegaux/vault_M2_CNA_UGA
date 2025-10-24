@@ -556,7 +556,7 @@ VOT (Voice Onset Time): Délai d'établissement du voisement après une occlusio
 - Positif quand : la vibration commence après l’explosion 
 - Négatif quand : la vibration commence avant l’explosion
 
-Malgré le fait que selon des valeur continues de VOT entre Ba et Pa, notre perception est catégorielle et va majoritairement reporter Ba OU Pa. Il existe entre ces deux catégorisation une frontière assez courte: 
+Malgré le fait que selon des valeur continues de VOT entre Ba et Pa, notre perception est catégorielle et va majoritairement reporter Ba OU Pa. Il existe entre ces deux catégorisation une frontière assez courte (CF *Courbe de perception catégorielle* sur la figure suivante): 
 ![[percep_categBG.png]]
 Une autre manière d'établir cette frontière est de demander aux participants de discriminer deux sons entendus, on observe alors un pic de discrimination au niveau de la frontière.
 
@@ -564,9 +564,16 @@ Une autre manière d'établir cette frontière est de demander aux participants 
 **Compensation de la coarticulation (C2C)**: la décision perceptive est influencée par les "connaissances" de coarticulation du système. Mis en évidence en demandant à des sujets de discriminer Ga ou Da dans un mot bisyllabique dont la première syllabe est aL ou aR:
 ![[C2C.png]]
 Dans le contexte aL, il sera plus difficile de produire Ga, donc le système perceptif est moins exigent pour détecter Ga, on a décalage de la frontière catégorielle vers la droite (vers Da). Et inversement avec la production de Da dans un contexte de aR.
+On remarque de plus que cette compensation n'est pas spécifique à la parole (Lotto & Kluender 1998), lorsque les manipulations sont faites avec des tons pures plutôt que des sons de paroles.
 
 #### Restauration de phonèmes
-Le système perceptif est capable de restaurer un phonème mal prononcé. L'information manquante est alors restaurée.
+Le système perceptif est capable de restaurer un phonème mal prononcé. L'information manquante est alors restaurée, un bon exemple de cela est la **parole sinusoïdale**:
+Si l'on reproduit les variations de fréquences correspondant aux différents formant d'un signal audio de parole sur des signaux sinusoïdaux, on parvient quand même, à l'écoute de ces sinusoïdes, à reconstruire les mots produits:
+![[parole_sinu.png]]
+
+
+
+
 #### Perception duplexe
 Différentes interprétations d'un même indice acoustique.
 ![[duplexe_percep.png]]
@@ -659,6 +666,18 @@ Hypospeech vs. hyperspeech : la production de parole est un compromis entre deux
 
 Le même message phonétique sera produit de façon différente en fonction de l’intention du locuteur et de son évaluation de l’état de la communication. -> notion de **variabilité adaptative**.
 
+### Bilan des théories:
+
+- **Théorie quantale (auditive)**
+	- La parole n’est pas spéciale – objet de la perception : signal acousticoauditif – hypothèse : invariants acoustico-auditif 
+- **Théorie Motrice**
+	- La parole est spéciale – objet de la perception : geste planifié – hypothèse : invariants dans le geste planifié (pas dans le signal acoustique ou dans l’articulation effective) 
+- **Théorie du réalisme direct** 
+	- La parole n’est pas spéciale – objet de la perception : geste effectif – hypothèse : invariants gestuels causent des invariants acoustiques 
+- **Théorie H&H**
+	- La parole n’est pas spéciale – pas d’unités primaires ni d’objet de la perception – pas d’invariants absolu dans le signal (acoustico-auditif ou articulatoire)
+
+
 # Interactions production/perception
 ## Implication de l'audition dans la production
 ### Surdité
@@ -695,3 +714,60 @@ Les sujets modifient leurs stratégies articulatoires pour compenser une perturb
 - $F_1$ déplacée vers le haut ou le bas pendant que les sujet produisent 'bet', 'beck', 'debt'
 - Les locuteurs produisent un shift de F1 dans la direction opposée, de façon inconsciente.
 - Latence : 130 msec
+- On suppose donc l'existence d'une boucle de contrôle par feedback auditif: l'*input auditif endogène est utilisé pour le contrôle de la production de parole en temps réel*.
+
+## Effets de contexte à long terme
+*Hypothèse de la Théorie Motrice* : normalisation du locuteur = représentation du conduit vocal du locuteur ? 
+Expérience de Ladefoged & Broadbent, 1957:
+On présente aux sujets une phrase porteuse "Please say what this word is..." suivie d'une CIBLE: "bit, bet, bat ou but".
+- CIBLE : acoustique ne change pas (tjrs 'but')
+- CIBLE : perception change avec shift de “speaker” 
+- Les caractéristiques spectrales de la *phrase porteuse prédisent la perception*.
+La perception de la cible est influencée par la phrase porteuse (i.e. par le contexte).
+
+## Eléments neurophysiologiques
+Les données récentes de la neuropsychologie ont remis en question un rôle du cortex moteur lors de la perception de parole, en particulier lorsque les stimuli sont ambigus, ou lors de l’acquisition d’une seconde langue + qu’il existe un système spécifique pour le traitement de la parole dans le cerveau.
+- Zatorre et al. 1992: différents circuits pour la perception de la parole vs. bruits artificiels
+- Binder et al. 2000: (*mots vs non-mots*) vs bruits vs sons purs -> Activation cérébrales spécifiques pour les signaux de paroles.
+
+### Les neurones miroirs (RIzzolatti et al. 1990s)
+Neurones activés à la fois en faisant l'action nous même et en observant quelqu'un faisant l'action. l a été proposé que les neurones miroirs joueraient un rôle fondamentale dans le traitement de la parole comme un mécanisme neurophysiologique qui crée une parité entre le locuteur et l’interlocuteur et permet une comparaison directe.
+### Résonances motrices
+Utilisation de TMS (Stimulation Magnétique transcranienne) pour mesurer l'activation motrice pendant la perception. On mesure les Potentiels Musculaires Evoqué (MEP) sur la langue lors de la perception de différents sons:
+
+- Perception de mots contenant le son 'rr' (implication de la langue pour le produire) dans des mots OU de pseudo-mots
+- Perception de mots contenant le son 'ff' (pas d'implication de la langue pour le produire) dans des mots OU de pseudo-mots
+- Sons n'étant pas des sons de paroles
+- ![[TMS_MEP.png]]
+- On remarque une activation motrice (même si très faible) associées spécifiquement à la production des sons/syllabes qui sont perçues.
+
+Mais y a til causalité? Le système moteur peut-il modifier la perception de parole?
+- Mesure du temps de réaction (RT) pour la discrimination de sons labiaux vs dentaux avec stimulation par TMS du cortex moteur des lèvres vs de la langue: ![[dentau_labiau_TR.png]]
+- Effet facilitateur de l'activation du système moteur correspondant à celui nécessaire à la production du son perçu.
+
+## Perception for Action Control Theory (PACT)
+![[PACT.png]]
+
+La perception peut suivre l'action en la remettant en forme, donc en permettant à la fois le contrôle de sa propre action et de celle de l'autre. Perception et action contribuent à spécifier la nature des objets linguistiques.
+
+# Multisensorialité et multimodalité de la communication parlée
+Percevoir du son ET du mouvement c'est entendre, mais aussi voir et parfois toucher.
+- Lecture labiale:
+	- 40-60% des phonèmes
+	- 10-20% des mots (parfois jusqu'à 60%, pour les personnes entrainées)
+	- Mise en évidence par des expériences basées sur la perception de la parole dans le bruit (mise en contraste des modalités 'audiovisuel' VS 'audio seul')
+		- Plus il y a de bruit, plus la vision aide la perception de la parole
+
+L'information visuelle n'est pas redondante, tel qu'illustré par les arbres de confusion de Summerfield:
+![[confusion_summerfield.png]]
+Plus des consonnes sont éloignées sur l'axe des abscisses, moins elles ont de chance d'être confondues à partir d'indices auditifs seuls. Cet axe serait différent s'il avait été représenté pour les indices visuels. 
+En ordonnée, le niveau de bruit indique les seuils qui causent la confusion ou non de lettres entre elles.
+
+**Effet McGurk**: Lors de la présentation d'information auditive et visuelles non compatibles, le systeme perceptif tente de reconstruire un intermédiaire:
+- Audio: ABA, lèvres fermées, occlusion
+- Visuel: AGA, lèvres ouvertes
+- Perception: ADA, lèvres ouvertes, occlusion
+
+
+
+
