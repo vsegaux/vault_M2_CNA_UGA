@@ -3,18 +3,19 @@ title: Notes de cours du M2 Cognition Naturelle et Artificielle
 publish: true
 ---
 # Tables des matières:
+
 ## Introduction aux sciences cognitives
 [[CM Loevenbruck]]
 ## Linguistique
  [[CM Depau]]
-## Machine Learning
-
 ## Méthodologie de neuroimagerie
 [[CM Campagne]]
 [[CM Cousin]]
+[[CM Bertolotti]]
 ## Méthodologie et mesures en sciences cognitives
-[[CM Chauvin]]
 [[CM ITO]]
+[[CM Chauvin]]
+[[CM GUYADER]]
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
@@ -22,13 +23,12 @@ publish: true
 ## Philosophie en sciences cognitives
 [[CM Alvarez]]
 ## Psychologie cognitive
-[[CM Rousset]]
-[[CM Faivre]]
 [[CM Mermillod PC]]
+[[CM Faivre]]
+[[CM Rousset]]
 ## Sciences du langage
 [[CM Dohen]]
-[[CM Garnier SL]]
-
+[[CM Nardy]]
 
 # Références
 
