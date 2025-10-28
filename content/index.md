@@ -19,7 +19,7 @@ publish: true
 ## Modèle de mémoire
 [[CM Grandchamp]]
 ## Perception et audition
-[[CM Garnier PA]]
+[[CM Garnier]]
 ## Philosophie en sciences cognitives
 [[CM Alvarez]]
 ## Psychologie cognitive

@@ -16,72 +16,11 @@ La méthode expérimentale vise à **étudier l’influence d’une variable (VI
 Le but est d’établir un **lien de causalité** : si la VI varie, la VD change-t-elle de manière significative ?
 
 ## Variable indépendante (VI)
-
-Variable dont on cherche à **vérifier l’influence sur la VD** (le comportement ou la performance observée).  
-Elle représente la **cause supposée** du phénomène étudié.
-
-### Caractéristiques :
-
-- Possède **plusieurs modalités** (souvent 2 ou 3).
-    
-- Peut être de **nature différente** :
-    
-    - **Provoquée** : sa valeur est imposée par l’expérimentateur.  
-        → ex. condition de test, quantité d’alcool donnée.
-        
-    - **Invoquée** : sa valeur est propre aux participants.  
-        → ex. niveau d’anxiété, âge, couleur des yeux.
-        
-
+![[Variable indépendante (VI)]]
 ## Variable dépendante (VD)
-
-Variable mesurée, censée refléter l’effet de la VI.  
-C’est **l’objet de la mesure** dans l’expérience.
-
-### Échelles de mesure (Stevens, 1946)
-
-| Type           | Nature                         | Exemples                       | Mesure                            |
-| -------------- | ------------------------------ | ------------------------------ | --------------------------------- |
-| **Nominale**   | Catégorielle, sans ordre       | Sexe, Catégorie Socio-Pro      | Effectif, Mode, χ²                |
-| **Ordinale**   | Ordre sans intervalle constant | Classement, échelle de douleur | Médiane, quantiles                |
-| **Intervalle** | Ordre + écart constant         | Température, score de test     | Moyenne, écart-type               |
-| **Rapport**    | Intervalle + zéro absolu       | Temps de réaction, vitesse     | Moyenne, coefficient de variation |
-
-→ Le **type d’échelle** détermine le **modèle d’analyse statistique** (gaussien, binomial, multinomial, etc.).
-
-### Qualités psychométriques d’une bonne VD :
-
-1. **Validité** : mesure réellement ce qu’elle prétend mesurer.
-    
-2. **Sensibilité** : détecte de faibles variations.
-    
-3. **Fidélité** : stabilité dans le temps (faible erreur de mesure).
-    
-4. **Objectivité** : indépendante de l’expérimentateur (standardisation).
-    
-
+![[Variable dépendante (VD)]]
 ## Variable contrôle (VC)
-
-Source d’influence **potentielle** sur la VD, non étudiée pour elle-même, mais **contrôlée** pour éviter la confusion avec la VI.
-
-### Types de contrôle :
-
-- **Fixé** : même valeur pour tous les sujets (ex. durée constante du test).
-    
-- **Aléatoire** : distribution aléatoire des sujets dans les conditions → neutralise les différences individuelles.
-    
-- **Contrebalancé** : chaque sujet passe toutes les conditions, mais dans un ordre différent.
-    
-
-### Types de VC selon leur nature :
-
-- **Invoquée** : propriété intrinsèque des participants (ex. genre, anxiété).
-    
-- **Provoquée** : manipulation expérimentale (ex. ordre de présentation, contexte sonore).
-    
-
-> Objectif : respecter le principe **« toute chose égale par ailleurs »**.
-
+![[Variable contrôle (VC)]]
 ## Hypothèses
 
 ### Hypothèse nulle ($H_0$)
@@ -98,44 +37,12 @@ $$ H_1 : \mu_1 \neq \mu_2 $$
 Les deux hypothèses sont **complémentaires** : rejeter $H_0$ revient à accepter $H_1$.
 
 ## P-value et seuil alpha (α)
-
-- **P-value** : probabilité, _sous H₀_, d’obtenir un résultat au moins aussi extrême que celui observé.
-    
-- **Seuil α** : niveau de risque que l’on accepte de prendre pour rejeter H₀ (souvent **0.05**).
-    
-
-### Décision :
-
-- Si _p ≤ α_ → effet **significatif** → rejet de H₀.
-    
-- Si _p > α_ → effet **non significatif** → on conserve H₀.
-    
-
-> Diminuer α réduit les faux positifs mais **augmente les faux négatifs** (perte de puissance).
-
-
+![[P-value et seuil alpha (α)]]
 ## Types d’effets
-
-- **Effet principal** : effet d’une VI sur la VD, indépendamment des autres VI.
-    
-- **Effet d’interaction** : effet combiné de plusieurs VI → la variation de la VD dépend de la combinaison des VI.
-    
-- **Effet simple** : effet d’une VI pour un seul niveau d’une autre VI.
-    
+![[Types d’effets]]
 
 ## Taille d’effet
-
-Permet d’évaluer **l’ampleur réelle** de la différence observée. C'est _une mesure de la force de l'effet observé d'une variable sur une autre_.
-
-- **d de Cohen** :  
-    $$ d = \frac{M_1 - M_2}{S_p} $$  
-    où $S_p$ est l’écart-type pondéré.
-    
-- Relation avec la statistique t :  
-    $$ t = \sqrt{n} \times d = \frac{M_1 - M_2}{S_p / \sqrt{n}} $$
-    
-
-
+![[Taille d’effet]]
 ## Erreurs de décision
 
 - **Erreur de type I (α)** : rejet à tort de H₀ → _faux positif_.
@@ -146,68 +53,15 @@ Permet d’évaluer **l’ampleur réelle** de la différence observée. C'est _
 > La **puissance statistique** d’un test = 1 − β → probabilité de détecter un effet réel.
 
 ## Plan d’expérience
-
-Le plan définit la structure de l’étude (VI, VD, VC, nombre de sujets, passation...).
-
-| Plan             | Description                              | Notation      | Exemple                     |
-| ---------------- | ---------------------------------------- | ------------- | --------------------------- |
-| **Inter-sujets** | Chaque sujet dans une seule condition    | `S < A >`     | 10 sujets par condition     |
-| **Intra-sujets** | Chaque sujet passe toutes les conditions | `S * A`       | 10 sujets × 2 conditions    |
-| **Mixte**        | Combinaison intra/inter                  | `S < A > * B` | 2 VI : une intra, une inter |
-    
-
-> Le plan conditionne entièrement l’analyse statistique.
-
-
+![[Plan d’expérience]]
 ## Hypothèses pour les tests statistiques
-
-1. **Normalité** : les résidus doivent suivre une loi normale.  
-    → Vérifié via Q-Q plot (si points alignés = normalité respectée).  
-    → Sinon : transformation (ex. log).
-    
-2. **Indépendance** : les observations ne doivent pas être corrélées entre elles.
-    
-3. **Homogénéité des variances** : variances égales entre groupes.  
-    → Sinon : utiliser **test de Welch** ou **test U de Mann–Whitney** (non paramétrique, sans interaction possible).
-    
-
+![[Hypothèses pour les tests statistiques]]
 ## Population et échantillon
-
-- **Population** : ensemble complet des individus concernés par la recherche.
-    
-- **Échantillon** : sous-ensemble de la population, choisi pour être représentatif.  
-    → On suppose un échantillonnage **aléatoire indépendant et identiquement distribué (a.i.i.d.)**.
-    
-
-> [!NOTE]  
-> Un échantillon _a.i.i.d._ signifie que chaque individu est sélectionné :
-> 
-> - **indépendamment** des autres ;
->     
-> - selon la **même loi de probabilité** que les autres (identiquement distribués).
->
+![[Population et échantillon]]
 ## Validité des recherches
-
-- **Validité interne** : le changement observé dans la VD est bien dû à la VI (et non à un facteur externe).
-    
-- **Validité externe** : possibilité de **généraliser** les résultats à d’autres populations, contextes ou situations.
-    
-
+![[Validité des recherches]]
 ## Test t de Student
-
-Permet de comparer des **moyennes** entre deux groupes.
-
-### Formule :
-
-t=$\frac{M_1 - M_2}{S_p / \sqrt{n}}$
-
-- Si $t$ observé dépasse la valeur critique (table Student) → rejet de H₀.
-    
-- **Unilatéral** : hypothèse directionnelle (effet dans un sens).
-    
-- **Bilatéral** : test des deux directions possibles.
-
-
+![[Test t de Student]]
 # Étude de cas : Agressivité et alcool (Zerhouni et al., 2013)
 
 ### Question

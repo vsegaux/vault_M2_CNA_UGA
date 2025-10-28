@@ -12,12 +12,9 @@ publish: true
 ---
 
 ## 🧠 Principes généraux
-
 ### Résolutions
 - **Résolution temporelle** : capacité à distinguer deux événements rapprochés dans le temps.
 - **Résolution spatiale** : capacité à localiser précisément l’origine du signal dans le cerveau.
-
-[[Les techniques d'imagerie]]
 
 | Technique | Objet mesuré           | Capteur                  | Résolution temporelle | Résolution spatiale | Ordre de grandeur du signal |
 |-----------|------------------------|--------------------------|-----------------------|---------------------|-----------------------------|
@@ -27,8 +24,8 @@ publish: true
 ---
 
 ## ⚡ Origine des signaux
-[[Origine des signaux]]
-
+[[Origine des signaux oscillatoires]]
+[[Origine physique des signaux EEGMEG]]
 - EEG/MEG mesurent l’activité **synchrone** de populations de neurones pyramidaux.
 - Sensibles aux **potentiels post-synaptiques (PPS)**, moins aux potentiels d’action.
 - Synchronisation assurée par :
@@ -38,7 +35,7 @@ publish: true
 ---
 
 ## 🎛️ EEG
-[[Electrodes et disposition]]
+[[EEG — Électroencéphalographie]]
 ### Dispositifs
 - Mesure **monopolaire** (électrode vs référence) ou **bipolaire** (électrode vs électrode).
 - Référence possible : nez, mastoïdes, lobes d’oreilles, moyenne globale (>64 électrodes).
@@ -55,9 +52,8 @@ publish: true
 ---
 
 ## 🌀 MEG
-
+[[MEG — Magnétoencéphalographie]]
 ### Dispositifs
-[[Dispositif MEG]]
 - Mesure de champs magnétiques via **SQUID** (Superconducting Quantum Interference Device).
 - Nécessite une **chambre blindée (cage de Faraday)**.
 - Refroidissement à l’hélium liquide (coût élevé).
@@ -65,9 +61,6 @@ publish: true
 ---
 
 ## 🔍 Comparatif EEG vs MEG
-[[Dipoles en EEG et en MEG]]
-[[Résumé EEG-MEG]]
-[[Sensibilité EEG - MEG]]
 
 | Critère              | EEG                                      | MEG                                       |
 |-----------------------|------------------------------------------|-------------------------------------------|
@@ -103,7 +96,7 @@ publish: true
 ---
 
 ## 🚫 Artéfacts
-[[Identification & Correction des artéfacts]]
+[[Correction des artefacts]]
 ### Sources physiologiques
 - Mouvements oculaires → correction via **EOG** (4 électrodes).
 - Activité cardiaque → correction via **ECG** (facile à discriminer).
@@ -120,7 +113,7 @@ publish: true
 ---
 
 ## 📊 Types d’analyses
-[[Traitement des données]]
+[[Analyses des signaux]]
 
 - **Globale** : vigilance, états émotionnels.
 - **Locale** : discrimination de visages, effet d’une condition expérimentale.

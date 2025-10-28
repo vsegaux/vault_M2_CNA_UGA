@@ -21,7 +21,6 @@ publish: true
 
 ### Behaviourisme
 [[Behaviourisme]]
-
 - Relation observée : **Situation → Comportement**.
 - **Avantages** : pouvoir prédictif, lois empiriques.  
 - **Limites** : pas d’explication, validité écologique faible, échantillons énormes.  
@@ -30,7 +29,7 @@ publish: true
 ---
 
 ## 2. Niveaux de compréhension (Marr, 1982)
-[[Niveaux de compréhension]]
+[[Les trois niveaux de compréhension (Marr)]]
 
 | Niveau              | Définition                               | Exemple machine | En psycho |
 |---------------------|-------------------------------------------|----------------|-----------|
@@ -41,13 +40,13 @@ publish: true
 ---
 
 ## 3. Les représentations en sciences cognitives
-
 ### Axiomes
 1. **Concept de représentation** : connaissances = représentations mentales.  
 2. **Comportement = manipulation de représentations**.  
 3. **Implémentation** (ex: réseaux de neurones) : sert à tester des hypothèses, pas à valider le fonctionnement humain.
 
 ### Sens de la représentation
+[[Concept de représentation]]
 - **Faible** : corrélation activité neuronale ↔ stimulus (ex: “neurone Jennifer Aniston”).  
 - **Fort** : structure physique dédiée à représenter un objet du monde extérieur.  
 - ⚠️ Les processus perceptifs doivent être **encapsulés** : la représentation n’est pas modifiable par rétroaction.
@@ -61,6 +60,7 @@ publish: true
 ## 4. Modèles de l’identification des objets
 
 ### Biederman (1985)
+[[Modèle de Biederman (Computationnel)]]
 1. Extraction de primitives locales (lignes, angles).
 2. Composantes volumétriques.
 3. Assemblage en structure 3D.
@@ -73,9 +73,9 @@ publish: true
 ## 5. Les systèmes de mémoire (Tulving)
 
 ### Typologie (1972, 1995)
-[[Mémoire épisodique]]
-[[Mémoire sémantique]]
-[[Mémoire procédurale]]
+[[Mémoire épisodique – Autonoétique]]
+[[Mémoire sémantique – Noétique]]
+[[Mémoire procédurale – Anoétique]]
 
 | Type de mémoire    | Expression       | Fonction                           |
 |--------------------|------------------|------------------------------------|
@@ -84,9 +84,8 @@ publish: true
 | **Épisodique**    | Autonoétique     | Souvenirs personnels (avec conscience de soi) |
 
 - **SPI model (1995)** : Sémantique → Procédurale → Indexation épisodique.  
-- [[Modèle SPI de Tulving (1995)]]
 - Hippocampe = rôle central (lésion → amnésie).  
-- **Amnésie antérograde** : plus de nouveaux souvenirs.  [[Cas des patients amnésique antérogrades]]
+- **Amnésie antérograde** : plus de nouveaux souvenirs. 
 - **Amnésie rétrograde** : perte de souvenirs passés.
 
 ### Expériences
@@ -96,11 +95,12 @@ publish: true
 ---
 
 ## 6. Théories de consolidation & équilibre
+[[Défis à la conception d'un modèle cohérent de la mémoire]]
 - **Stabilité vs Plasticité** : retenir longtemps ↔ apprendre vite.  
 - **Spécifique vs Général** : info précise ↔ structure globale.  
 
 ### Nadel & Moscovitch (1997)
-[[Nadel & Moscowitch (1997)]]
+[[Modèle de Nadel & Moscovitch (1997)]]
 - Interaction hippocampe ↔ néocortex.  
 - Rêves = réactivation aléatoire → consolidation et parfois déformation des souvenirs.  
 - Justifie **apprentissage distribué > massé**.
@@ -114,17 +114,15 @@ publish: true
 - Limite : rigidité, difficulté à expliquer influence du contexte.
 
 ### Non-abstractive (connexionniste, multi-traces)
-[[La mémoire non abstractive]]
+[[Non-abstractif le modèle multi-traces Minerva II]]
 - Mémoire = **re-création d’expériences**.  
 - Pas de stockage fixe, mais traces multiples en interaction.  
-- **Minerva II (Hintzman, 1984)** [[Un modèle multi-traces Minerva II (Hintznan 84)]]:
+- **Minerva II (Hintzman, 1984)**:
   - Mémoire = matrice de traces (expériences sensorielles).  
   - Rappel = écho calculé sur l’ensemble des traces activées par une sonde.  
   - Permet flexibilité, dépendance au contexte, récupération distribuée.  
-[[Minerva II Synthèse et limites]]
 
 ### Expériences justificatives
-[[Indices expérimentaux]]
 - **IRM** : mots simples activent aires sensorielles liées (ex: “poulet” → gustatif).  
 - **Masques visuels** : perturbent l’accès aux concepts, même via audition.  
 - **Indices auditifs** associés au masquage → altèrent catégorisation.  

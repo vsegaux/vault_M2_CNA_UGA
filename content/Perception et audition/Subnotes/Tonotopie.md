@@ -1,12 +1,19 @@
 ---
 publish: true
 ---
-La membrane basilaire ne réagit pas de la même manière aux différentes fréquences selon l'endroit de stimulation. La *base* de la membrane basilaire, plus étroite et plus rigide que sont *apex*, réagit principalement aux fréquences hautes. ==On observe donc un maximum de déformation à basse fréquence au niveau de l'apex==; et ==un maximum de déformation à haute fréquence au niveau de la base==.
+> [!NOTE] Notion importante  
+> **Organisation tonotopique de la cochlée**
 
-|          | Largeur | Rigidité | Fréquences <br>d'excitation |
-| -------- | ------- | -------- | --------------------------- |
-| **Base** | Etroite | Rigide   | Hautes                      |
-| **Apex** | Large   | Souple   | Basses                      |
+La **membrane basilaire** réagit différemment selon la fréquence :
 
+- la **base** (étroite et rigide) vibre (maximum de déformation) pour les **fréquences hautes**,
+    
+- l’**apex** (large et souple) vibre pour les **fréquences basses**.
+    
+
+|Région|Largeur|Rigidité|Fréquences sensibles|
+|---|---|---|---|
+|Base|Étroit|Rigide|Hautes|
+|Apex|Large|Souple|Basses|
 
 ![[tonotopie.png]]

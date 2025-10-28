@@ -1,10 +1,9 @@
 ---
 publish: true
 ---
-Membrane qui marque la limite entre l'oreille externe et l'oreille moyenne. Il a pour rôle l'*amplification* et la *transmission* des vibrations sonores à la chaîne des osselets. Il permet aussi de protéger l'oreille moyenne. 
+Le **tympan** sépare l’oreille externe de l’oreille moyenne.  
+Il **amplifie** et **transmet** les vibrations sonores vers la chaîne des osselets, tout en jouant un rôle de **protection**.
 
-Dimension : 8mm
-Composition, trois couches membraneuses:
-- une couche de peau du côté de l’oreille externe 
-- une couche de muqueuse du côté de l’oreille moyenne 
-- une couche de tissu conjonctif entre les deux.
+- Diamètre ≈ 8 mm
+    
+- Structure en trois couches : peau externe, muqueuse interne et tissu conjonctif central.
