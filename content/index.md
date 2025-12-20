@@ -30,6 +30,36 @@ publish: true
 [[CM Dohen]]
 [[CM Nardy]]
 
+# S2
+
+## Bayesian Cognition
+[[CM Diard]]
+
+## Cognition augmentée
+[[CM Berard]]
+[[CM Congedo]]
+[[CM Rochet]]
+[[CM Schwab]]
+
+## Cognition vision model
+[[CM Alleysson]]
+[[CM Chauvin Vision]]
+## Deep learning
+[[CM Mermillod DL]]
+## Ethique
+[[CM Durette]]
+[[CM Peyrin]]
+## Masterclass
+[[Master Class]]
+## Modele mémoire
+[[CM Rousset MM]]
+[[CM Grandchamp]]
+## Robotique
+[[CM QUINTON]]
+
+## Séminaires
+[[Séminaire 1]]
+
 # Références
 
 Site du master:

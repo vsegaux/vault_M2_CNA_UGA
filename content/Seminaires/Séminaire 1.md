@@ -122,7 +122,6 @@ Compression des distances produites, tous les objets sont plus rapprochés.
 COmpression plus marquées dans la conditions active que passive, et davantage encore pour les objets manipulables par rapport aux non-manipulables.
 
 # espace proche et lointain
-Thèse qui démarre: CF slides... Cool
 
 CCL:
 Arguments plutot en faveur du rôle des info sensori-motrices dans différents traitements cognitifs (question de causalité?)

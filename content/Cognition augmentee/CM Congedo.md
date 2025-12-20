@@ -57,10 +57,3 @@ On ne peut utiliser que les données EEG en guise d'interface. Les applications 
 
 - Typiquement en réponse visuelle, on repère le potentiel P300. 
 - Dans le jeu Brain Invaders, la cible va s'allumer 2 fois uniquement parmi 12 flash successifs de plusieurs monstres. Dans les données EEG, on retrouve les flash qui correspondent à la cible (P300), l'algorithme doit ensuite faire la différence entre un flash normal et un flash de la cible. Le sujet doit simplement regarder spécifiquement la cible parmi les monstres possibles. L'activité P300 n'est pas volontaire pour le participants, elle est mesurée "malgré lui".
-
-
-
-> [!NOTE] Examen
-> Pas de questions sur la deuxième séance avec ce prof. Le cours s'arrête ici.
-
-

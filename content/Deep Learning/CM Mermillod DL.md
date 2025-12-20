@@ -135,4 +135,152 @@ Au départ, les poids sont aléatoires donc les sorties le sont aussi. On calcul
 	- Pour chaque classe possible, on affiche les match/mismatch donné par le modèle avec chaque autre classe possible ![[matrice_confusion.png]]
 - *Loss* :
 	- Erreur produite ![[Loss_sur_apprentissage.png]]
-	- 
+	- On peut utiliser la loss pour quantifier le degré d'erreur d'un modèle.
+
+
+# Chapitre 3: Du perceptron au perceptron multi couches au deep learning
+
+Une possibilité est de passé de l'image à des features (les "*gabor*" par exemple) et de les donner ensuite au réseau de neurone. Cette approche est inspirée du système visuel humain (avec les cellules ganglionnaire centre OFF, bord ON; en réalité, les photorecepteurs sont activateurs des cellules bipolaires, qui elles même sont à leur tour soit activatrice (ON) soit inhibitrice (OFF) de la cellule ganglionnaire).
+![[gabor_to_rn.png]]
+
+Ces champs recepteurs peuvent être modélisés par une différence de Gaussienne:
+![[double_gauss_convol.png]]
+On parle aussi de chapeau mexicain. Ce type de filtrage permet de mettre en évidence les contrastes dans l'image.
+
+Les champs récepteur des cellules simples de V1 forment les Gabor, des détecteurs de barres orientées: ![[GABOR_V1.png]]
+Sur cette figure, le champ récepteur excitateur correspond aux barres bleues et blanches, les champs inhibiteur sont les barres jaunes et noires.
+
+
+Une autre possibilité est de prendre des filtres de convolution très simple en entrée, et laisser le réseau de neurone choisir quelles features il utilise, c'est cette deuxième option qu'ont proposé LeCun, Bengio & Hinton (2015) (Deep learning). Au final, on remarque que des gabors sont quand même extraits dans les premières couches internes.
+
+Pour modéliser ces Gabor, nous utilisons des fonction de Gabor, qui correspondent à des sinusoïdes modulées par des gaussiennes: ![[gabor_model_function.png]]
+
+Dans le cerveau, chaque cellule simple de V1 est spécifiquement sensible à une certaine orientation de a stimulation.
+Les cellules complexes vont quant à elle "aggrégé l'information" issue de plusieurs cellules simples, leur permettant d'être insensibilisé à la phase (donc à la position exacte de la stimulation dans l'image). Elle reste cependant sensible à l'orientation et la fréquence spatiale.
+
+
+Plus loin dans la chaine de traitement visuel du cerveau (cortex inferotemporal IT), certains neurones ont une activité spécifique par rapport à des formes géométriques.
+
+
+Typiquement, un lion est détecté quelque soit sa position, taille ou orientation dans le champ visuel.
+
+### Traitement de données dynamique
+Exemple des chaines de Markov: Chaine de probabilité, typiquement pour les modèles de langages.
+
+**Simple Recurrent Network** SRN: 
+Typiquement utilisé pour les séries temporelles, ces réseaux de neurones utilisent des couches de neurones récurrents, qui retiennent l'information accumulée au fil des étapes. Ces valeurs de neurones sont ré-introduites en entrée du réseau.
+
+Problème du vanishing gradient des RNN:
+- l'utilisation de la descente du gradient n'est pas efficace sur des apprentissages à long terme. L'accumulation de donnée réduit l'efficacité de cette descente.
+- une réponse a été de proposer une variente du SRN, avec des entrées d'oubli et des entrée d'apprentissage (Long Short-term memory LSTM)
+- une autre proposition de réponse est la Gated Recurrent Unit (GRU), une version simplifiée du LSTM avec simplement 2 portes.
+#### Des RNN aux transformers
+**Transformer**: Du papier 'Attention is all you need.'
+- Des tokens (querry, key, value) sont extraits des données et des "têtes attentionnelles" sont calculées. Querry * Key, donne les interdépendances entre ces tokens.
+- Dans les transformers, les convolutions sont remplacées par ces couches attentionnelles (multiplcation des vecteurs QK, pour ensuite multiplier la matrice obtenue par V).
+- Les transformers demandent beaucoup de place/de ressource (de manière quadratique avec l'augmentation du volume d'entrée), mais il permet de comprendre les relations même à long terme dans les entrées.
+
+# Le deep learning depuis 2012
+## La belle histoire
+
+En 2012:
+- Poussée du marketing
+- Développement de GPU
+- Début du BigData
+
+### Catégorisation visuelle
+(2012, Imagenet classification with deep convolutional neural networks), parmis 1000 catégories d'images.
+DeepNeuralNetwork stratégique pour Google et Facebook avec la reconnaissance faciale.
+- Les modèles de deep learning (CNN ici) apprennent d'eux même (par exemple l'âge selon al taille des oreilles)
+- Pour la génération d'image, deux modèles fonctionnent en parallèle, un embedder qui doit extraire des traits caractéristiques; et un générateur, qui synthétise des nouvelles images. Ces images synthétisées sont données à l'embedder pour voir s'il arrive à reconnaitre l'image de synthèse comme étant réelle ou non: ![[generative_dnn.png]]
+
+### Intelligence et jeux
+Eléboration de stratégies avancées pour obtenir un maximum de points avec un minimum d'actions. Les enchainements d'actions sont appris et généralisés afin de remplir un but.
+Typiquement pour Alpha Go, des IA sont entrainées en jouant les unes avec les autres, et seulement les meilleures sont conservées pour la génération suivante etc.. Puis AlphaStart sur Starcraft: '99.8%' de victoire face aux humains. Puis sur des jeux de coopération, comme Dota 2, l'IA développe des stratégies de coopérations, de camping etc..
+
+### Autres domaines
+- 21 juillet 2025, meilleur que les humains en mathématiques
+- Décryptage et génèse de protéines: AlphaFold
+	- Attention alerte éthique: cette IA peut aussi tout à fait créer des virus. A surveiller son utilisation
+- GNoME: Synthèse de nouveaux matériaux, 800 ans de recherches humaines en quelques semaines d'IA.
+	- Ici encore, la question de l'utilisation de ces matériaux pose potentiellement problème.
+- AlphaDogfight (2024), pilotage d'avion de chasse. Attention aux dérives, l'IA pour atteindre son objectif est prête à tuer/détruire, même à faire des opérations kamikazes. IA plus efficaces pour le combat aérien car sans contraintes (accélération etc...).
+- Drone de combat.
+- Autres soucis éthiques: Fake News, manipulation d'opinion etc...
+
+## L'histoire honteuse
+
+Retournement de veste 'ne faite pas de réseaux de neurones' avant 2012, puis engouement ensuite.
+Architecture développée pour gagner des pourcentages de performance sur Imagenet/MNIST etc... Pas forcément intéressant réellement (resnet50 avec 152 couches par exemple).
+
+Question de l'intelligence des IA, mais quelle est la définition de l'intelligence?
+Thurstone, Spearman et Wechsler s'y sont intéressés pour dresser des échelles composites d'intelligence.
+
+## Limite des CNN actuels
+
+On modélise bien le système visuel avec les CNN, mais les aires pariétales qui permettent de comprendre l'environnement (les intentions d'autrui etc...) ne sont pas simulées/modélisées, alors qu'on y gagnerait bcp.
+### Attaques adverses
+Des combinaisons d'images perturbent fortement les CNN:
+- Par sommation de l'image de base avec 
+	- Texture d'une autre image
+	- Bruit correspondant au barycentre d'une autre catégorie (gibbon sur l'exemple ci-dessous) (barycentre obtenu par 'affichage' des résultats d'apprentissage du CNN)
+	- Modification des couleurs
+	- ![[attaque_adverse.png]]
+
+
+Plusieurs solutions inspirées de la psychologie, des neurosciences (plutôt que simplement ajouter des couches comme dans resnet50):
+- Donner la capacité aux modèles de creer des catégories sur-ordonnées (chien, chat appartiennent à 'animaux terrestres')
+- Ajouter des 'connexions descendantes' (typiquement dans les RNN) dans le traitement des images. Inspirés des circuits de prédiction du cerveau humain (Kauffman L. Ramanoël S, Pyrin C (2014)): les infos BF de V1 sont envoyée au cortex orbitofrontal (en parallèle d'un envoi au cortex inférotemporal qui s'occupe de la reconnaissance) afin qu'il participe à guider la reconnaissance visuelle (effectuée dans le cortex inférotemporal): ![[kauffmanL_orbitofrontal.png]] Sur la base des basses fréquence, on se construirait un 'primal sketch' qui permet de bien mieux résister aux attaques adverses (typiquement HF).
+- Finalement, ça revient à ajouter des traitements top-down.
+
+
+#### Solution proposée : anticipation
+"Mermillod, M., Bourrier, Y., David, E., Kauffmann, L., Chauvin, A., Guyader, N., ... & Peyrin, C. (2019). The importance of recurrent topdown synaptic connections for the anticipation of dynamic emotions. Neural Networks, 109, 19-30"
+
+Comparaison d'un MLP (multi layer perceptron) classique et d'un SRN (simple recurring network) pour la reconnaissance d'émotion:
+- meilleure performance pour les émotions non "exagérées" avec le SRN
+- Pas de différence de performance pour les émotions exagérée
+- Limite de l'étude de base: le SRN a plus de couches/neurones que le MLP
+	- Correction du MLP pour augmenter son nombre de neurones/couche pour être équivalent au SRN. La seule différence étant alors dans l'architecture de traitement de l'information
+	- Le SRN reste plus performant pour les visages 'non exagérés'
+
+### Oubli catastrophique
+Incapacité des IA à apprendre de manière sérielle. Si on apprends à un réseau de neurone à faire une tâche (jouer aux échecs), puis qu'on veut lui faire apprendre une nouvelle tâche, il va en quelque itérations oublier complètement à faire la première tâche (modification totale des poids/neurones).
+![[oubli_catastr_VS_humains.png]]
+
+Dans le cerveau humain, l'hyppocampe permet la mémoire épisodique: il indexe les souvenirs contenus dans le néocortex. Les souvenirs sont maintenus par réactivation aléatoire (rêves) de certaines traces. (CF cours de Rousset de la première partie du semestre). Modélisé dans un réseau de neurone (ou plutôt dans 2 réseaux):
+![[hypo_cortex_réseau_neurone.png]]
+Dans l'exemple ci-dessus, le learning net seul est soumis à l'oubli catastrophique, mais ses sorties sont injectées dans le memory net dont les sorties sont elle-meme redonnées en entrée au learning net. Le mémory net aggrège les différentes classes possible. Avec un tel système, il est possible d'apprendre de nouvelles classes (discriminer de nouvelles émotions par exemple) de manière sérielle. On suppose donc au départ avoir suffisamment de neurones de sorties pour accueillir toutes les 'nouvelles' classes possibles (seulement certains sont actives au départ).
+
+#### Exemple d'application
+Prédiction de consommation énergétique pour les pompes à chaleurs (soucis d'oubli catastrophique avec/sans télétravail). -> 40% d'économie d'énergie cool.
+
+#### Application aux données de psychologie
+![[donne_psycho_DL.png]]
+Reconnaissance d'émotion, de genre à partir de photos de visages. A partir des CNN, on déduis les cartes de saillance et on déduit les éléments qui ont été les plus important (gradients plus hauts) (attention, les cartes de saillance ne sont valable que pour la tâche 'courante').
+
+En neurosciences aussi pour les données IRM, typiquement pour desceller alzheimer.
+Collaboration CEA LIST/CLinatec/LPNC pour des exosquelettes pour des sujets tétraplégiques.
+
+# Avantages biologiques et computationnels de systèmes PDP pour la cognition humaine
+## Neurone grand-mère
+Plusieurs données plaident en faveur d’un traitement parallèle et distribué dans le cerveau humain. Concept de neurones «grand-mère» (Bowers, 2010), McCLelland (2010) et Quiroga & Kreiman (2010) (Jennifer Aniston). L'information est distribuée, donc résiliante, résistante à l'altération physique (dans le cas d'alzheimer, on peut atteindre 50 à 60 de destruction du système avant de percevoir des symptomes).
+
+
+## Résistance au bruit inhérent des réseaux de neurones biologiques
+- The probability that a synapse fails to release neurotransmitter in response to an incoming signal is remarkably high, between 0.5 and 0.9
+- The spontaneous firing of spikes accounts for almost 80% of the metabolic energy consumed by the brain
+- *La structure parallèle / distribuée du système permet un fonctionnement efficient malgré le taux d’échec et de bruit de la matrice synaptique*
+
+## Rapidité des processus cognitifs malgré la lenteur des processurs biochimiques de communication entre les neurones
+
+Dans les ordinateurs (machine de Turing etc..), goulot d'étranglement au niveau du CPU (64bits) pour traiter des mémoires à plusieurs GHz. Dans le cerveau, le CPU=La mémoire, tous les processus sont parallèles et distribués.
+
+
+## Réseau de neurones artificiels et MEMRISTOR
+
+![[memristor.png]]
+[Débouché stylée](https://www.inp.cnrs.fr/fr/cnrsinfo/le-gdr-biocomp-un-reseau-thematique-sur-le-calcul-bio-inspire)
+
+
+Fin du cours slide 217/286.

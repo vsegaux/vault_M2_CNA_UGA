@@ -171,4 +171,227 @@ Application: Boost de la perception visuelle pour des stimuli qui sont normaleme
 - effet variables selon l'aire stimulée
 - limité à la surface du cortex
 - L’espace des paramètres est grand, peu de recul sur les effets réels de ceux-ci (rTMS: nombre d’impulsions, puissance, frequence, motifs etc, tES: frequence, intensité, durée, état du sujet etc…)
-- 
+
+
+
+# Cours 2: Futurs développements et applications des NIBS basées sur l'électromagnétisme
+(Non Invasive Brain Stimulation)
+## Rappels et limites des NIBS conventionnelles
+La stimulation corticale se base sur l'application d'un champ électrique à la surface du cortex, soit par tES (champ electrique), soit pas TMS (impulsions magnétiques). (CF cours 1)
+
+Le principe général est le suivante:
+- application de la stimulation
+- induction d'une activité neuronale de la région ciblée
+	- et de région voisines, qui vont mener à la coactivation de tout un réseau.
+	- la perception de la stimulation (auditive en TMS, sensorielle de manière générale) va aussi donner lieu à des modifications de comportement, d'où l'interet de bien contrôler avec des essais placebo.
+- modification du comportement
+- Expérimentalement:
+	- ONLINE: on compare la tâche avec ou sans stimulation
+	- OFFLINE: on compare la tache avant et après la stimulation.
+- Limites:
+	- Neuromodulation: entraine des phénomène de plasticité par modulation de la balance excitation/inhibition et/ou de la connectivité. ![[neuromodulation_consequences.png]]
+	- Mais cette modulation est très variable:
+		- Répondeurs VS non Répondeurs (variabilité inter-sujet)
+		- Sens de l'effet
+		- Variabilité de l'effet selon la zone stimulée
+		- Variabilité intra-sujet:
+			- selon le rythme circadien
+			- selon l'historique de l'activation synaptique
+			- selon la génétique
+			- âge (même si facile à contrôler)
+## Couplage avec la neuroimagerie fonctionnelle
+Pourquoi le couplage? 
+- Mieux comprendre les mécanismes d'action 
+- Trouver des marqueurs physiopathologiques (sans effet observable) 
+- Observer les modulations des activités fonctionnelles soutenant un processus cognitif 
+- Personnaliser le site de stimulation 
+- Prendre en compte l’état cérébral en temps réel pour adapter la stimulation (closed-loop)
+### Principe
+Comment?
+- **Matériel**:
+	- Couplage tES - fMRI/EEG
+	- TMS - EEG
+	- TMS - fMRI, compliqué à mettre en place
+- **Méthode**:
+	- Problématique des artéfacts liés à la stimulation, plusieurs solutions pour contrer ce problème en IRM:
+		- Insérer les stimulations entre les acquisitions de coupes de l'IRM
+		- Effectuer un jeu complet d'acquisition IRM, puis stimuler, et refaire l'acquisition IRM
+	- Le soucis est similaire en EEG, pour arriver à extraire les ERP (potentiels évoqué), des analyses en composantes indépendantes sont nécessaires. Grâce à ces analyses, les artéfacts liées à la stimulation peuvent être retirées.
+- **Design expérimental**:
+	- On applique la neuroimagerie pendant (ONLINE) ou avant et après (OFFLINE), comme pour les protocoles standards de TMS. Idéalement, on souhaite trouver des corrélations entre l'activité cérébrale et les comportements observés.
+### Application
+#### Mieux comprendre les mécanismes d'action de la TMS
+Le pulse TMS provoque la dépolarisation de certains neurones, on s'interesse à la dynamique évoquée par le pulse: 
+![[application_Tms_evoquee.png]]
+On remarque que la stimulation a un impacte pendant 300-500ms, et plus le temps passe, plus la perturbation se propage dans le cerveau, toujours de manière variable selon la cytoarchitecture des zones traversées.
+
+Selon le nœud stimulé, la propagation est très variable. Le cerveau comporte des clusters spécialisés dans certaines tâches; connectés par des "hubs" d'interconnexion. En cas de stimulation d'un de ces 'hubs', la propagation est très grande. 
+
+#### Personnalisation des stimulations
+L'objectif est de sortir du «one-size-fits-all» pour aller vers des traitements personnalisés, adaptés au patient. Par défaut, une grande variabilité anatomique ET fonctionnelle est observée entre les différents individus.
+- Exemple : dépression sévère, cure de rTMS sur le DLPFC gauche
+![[personnalisation_stimulation.png]]
+
+#### Physiopathologie
+Exploring brain dynamics to assess excitability, excitation/inhibition balance, connectivity.
+Typiquement sur les patients parkinsonnien, pas stimulation profonde, on arrive à diminuer les tremblement et symptômes moteurs (difficulté d'initiation de mouvement). Par couplage Stimulation et EEG, on peut mesurer l'activation de certaines zones en fonction de l'activation ou non d'autres zones (typiquement des zones qui inhibent le système moteur).
+
+Même genre d'exemple pour des patients d'AVC, on observe l'activité du cortex moteur impacté et la compare par rapport à une activité standard. On peut alors utiliser la stimulation pour désinhiber (réveiller) ces zones.
+#### Perception du mouvement
+- **Contexte** : Comprendre comment des perturbations focales provoquent une réorganisation du réseau cérébral 
+	- mécanismes neuronaux soustendant la perception 
+	- réhabilitation 
+![[perception_mvmt_couplage.png]]
+- Burst de TMS online, au moment du traitement visuel précoce ou tardif 
+- Couplage IRMf pour observer la perturbation au niveau des réseaux
+	- L'experience montre une diminution des performances lors de la stimulation précode ET tardive.
+
+
+
+
+## Stimulation en boucle fermée
+### Principe
+
+![[close_loop_principe.png]]
+On mesure en temps réel en EEG, on analyse le signal pour gérer la stimulation en conséquence, on atteint alors des états d'activations cérébraux que l'on mesure par EEG, et ainsi de suite pour converger vers la stimulation/l'activité souhaitée.
+
+### Applications
+#### Cartographie motrice TMS-EMG
+![[TMS_EMG_carto.png]]
+On peut réaliser des cartographies motrices grâce à l'EMG et la stimulation du cortex moteur primaire. On découvre que certaines zones vont déclencher une cascade d'activation qui code pour certains mouvement (plutot que strictement pour un muscle spécifique systématiquement).
+
+Par exemple, on peut mesurer l'amplitude pic à pic, et grâce à un modèle bayesien, on prédit la position idéale de la stimulation sur le 'hotspot' correspondant au muscle/mouvement d'interet:
+![[bayesian_hotspot_spotting.png]]
+
+#### Excitabilité corticale phase-dependant
+Etat cérébrale = 'phase' du signal
+L'objectif est de délivrer la stimulation selon certaines phases des oscillations cérébrales:
+![[phase_dep_cl.png]]
+Typiquement dans des moments de pics ou de creux du signal EEG, correspondant à différent états d'excitabilité/d'activité neuronale: les taux de décharge des neurones évoluent dans le temps et produisent des pics/creux dans les ondes mesurées. 
+- Par exemple avec les ondes alpha, les pics correspondent à des phase d'excitabilité basse (faible taux de décharge) et les creux à des phases d'excitabilité haute.
+
+#### Plasticité rTMS phase-dependent
+Travail sur les ondes $\theta$ préfrontale et la plasticité indutie par rTMS, neuromodulation des processus liés à la mémoire de travail (OFFLINE). La neuromodulation est significative pour les creux du signal (comparaison avec les pics et une condition sans spécification de phase).
+
+#### Sommeil et tACS adaptative
+tACS (stimulation par courant alternatif sur le scalp).
+- Contexte : thérapie pour traiter les insomnies, le but est de favoriser l'apparition de certaines ondes pour maintenir le patient dans un sommeil aussi profond que possible.
+- tACS « classique » vs. tACS adaptative selon les différents stades du sommeil 
+- tACS adaptée en boucle fermée pour définir : site & fréquence de stimulation
+
+- Les résultats ont montré une latence diminuée pour atteindre le stade profond et une meilleure stabilité du sommeil profond. D'autant plus avec l'adaptation en boucle fermée.
+
+## Vers une stimulation en boucle fermée de la perception multistable
+
+Multistable-> Same sensory input, but perception is changing over multiple stable perceptions (shapes on a picture, movement directions...)
+Such stimuli require activity of multiple areas:
+- *decision-making* and integrating prior knowledge (frontal)
+- perceptual selection and *attention* (parietal)
+- motion sensitive neurons and correlation with *dominant percept* (occipital)
+
+The aims of the study are:
+- conduct an open-loop TMS-EEG study to: 
+	- Identify the network of regions that are causally involved in perceptual switches. 
+	- Identify the behavioral and neurophysiological signatures of the switch. 
+- developing a real-time TMS-EEG cleaning pipeline for carrying out the closed-loop brain-state-dependent experiment.
+
+### Method
+- Aquire stimulation target location for each patient individually
+- Intensity calculation, also individually
+- Task training for the patient
+- First stimulation block
+	- For each trial, the participant reports their perceived stimulation in real time, while their brain signals are being recorded.
+- Break
+- ...
+- Fifth stimulation block
+
+### Result
+- Behavioural:
+	- Stimulation shortens the percept duration.
+- EEG signals
+	- No correlation on sensor level
+	- Correlation on source level (V5 and FEF (FEF..?))
+		- Connectivity
+	- State-dependency results:
+		- Brain response to TMS When it was delivered during a stable period (offSwitch) and when it was close to the transition period (onSwitch) were separated 
+		- The brain response to TMS in IPS is different when it is delivered in stable periods compared to transition periods 
+		- Decrease of excitability in IPS might be an indicator of a switch 
+		- This indicator can inform closed-loop state-dependent stimulation
+
+
+# Cours 3: Deep Brain stimulation
+## Deep TMS
+
+La bobine classique utilisée pour la TMS ne permet pas de stimuler en profondeur (même pas au delà de des gyrus), en particulier pas pour stimuler des surfaces qui ne sont pas parallèles à la surface du crâne.
+Il existe d'autres types de bobines (H1-Coil, H7, H4 aussi), qui permettent de stimuler plus en profondeur mais de manière beaucoup moins focale ($17cm^3$ vs $3cm^3$ pour la bobine classique.)
+Une autre manière de faire est de combiner deux champs magnétiques (TI-TMS) pour creer un pattern d'interférences afin de stimuler jusqu'à 5cm de profondeur.
+
+Au final cette technique est mieux que la TMS standard mais ne permet toujours pas d'aller profondement dans le cerveau.
+
+
+## Transcranial Temporal Interference Stimulation (tTIS)
+### Principes
+Stimulation via deux bobines qui génère chacune un champ haute fréquence >2000, de part et d'autre du crâne.
+Hypothèses:
+- Les courants rapides qui traversent les tissus n'active pas les neurones
+- La région où les deux courants se superposent voit apparaitre une oscillation lente efficace pour stimuler les neurones -> Enveloppe basse fréquence à $\Delta$f. On peut donc choisir ce $\Delta$ pour stimuler une certaine gamme de fréquence.
+- la simulation devient donc focalisée en profondeur
+
+### Neurophysiologie
+Ces hypothèses ont été prouvées (chez le rongeur d'abord, puis chez l'Homme):
+- Excitabilité similaires par stimulation par interférence à $\Delta$f =10 Hz que par stimulation électrique par courant alternatif à 10Hz.
+- Pas d'excitabilité déclenchée par le champ à 2000kHz seul.
+
+### Exemples d'applications
+- Neuroplasticité
+	- Pattern de stimulation par burst espacés de 10secondes dans le striatum
+	- Différence entre contrôle et tTIS dans une tâche d'apprentissage de séquences
+		- Effet bénéfique sur l'apprentissage et augmentation de l'activité neuronale dans le striatum (IRMf), plus particulièrement sur le Putamen.
+- Modifier l'activité oscillatoire
+	- Montre un effet sur l'encodage d'item lors d'une tâche et d'autres effets à plus long terme, potentiellement avec application pour des maladies comme alzheimer (mais pas plus de détail donné...)
+- Interférer avec un processus neuronal/cognitif en cours
+	- traitement de la récompense sensible au high gamma (80Hz)
+	- tâche de force manuelle: appliquer une pression pour suivre une cible mouvante
+	- selon les condition:
+		- renforcement positif/négatif visuel selon la distance à la cible
+		- pas d'information sur la distance à la cible
+	- La stimulation a 80Hz permet d'éliminer l'interet du renforcement (qui est d'habitude bénéfique pour les sujets).
+	- Activation du striatum en corrélation avec ces effets.
+
+*Deep tTIS - Conclusion*
+- Cette technique étend l'utilisation de la stimulation cérébrale non invasive aux structures cérébrales profondes (hippocampe, ganglions de la base, etc…). 
+- Premières applications chez des patients (TBI, Ploumitsakou et al. en préparation ; Parkinson, Liu et al. 2024 ; Zhang et al. 2024). 
+- Les prochaines étapes nécessitent un développement technologique supplémentaire et l'acquisition de preuves cliniques solides et une transposition dans la pratique clinique quotidienne
+
+## Transcranial ultrasound stimulation (TUS)
+### Principes
+Stimulation par ultrason, focalisation de l'ordre du milimètre, à plusieurs centimètre de profondeur.
+Attention, deux techniques à ultrason:
+- High intensity focused ultrasound -> Bruler les tissus, typiquement pour les tremblements dans le syndrome de 'holmes' (..?)
+- Low intensity focused ultrasound -> Utilisé pour la neuromodulation
+
+Les ultrasons provoquent des variations de pression, les stimulations sont typiquement réalisée par trains d'impulsion, plusieurs mesures:
+- intensité spatiale; intensité maximale sur le point focale
+- intensité temporelle; liée à l'intensité spatiale par un facteur (proportionnelle donc)
+
+Défis physique:
+- le son peut etre diffusé, réfracté, réfléchis lors de sa transmission dans la boite cranienne
+	- Impact sur la focalité et la précision de la stimulation
+### Neurophysiologie
+Deux mécanismes plausibles:
+- Thermique: échauffement des tissus et provocation de neuromodulation (mais plutôt évité car peu sûr en terme de sécurité)
+- Mécanique: 
+	- Par déplacement des tissus -> Objectif de la manipulation; il y a des mécanocepteur dans les neurones qui vont réagir à la déformation/pression et qui sont donc impliqué dans leur activation
+	- Par cavitation: bulles d'air soumises à des ondes mécaniques grossissent et s'effondre sur elle meme, provoquant potentiellement des lesions -> Cette conséquence est plutot évitée (par surveillance de l'index mécanique) pour ne pas riquer de lésion
+
+### Exemples d'applications
+- Comprendre comment la voie indirecte Prefrontal-Striatal contribue à l’action de stopper une réponse inappropriée:
+	- Le protocol de TUS employé réduit l’activité corticale du cortex moteur primaire pour au moins 60 minutes (réduction de 30% des potentiels moteurs évoqués)
+	- Le protocol de TUS employé réduit l’inhibition de réponse dans la tâche du Stop-Trial Effet Offline (stop trial: signal pour arreter d'appuyer sur un bouton, mesure du temps de réaction)
+- 1) Quel est le mécanisme par lequel la modulation du TUS se traduit en neuromodulation excitatrice ou inhibitrice dans le cerveau humain ? 2) Quels sont les effets de cette neuromodulation sur la connectivité à grande échelle du cerveau humain ?
+
+## Limites et perspectives
+- Stimulation à l’aveugle? Application des principles de stimulation en boucle fermée aux NI-DBS? 
+- Facteurs confondants (difficulté de masquage des sensation, du bruits?) rendant difficile les études en double-aveugle? (effet placebo etc..)
+- Importance de la modélisation du champ électrique (DeepTMS, tTIS) et du champ de pression (TUS) pour des aspects de sécurité et de ciblage 
+- Problème de ciblage, nécessité d’une précision accrue pour des structures profondes de petites tailles, sans possibilité de monitoring en ligne de la précision du ciblage
