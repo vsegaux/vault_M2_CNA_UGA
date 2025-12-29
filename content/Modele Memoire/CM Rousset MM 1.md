@@ -6,8 +6,6 @@ Les systèmes de mémoire sont confrontés à deux dilemmes structurels majeurs 
 1. **Information Générale vs. Spécifique** : Comment un système peut-il à la fois capturer les structures de connaissances générales (sémantiques) et retenir les détails uniques d'événements spécifiques (épisodiques) ?
 2. **Stabilité vs. Plasticité** : Comment le système peut-il rester **stable** et conserver les anciennes connaissances tout en étant suffisamment **plastique** pour intégrer rapidement de nouvelles informations ?
 
----
-
 ## II. Fondements Connectionnistes et Mémorisation Distribuée
 
 ### A. La Loi de Hebb Stricte et son Application
@@ -37,8 +35,6 @@ Pour que les capacités d'apprentissage d'un modèle Hebbien simple soient excel
 - **Solution pour la Spécificité** : Pour obtenir une mémoire spécifique (évitant l'interférence), il faut un encodage orthogonal, rendu possible par un codage de type **'sparse'** (seuls certains neurones sont activés, augmentant les chances d'orthogonalité entre les patterns (plutôt que d'activer TOUS les neurones de manière partielle)).
 	- Ainsi, pour savoir si une nouvelle entrée est orthogonale, il faut la comparer à toutes les autres entrées déjà présentes: pour être sur qu'elle soit bien orthogonale à chacune d'entre elle. On ne stockerait finalement (dans l'**hyppocampe**) que les entrées complètement nouvelles (celles qui ont des similitudes avec d'autres ne 'valent pas la peine' d'être apprises).
 	- Et dans le reste du **cortex**, on stocke les points communs, la sémantique entre tous les différents éléments.
-
----
 
 ## III. Les Systèmes d'Apprentissage Complémentaires (Hippocampe/Néocortex)
 
@@ -91,15 +87,14 @@ Malgré la consolidation plus courante du premier élément appris, celui-ci fin
 
 ### C. Évidences Neuropsychologiques (Lésions)
 
-Les modèles complémentaires expliquent les résultats observés après des lésions du lobe temporal interne (hippocampe) :
-
 - Les souvenirs les plus anciens sont maintenus (car consolidés dans le cortex), tandis que les souvenirs les plus récents (dépendants de l'hippocampe) sont perdus. ![[lesion_hypo.png]]![[oubli_lesion_control.png]]
 	- Pour les patients lésionnés, la *courbe d'oubli* est croissante car les souvenirs ne sont retenus que par consolidations, aucun nouveau souvenir ne peut venir "écraser" les anciens (comme sur la courbe de consolidation du sujet sain vue ci-dessus).
-- **Amnésie Antérograde** : L'incapacité de former de nouveaux souvenirs survient immédiatement après la lésion du Link System.
+
+
+- **Amnésie Rétrograde** : Les patients amnésiques (lésion Link System) montrent une amnésie rétrograde **gradée**. Les souvenirs les plus anciens sont maintenus (car consolidés dans le cortex), tandis que les souvenirs les plus récents (dépendants de l'hippocampe) sont perdus.
+- **Amnésie Antérograde** : L'incapacité de former de nouveaux souvenirs (amnésie antérograde) survient immédiatement après la lésion du Link System.
 - **Ictus Amnésique Transitoire (TGA)** : Simulé par $K=0$ dans le Link System. Pendant l'ictus, l'apprentissage est impossible, mais la récupération progressive de $K$ permet de retrouver les fonctions mnémoniques, à l'exception du souvenir appris pendant la période d'amnésie.![[ictus_simulation_result.png]]
 	- Sur les graphes ci-dessus, la période d'amnésie est représentée en blanc (K=0). Le test de la mémoire est réalisé avec différentes valeurs de K. On reconnait la courbe de lésion dans le cas K=0. Dans la courbe en bas à droite, le patient a complètement récupéré au moment du test, le seul souvenir oublié est celui correspondant à l'apprentissage pendant l'ictus.
-
----
 
 ## IV. Réseaux à Hyperplans Séparateurs et Généralisation
 
@@ -158,8 +153,6 @@ On comprends donc que si par la suite, on lui apprend qu'un "torti" est un oisea
 *Pourquoi cette généralisation n'est pas comme la généralisation "habituelle/basique" (celle basée sur la ressemblance des éléments d'entrée)?*
 La généralisation est réalisée ici par une adaptation de **fonction** et non pas par un catégorisation dans l'espace des entrées. On a ici une généralisation sans avoir de représentation au sens fort (les neurones (de la couche cachée) ne sont pas là pour représenter/séparer les végétaux et les animaux; ni les oiseaux et les poissons); ils répondent juste à la fonction qui leur a été donnée.
 
----
-
 ## V. L'Oubli Catastrophique et la Solution des Pseudo-Exemples
 
 ### A. Sensibilité à l'Oubli Catastrophique (Réponse à Q3, 2022/2023)
@@ -201,8 +194,6 @@ Finalement, *l'ordre des choses apprise a une importance*: lors de l'apprentissa
 	- Sans réverbération: oubli partiel de l'ancienne base 
 	- Avec réverbération: très peu d'oubli de l'ancienne base
 
-
----
 
 ## VI. Apprentissage Séquentiel et Transfert de Connaissances
 

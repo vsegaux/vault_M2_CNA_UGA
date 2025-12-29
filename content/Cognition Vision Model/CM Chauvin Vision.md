@@ -3,6 +3,7 @@ prof: CHAUVIN Alan
 date: 2025-11-17
 publish: true
 ---
+
 > [!NOTE] Examen
 > 
 > - **Répartition de la note** : Environ 30% TP / 70% Examen.
@@ -10,514 +11,377 @@ publish: true
 > - **Format de l'examen** : Questions de cours classiques + analyse d'expérience.
 >     
 
-# Introduction et Plan du cours
+# Introduction : De la physique à la perception
 
-L'objectif est de comprendre comment le système visuel transforme un signal physique en une perception sémantique.
+L'objectif de ce cours est de comprendre les mécanismes par lesquels le système visuel transforme un signal physique (lumière) en une perception sémantique (sens).
 
-1. **Qu'est-ce que voir ? (L'environnement visuel)**
+## Vue d'ensemble du cours
+
+1. **L'environnement visuel** : Définition de l'image, statistiques des scènes naturelles et modélisation par l'espace de Fourier.
+2. **Traitement précoce (Rétine)** : Transduction, compression de l'information et filtrage initial.
+3. **Traitement central (Cortex)** : Architecture de V1, extraction des traits (orientation, fréquence), et spécialisation des aires supérieures (V2, V4, V5, IT).
     
-    - Définition de l'image numérique (pixel).
+# 1. L'environnement visuel et l'approche computationnelle
+
+## A. Comprendre la scène visuelle
+
+### 1. Le "Gist" (L'essence d'une scène)
+
+Le système visuel extrait le **"gist"** d'une scène en quelques millisecondes de manière automatique. Ce concept englobe :
+- **La catégorie sémantique** (ex: plage, rue, forêt).
+- **La structure globale** (ex: espace ouvert/fermé).
+- **Les surfaces et objets dominants**.
+- **Les affordances émotionnelles** (danger, chaleur, navigation possible).
+    
+### 2. Les approches théoriques
+
+Il existe deux manières principales d'aborder la vision :
+- **Approche Descendante (Top-down)** : La perception est guidée par les connaissances préalables et le contexte (ex: chercher des chaises parce qu'on est dans une classe). _Limite : nécessite des schémas préexistants._
+- **Approche Ascendante (Bottom-up)** : _Approche privilégiée dans ce cours._ La perception se construit étape par étape à partir du signal brut.
+    
+### 3. La vision structurale (Modèle de Marr, 1982)
+
+David Marr propose un modèle de reconstruction 3D séquentiel (Bottom-up) :
+1. **Primal Sketch (Esquisse 2D)** : Extraction des contours, lignes et contrastes de base.
+2. **2.5D Sketch** : Reconstruction des surfaces du point de vue de l'observateur (profondeur locale, texture, ombres). _Ce n'est pas encore de la 3D car les faces cachées sont inconnues._
+3. **Modèle 3D** : Représentation centrée sur l'objet (indépendante du point de vue), utilisant des axes de symétrie.
+4. **Catégorisation (Palmer)** : Identification sémantique et fonctionnelle de l'objet.
+    
+## B. Modélisation de l'image numérique
+
+Pour étudier la vision, l'image numérique (matrice de pixels) sert de modèle à l'image rétinienne. Elle possède deux propriétés principale: sa *résolution* (nombre de pixels) et sa *quantification* (encodage, par exemple 8 bits = 256 niveaux de gris).
+
+### 1. Le Pixel : Information locale
+
+Un pixel à une position $(x, y)$ contient 5 dimensions d'information :
+- **Luminance (2D)** : Intensité lumineuse.
+- **Couleur (+1D)** : 3 canaux (RGB).
+- **Temps (+1D)** : Variation temporelle (vidéo).
+- **Profondeur (+1D)** : Indices *binoculaires* (disparité) et *monoculaires* (ombres, perspective, taille).
+    
+### 2. Mesurer la similitude entre deux images
+
+Comment le cerveau (ou un ordinateur) compare-t-il deux images ?
+
+- **La Moyenne** : Inefficace, mélange tout en gris.
+- **Le MSE (Mean Squared Error)** : Différence pixel par pixel. Très efficace pour détecter du bruit.
+    - _Problème majeur_ : Le MSE est trop sensible aux transformations spatiales. Un simple décalage de quelques pixels change totalement le score MSE alors que l'image est perceptivement identique pour un humain. **Le pixel n'est pas la bonne unité de mesure sémantique.**
         
-    - Introduction à l'espace de Fourier : pourquoi est-ce un outil pertinent ?
-        
-    - _Nuance importante_ : Le système visuel n'effectue pas une Transformée de Fourier (TF) globale sur toute l'image. Il fonctionne de manière **locale**. Cependant, le filtrage local effectué par le cerveau extrait les mêmes caractéristiques (features) que l'analyse de Fourier. C'est donc un excellent modèle d'approximation.
-        
-2. **Du signal à la rétine (Traitement précoce)**
-    
-    - Projection optique.
-        
-    - Transduction par les photorécepteurs (dynamique, adaptation).
-        
-    - Traitement rétinien : couches plexiformes, cellules bipolaires et ganglionnaires (filtrage, compression).
-        
-3. **De la rétine au Cortex (Traitement central)**
-    
-    - Transmission via le Corps Genouillé Latéral (CGL) vers V1.
-        
-    - Architecture de V1 : hypercolonnes, sélectivité (orientation, fréquence).
-        
-    - Modélisation par filtres de Gabor.
-        
-    - Aires extrastriées (V2, V3, etc.) : construction de la complexité.
-        
+### 3. L'espace de Fourier : Une représentation fréquentielle
 
----
+La Transformée de Fourier (TF) est un outil puissant car elle est robuste aux translations et sépare l'information de manière pertinente.
 
-# 1. Définir l'environnement visuel
+**Principe théorique :** Tout signal complexe est une somme de sinusoïdes définies par :
 
-## Le "Gist" d'une scène
+$$x(t) = A \cdot \sin(\frac{2\pi}{T}t + \phi)$$
 
-Le système visuel est capable d'extraire le **"gist"** (l'essentiel) d'une scène visuelle en quelques millisecondes (reconnaissance _rapide_ et _automatique_). Ce gist comprend :
+Où $A$ est l'amplitude (contraste), $T$ la période (inverse de la fréquence) et $\phi$ la phase (position).
 
-- **La catégorie sémantique** (ex: scène de plage, ville, forêt).
-    
-- **La structure spatiale globale** (ex: ouvert vs fermé, naturel vs artificiel).
-    
-- **Les surfaces dominantes** (sable, eau, bitume).
-    
-- **Les objets principaux** (barque, voiture).
-    
-- **Les affordances émotionnelles** (sensation de chaleur, danger, bien-être).
-    
-
-## Approches de la vision
-
-### Approche descendante (Top-down)
-
-Elle part de nos connaissances préalables pour décrire une scène (ex : "Je sais qu'une classe contient des chaises, donc je cherche des chaises").
-
-- _Limite_ : Cette approche est contrainte par la nécessité de posséder des schémas préexistants.
-    
-
-### Approche ascendante (Bottom-up)
-
-C'est l'approche privilégiée dans ce cours. On décrit la scène en s'appuyant uniquement sur les informations extraites par le système visuel, étape par étape, du signal brut vers la sémantique.
-
-#### Vision structurale (Modèle de Marr, 1982)
-
-David Marr propose une vision séquentielle par étapes de complexité croissante :
-
-1. **Primal Sketch (Esquisse primaire - 2D)** : Extraction des primitives de base (lignes, jonctions, contours, contrastes, mouvement).
-    
-2. **2.5D Sketch** : Reconstruction des surfaces centrée sur l'observateur (texture, ombres, disparité binoculaire, profondeur locale). _Note : Ce n'est pas encore de la 3D complète car on ne voit pas "derrière" les objets._
-    
-3. **Modèle 3D** : Représentation centrée sur l'objet (indépendante du point de vue). Utilisation des axes de symétrie et d'élongation pour structurer les volumes.
-    
-4. **Catégorisation (Palmer)** : Identification de l'objet, de sa fonction et de ses affordances (ce que l'objet permet de faire).
-    
-
----
-
-# 2. Modélisation de l'image numérique
-
-Pour étudier la vision, on utilise l'image numérique comme modèle de l'image rétinienne (échantillonnage discret).
-
-## Le Pixel : brique élémentaire
-
-Un pixel ("Picture Element") à une position $(x, y)$ est défini par **5 dimensions** d'information :
-
-1. **Luminance (2D)** : Intensité lumineuse spatiale.
-    
-2. **Couleur (+1D)** : Codée sur 3 canaux (Rouge, Vert, Bleu).
-    
-3. **Temps (+1D)** : Pour les vidéos, variation temporelle (frames).
-    
-4. **Profondeur/3D (+1D)** :
-    
-    - _Indices binoculaires_ : Disparité rétinienne (décalage image œil gauche/droit).
-        
-    - _Indices monoculaires_ : Ombres, occlusions, perspective linéaire, gradients de texture, taille relative.
-        
-
-**Propriétés de l'image :**
-
-- **Résolution** : Taille de la matrice (nombre de pixels).
-    
-- **Quantification** : Encodage de l'intensité (ex: 8 bits = 256 niveaux de gris).
-    
-
-## Mesurer la similitude entre deux images
-
-Comment comparer mathématiquement deux scènes ?
-
-### 1. La Moyenne (Averaging)
-
-Peu efficace. La moyenne de toutes les images de "plages" donne une bouillie grise qui ne permet pas de discriminer finement les catégories.
-
-### 2. Le MSE (Mean Squared Error)
-
-On calcule la différence d'intensité pixel par pixel entre deux images.
-
-- Peut être généralisé par la norme $L_p$.
-    
-- **Avantage** : Efficace pour détecter du bruit (neige) sur une image identique.
-    
-- **Inconvénient majeur** : Le MSE est très sensible aux transformations spatiales. Si on prend une image et qu'on la décale de quelques pixels ou qu'on effectue une rotation, l'image reste _perceptivement_ identique pour un humain, mais le MSE explose. Le pixel n'est donc pas la bonne unité de mesure pour la sémantique.
-    
-
-### 3. L'espace de Fourier
-
-La Transformée de Fourier (TF) offre une représentation plus robuste aux translations.
-
-#### Principe théorique
-
-Tout signal complexe peut être décomposé en une somme de signaux sinusoïdaux simples.
-
-Une sinusoïde est définie par : $x(t) = A \cdot \sin(\frac{2\pi}{T}t + \phi)$
-
-- $A$ : Amplitude (contraste maximal).
-    
-- $T$ : Période (inverse de la fréquence $f$).
-    
-- $\phi$ : Phase (décalage temporel ou spatial).
-    
-
-La Transformée de Fourier convertit le signal du domaine spatial vers le domaine fréquentiel :
+La TF convertit l'image du domaine spatial vers le domaine fréquentiel :
 
 $$X(f)= \int_{-\infty}^{\infty} x(t)\exp(-j2\pi ft) dt$$
+![[Fourier_basique.png]] ![[fourier_image.png]]
 
-#### Application à l'image (2D)
+**Décomposition de l'image en deux spectres :**
+1. **Spectre d'Amplitude (SA) - "Le Quoi"** :
+	- ![[fourier_representation2D.png]]
 
-Pour une image, on décompose les variations de luminance. On obtient deux spectres :
+    - Indique la quantité d'énergie pour chaque fréquence et orientation.
+    - **Centre** = Basses Fréquences (BF) $\to$ Formes globales, "Gist".
+    - **Périphérie** = Hautes Fréquences (HF) $\to$ Détails, bords fins.
+    - **Loi en $1/f$** : Les scènes naturelles ont beaucoup d'énergie en BF et peu en HF.
+    - L'orientation des points indique l'orientation des motifs dans l'image (ex: une scène de ville avec des immeubles verticaux aura de l'énergie sur l'axe horizontal du spectre).
+    - _Lien perceptif_ : Le cerveau utilise le SA pour la catégorisation rapide (ex: ville = lignes verticales/horizontales; nature = orientations variées).
+2. **Spectre de Phase (SP) - "Le Où"** :
+    - Contient la position des ondes. C'est lui qui encode la **structure des bords** et l'identité précise des objets.
+    - Moins lisible 'naturellement'
+ 
 
-1. **Le Spectre d'Amplitude (SA)** :
-    
-    - Indique "combien" il y a de chaque fréquence.
-        
-    - Représentation visuelle :
-        
-        - Le centre = Basses Fréquences (BF) = structure globale, formes grossières.
-            
-        - La périphérie = Hautes Fréquences (HF) = détails fins, contours précis.
-            
-        - L'orientation des points indique l'orientation des motifs dans l'image (ex: une scène de ville avec des immeubles verticaux aura de l'énergie sur l'axe horizontal du spectre).
-            
-    - **Propriété fondamentale** : Les scènes naturelles suivent une loi en $1/f$ (beaucoup d'énergie en BF, peu en HF).
-        
-2. **Le Spectre de Phase (SP)** :
-    
-    - Indique "où" sont les sinusoïdes (leur position). Contient l'information sur la structure des bords.
-	    
-    - Souvent moins lisible 'naturellement'.
-        
-
-![[Fourier_basique.png]] ![[fourier_image.png]] ![[fourier_representation2D.png]]
-
-> Expérience clé (Images Hybrides) :
+> [!NOTE] Expérience des Images Hybrides
 > 
-> Si on mélange le Spectre d'Amplitude d'une scène A avec le Spectre de Phase d'une scène B, l'image résultante ressemble structurellement à B, mais on perçoit la texture de A.
+> Si on mélange l'Amplitude de l'image A avec la Phase de l'image B :
 > 
-> Cependant, pour la catégorisation rapide (plage vs ville), le cerveau semble s'appuyer prioritairement sur les régularités du Spectre d'Amplitude (ex: horizon dégagé vs lignes verticales).
+> - L'image ressemble structurellement à B (la phase donne la forme).
+>     
+> - Mais on perçoit la "texture" de A.
+>     
+> - Pour la catégorisation ultra-rapide, le cerveau s'appuie d'abord sur les régularités statistiques de l'Amplitude.
+>     
 
 Finalement, le spectre d'amplitude semble être un bon indicateur de la catégorie des scènes:
 ![[img_2_fourier_examples.png]]
 
-#### Lien avec le système visuel (Filtrage local)
+### 4. Le lien avec le système visuel (Filtrage local)
 
-Le cerveau ne fait pas une TF mathématique globale. Il utilise des **filtres locaux** (les champs récepteurs des neurones) qui pavent le champ visuel.
+Attention : Le cerveau ne calcule pas une TF globale sur toute l'image.
 
-- Opération mathématique : **Convolution**.
-    
-- **Théorème de convolution** : Une convolution dans l'espace spatial équivaut à une multiplication dans l'espace fréquentiel (Fourier).
-    
-- En balayant l'image avec des filtres spécifiques (ex: Gabor), le cerveau analyse localement les fréquences et orientations, simulant ainsi une analyse de Fourier locale.
-    
+Il fonctionne par filtrage local (convolution). Cependant, grâce au théorème de convolution (convolution spatiale <=> multiplication fréquentielle), appliquer des filtres locaux (comme ceux de Gabor) revient à analyser les fréquences locales. Le modèle de Fourier est donc une excellente approximation de ce que fait le cortex visuel.
 
 ![[TF8locale.png]] ![[visuel_lien_fourier_humain.png]]
 
----
 
-# 3. Le traitement de l'information visuelle (Rétine)
+# 2. La Rétine : Traitement et compression
 
-L'information lumineuse traverse l'œil pour atteindre la rétine, où elle subit plusieurs étapes de traitement et de compression avant d'être envoyée au cerveau.
+La rétine n'est pas une simple caméra. Elle effectue un pré-traitement complexe (compression, accentuation des contrastes, adaptation) avant d'envoyer l'info au cerveau.
 
-## A. Les Photorécepteurs (Transduction)
+## A. Transduction : Les Photorécepteurs
 
-Ils convertissent la lumière en signal électrique.
-
-- **Modèle 1 : Dynamique de réponse (Adaptation à la luminance)**
-    
-    - La réponse des photorécepteurs n'est pas linéaire. Elle suit une courbe quasi-logarithmique (équation de Naka-Rushton) qui sature aux extrêmes.
-        
-    - Le système s'adapte au niveau de lumière ambiante ($L_0$) pour maximiser la sensibilité aux contrastes autour de cette valeur moyenne. C'est ce qui nous permet de voir aussi bien en plein soleil que dans une pièce sombre (après adaptation).
-        
+Conversion de la lumière en signal électrique.
+- **Modèle 1 : Dynamique et Adaptation (Naka-Rushton)**
+    - La réponse n'est pas linéaire mais quasi-logarithmique (saturation aux extrêmes).
+    - Adaptation : Le système ajuste sa sensibilité autour de la luminosité ambiante ($L_0$) pour maximiser la perception des contrastes, que l'on soit en plein soleil ou dans l'obscurité.
         ![[dynamique_reponse_photorecept.png]]
-        
-- **Modèle 2 : Répartition et Échantillonnage (Rétinotopie)**
-    
-    - **Fovéa (Centre)** : Très forte densité de **Cônes**. Vision photopique (jour), couleur, haute résolution.
-        
-    - **Périphérie** : Forte densité de **Bâtonnets**, peu de cônes. Vision scotopique (nuit), détection de mouvement, faible résolution, pas de couleur.
-        
-    - Conséquence : La résolution spatiale n'est pas homogène. Elle est maximale au centre et chute drastiquement en périphérie.
-        
+- **Modèle 2 : Rétinotopie et Échantillonnage**
+    - **Fovéa (Centre)** : Densité maximale de **Cônes**. Vision des détails (haute résolution), couleur, vision diurne.
+    - **Périphérie** : Dominée par les **Bâtonnets**. Vision du mouvement, basse résolution, vision nocturne.
+    - Conséquence : La résolution spatiale chute drastiquement dès qu'on s'éloigne du centre du regard.
         ![[Répartition_photorecepteur_retine.png]]
-        
-- **Phénomène de Convergence** :
-    
-    - En fovéa : 1 Cône $\to$ 1 Bipolaire $\to$ 1 Ganglionnaire (Acuité maximale, pas de perte).
-        
-    - En périphérie : ~1000 Bâtonnets $\to$ quelques Bipolaires $\to$ 1 Ganglionnaire. (Gain de sensibilité à la lumière par sommation, mais perte de précision spatiale).
-        
+- **Phénomène de Convergence**
+    - _Fovéa_ : 1 Cône $\to$ 1 Bipolaire $\to$ 1 Ganglionnaire (Pas de perte de détails).
+    - Périphérie : ~1000 Bâtonnets $\to$ 1 Ganglionnaire (Sommation spatiale = gain de sensibilité à la lumière, mais perte de précision).
         ![[convergence_photorecepteur.png]]
-        
+## B. Traitement du signal : Couche Plexiforme & Bipolaires
 
-## B. Couche Plexiforme Externe (OPL) & Cellules Bipolaires
-
-C'est la première étape de traitement du signal.
-
-- **Modèle 4 : Modèle électrique**
-    
-    - Les cellules horizontales connectent les photorécepteurs entre eux latéralement via des _Gap junctions_.
-        
-    - Cela crée un réseau électrique qui lisse le signal (filtre passe-bas).
-        
-    - La cellule bipolaire soustrait ce signal moyen (venant des cellules horizontales) du signal direct du photorécepteur.
-        
+- **Modèle 4 : Filtrage électrique et inhibition latérale**
+    - Les **cellules horizontales** connectent les photorécepteurs entre eux et lissent le signal (moyenne locale). On parle de '*gap junction*'.
+    - Les cellules bipolaires soustraient ce signal moyen du signal direct. Cela crée des champs récepteurs antagonistes (centre ON/Périphérie OFF ou inversement).
         ![[modele_4_elec_bg.png]] ![[resume_filtre_cellule_bipo.png]]
+- **Champs Récepteurs (CR) Centre-Périphérie**
+    - **Centre ON / Périphérie OFF** : S'active si la lumière est au centre, s'inhibe si elle est autour.
+    - **Fonction** : Détecter les **contrastes locaux** (bords) plutôt que la lumière absolue.
         
-- Champs Récepteurs (CR) Centre-Périphérie :
-    
-    Ce mécanisme crée des champs récepteurs antagonistes.
-    
-    - **Centre ON / Périphérie OFF** : S'active si la lumière touche le centre, s'inhibe si elle touche la périphérie.
-        
-    - **Centre OFF / Périphérie ON** : Inverse.
-        
-    - **Fonction** : Détecter les **contrastes locaux** (bords) plutôt que la luminosité absolue.
-        
-
-## C. Cellules Ganglionnaires (Sortie de la rétine)
-
-Elles récupèrent l'info des bipolaires et envoient les potentiels d'action vers le cerveau.
+## C. La Sortie : Cellules Ganglionnaires
 
 - **Modèle 3 : Différence de Gaussiennes (DoG)**
-    
-    - Le champ récepteur est modélisé mathématiquement par une différence de deux gaussiennes (une étroite positive pour le centre, une large négative pour la périphérie). C'est un filtre "Chapeau Mexicain".
-        
+    - Le champ récepteur est modélisé par un filtre "Chapeau Mexicain" (une gaussienne centrale positive moins une gaussienne périphérique large négative).
         ![[model_ganglio_1.png]] ![[model_ganglion_2.png]]
+- **Blanchiment Spectral (Spectral Whitening)**
+    - Les images naturelles ont trop de Basses Fréquences (redondance).
+    - Le filtre ganglionnaire atténue ces BF et rehausse les Hautes Fréquences. Cela "égalise" (blanchit) le spectre pour rendre l'information plus efficace à transmettre.
         
-- **Blanchiment Spectral (Spectral Whitening)** :
-    
-    - Dans les images naturelles, les Basses Fréquences (BF) ont une énergie énorme (loi $1/f^2$).
-        
-    - Le filtrage par les cellules ganglionnaires (passe-bande) atténue ces BF dominantes et rehausse les Hautes Fréquences (HF). Cela "égalise" (blanchit) le spectre pour rendre les détails (HF) perceptibles et compresser l'information redondante.
-        
+### Les 3 voies parallèles (M, P, K)
 
-### Les 3 voies parallèles (Magno, Parvo, Konio)
+L'information est séparée dès la rétine en canaux distincts :
 
-Les cellules ganglionnaires sont spécialisées :
-
-|**Type**|**Nom**|**Caractéristiques**|**Fonction (Extraction)**|
+|**Type**|**Nom**|**Propriétés**|**Fonction**|
 |---|---|---|---|
-|**M**|**Magnocellulaire** ("Parasol")|Gros corps cellulaire, gros champ récepteur. Très rapide (phasique). Sensible au contraste de luminance, mais aveugle à la couleur. Principalement en périphérie.|Mouvement, scintillement, **Basses Fréquences (BF)**, contours grossiers.|
-|**P**|**Parvocellulaire** ("Midget")|Petit corps cellulaire, petit champ récepteur. Plus lente (tonique). Sensible à la couleur (Rouge/Vert) et aux détails. Principalement en fovéa.|Couleur, forme fine, textures, **Hautes Fréquences (HF)**.|
-|**K**|**Koniocellulaire**|Propriétés intermédiaires.|Couleur (Bleu/Jaune).|
+|**M**|**Magnocellulaire** ("Parasol")|Gros corps, gros CR, rapide (phasique).|**Mouvement**, Scintillement, **Basses Fréquences (BF)**. Aveugle à la couleur.|
+|**P**|**Parvocellulaire** ("Midget")|Petit corps, petit CR, lente (tonique).|**Détails fins (HF)**, Forme, Couleur (Rouge/Vert).|
+|**K**|**Koniocellulaire**|Intermédiaire.|Couleur (Bleu/Jaune).|
 
-> Principe "Coarse-to-Fine" (Du grossier au détail) :
+> [!NOTE] Principe "Coarse-to-Fine"
 > 
-> Comme la voie Magno (BF) est plus rapide que la voie Parvo (HF), le cerveau reçoit d'abord une structure grossière de la scène (le "gist", les formes globales) avant de recevoir les détails fins et la couleur.
-> 
-> Preuve expérimentale : Images hybrides (BF d'une scène + HF d'une autre). En présentation très courte, on ne perçoit que la scène en BF.
- 
- ![[spatio_temp_rep.png]]Sur la courbe ci-dessus, chaque couleur correspond à un type de cellule:
+> La voie Magno (BF, rapide) transmet la structure globale ("gist") avant que la voie Parvo (HF, lente) n'apporte les détails.
+
+![[spatio_temp_rep.png]]
+
+Sur la courbe ci-dessus, chaque couleur correspond à un type de cellule:
 - Magno cellulaire Y (orange): Passe très bas puis passe haut (2 passe bandes)
 - Magno cellulaire LF-X (rouge): Passe bas
 - Parvo cellulaire HF-X (bleu): Passe haut
-Finalement, les prédictions qui peuvent être faites:  ![[prediction_magno_parvo.png]]
+Finalement, les prédictions qui peuvent être faites:  
 
-### Smart Retina ?
+![[prediction_magno_parvo.png]]
 
-La rétine ne fait pas que transmettre. Elle effectue des traitements complexes très tôt :
+### La "Smart Retina"
 
+La rétine effectue des calculs prédictifs :
 - Détection de mouvement local.
-    
-- Anticipation de la trajectoire (pour compenser les délais de transmission neuronaux).
-    
-- Ségrégation précoce du mouvement objet vs mouvement oculaire.
-    
+- Anticipation de trajectoire pour compenser les délais neuronaux.
+- Distinction entre le mouvement d'un objet et le mouvement de l'œil.
     ![[smart_retina_mvmnt.png]]
     
 
-### Résumé des voies optiques
+### Synthèse des couches rétiniennes
 
-![[synthese_couche_photorecept.png]] ![[resume_ganglionaires.png]]
+![[synthese_couche_photorecept.png]]
 
----
-
-# 4. De la rétine au cortex visuel primaire
-
-## Le trajet optique
-
-1. **Nerf Optique** : Sortie de la rétine.
+1. **Photorécepteurs** (Transduction).
+2. **Couche Plexiforme Externe** : Synapses Photorécepteurs / Horizontales / Bipolaires.
+3. **Couche Plexiforme Interne** : Synapses Bipolaires / Amacrines / Ganglionnaires.
+4. Cellules Ganglionnaires (Émission des potentiels d'action via le nerf optique).
+    ![[resume_ganglionaires.png]]
     
-2. **Chiasma Optique** : Décussation partielle.
-    
-    - Les hémi-rétines **nasales** (vision périphérique) croisent vers l'hémisphère opposé.
-        
-    - Les hémi-rétines **temporales** restent du même côté.
-        
-    - Résultat : Le champ visuel droit est traité par l'hémisphère gauche (et vice-versa).
-        
+
+# 3. De la Rétine au Cortex (V1)
+
+## A. Le trajet optique
+
+1. **Nerf Optique** : Sortie de l'œil.
+2. **Chiasma Optique** :
+    - Décussation partielle : Les hémirétines nasales croisent, les temporales restent du même côté.
+    - Résultat : L'hémisphère gauche traite le champ visuel droit (et inversement).
         ![[champ_visuel.png]]
-        
-3. **Corps Genouillé Latéral (CGL)** (Thalamus) : Reçoit 90% des fibres.
-    
-4. **Colliculus Supérieur** (Tronc cérébral) : Reçoit 10% des fibres. Gère les réflexes oculaires et l'orientation inconsciente (blindsight).
-    
+3. **Corps Genouillé Latéral (CGL - Thalamus)** : Relais principal (90% des fibres).
+4. **Colliculus Supérieur** : Orientation réflexe et inconsciente (10% des fibres).
 
-## Le Corps Genouillé Latéral (CGL)
+## B. Le Corps Genouillé Latéral (CGL)
 
-Ce n'est pas un simple relais passif.
-
-- **Organisation** : 6 couches alignées (rétinotopie conservée).
-    
-    - Couches 1-2 : Entrées **Magnocellulaires**.
-        
-    - Couches 3-6 : Entrées **Parvocellulaires**.
-        
-- **Rôle** : Porte d'entrée vers le cortex. Modulation attentionnelle.
-    
-- Feedback : 90% des connexions entrant dans le CGL viennent... du cortex (V1) ! Cela suggère un fort contrôle top-down (le cerveau module ce qu'il veut voir).
-    
+- **Organisation** : 6 couches qui conservent la rétinotopie et la séparation Magno (couches 1-2) / Parvo (couches 3-6).
+- **Rôle** : Porte d'entrée vers le cortex, *modulation attentionnelle*.
+- Feedback : Reçoit plus de connexions descendantes du cortex (V1) que d'entrées rétiniennes ! Cela prouve l'importance des processus Top-down.
     ![[resume_retineècgl_magno_parvo.png]]
     
 
----
+# 4. Le Cortex Visuel Primaire (V1)
 
-# 5. Le Cortex Visuel Primaire (V1)
+V1 décompose l'image en traits élémentaires (orientations, fréquences).
 
-Situé dans le lobe occipital, c'est le premier centre de traitement cortical.
+## A. Propriétés architecturales
 
-## Propriétés fondamentales
-
-1. **Rétinotopie** : La carte de la rétine est préservée sur la surface du cortex.
-    
-2. **Magnification corticale** : La fovéa (1% de la rétine) occupe environ 50% de la surface de V1. C'est une sur-représentation des informations centrales. ![[V1_repartition.png]]
-    
-3. **Organisation laminaire** : Les entrées du CGL arrivent dans la couche 4 (IVC), en gardant la séparation Magno($\alpha$)/Parvo($\beta$). ![[V1_laminaire_magno_parvo.png]]
+1. **Rétinotopie** : Conservation de la carte spatiale de la rétine.
+2. **Magnification corticale** : La fovéa (1% de la rétine) mobilise ~50% des neurones de V1.
+    ![[V1_repartition.png]]
+3. **Organisation laminaire** : Les entrées du CGL arrivent dans la couche 4 (IVC), en conservant la ségrégation Magno (Alpha)/Parvo (Beta).
+    ![[V1_laminaire_magno_parvo.png]]
     
 
-## Cellules de V1 et Sélectivité
+## B. Les Cellules de V1 (Hubel & Wiesel)
 
 Hubel & Wiesel (Prix Nobel) ont découvert que les neurones de V1 ne répondent plus à des points (comme la rétine), mais à des **lignes orientées**.
 
-- **Cellules Simples** (Couches 4 & 6) :
-    
-    - Champs récepteurs allongés avec zones ON/OFF distinctes.
-        
-    - Sensibles à l'**orientation** et à la **position exacte** (phase) de la barre lumineuse dans le champ récepteur.
-        
-    - Modèle : On peut créer une cellule simple en alignant plusieurs cellules ganglionnaires centre-surround.
-        
-        ![[champ_recept_bars.png]]
-        
-- **Cellules Complexes** (Couches 2, 3, 5) :
-    
-    - Sensibles à l'**orientation** mais **insensibles à la position exacte** (invariance de phase). Elles répondent tant que la barre orientée est quelque part dans le champ récepteur (souvent sensible aussi au mouvement de cette barre).
-        
-    - _Modèle_ : Sommation de plusieurs cellules simples.        
+### 1. Cellules Simples (Sélectivité), couche 4 & 6
 
-> Preuve par adaptation (Aftereffect) :
-> 
-> Fixer longtemps des lignes inclinées vers la gauche fatigue les neurones sélectifs à cette orientation. Si on regarde ensuite des lignes verticales, elles sembleront pencher vers la droite (les neurones "gauches" étant fatigués, les neurones "droits" dominent relativemet).
-> 
-> Cela prouve l'existence de populations de neurones dédiées (canaux) pour l'orientation et la fréquence spatiale.
-> 
-> ![[adaptation_orientation.png]] ![[adaptation_freq_spatiale.png]]
+- Sensibles à l'**orientation**, à la **fréquence spatiale** et à la **position exacte** (phase) de la barre lumineuse dans le champ récepteur.
+- Modélisation : Alignement de plusieurs cellules ganglionnaires (Centre-ON) pour former un champ récepteur allongé.
+    ![[champ_recept_bars.png]]
+    
+- **Modèle Mathématique (Filtre de Gabor)** :
+    - Le CR est le produit d'une Gaussienne (localisation) et d'une Sinusoïde (fréquence/orientation).
+    - $G(x,y) = \text{Gaussienne}(x,y) \times \text{Sinusoïde}(x,y)$.
+    - Correspond à la partie Réelle ou Imaginaire du filtre.
+        ![[gabor_reel_imag.png]]
+    
+### 2. Cellules Complexes (Invariance)
 
-## Organisation fonctionnelle : L'Hypercolonne
+- Sensibles à l'**orientation** mais **insensibles à la position exacte** (invariance de phase). Elles répondent tant que la barre orientée est quelque part dans le champ récepteur (souvent sensible aussi au mouvement de cette barre).
+- **Modélisation** : Sommation de plusieurs cellules simples.
+- Mathématiquement : Correspond au module (l'énergie) du filtre de Gabor ($\sqrt{Réel^2 + Imaginaire^2}$).
+    
+    ![[gabor_representation.png]]
+    
 
-V1 est organisé en modules répétitifs appelés **Hypercolonnes**. Une hypercolonne traite **une petite portion de l'espace visuel** et contient toute la machinerie nécessaire pour l'analyser complètement :
+### 3. Preuves expérimentales (Aftereffects)
 
-1. **Colonnes d'orientation** : Ensemble de neurones couvrant toutes les orientations possibles (360°), disposés en "pinwheels".
-    
-2. **Colonnes de dominance oculaire** : Neurones préférant l'œil gauche ou l'œil droit.
-    
-3. **Blobs (tâches)** : Zones riches en cytochrome oxydase, traitant la **couleur**.
-    
-4. **Sélectivité à la fréquence spatiale** : Neurones répondant à différentes finesses de détails.
-    
+Fixer longtemps des lignes inclinées vers la gauche fatigue les neurones sélectifs à cette orientation. Si on regarde ensuite des lignes verticales, elles sembleront pencher vers la droite (les neurones "gauches" étant fatigués, les neurones "droits" dominent relativemet).
+Cela prouve l'existence de populations de neurones dédiées (canaux) pour l'orientation et la fréquence spatiale.
+
+![[adaptation_orientation.png]] ![[adaptation_freq_spatiale.png]]
+
+## C. Organisation fonctionnelle : L'Hypercolonne
+
+V1 est pavé de modules appelés **Hypercolonnes**. Chaque hypercolonne analyse une petite portion de l'espace visuel et contient :
+1. **Colonnes d'orientation** : Ensembles de neurones sensibles à certaines orientations, couvrant, ensemble, toutes les orientations possibles.
+2. **Colonnes de dominance oculaire** (Œil gauche/droit).
+3. **Blobs** : Traitement de la couleur.
+4. **Fréquences spatiales** : Ensembles de neurones répondant à différentes finesses de détails.
 
 Ainsi, l'organisation spatiale garantit la permanence de l'objet : si un objet tourne ou bouge légèrement, l'activité se déplace simplement vers la colonne voisine au sein du même module ou vers le module adjacent.
 
 ![[couche_colonne_V1.png]] ![[hypercolone_simplifie.png]]
 
-## Modélisation mathématique de V1 : Le filtre de Gabor (Modèle 5)
-
-La fonction de Gabor est le meilleur modèle mathématique pour décrire le champ récepteur d'une cellule simple de V1.
-
-C'est le produit d'une Sinusoïde (sélectionne la fréquence et l'orientation) et d'une Gaussienne (localise le filtre dans l'espace).
-
-Formule simplifiée : $G(x,y) = \text{Gaussienne}(x,y) \times \text{Sinusoïde}(x,y)$
-
-- **Cellules simples** : Modélisées par la partie Réelle (symétrique/paire) ou Imaginaire (antisymétrique/impaire) du filtre. ![[gabor_reel_imag.png]]
-    
-- **Cellules complexes** : Modélisées par l'énergie du filtre (Module = $\sqrt{Réel^2 + Imaginaire^2}$). Cela explique leur insensibilité à la phase (position précise). ![[gabor_representation.png]]
-    
-
-En vision artificielle, on utilise un banc de filtres de Gabor (plusieurs tailles et orientations) pour simuler le traitement effectué par une hypercolonne.
-
+**Modélisation**:
+En vision artificielle, on utilise typiquement un banc de filtres de Gabor (plusieurs tailles et orientations) pour simuler le traitement effectué par une hypercolonne.
 ![[gabor_banc_filtre.png]]
 
-Un autre moyen d'arriver à cette forme pour les cellules simples est de procéder par analyse d'images en composantes indépendantes. Les travaux de Hosoya & Hyvärinen ont utilisé cette méthode (cet algorithme) pour extraire les composantes indépendantes d'images. La décomposition ainsi obtenue donne les différentes sources élémentaires qui composent une image, et ces sources ressemblent beaucoup aux filtre élémentaires tels que présentés ci-dessus. Ces filtres/cette décomposition permettraient donc bien d'extraire les composantes élémentaires des images:
-![[decompo_indepdnante_image_.png]] 
-*Les propriétés et l’organisation spatiale des champs récepteurs émergent des régularités statistiques des scènes naturelles en cherchant à maximiser l’information transmises.*
+Mais d'autres approches sont aussi possibles:
+> Approche ICA (Independent Component Analysis) : Des algorithmes comme ceux de Hosoya & Hyvärinen montrent que si l'on cherche à extraire statistiquement les composantes indépendantes des images naturelles, on retrouve exactement ces formes de filtres de Gabor. L'architecture de V1 est donc une adaptation statistique optimale à notre environnement visuel.
+> ![[decompo_indepdnante_image_.png]]
 
----
+## D. Résumé du flux Rétine $\to$ V1
 
-# 6. Au-delà de V1 : Cortex Extrastrié
-
-L'information est redistribuée vers des aires spécialisées (organisation hiérarchique mais avec beaucoup de connexions parallèles et retours).
-
-- **V2** : Traitement des contours illusoires (remplissage des surfaces), début de la mise en relation des formes.
-    
-- **V4** : Traitement de la couleur et des formes complexes (qui ne sont pas forcément "captées" par les zones précédentes).
-    
-- **V5 / MT (Middle Temporal)** : Traitement du mouvement global.
+1. **Rétine/CGL** : Analyse par points (Champs récepteurs circulaires, Différence de Gaussiennes (filtre chapeau méxicain)). Formation des voies P/M/K au niveau du CGL.
+2. **V1 (Cellules Simples)** : Convergence des points (cellule ganglionnaires ON/OFF) $\to$ Détection de lignes orientées (Filtres de Gabor, phase précise).
+3. **V1 (Cellules Complexes)** : Convergence des lignes (cellules simples) $\to$ Invariance de position (Énergie de Gabor, phase ignorée), mais toujours préférence à une orientation et fréquence spécifique.
     
 
-On distingue deux grandes voies corticales :
 
-1. **Voie Dorsale ("Where" / "How")** : Vers le lobe pariétal. Extension de la voie Magno. Traite le mouvement, la position spatiale, guide l'action.
-    
-2. **Voie Ventrale ("What")** : Vers le lobe temporal (IT - Inféro-Temporal). Extension de la voie Parvo. Traite la reconnaissance d'objets, les visages, les couleurs.
+# 5. Au-delà de V1 : Le Cortex Extrastrié
+
+L'information est ensuite distribuée vers deux grandes voies corticales.
 
 ![[audela_V1_extrastrie.png]]
-
-A partir des caractéristiques élémentaires, on reconstruit des contours et remplis la forme via les propriétés de surface. Fonctionnellement, cela nous permet de compléter le contours d'objets masqués/de ségréguer des objets.
-
 ![[audela_V1_detail.png]]
 
-# 7. Extraction du mouvement
- Il existe dans **V1** des *cellules simples* sélectives à la direction du mouvement. La réponse de ces cellules est séparable en une composante spatiale et une composante temporelle: RF(X,T) = G(X)H(T)
- ![[spatial_temporal_resp.png]]
- On reconnait la forme de filtre de Gabor, et celle-ci évolue au fil du temps, tel que montré dans les travaux de DeAngelis, Ohzawa, Freeman (1993)
+## A. La Voie Dorsale ("Where" / "How") - Pariétale
 
-Dans **V3**, les activités de V1 sont combinées pour extraire des informations de mouvements et rendre possible l'extraction de bords à partir de mouvement (typiquement dans du bruit, où l'extraction serait impossible sans mouvement) (Zeki, 1993). Ici encore, les informations des premières aires visuelles sont combinées dans les aires supérieures.
+_Origine principale : Voie Magno (Basses Fréquences)._
+- **Fonction** : Localisation spatiale, guidage de l'action, détection du mouvement.
+- **V5 / MT (Middle Temporal)** : Le centre du mouvement.
+    - Détecte la **cohérence du mouvement** globale (combien de pixels vont dans la même direction).
+    - Très sensible : Les neurones répondent même avec seulement 1-2% de points cohérents dans un nuage de bruit (Newsome & Paré, 1988).
+    - Lésion de V5 : **Akinétopsie** (vision saccadée/stroboscopique, incapacité à percevoir la fluidité).
+        
+## B. La Voie Ventrale ("What") - Temporale
+
+_Origine principale : Voie Parvo (Hautes Fréquences + Couleur)._
+- **Fonction** : Reconnaissance d'objets, visages, lecture.
+- **Hiérarchie d'abstraction (Pooling)** :
+    1. **V1** : Barres orientées.
+    2. **V2** : Formes simples, contours illusoires, angles.
+    3. **V4** : Formes 3D, courbures complexes, couleur.
+    4. Cortex IT (Inféro-Temporal) : Objets complets, concepts.
+        ![[voie_ventrale.png]]
+        
+
+### Focus sur l'Aire Inféro-Temporale (IT)
+
+Les neurones y répondent à des objets spécifiques avec une grande **invariance** (taille, position, angle de vue).
+- L'organisation en colonnes permet un continuum de représentation (ex: rotation d'un visage).
+    ![[invariance_rotation_objet_IT.png]]
+    
+
+
+# 6. Approfondissement : Mouvement et Intégration
+
+## Le Mouvement dans V1 et V3
+
+- **V1** : Contient des cellules simples sélectives à la direction du mouvement.
+    - Leur champ récepteur est orienté dans l'espace $(X)$ et dans le temps $(T)$.
+    - $RF(X,T) = Gabor(X) \times \text{Fonction}(T)$.
+    - Cela permet de détecter une direction locale.
+        ![[spatial_temporal_resp.png]]
+        
+- **V3** : Les activités de V1 sont combinées pour extraire des informations de mouvements et rendre possible l'extraction de bords à partir de mouvement (typiquement dans du bruit, où l'extraction serait impossible sans mouvement) (Zeki, 1993). Ici encore, les informations des premières aires visuelles sont combinées dans les aires supérieures.
 
 **Akinétopsie**: Agnosie visuelle du mouvement. -> La vie est comme un filme stroboscopique.
-**Mouvement apparent**:
-- Une variation de position discrète au cours du temps. (typiquement effet stroboscopique)
-- Par opposition au mouvement constant qui est continue.
 
+## Types de Mouvement
+- **Mouvement Constant** : Déplacement continu.    
+- **Mouvement Apparent** : Illusion de mouvement créée par une succession rapide d'images statiques (stroboscope, cinéma).
+    
 
-# 8. Aire Inféro-Temporale (IT)
-Neurones qui répondent sélectivement à certaines catégories d’objets, invariance de la réponse à la taille, la position, l’angle de vue, aux caractéristiques de surface…
-- Les réponses évoquent un continuum dans la représentation de l’espace des objets. Cette **organisation** (des neurones) permet d’avoir un continuum de réponse lors de transformations type rotation, translation dans l’espace 3D des objets:![[invariance_rotation_objet_IT.png]]
+# 7. Limites du modèle et Phénomènes complexes
 
-## Limite du modèle hierarchique
+## A. Limites de la hiérarchie pure
 
-### Représentation fortes
+Le modèle classique (V1 $\to$ V2 $\to$ IT $\to$ Concept) a des limites.
+
+### 1. Le mythe du "Neurone Grand-Mère"
+
 *Logiquement la finalité d’un modèle hiérarchique est la reconstruction des objets et en particuliers des exemplaires : le neurone grand-mère*... C'est une limite de ce modèle, qui fini par conclure que nous aurions des représentations fortes et que le but du système visuel est d'y accéder. Or il est peu probable que chaque concept soit codé de manière invariante:
 - S’il existe un neurone “grand mère/Jennifer Aniston” et sachant qu’on estime le nombre neurone chez l’humain à ~86 millions, quelle est la probabilité de tomber dessus? 
 - Si par malheur ce neurone dysfonctionne? On oublierai le concept..?
-- Degré d’invariance de la réponse du neurone? On ne peut pas s’assurer que le neurone n’aurait pas répondu à d’autres stimuli un peu différents étant donné le nombre limité de stimuli testés
+- Degré d’invariance de la réponse du neurone? On ne peut pas s’assurer que le neurone n’aurait pas répondu à d’autres stimuli un peu différents étant donné le nombre limité de stimuli testés.
 
-Au contraire, l'hypothèse courante est plutôt celle du "sparse-coding":  représentation d’un concept par l’activation conjointe d’un ensemble de neurones relativement petit => neurone enregistré est commun aux réseaux actives par les différentes représentations de Jennifer Aniston.
--  Avantage: réduit les couts de traitements
+- **Hypothèse actuelle : Sparse Coding (Codage clairsemé)**. Un concept est représenté par l'activation simultanée d'un _petit groupe_ de neurones. Un même neurone peut participer à plusieurs "assemblées". Cela réduit le coût énergétique.
+    
 
-### Ascendance
-*Le traitement de l’information visuelle ne se fait pas uniquement de manière « ascendante »*. En réalité:
-- Deux fois plus de connexions feedbacks que de connexions ascendantes + connexions horizontales 
-- Nombreuses connexions qui « sautent » des niveaux 
-- La réponse des aires visuelles n’est pas toujours expliquée par les propriétés des stimuli
+### 2. L'importance du Feedback
 
-Les connections feedback jouent différents rôles:
-- attentional modulation, 
-- the comparison of internally generated predictions of sensory input with actual inputs; 
-- imagining sensory-like representations from concepts of e.g. visual objects
+Le cerveau n'est pas qu'une machine ascendante (Feedforward).
+- Il y a **2x plus de connexions descendantes** (Feedback) que montantes.
+- De nombreuses connexions 'sautent' des niveaux.
+- Rôles du feedback : Modulation de l'attention, prédiction sensorielle (Predictive Coding), imagerie mentale.
+    
+
+## B. Les Hallucinations Géométriques
+
+Pourquoi les hallucinations (migraines, psychédéliques) ont-elles souvent des formes de spirales, tunnels ou toiles d'araignées ?
+1. **Organisation de V1** : Les neurones sont organisés en hypercolonnes détectant des orientations.
+2. **Activité spontanée** : Une activation anormale se propage entre neurones voisins (qui codent souvent des orientations similaires).s
+3. Déformation Rétino-Corticale : La transformation mathématique de la rétine vers le cortex (log-polaire) fait qu'une ligne droite ou une onde plane sur le cortex correspond physiquement à une spirale ou un cercle dans le champ visuel.
+    ![[champ_visuel_forme_retine.png]]
+    ![[hallucination_forme_retine_cortex.png]]
 
 
-### Limite générale de l'approche
-Attention : nous sommes encore sur des modèles de traitement de l’information, avec des espaces, des métriques, des algorithmes d’optimisation informés.
-
-
-# 9. Hallucinations
-Pour expliquer les hallucinations, il est nécessaire d'avoir une activité spontanée ou non corrélée avec les informations rétiniennes. Les hallucinations sont souvent concentriques, rappelant l'organisation du cortex visuel et la déformation du champ visuel qui existe entre la rétine et le cortex:
-![[champ_visuel_forme_retine.png]]
-![[hallucination_forme_retine_cortex.png]]
-De plus, l'activité spontanée d'une cellule dans le cortex visuel va provoquer l'activité de cellules voisines (dans l'hypoercolonne) qui codent généralement pour des formes/orientation similaires et va donc provoquer l'hallucination de contour illusoires. Finalement, les hallucinations sont dues à:
-- *Activité spontanée* : Nous avons vu qu’une activité spontanée ou auto-initée du cortex visuel est possible dans les tâches d’imagerie. 
-- *Déformation du champ visuel* : Les formes des hallucinations rappelle l’organisation du cortex visuel et la déformation qui existe entre la rétine et le cortex. 
-- *Connections pour des neurones « alignés »* : On rajoute en plus les connections entre es neurones distants

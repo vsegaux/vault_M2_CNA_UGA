@@ -34,30 +34,24 @@ publish: true
 
 ## Bayesian Cognition TODO
 [[CM Diard]] (1 feuille)
-
-## Cognition augmentée TODO Congedo
-[[CM Berard]] (pas évalué)
-[[CM Congedo]] (épreuve orale 10min)
-[[CM Rochet]] (pas évalué)
-[[CM Schwab]] (pas évalué)
-
-## Cognition vision model TODO
-[[CM Alleysson]]
-[[CM Chauvin Vision]]
 ## Deep learning TODO
 [[CM Mermillod DL]]
-## Ethique
+## Cognition augmentée OK
+[[CM Congedo ]](épreuve orale 10min)
+## Cognition vision model
+[[CM Alleysson]] OK
+[[CM Chauvin Vision]] environ OK
+## Ethique NOGO
 [[CM Durette]]
 [[CM Peyrin]]
-## Masterclass
+## Masterclass NOGO
 [[Master Class]]
 ## Modele mémoire TODO
 [[CM Rousset MM]]
 [[CM Grandchamp]] (1 feuille manuscrite)
-## Robotique TODO (documents autorisés)
+## Robotique TODO
 [[CM QUINTON]]
-
-## Séminaires
+## Séminaires OK
 [[Séminaire 1]]
 
 # Références

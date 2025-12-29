@@ -3,57 +3,63 @@ prof: CONGEDO Marco
 date: 2025-11-25
 publish: true
 ---
- Toute la première partie porte sur des rappels de l'EEG, cf [[CM Campagne]].
-# EEG Analysis
-## Blind Source Separation (BSS)
-- Signal x(t), pour N capteurs
-- L'objectif est de retrouver s(t), le signal source de x(t) -> *A expliquer mieux...*
+## I. Introduction à l'EEG
 
-# EEG Classification
-On fait rarement le traitement sur les signaux bruts, plutôt sur la matrice de covariance, qui correspond à la multiplication de la matrice et de sa transposée (divisée par le nombre de capteurs). Chaque case hors de la diagonale va alors donner la corrélation entre une paire de capteurs.
+L'électroencéphalographie (EEG) permet de mesurer les potentiels électriques cérébraux instantanés avec une **haute résolution temporelle (~1 ms)**. C'est une méthode non invasive, silencieuse et relativement peu coûteuse, bien qu'elle souffre d'une **faible résolution spatiale** et d'une sensibilité accrue aux artéfacts (biologiques comme les clignements d'yeux, instrumentaux ou environnementaux).
 
-**Géodésique**: Extension dans un espace non euclidien de la ligne droite qui minimise le chemin entre deux points.
-- Par exemple, le chemin le plus cours pour aller de Berlin à Lyon est une géodésique.
-- Si on prend les deux pôles, il y a une infinité de géodésiques pour les relier.
-- Dans des espaces non euclidiens, il peut exister des triangles avec 2 angles droits.
+## II. Analyse du Signal : La Séparation Aveugle de Sources (BSS)
 
-Les matrices de covariance permettent d'être sensibles à des variations très faibles comme grande. Les notions de distances ($\delta$) et de barycentre existent dans ces espaces non euclidiens. -> *A expliquer mieux...*. Le barycentre est le point qui minimise les distances : B=$\delta^2(M,A)+\delta^2(M,B)$, on parle de moyenne géométrique ($\sqrt{XY}$, plutôt que la moyenne arithmétique ($\frac{X+Y}{2}$))
+L'objectif de la **Blind Source Separation (BSS)** est de passer des signaux enregistrés par les capteurs aux signaux produits par les sources réelles dans le cerveau.
 
-*Variété Remannienne*: En mathématiques, et plus précisément en géométrie, la **variété riemannienne** est l'objet de base étudié en géométrie riemannienne. Il s'agit d'une variété, c'est-à-dire un espace courbe généralisant les courbes (de dimension 1) ou les surfaces (de dimension 2) à une dimension _n_ quelconque, et sur laquelle il est possible d'effectuer des calculs de longueur. 
+- **Le problème :** On enregistre un signal $x(t)$ via $N$ capteurs. Ce signal est un mélange de $P$ sources $s(t)$ (où $P \le N$).
+- **Le modèle :** $x(t) = As(t)$, où $A$ est la matrice de mélange.
+- **La solution :** L'objectif est de trouver une matrice de "démélange" $B$ telle que l'on puisse estimer les sources : $\hat{s}(t) = Bx(t)$.
 
-### Remannian Procrustes Analysis (RPA)
-*A expliquer mieux...*
-L'objectif est de reformater les données pour pouvoir mieux les comparer. Typiquement pour mieux les catégoriser en machine learning. Les transformations appliquées sont 'rigides' (sauf la standardisation), c'est à dire que les relations entre les points ne sont pas modifiées.
+## III. Classification et Géométrie Riemannienne
 
-- *Recentrage:* Des données d'origine, on recentre chaque donnée sur l'identité (point central typiquement la moyenne). 
+En EEG, on travaille rarement sur les signaux bruts. On utilise généralement la **matrice de covariance**, notée $C = \frac{1}{T} XX^T$, où chaque élément hors de la diagonale représente la corrélation entre une paire de capteurs. Ces matrices sont des matrices symétriques définies positives (SPD). Elles forment un espace qui n'est pas euclidien.
+
+### 1. Concepts Fondamentaux (Espace Non-Euclidien)
+
+Pour mieux catégoriser les données en _machine learning_, on utilise la géométrie riemannienne, qui étudie des espaces courbes appelés **variétés riemanniennes**.
+
+- **Géodésique :** Dans un espace courbe, c'est l'équivalent de la ligne droite ; elle représente le **chemin le plus court entre deux points**. Par exemple, sur Terre, les méridiens reliant les pôles sont des géodésiques.
+- **Barycentre (Moyenne Riemannienne) :** Dans ces espaces non euclidiens, le barycentre est le point qui minimise la somme des carrés des distances géodésiques aux autres points. On utilise ici une **moyenne géométrique** ($\sqrt{XY}$) plutôt qu'arithmétique ($\frac{X+Y}{2}$).
+- **Avantages :** Cette approche est robuste au bruit, ne nécessite souvent pas de calibration (parameter-free) et permet une meilleure sensibilité aux variations très faibles du signal.
+
+### 2. Riemannian Procrustes Analysis (RPA)
+
+La RPA consiste à reformater les données de différents sujets ou sessions pour les rendre comparables sans modifier les relations intrinsèques entre les points (transformations "rigides").
+
+Les trois étapes de transformation sont (avec C, la matrice de covariance initiale)s :
+1. **Recentrage :** On centre les données de chaque sujet sur l'identité (le point central/moyen) via la formule $G^{-1/2} C_k G^{-1/2}$.
 	- Par exemple: {1,2,3} et {10,20,30} deviennent : {-1,0,1} et {-10,0,10}
-	- Avec des matrices : $G^{-1/2}C_kG^{-1/2}$ 
-- *Standardisation/stretching:* Ensuite, on adapte la variance pour que l'écart type soit équivalents dans toutes les données.
-	- Avec des matrices : $C_k^p$ 
-- *Rotation:* 
-	- Avec des matrices : $UC_kU^{T}$ 
-- Finalement:
-	- $UG^{-1/2}C_k^pG^{-1/2}U^T$ 
-Sur l'exemple suivant, les données transformées sont/semblent plus difficile à classifier.
-![[RPA_EEG_signal.png]]
+2. **Standardisation (Stretching) :** On adapte la variance pour que l'écart-type soit équivalent dans toutes les données, corrigeant les différences d'échelle: $C_k^p$ 
+3. **Rotation :** Une correction finale par rotation ($UC_kU^T$) pour aligner parfaitement les distributions.
+- ![[RPA_EEG_signal.png]]
 
-Ce genre de transformation est utile typiquement dans les cas où on a des données sur de nombreux sujets *réalisant la même tâche*, l'objectif est d'apprendre au algorithmes de machine learning à détecter l'effet de la tâche, indépendamment du sujet. On applique alors les transformations ci-dessus aux données de chaque sujet.
+L'objectif final est de permettre aux algorithmes de **détecter l'effet d'une tâche indépendamment du sujet**.
 
-## Brain-Computer Interfaces (BCI)
-### Applications
-On ne peut utiliser que les données EEG en guise d'interface. Les applications sont variées:
-- remplacement d'habilité motrices (prothèses, CEA)
-- mobilité (commander un fauteuil roulant)
-- communication (débit limité pour l'instant, environ 5 lettre par minute)
-- divertissement (contrôle de jeux vidéo...)
+## IV. Paradigmes des Interfaces Cerveau-Machine (BCI)
 
-### Paradigmes
-- Event-Related De/Synchronization
-	- Typiquement en se basant sur les cortex moteurs et somatosensoriels (et plus particulièrement sur leur organisation topographique): déynchronisation du Cortex Moteur Contro latéral lors de la volonté de bouger un membre, la main par exemple.
-- Event-Related Potential
+Les BCI utilisent les données EEG pour commander des interfaces (prothèses motrices, fauteuils roulants, communication ou jeux vidéo).
 
-> [!NOTE] Examen
-> - Question posée
+### 1. ERD/ERS (Imagerie Motrice)
 
-- Typiquement en réponse visuelle, on repère le potentiel P300. 
-- Dans le jeu Brain Invaders, la cible va s'allumer 2 fois uniquement parmi 12 flash successifs de plusieurs monstres. Dans les données EEG, on retrouve les flash qui correspondent à la cible (P300), l'algorithme doit ensuite faire la différence entre un flash normal et un flash de la cible. Le sujet doit simplement regarder spécifiquement la cible parmi les monstres possibles. L'activité P300 n'est pas volontaire pour le participants, elle est mesurée "malgré lui".
+Ce paradigme repose sur l'organisation topographique des cortex moteurs et somatosensoriels (homonculus).
+
+- **ERD (Event-Related Desynchronization) :** On observe une baisse d'énergie (désynchronisation) dans le cortex moteur **controlatéral** lors de l'intention ou de l'imagination d'un mouvement (ex: bouger la main droite provoque une ERD à gauche).
+- **ERS (Event-Related Synchronization) :** Augmentation d'énergie (synchronisation), souvent observée après l'arrêt du mouvement (rebond Beta).
+
+### 2. Potentiels Évoqués (P300)
+
+Le **P300** est un potentiel qui apparaît environ 300 ms après un stimulus cible "rare" parmi des stimuli non-cibles.
+
+- **Exemple (Brain Invaders) :** Le joueur regarde une cible parmi plusieurs monstres. La cible s'allume aléatoirement( parmi plusieurs flash de présentation). L'algorithme détecte le P300 généré par ce flash pour identifier la cible du regard, même si l'activité n'est pas "volontaire" de la part du sujet.
+
+## V. Neurofeedback
+
+Le neurofeedback est une boucle fermée où une caractéristique de l'EEG est extraite en temps réel et traduite en un feedback sensoriel (visuel ou auditif) pour que le sujet apprenne à réguler son propre état cérébral.
+
+- **Application classique (TDAH) :** Utilisation du ratio de puissance **Theta/Beta** comme indice d'inattention. Le patient s'entraîne à réduire ce ratio pour améliorer sa concentration.
+- **Spécificité via BSS :** L'utilisation de la séparation de sources (BSS) permet de cibler des signaux très spécifiques et d'éliminer les interférences, rendant le neurofeedback plus efficace.
