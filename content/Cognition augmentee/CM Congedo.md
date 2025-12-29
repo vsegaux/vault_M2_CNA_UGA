@@ -17,7 +17,7 @@ L'objectif de la **Blind Source Separation (BSS)** est de passer des signaux enr
 
 ## III. Classification et Géométrie Riemannienne
 
-En EEG, on travaille rarement sur les signaux bruts. On utilise généralement la **matrice de covariance**, notée $C = \frac{1}{T} XX^T$, où chaque élément hors de la diagonale représente la corrélation entre une paire de capteurs. Ces matrices sont des matrices symétriques définies positives (SPD). Elles forment un espace qui n'est pas euclidien.
+En EEG, on travaille rarement sur les signaux bruts. On utilise généralement la **matrice de covariance**, notée $C = \frac{1}{T} XX^T$, où chaque élément hors de la diagonale représente la corrélation entre une paire de capteurs. Ces matrices sont des matrices symétriques définies positives. Elles forment un espace qui n'est pas euclidien.
 
 ### 1. Concepts Fondamentaux (Espace Non-Euclidien)
 
@@ -47,11 +47,13 @@ Les BCI utilisent les données EEG pour commander des interfaces (prothèses mot
 ### 1. ERD/ERS (Imagerie Motrice)
 
 Ce paradigme repose sur l'organisation topographique des cortex moteurs et somatosensoriels (homonculus).
-
-- **ERD (Event-Related Desynchronization) :** On observe une baisse d'énergie (désynchronisation) dans le cortex moteur **controlatéral** lors de l'intention ou de l'imagination d'un mouvement (ex: bouger la main droite provoque une ERD à gauche).
+![[ERD_ERS.png]]
+- **ERD (Event-Related Desynchronization) :** On observe une baisse d'énergie (désynchronisation, dans une certaine bande spectrale) dans le cortex moteur **controlatéral** lors de l'intention ou de l'imagination d'un mouvement (ex: bouger la main droite provoque une ERD à gauche).
 - **ERS (Event-Related Synchronization) :** Augmentation d'énergie (synchronisation), souvent observée après l'arrêt du mouvement (rebond Beta).
 
-### 2. Potentiels Évoqués (P300)
+### 2. Potentiels Évoqués (ERP) et P300
+
+Un **ERP** (Event-Related Potential) est obtenu par *moyennage* d'essais, il ne conserve donc que le *signal en phase d'un essai à l'autre*; il reflète le traitement neuronal temporellement stable et synchronisé avec l'évènement.
 
 Le **P300** est un potentiel qui apparaît environ 300 ms après un stimulus cible "rare" parmi des stimuli non-cibles.
 
