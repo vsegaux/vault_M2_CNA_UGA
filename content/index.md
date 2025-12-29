@@ -32,29 +32,29 @@ publish: true
 
 # S2
 
-## Bayesian Cognition
-[[CM Diard]]
+## Bayesian Cognition TODO
+[[CM Diard]] (1 feuille)
 
-## Cognition augmentée
-[[CM Berard]]
-[[CM Congedo]]
-[[CM Rochet]]
-[[CM Schwab]]
+## Cognition augmentée TODO Congedo
+[[CM Berard]] (pas évalué)
+[[CM Congedo]] (épreuve orale 10min)
+[[CM Rochet]] (pas évalué)
+[[CM Schwab]] (pas évalué)
 
-## Cognition vision model
+## Cognition vision model TODO
 [[CM Alleysson]]
 [[CM Chauvin Vision]]
-## Deep learning
+## Deep learning TODO
 [[CM Mermillod DL]]
 ## Ethique
 [[CM Durette]]
 [[CM Peyrin]]
 ## Masterclass
 [[Master Class]]
-## Modele mémoire
+## Modele mémoire TODO
 [[CM Rousset MM]]
-[[CM Grandchamp]]
-## Robotique
+[[CM Grandchamp]] (1 feuille manuscrite)
+## Robotique TODO (documents autorisés)
 [[CM QUINTON]]
 
 ## Séminaires

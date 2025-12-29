@@ -17,16 +17,16 @@ publish: true
 	- Rigueur scientifique de la rédaction (corrélation/causalité)
 	- Conflit d'intérêt
 
-## Ethique de la recherche
-- Is it wise? 
-- -> Quelles sont les potentielles implications de la recherche?
-	- Normalisation (on créer une norme, une échelle)
-	- Communication des résultats, extrapolation, interprétation
-	- Utilisation des outils (collecte de donnée, )
-	- Effet d'expertise (cautionner un outil plutôt qu'un autre, )
-	- Conséquence de la recherche (impact sur la socialisation, impact comportemental/influence, )
-	- Naturalisation de l'esprit (=explication des processus, causalité symptôme-dysfonctionnement biologique; potentielle restriction de la manière de traiter le problème; restriction du champs de questionnement)
-	- Y a til des connaissances sur nous-même qu'il vaudrait mieux ne pas avoir?
+	## Ethique de la recherche
+	- Is it wise? 
+	- -> Quelles sont les potentielles implications de la recherche?
+		- Normalisation (on créer une norme, une échelle)
+		- Communication des résultats, extrapolation, interprétation
+		- Utilisation des outils (collecte de donnée, )
+		- Effet d'expertise (cautionner un outil plutôt qu'un autre, )
+		- Conséquence de la recherche (impact sur la socialisation, impact comportemental/influence, )
+		- Naturalisation de l'esprit (=explication des processus, causalité symptôme-dysfonctionnement biologique; potentielle restriction de la manière de traiter le problème; restriction du champs de questionnement)
+		- Y a til des connaissances sur nous-même qu'il vaudrait mieux ne pas avoir?
 
 
 
@@ -44,3 +44,10 @@ publish: true
 Déontologisme: Est-il sage de ...?
 Conséquentialisme: Quel est l'objectif?
 Aretaisme: Quelle est l'intention?
+
+
+> [!NOTE] Slides à préparer
+> 1. Présentation du projet
+> 2. Questions d'éthique DE LA recherche
+> 3. Récap des outils/éléments qui ont aidé à faire le questionnement éthique + Des problèmes potentiellement rencontrés.
+
