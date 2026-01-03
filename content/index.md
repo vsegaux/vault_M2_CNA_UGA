@@ -32,7 +32,7 @@ publish: true
 
 # S2
 
-## Bayesian Cognition TODO
+## Bayesian Cognition A Ficher
 [[CM Diard]] (1 feuille)
 ## Deep learning TODO
 [[CM Mermillod DL]]
@@ -46,10 +46,10 @@ publish: true
 [[CM Peyrin]]
 ## Masterclass NOGO
 [[Master Class]]
-## Modele mémoire TODO
+## Modele mémoire A ficher
 [[CM Rousset MM]]
 [[CM Grandchamp]] (1 feuille manuscrite)
-## Robotique TODO
+## Robotique TODO-> Tout doc OK
 [[CM QUINTON]]
 ## Séminaires OK
 [[Séminaire 1]]
