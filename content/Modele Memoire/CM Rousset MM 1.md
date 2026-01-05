@@ -88,11 +88,10 @@ Malgré la consolidation plus courante du premier élément appris, celui-ci fin
 ### C. Évidences Neuropsychologiques (Lésions)
 
 - Les souvenirs les plus anciens sont maintenus (car consolidés dans le cortex), tandis que les souvenirs les plus récents (dépendants de l'hippocampe) sont perdus. ![[lesion_hypo.png]]![[oubli_lesion_control.png]]
-	- Pour les patients lésionnés, la *courbe d'oubli* est croissante car les souvenirs ne sont retenus que par consolidations, aucun nouveau souvenir ne peut venir "écraser" les anciens (comme sur la courbe de consolidation du sujet sain vue ci-dessus).
+	- Pour les patients lésionnés (link-system), la *courbe d'oubli* est croissante car les souvenirs ne sont retenus que par consolidations, aucun nouveau souvenir ne peut venir "écraser" les anciens (comme sur la courbe de consolidation du sujet sain vue ci-dessus).
+	- **Amnésie Antérograde** : L'incapacité de former de nouveaux souvenirs survient immédiatement après la lésion du Link System.
 
 
-- **Amnésie Rétrograde** : Les patients amnésiques (lésion Link System) montrent une amnésie rétrograde **gradée**. Les souvenirs les plus anciens sont maintenus (car consolidés dans le cortex), tandis que les souvenirs les plus récents (dépendants de l'hippocampe) sont perdus.
-- **Amnésie Antérograde** : L'incapacité de former de nouveaux souvenirs (amnésie antérograde) survient immédiatement après la lésion du Link System.
 - **Ictus Amnésique Transitoire (TGA)** : Simulé par $K=0$ dans le Link System. Pendant l'ictus, l'apprentissage est impossible, mais la récupération progressive de $K$ permet de retrouver les fonctions mnémoniques, à l'exception du souvenir appris pendant la période d'amnésie.![[ictus_simulation_result.png]]
 	- Sur les graphes ci-dessus, la période d'amnésie est représentée en blanc (K=0). Le test de la mémoire est réalisé avec différentes valeurs de K. On reconnait la courbe de lésion dans le cas K=0. Dans la courbe en bas à droite, le patient a complètement récupéré au moment du test, le seul souvenir oublié est celui correspondant à l'apprentissage pendant l'ictus.
 
@@ -123,7 +122,7 @@ Dans les systèmes fonctionnant par séparation par hyperplan, l'assertion qu'un
 
 Les système fonctionnant par séparation par hyperplan favorisent même des niveau de structuration dépassant largement la simple juxtaposition des relations entrées/sorties. En effet l'espace d'entrée est projeté sur les couches intérieures "où" une structure logique est extraites à partir des différents exemples appris (exemple des 'oiseaux' catégorisés ensemble car ils peuvent tous voler, sans forcément se ressembler physiquement; CF juste après). Ce genre de structure permet au réseau de neurones de faire des inférences bien au delà de simple rappel (par exemple, si j'apprends qu'un "torti" est un oiseau, alors je sais qu'il peut voler).
 
-### C. Rôle des Couches Cachées et Nature de la Généralisation ( suite de réponse à Q2, 2022/2023)
+### C. Rôle des Couches Cachées et Nature de la Généralisation
 
 Un réseau à une seule couche est limité aux problèmes linéairement séparables.
 ![[hyperplan_soucis_couche.png]]

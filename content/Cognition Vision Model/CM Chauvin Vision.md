@@ -177,8 +177,8 @@ L'information est séparée dès la rétine en canaux distincts :
 
 Sur la courbe ci-dessus, chaque couleur correspond à un type de cellule:
 - Magno cellulaire Y (orange): Passe très bas puis passe haut (2 passe bandes)
-- Magno cellulaire LF-X (rouge): Passe bas
-- Parvo cellulaire HF-X (bleu): Passe haut
+- Magno cellulaire LF-X (bleu): Passe bas
+- Parvo cellulaire HF-X (rouge): Passe haut
 Finalement, les prédictions qui peuvent être faites:  
 
 ![[prediction_magno_parvo.png]]
@@ -223,7 +223,7 @@ La rétine effectue des calculs prédictifs :
     ![[resume_retineècgl_magno_parvo.png]]
     
 
-# 4. Le Cortex Visuel Primaire (V1)
+# 4. Le Cortex Visuel Primaire (V1, strié)
 
 V1 décompose l'image en traits élémentaires (orientations, fréquences).
 
