@@ -263,8 +263,3 @@ Ces résultats confirment que la mémoire humaine, dans ce contexte, fonctionne 
 
 - Le transfert d'information ne se fait pas par la copie d'exemplaires, mais par la capture de la **structure interne** du domaine (la fonction).
 - Cela valide l'idée que le cerveau peut extraire des régularités logiques à partir de stimuli qui ne se ressemblent pas physiquement, en utilisant des attracteurs créés par l'apprentissage.
-
-
----
-
-**Analogie finale :** Apprendre par pseudo-exemples, c'est comme essayer de deviner la forme d'un moule (la fonction) non pas en regardant les objets qu'il a déjà produits, mais en y versant du sable au hasard (le bruit) et en observant les empreintes que le moule laisse sur ce sable. Même si le sable ne ressemble pas aux objets originaux, il finit par révéler la forme du moule.

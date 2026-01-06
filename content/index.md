@@ -50,7 +50,7 @@ publish: true
 [[CM Rousset MM]]
 [[CM Grandchamp]] (1 feuille manuscrite)
 ## Robotique TODO-> Tout doc OK
-[[CM QUINTON]]
+[[CM ROBOT]]
 ## Séminaires OK
 [[Séminaire 1]]
 

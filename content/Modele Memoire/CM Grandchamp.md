@@ -6,7 +6,7 @@ publish: true
 ---
 
 
-> [!NOTE] Examen
+> [!NOTE] Examen -> TODO: Une feuille manuscrite autorisée
 > Notions à retenir:
 > - Linéaire / Non linéaire
 > - Supervisé = prédire / Non supervisé = explorer.
