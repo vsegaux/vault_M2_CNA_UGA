@@ -3,15 +3,10 @@ prof: QUINTON Jean-Charles
 date: 2025-11-20
 publish: true
 ---
----
-prof: QUINTON Jean-Charles / LEFORT Mathieu
-date: 2025-11-20
-publish: true
----
 
 > [!NOTE] Conseils Examen (Annale 2025)
 > **Objectif :** Conception d'un système cobotique industriel sur table.
-> **Attentes :** Ne pas se contenter de lister le cours. Il faut **justifier** chaque choix matériel ou logiciel par rapport aux contraintes :
+> **Attentes :** Ne pas se contenter de lister le cours. Il faut **justifier** chaque choix matériel ou logiciel par rapport aux contraintes (de l'énoncé!):
 > * **Espace réduit :** Optimisation de la structure (bras série vs parallèle).
 > * **Sécurité humaine :** Compliance (souplesse), évitement, redondance.
 > * **Adaptabilité :** Apprentissage sur des pièces variables.
