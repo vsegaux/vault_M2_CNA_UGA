@@ -140,7 +140,12 @@ Au départ, les poids sont aléatoires donc les sorties le sont aussi. On calcul
 
 # Chapitre 3: Du perceptron au perceptron multi couches au deep learning
 
+
+> [!NOTE] Examen! Champs récepteur de V1 et pourquoi ils sont comme ça? (biologiquement, depuis les récepteurs de la rétine!)
+> Contents
+
 Une possibilité est de passé de l'image à des features (les "*gabor*" par exemple) et de les donner ensuite au réseau de neurone. Cette approche est inspirée du système visuel humain (avec les cellules ganglionnaire centre OFF, bord ON; en réalité, les photorecepteurs sont activateurs des cellules bipolaires, qui elles même sont à leur tour soit activatrice (ON) soit inhibitrice (OFF) de la cellule ganglionnaire).
+Pooling/convergence et convolution successives donnent finalement un filtrage depuis la rétine vers les cellules ganglionnaires, puis des cellules simples vers les cellules complexes de V1).
 ![[gabor_to_rn.png]]
 
 Ces champs recepteurs peuvent être modélisés par une différence de Gaussienne:
@@ -218,6 +223,11 @@ Thurstone, Spearman et Wechsler s'y sont intéressés pour dresser des échelles
 
 ## Limite des CNN actuels
 
+> [!NOTE] Examen potentiellement!!! Attaque adverses et solution!
+> Contents
+
+
+
 On modélise bien le système visuel avec les CNN, mais les aires pariétales qui permettent de comprendre l'environnement (les intentions d'autrui etc...) ne sont pas simulées/modélisées, alors qu'on y gagnerait bcp.
 ### Attaques adverses
 Des combinaisons d'images perturbent fortement les CNN:
@@ -232,8 +242,6 @@ Plusieurs solutions inspirées de la psychologie, des neurosciences (plutôt que
 - Donner la capacité aux modèles de creer des catégories sur-ordonnées (chien, chat appartiennent à 'animaux terrestres')
 - Ajouter des 'connexions descendantes' (typiquement dans les RNN) dans le traitement des images. Inspirés des circuits de prédiction du cerveau humain (Kauffman L. Ramanoël S, Pyrin C (2014)): les infos BF de V1 sont envoyée au cortex orbitofrontal (en parallèle d'un envoi au cortex inférotemporal qui s'occupe de la reconnaissance) afin qu'il participe à guider la reconnaissance visuelle (effectuée dans le cortex inférotemporal): ![[kauffmanL_orbitofrontal.png]] Sur la base des basses fréquence, on se construirait un 'primal sketch' qui permet de bien mieux résister aux attaques adverses (typiquement HF).
 - Finalement, ça revient à ajouter des traitements top-down.
-
-
 #### Solution proposée : anticipation
 "Mermillod, M., Bourrier, Y., David, E., Kauffmann, L., Chauvin, A., Guyader, N., ... & Peyrin, C. (2019). The importance of recurrent topdown synaptic connections for the anticipation of dynamic emotions. Neural Networks, 109, 19-30"
 

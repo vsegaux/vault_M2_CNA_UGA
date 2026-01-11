@@ -8,8 +8,8 @@ publish: true
 
 > [!NOTE] Examen -> TODO: Une feuille manuscrite autorisée
 > Notions à retenir:
-> - Linéaire / Non linéaire
-> - Supervisé = prédire / Non supervisé = explorer.
+> - Linéaire / Non linéaire -> Exemples d'algo et fonctionnement général
+> - Supervisé = prédire / Non supervisé = explorer. -> Exemples d'algo et fonctionnement général
 > - Biais ↔ Variance = compromis à gérer.
 > - Notion de surapprentissage et comment l'éviter.
 > - Normaliser avant KNN, SVM, K-means.
