@@ -116,8 +116,6 @@ Structure en "couches" comportementales parallèles. Pas de processeur central u
     * *Niveau 2 (Haut) :* "Assembler la pièce".
     * *Logique :* Si l'humain pousse le robot (Niveau 1), cela inhibe temporairement l'assemblage (Niveau 2). Si choc violent (Niveau 0), tout s'arrête.
 
----
-
 # Partie 2 : Apprentissage & Cognition (M. Lefort)
 
 ## 1. Apprentissage Supervisé

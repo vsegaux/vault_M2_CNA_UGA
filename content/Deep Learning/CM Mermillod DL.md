@@ -237,6 +237,7 @@ Des combinaisons d'images perturbent fortement les CNN:
 	- Modification des couleurs
 	- ![[attaque_adverse.png]]
 
+Pourquoi ça marche sur les CNN?  Les CNN actuels ont un **biais vers les textures** plutôt que vers les formes globales16. Contrairement aux humains, ils manquent de mécanismes de compréhension de l'environnement (liés aux aires pariétales) et de traitements descendants (top-down).
 
 Plusieurs solutions inspirées de la psychologie, des neurosciences (plutôt que simplement ajouter des couches comme dans resnet50):
 - Donner la capacité aux modèles de creer des catégories sur-ordonnées (chien, chat appartiennent à 'animaux terrestres')

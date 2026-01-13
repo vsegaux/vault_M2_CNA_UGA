@@ -17,7 +17,7 @@ L'objectif de la **Blind Source Separation (BSS)** est de passer des signaux enr
 
 ## III. Classification et Géométrie Riemannienne
 
-En EEG, on travaille rarement sur les signaux bruts. On utilise généralement la **matrice de covariance**, notée $C = \frac{1}{T} XX^T$, où chaque élément hors de la diagonale représente la corrélation entre une paire de capteurs. Ces matrices sont des matrices symétriques définies positives. Elles forment un espace qui n'est pas euclidien.
+En EEG, on travaille rarement sur les signaux bruts (temporels, bruités, variables). On utilise généralement la **matrice de covariance**, notée $C = \frac{1}{T} XX^T$, où chaque élément hors de la diagonale représente la corrélation entre une paire de capteurs (donc la matrice décrit comment les différents capteurs varient ensemble au cours du temps; deux enregistrements peuvent être très différents dans le temps, mais en partageant une structure de covariance similaire). Ces matrices sont des matrices symétriques définies positives. Elles forment un espace qui n'est pas euclidien.
 
 ### 1. Concepts Fondamentaux (Espace Non-Euclidien)
 
@@ -25,7 +25,7 @@ Pour mieux catégoriser les données en _machine learning_, on utilise la géom�
 
 - **Géodésique :** Dans un espace courbe, c'est l'équivalent de la ligne droite ; elle représente le **chemin le plus court entre deux points**. Par exemple, sur Terre, les méridiens reliant les pôles sont des géodésiques.
 - **Barycentre (Moyenne Riemannienne) :** Dans ces espaces non euclidiens, le barycentre est le point qui minimise la somme des carrés des distances géodésiques aux autres points. On utilise ici une **moyenne géométrique** ($\sqrt{XY}$) plutôt qu'arithmétique ($\frac{X+Y}{2}$).
-- **Avantages :** Cette approche est robuste au bruit, ne nécessite souvent pas de calibration (parameter-free) et permet une meilleure sensibilité aux variations très faibles du signal.
+- **Avantages :** Cette approche est robuste au bruit (relations entre capteurs plutot que valeurs instantanées), ne nécessite souvent pas de calibration (parameter-free) et permet une meilleure sensibilité aux variations très faibles du signal.
 
 ### 2. Riemannian Procrustes Analysis (RPA)
 
@@ -55,7 +55,7 @@ Ce paradigme repose sur l'organisation topographique des cortex moteurs et somat
 
 Un **ERP** (Event-Related Potential) est obtenu par *moyennage* d'essais, il ne conserve donc que le *signal en phase d'un essai à l'autre*; il reflète le traitement neuronal temporellement stable et synchronisé avec l'évènement.
 
-Le **P300** est un potentiel qui apparaît environ 300 ms après un stimulus cible "rare" parmi des stimuli non-cibles.
+Le **P300** est un potentiel qui apparaît environ 300 ms après un stimulus cible "rare" parmi des stimuli non-cibles (ie après l'apparition d'un stimulus inatendu).
 
 - **Exemple (Brain Invaders) :** Le joueur regarde une cible parmi plusieurs monstres. La cible s'allume aléatoirement( parmi plusieurs flash de présentation). L'algorithme détecte le P300 généré par ce flash pour identifier la cible du regard, même si l'activité n'est pas "volontaire" de la part du sujet.
 
