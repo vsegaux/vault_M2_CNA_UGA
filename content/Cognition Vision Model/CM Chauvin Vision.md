@@ -319,7 +319,7 @@ _Origine principale : Voie Parvo (Hautes Fréquences + Couleur)._
 - **Hiérarchie d'abstraction (Pooling)** :
     1. **V1** : Barres orientées.
     2. **V2** : Formes simples, contours illusoires, angles.
-    3. **V4** : Formes 3D, courbures complexes, couleur.
+    3. **V4** : Formes 3D, courbures complexes, **couleur**.
     4. Cortex IT (Inféro-Temporal) : Objets complets, concepts.
         ![[voie_ventrale.png]]
         
